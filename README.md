@@ -10,19 +10,22 @@ You will also see any lint errors in the console.
 
 # constructor project
 
-App ----publish
-    |----src|----assets: chứa thư mục ảnh, video,..
-            |----components: chứa các gói nav, header, footer.
-            |----containers
-            |----routes: đường dẫn
-            |----styles: css biến, global
-            |----translations : chuyển đổi ngôn ngữ 
-            |----untils : nơi chứa các hàm thực thi js
-            |----views |----home
-            |          |----pages
-            |          |----destionations
-            |          |----tours
-            |          |----blog
-            |          |----shop
-            |          |----elements
+App 
+ |____ publish
+    |__src|__assets: chứa thư mục ảnh, video,..
+            |__components: chứa các gói nav, header, footer.
+            |__containers
+            |__routes: đường dẫn
+            |__styles: css biến, global
+            |__translations : chuyển đổi ngôn ngữ 
+            |__untils : nơi chứa các hàm thực thi js
+            |__views |__home
+            |          |__pages
+            |          |__destionations
+            |          |__tours
+            |          |__blog
+            |          |__shop
+            |          |__elements
             |index.js
+			
+
