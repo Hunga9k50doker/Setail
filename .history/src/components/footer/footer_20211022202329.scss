@@ -1,0 +1,131 @@
+@import "../../styles/global";
+@import "../../styles/variables";
+
+.footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: $bg-footer;
+  color: $white-color;
+  padding-top: 106px;
+  font-family: "Poppins";
+  font-size: 14px;
+//   line-height: 24px;
+  a:hover {
+      color: $primary-color;
+    }
+  .col:first-child {
+    h5 {
+      margin: 20px 0;
+      font-size: 18px;
+      color: $text-color;
+    }
+
+    ul {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      i {
+        color: $primary-color;
+        display: inline-block;
+        margin-right: 10px;
+      }
+      a{
+      color:$white-color;
+      &:hover{
+          color:$primary-color;
+      }
+      }
+    }
+    
+    .contact-item {
+      margin: 5px 0;
+      
+    }
+  }
+
+  &__title {
+    margin-bottom: 26px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  &__content {
+      font-size: 14px;
+      letter-spacing:1px;
+      color:$text-color;
+      font-weight: 300;
+      &-item:not(:first-child){
+          margin-top:26px;
+          font-size: 14px;
+      }
+  }
+
+  .time-visit{
+      color: $white-color;
+      margin-top: 9px;
+  }
+
+  &__form{
+    margin-top: 26px;
+    width:90%;
+    min-width: 50%;
+    &-name,
+    &-email,
+    &-submit{
+        display:flex;
+        align-items:center;
+        i{
+            display: inline-block;
+            background: $text-color;
+            height:100%;
+            padding: 16px;
+            font-size: 18px;
+        }
+        input,button{
+            width: 100%;
+            outline: none;
+            margin:9px 0px;
+            padding:16px 10px;
+            border:none;
+            background:$text-color;
+            font-size: 15px;
+        }
+        // input::placeholder{
+        //     font-size: ;
+        // }
+        
+    }
+    &-submit{
+        background: $primary-color;
+        text-transform: uppercase;
+        padding:16px 10px;
+        display:flex;
+        align-items:center;
+        justify-content: center;
+        cursor: pointer;
+        &:hover{
+            background:$bg-color--hover;
+
+        }
+    }
+  }
+
+  .footer-copyright{
+      margin-top: 28px;
+      border-top: 1px solid #fff;
+      width:calc(100vw - 20px);
+      position: absolute;
+      
+      left:50%;
+      transform: translate(-50%,-50%);
+  }
+  .copyright {
+    
+    margin: 28px auto;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 300;
+  }
+}

@@ -1,0 +1,81 @@
+@import "../../styles/variables";
+
+.nav {
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #1c1c1c;
+  &__logo {
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    font-size: 14px;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &-item {
+      transition: all 0.5s ease;
+      padding: 28px 37px;
+      font-size: 15px;
+      cursor: pointer;
+        color:$white-color;
+        &:hover {
+            color: $primary-color;
+        }
+      &:hover &-title:after{
+          transform:scaleX(1);
+            transform-origin: left center;
+      }
+
+
+      &-title{
+          position: relative;
+        font-weight: 300;
+
+        &:after{
+            content: " ";
+            width: 100%;
+            height: 4px;
+            background: $bg-color--hover;
+            position: absolute;
+            bottom: -8px;
+            left:0;
+            transform: scaleX(0);
+            transform-origin:  center left;
+            transition: all 0.3s ease;
+
+        }
+     
+      }
+      &-selections {
+        display: none;
+      }
+    }
+  }
+
+  &__innerRight {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &-item {
+      position: relative;
+      transition: all 0.5s ease;
+      cursor: pointer;
+      margin: 0 16px;
+      font-size: 20px;
+      color: $text-color;
+      z-index: 2;
+      transform: scale(1);
+
+      &:hover {
+        transform: scale(1.2);
+        color: $bg-color--hover;
+        
+      }
+    }
+  }
+}

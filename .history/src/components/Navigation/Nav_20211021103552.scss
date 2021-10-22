@@ -1,0 +1,187 @@
+@import "../../styles/variables";
+@import "../../styles/global.scss";
+
+.nav {
+  position: relative;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #b6a9a9;
+  &__logo {
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    font-size: 14px;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &-item {
+      position: relative;
+      transition: all 0.5s ease;
+      padding: 28px 37px;
+      font-size: 15px;
+      cursor: pointer;
+      color: $white-color;
+      &:hover {
+        color: $primary-color;
+      }
+
+      &-title {
+        position: relative;
+        font-weight: 700;
+
+        &:after {
+          @extend .hover-slide-below;
+        }
+        &:hover:after {
+          transform: scaleX(1);
+          transform-origin: left center;
+        }
+      }
+      &-selections {
+        transition: all 0.3s ease;
+        text-align: left;
+        flex-direction: column;
+        position: absolute;
+        border-radius: 2px;
+        top: 82px;
+        left: 0;
+        width: 150%;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+        // transform: scaleY(0);
+        display: none;
+        transform-origin: center top;
+
+        &:before {
+          @extend .bridge;
+        }
+
+      }
+
+      &:hover &-selections {
+        transform: scaleY(1);
+        transform-origin: top center;
+      }
+      &-selection {
+        position: relative;
+        display: block;
+        padding: 5px 25px 6px 32px;
+        font-size: 15px;
+        color: $text-color;
+        font-weight: 500;
+        p {
+          position: relative;
+          display: inline-block;
+          width: fit-content;
+          &:after {
+            @extend .hover-slide-below;
+            height: 3px;
+          }
+        }
+        &:hover {
+          color: $primary-color;
+
+          .sub-menu {
+            display: flex;
+          }
+        }
+        &:hover p:after {
+          transform: scaleX(1);
+          transform-origin: left center;
+        }
+        &:first-child {
+          padding-top: 34px;
+        }
+        &:last-child {
+          margin-bottom: 34px;
+        }
+
+        .sub-menu {
+          display: none;
+          position: absolute;
+          top: 0;
+          left: 100%;
+          display: flex;
+          align-items: flex-start;
+          float: left;
+          flex-direction: column;
+          box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+          width: 100%;
+          padding: 28px 0 28px 0;
+          &-item {
+            width: 100%;
+            padding: 5px 37px 6px 37px;
+            color: $text-color;
+            a {
+              position: relative;
+              display: inline-block;
+              width: fit-content;
+              &:after {
+                @extend .hover-slide-below;
+                height:2px;
+              }
+            }
+            &:hover a{
+              color: $primary-color;
+            }
+            &:hover a:after{
+              transform: scaleX(1);
+              transform-origin: left center;
+            }
+          }
+        }
+      }
+
+      // &:nth-child(6) &-selection {
+      //   display: flex;
+      //   align-items: center;
+      //   justify-content: space-between;
+      // }
+
+      &:nth-child(7) &-selection {
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    
+    }
+
+    &-item-Elements{
+
+    }
+    &-item:nth-child(7) &-item-selections {
+      // background: #000;
+      display: flex;
+      position: absolute;
+      left: 100%;
+      width:100vh;
+      // width: 200%;
+    }
+  }
+
+  &__innerRight {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &-item {
+      position: relative;
+      transition: all 0.5s ease;
+      cursor: pointer;
+      margin: 0 16px;
+      font-size: 20px;
+      color: $text-color;
+      z-index: 2;
+      transform: scale(1);
+
+      &:hover {
+        transform: scale(1.2);
+        color: $bg-color--hover;
+      }
+    }
+  }
+}

@@ -1,0 +1,94 @@
+@import "../../styles/variables";
+
+.nav {
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #b6a9a9;
+  &__logo {
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    font-size: 14px;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &-item {
+      position: relative;
+      transition: all 0.5s ease;
+      padding: 28px 37px;
+      font-size: 15px;
+      cursor: pointer;
+      color: $white-color;
+      &:hover {
+        color: $primary-color;
+      }
+      &:hover &-title:after {
+        transform: scaleX(1);
+        transform-origin: left center;
+      }
+
+      &-title {
+        position: relative;
+        font-weight: 700;
+
+        &:after {
+          content: " ";
+          width: 100%;
+          height: 4px;
+          background: $bg-color--hover;
+          position: absolute;
+          bottom: -8px;
+          left: 0;
+          transform: scaleX(0);
+          transform-origin: center left;
+          transition: all 0.3s ease;
+        }
+      }
+      &-selections {
+        display: none;
+        // display:flex;
+        justify-content: center;
+        flex-direction: column;
+        position: absolute;
+       bottom: -100%;
+       left: 0;
+       right: 0;
+       width: 100%;
+       .sub-menu{
+         display: none;
+       }
+
+      }
+
+      &-selections:first-child{
+        
+      }
+    }
+  }
+
+  &__innerRight {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &-item {
+      position: relative;
+      transition: all 0.5s ease;
+      cursor: pointer;
+      margin: 0 16px;
+      font-size: 20px;
+      color: $text-color;
+      z-index: 2;
+      transform: scale(1);
+
+      &:hover {
+        transform: scale(1.2);
+        color: $bg-color--hover;
+      }
+    }
+  }
+}

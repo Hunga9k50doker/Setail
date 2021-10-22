@@ -1,0 +1,49 @@
+
+.nav__onTop{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    margin: 0 18px;
+    background: #1c1c1c;
+    &-leftInner,&-rightInner{
+        display:flex;
+        align-items:center;
+        justify-content: space-around;
+        &-item{
+            display:flex;
+            align-items:center;
+            justify-content: center;
+            font-size: 13px;
+            margin:12px 10px;
+            cursor: pointer;
+            i{
+                margin-right: 8px;
+            }
+        
+            &-toggleLang{
+                background: #3ABDC1;
+                display:flex;
+                align-items:center;
+                justify-content: space-around;
+                p{
+                    display: inline-block;
+                    margin-right: 8px;
+                }
+            }
+            &-langs{
+                display:none;
+            }
+        }
+
+
+        &-item-socialNetwork{
+            margin-left: 4px;
+            margin-right: 4px;
+        }
+
+        &-account{
+            background: #3fd0d4;
+        }
+    }
+
+}

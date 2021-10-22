@@ -1,0 +1,119 @@
+@import "../../styles/variables";
+@import '../../styles/global';
+
+.nav__onTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0 0 18px;
+  background: #1c1c1c;
+  color: #fff;
+  &-leftInner,
+  &-rightInner {
+    display: flex;
+    align-items: center;
+    &-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      padding: 0 10px;
+      cursor: pointer;
+      &:hover {
+        color: $primary-color;
+      }
+      i {
+        margin-right: 8px;
+      }
+
+      &-langs {
+        // display: none;
+        transition: all 0.3s ease;
+        position: absolute;
+        bottom: calc(-100% - 54px);
+        left: 0;
+        right: 0;
+              z-index: 5;
+
+        transform: scaleY(0);
+        transform-origin: center top;
+        opacity: 0;
+      }
+      &-lang {
+        padding: 6px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background: $primary-color;
+        color: #fff;
+        &:hover {
+          background: $bg-color--hover;
+        }
+        &:last-child {
+          padding-bottom: 12px;
+        }
+
+        &:first-child {
+          position: relative;
+          &:after {
+            content: " ";
+            position: absolute;
+            width: 100%;
+            height: 8px;
+            top: -4px;
+          }
+        }
+      }
+    }
+
+    &-item-socialNetwork {
+      padding-left: 4px;
+      padding-right: 4px;
+    }
+    &-item-toggleLang {
+      position: relative;
+      background: $bg-color--hover;
+      display: flex;
+      align-items: center;
+      height: 100%;
+      margin: 0;
+      padding: 12px 10px;
+      justify-content: space-around;
+      p {
+        display: inline-block;
+        margin-right: 8px;
+      }
+     
+    }
+    &-item-toggleLang:hover .nav__onTop-rightInner-item-langs {
+      transform: scaleY(1);
+      transform-origin:  top center;
+      opacity: 1;
+      z-index: 5;
+    }
+
+    &-account {
+      background: $primary-color;
+      padding: 12px 10px 12px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      i {
+        display: inline-block;
+        font-size: 1.1rem;
+      }
+      &:hover {
+        color: #999;
+        background: $bg-color--hover;
+      }
+    }
+  }
+  &-leftInner {
+    i {
+      color: $primary-color;
+    }
+  }
+}
+
+// ============Animation=====================
