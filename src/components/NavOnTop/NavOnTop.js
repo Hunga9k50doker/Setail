@@ -1,6 +1,8 @@
 // import { render } from "@testing-library/react";
 import './NavOnTop.scss';
 import "../../styles/global.scss";
+import "../../styles/responsive.scss";
+import "../../styles/grid.scss";
 import { NavLink, Link } from "react-router-dom";
 
 const NavOnTop = () => {

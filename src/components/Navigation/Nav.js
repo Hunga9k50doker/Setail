@@ -32,12 +32,11 @@ const Nav = () => {
   }
   return (
     <div className="nav">
-      <Link to="">
-        <img
-          src="./logo/logo-footer.png"
-          alt="Not found"
-          className="nav__logo"
-        />
+      <Link to="/">
+        <picture >
+          <source srcset="./logo/logo-footer.png" media="(min-width: 1025px)" />
+          <img className="nav__logo" src="./logo/logo-header.png" alt="Not found" />
+        </picture>
       </Link>
       <ul className="nav__list">
         <li className="nav__list-item nav__list-item-Home">
@@ -303,6 +302,10 @@ const Nav = () => {
         </li>
       </ul>
 
+      {/* =======account on <=low pc (1024px) */}
+      <div className="nav-account">
+        <i className="far fa-user-circle"></i>
+      </div>
       {/* ================search modal=========================== */}
       <div className="search-modal " onClick={() => openModal}>
         <i class="fas fa-times close "></i>
@@ -316,5 +319,6 @@ const Nav = () => {
 
   
 };
+
 
 export default Nav;

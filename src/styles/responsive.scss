@@ -1,0 +1,48 @@
+@import "./variables";
+@import "./global.scss";
+
+//large pc
+@media (min-width: 1025px) {
+  .nav {
+    &-account {
+      display: none;
+    }
+  }
+}
+
+// <=low pc
+@media (max-width: 1024px) {
+  .nav__onTop {
+    display: none;
+  }
+
+  .nav {
+    top: 0 !important;
+    background: $primary-color;
+    color: $white-color;
+    &__logo {
+      float: center;
+      margin: 28px auto;
+    }
+    &__list {
+      display: none;
+    }
+    &__innerRight {
+      position: absolute;
+      top: 50%;
+      left: 100px;
+      transform: translateY(-50%);
+      &-item-search,
+      &-item-cart {
+        display: none;
+      }
+
+      &-item-category {
+        i {
+          color: $white-color;
+          font-size: 40px;
+        }
+      }
+    }
+  }
+} ;

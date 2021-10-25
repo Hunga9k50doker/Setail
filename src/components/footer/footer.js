@@ -1,4 +1,4 @@
-import {NavLink} from 'react-router-dom';
+import {NavLink, Link} from 'react-router-dom';
 import './footer.scss';
 import '../../styles/grid.scss';
 
@@ -79,7 +79,7 @@ const Footer =() =>{
                         <i class="far fa-envelope"></i>
                         <input maxLength="50" type="email" placeholder="Email" name="" id="" />
                       </div>
-                      <bnt class="footer__form-submit">Subscribe</bnt>
+                      <button class="footer__form-submit">Subscribe</button>
                     </form>
                   </div>
                   <div class="col l-3 m-6 c-12">
@@ -93,12 +93,12 @@ const Footer =() =>{
                 <div class="row">
                   <h5 class="copyright">
                     Powered by @
-                    <NavLink
-                      to="https://www.linkedin.com/in/nguyen-hung-651459218/"
-                      class=""
+                    <a 
+                      href="https://www.linkedin.com/in/nguyen-hung-651459218/"
+                      target="_blank"
                     >
                       Nguyen Hung
-                    </NavLink>
+                    </a>
                   </h5>
                 </div>
               </div>

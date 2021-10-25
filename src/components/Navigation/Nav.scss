@@ -1,6 +1,7 @@
 @import "../../styles/variables";
 @import "../../styles/global.scss";
 
+
 .nav {
   position: fixed;
   left: 0;
@@ -14,7 +15,7 @@
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
   &__logo {
     cursor: pointer;
-    width: 150px;
+    max-width: 150px;
     height: 50px;
     font-size: 14px;
   }
@@ -24,9 +25,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    max-width:60%;
+    flex: 1;
+    margin: 0 37px;
     &-item {
       position: relative;
       transition: all 0.5s ease;
+      padding: 28px 0px;
       padding: 28px 37px;
       font-size: 15px;
       cursor: pointer;
@@ -270,6 +275,7 @@
     }
   }
 
+  
   // ===============modal====================
   .search-modal {
     position: fixed;
@@ -326,4 +332,16 @@
       }
     }
   }
+
+  //account on <=low pocket
+  &-account{
+    position: absolute;
+    top: 50%;
+    right:100px;
+    transform: translateY(-50%);
+    font-size: 40px;
+  }
 }
+
+@import "../../styles/responsive.scss";
+
