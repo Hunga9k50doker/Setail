@@ -9,7 +9,6 @@ You will also see any lint errors in the console.
 
 
 # constructor project 
-	|
   	src___assets: chứa thư mục ảnh, video,..
             |__components: chứa các gói nav, header, footer.
             |__containers
