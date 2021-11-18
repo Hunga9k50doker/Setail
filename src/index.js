@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./views/App.js";
-import reportWebVitals from "./reportWebVitals";
 import "./styles/global.scss";
+import reportWebVitals from "./reportWebVitals";
 // import socialNetworks from '../src/components/socialNetworks'
 
 ReactDOM.render(

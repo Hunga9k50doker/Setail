@@ -1,14 +1,16 @@
 @import "../styles/variables";
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 .App {
   position: relative;
 }
 
-.container {
-  margin-top: 100px;
-  font-size: 20px;
-  color: #000;
-  height: 1000px;
+.nav{
+  z-index: 99;
+}
+.component {
+  margin-top: 70px;
+  min-height: 5000px;
 }
 
 .backToTop {

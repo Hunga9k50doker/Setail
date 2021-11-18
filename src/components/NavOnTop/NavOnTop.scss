@@ -1,6 +1,9 @@
 @import "../../styles/variables";
 @import "../../styles/global";
 
+ul,li,p{
+  margin: 0;
+}
 .nav__onTop {
   display: flex;
   align-items: center;
@@ -19,11 +22,18 @@
       font-size: 13px;
       padding: 0 10px;
       cursor: pointer;
+      color: $white-color;
       &:hover {
         color: $primary-color;
       }
       i {
         margin-right: 8px;
+      }
+      a {
+        color: $white-color;
+        &:hover {
+          color: $primary-color;
+        }
       }
 
       &-langs {
@@ -45,7 +55,7 @@
         justify-content: center;
         flex-direction: column;
         background: $primary-color;
-        color: #fff ;
+        color: #fff;
         &:hover {
           background: $bg-color--hover;
         }
@@ -78,7 +88,7 @@
       align-items: center;
       height: 100%;
       margin: 0;
-      padding: 12px 10px;
+      padding: 12.5px 10px;
       justify-content: space-around;
       p {
         display: inline-block;
@@ -93,7 +103,7 @@
 
     &-account {
       background: $primary-color;
-      padding: 12px 10px 12px 16px;
+      padding: 13px 10px 13px 16px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -114,4 +124,3 @@
 }
 
 @import "../../styles/responsive.scss";
-
