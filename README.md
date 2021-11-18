@@ -26,4 +26,6 @@ You will also see any lint errors in the console.
 			
 ## Icon: fontawasome
 ## framework: 
-reactjs, hook, bootstrap,
+reactjs, bootstrap,
+# feature;
+hook, sass,jsx
