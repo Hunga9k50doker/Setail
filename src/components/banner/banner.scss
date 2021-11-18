@@ -1,0 +1,32 @@
+@import "../../styles/global";
+@import "../../styles/variables";
+
+.ban {
+  .carousel {
+    &-item {
+      position: relative;
+      width: 100vw;
+      height: 60vh;
+      overflow: hidden;
+    }
+    &-caption {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      transform: translate(-50%, -50%);
+      line-height: 100%;
+      font-family: "Poppins", sans-serif;
+
+      h2 {
+        font-size: 7rem;
+        font-weight: 800;
+      }
+      h5 {
+        font-family: "Pacifico", sans-serif;
+        font-size: 2rem;
+        -webkit-font-smoothing: antialiased;
+      }
+    }
+  }
+}

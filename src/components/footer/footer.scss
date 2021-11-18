@@ -11,7 +11,7 @@
   padding-top: 106px;
   font-family: "Poppins";
   font-size: 14px;
-  //   line-height: 24px;
+  clear: none;
   a:hover {
     color: $primary-color;
   }
@@ -73,13 +73,17 @@
     &-name,
     &-email,
     &-submit {
+      position: relative;
       display: flex;
       align-items: center;
+      overflow:hidden;
       i {
+        position: absolute;
+        top: calc(50% - 4px);
+        left:10px;
+        transform: translate(0,-50%);
         display: inline-block;
         background: $text-color;
-        height: 100%;
-        padding: 16px;
         font-size: 18px;
       }
       input,
@@ -91,6 +95,9 @@
         border: none;
         background: $text-color;
         font-size: 15px;
+      }
+      input{
+        padding-left: 40px;
       }
     }
     &-email {

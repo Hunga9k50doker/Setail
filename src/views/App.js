@@ -1,9 +1,10 @@
+import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { useEffect, useState } from "react";
 import "./App.scss";
 import NavOnTop from "../components/NavOnTop/NavOnTop";
 import Nav from "../components/Navigation/Nav";
 import Footer from "../components/footer/footer";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { useEffect, useState } from "react";
 
 import HomeExotic from "./home/exoticDestinations/exotic";
 import HomeTravel from "./home/travelAgency/travel";
@@ -84,7 +85,8 @@ function App() {
             <HomeTravel />
           </Route>
           <Route path="/home/winter-holidays">
-            <HomeWinter />
+            <HomeWinter
+            />
           </Route>
           <Route path="/home/exotic-destinations">
             <HomeExotic />

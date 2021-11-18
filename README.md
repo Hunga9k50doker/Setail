@@ -8,24 +8,22 @@ The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
 
-# constructor project
-
-App 
- |____ publish
-    |__src|__assets: chứa thư mục ảnh, video,..
+# constructor project 
+  	src___assets: chứa thư mục ảnh, video,..
             |__components: chứa các gói nav, header, footer.
             |__containers
             |__routes: đường dẫn
             |__styles: css biến, global
-            |__translations : chuyển đổi ngôn ngữ 
             |__untils : nơi chứa các hàm thực thi js
-            |__views |__home
+            |__views_____home
             |          |__pages
-            |          |__destionations
+            |          |__destinations
             |          |__tours
             |          |__blog
             |          |__shop
             |          |__elements
             |index.js
 			
-
+## Icon: fontawasome
+## framework: 
+reactjs, hook, bootstrap,
