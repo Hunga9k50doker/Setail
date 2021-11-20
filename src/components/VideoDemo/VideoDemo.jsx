@@ -33,9 +33,9 @@ const VideoDemo = () => {
             title="this is a video"
             src="https://player.vimeo.com/video/71319358?h=8d0e4ac080&badge=0"
             className="video__source"
-            frameborder="0"
+            frameBorder="0"
             allow="autoplay; fullscreen;accelerometer;gyroscope;encrypted-media; picture-in-picture"
-            allowFullscreen
+            allowFullScreen
           ></iframe>
         </div>
       </div>

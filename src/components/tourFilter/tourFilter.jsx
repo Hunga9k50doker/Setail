@@ -6,11 +6,11 @@ const TourFilter = (props) => {
       <form className="tour__filter">
         <ul className="tour__filter-list">
           <li className="tour__filter-item">
-            <i class="far fa-compass"></i>
+            <i className="far fa-compass"></i>
             <input type="text" placeholder="Where to?" />
           </li>
           <li className="tour__filter-item">
-            <i class="far fa-calendar-alt"></i>
+            <i className="far fa-calendar-alt"></i>
             <select id="tour__filter-item-months">
               <option value="0">Month</option>
               <option value="1">January</option>
@@ -28,7 +28,7 @@ const TourFilter = (props) => {
             </select>
           </li>
           <li className="tour__filter-item">
-            <i class="fas fa-thumbtack"></i>
+            <i className="fas fa-thumbtack"></i>
             <select id="tour__filter-item-travel-types">
               <option value="0">Travel Type</option>
               <option value="1">Europe</option>

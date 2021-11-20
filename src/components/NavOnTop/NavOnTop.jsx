@@ -1,9 +1,9 @@
 // import { render } from "@testing-library/react";
-import './NavOnTop.scss';
+import "./NavOnTop.scss";
 import "../../styles/global.scss";
 import "../../styles/responsive.scss";
 import "../../styles/grid.scss";
-import { NavLink, Link } from "react-router-dom";
+import {  Link } from "react-router-dom";
 
 const NavOnTop = () => {
   return (
@@ -26,23 +26,32 @@ const NavOnTop = () => {
       </ul>
       <ul className="nav__onTop-rightInner">
         <li className="nav__onTop-rightInner-item nav__onTop-rightInner-item-socialNetwork">
-          <a href="" target="_blank">
+          <a href="https://twitter.com/home" rel="noreferrer" target="_blank">
             <i className=" fab fa-twitter"></i>
           </a>
         </li>
         <li className="nav__onTop-rightInner-item nav__onTop-rightInner-item-socialNetwork">
-          <a href="https://www.pinterest.com/qodeinteractive/" target="_blank">
+          <a
+            href="https://www.pinterest.com/qodeinteractive/"
+            rel="noreferrer"
+            target="_blank"
+          >
             <i className=" fab fa-pinterest-p"></i>
           </a>
         </li>
         <li className="nav__onTop-rightInner-item nav__onTop-rightInner-item-socialNetwork">
-          <a href="https://www.instagram.com/nguyenhung9104/" target="_blank">
+          <a
+            href="https://www.instagram.com/nguyenhung9104/"
+            rel="noreferrer"
+            target="_blank"
+          >
             <i className=" fab fa-instagram"></i>
           </a>
         </li>
         <li className="nav__onTop-rightInner-item nav__onTop-rightInner-item-socialNetwork">
           <a
             href="https://www.facebook.com/profile.php?id=100047468063150"
+            rel="noreferrer"
             target="_blank"
           >
             <i className=" fab fa-facebook-f"></i>

@@ -119,7 +119,7 @@ const Selections = (props) => {
                 <h3>{item.title}</h3>
                 <h5>
                   <div className="selections__item-rating">
-                    <i class="fas fa-star-half-alt"></i>
+                    <i className="fas fa-star-half-alt"></i>
                     <p>{item.rating}</p>
                   </div>
                   <p>{item.cost}</p>

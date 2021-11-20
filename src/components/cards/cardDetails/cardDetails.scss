@@ -1,0 +1,80 @@
+@import "../../../styles/variables";
+@import "../../../styles/global";
+
+.card {
+  width: 100%;
+  color: $black-color;
+  overflow: hidden;
+  i {
+    margin-right: 8px;
+    font-size: 1rem;
+  }
+  &-header {
+    position: relative;
+    padding: unset;
+  }
+  img {
+    transition: all 0.5s linear;
+    transform: scale(1);
+  }
+  &:hover {
+    cursor: pointer;
+    img {
+      transform: scale(1.05);
+    }
+  }
+  &-body {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &-information {
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    right: 0;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: $primary-color;
+    color: $white-color;
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  &-title {
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin-top: 20px;
+  }
+  &-text {
+    color: $text-color;
+    font-size: 1rem;
+    flex: 1;
+    margin: 5px 0;
+    display: -webkit-box;
+    -webkit-box-oriant: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &-cost__rating {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    .card-cost {
+      font-weight: 600;
+      font-size: 1.2rem;
+    }
+    .card-rating {
+      margin-right: 20px;
+      font-weight: 600;
+    }
+  }
+}
