@@ -1,0 +1,7 @@
+@import '../../styles/variables';
+@import '../../styles/global';
+
+.slide__banner{
+    @extend .slide__card-slick;
+   
+}

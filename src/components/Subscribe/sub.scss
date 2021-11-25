@@ -1,0 +1,29 @@
+@import "../../styles/variables";
+@import "../../styles/global";
+
+.sub {
+  background: $primary-color;
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  &__title {
+    font-size: 1.6rem;
+    color: $white-color;
+    font-weight: 600;
+    margin: 20px 0;
+
+    
+  }
+  &__btn {
+      margin: 20px 0;
+    border: none;
+    padding: 16px 48px;
+    text-transform: uppercase;
+    letter-spacing: 1.2;
+    font-weight: 500;
+    &:hover{
+        background: $bg-color--hover;
+        color: $white-color;
+    }
+  }
+}

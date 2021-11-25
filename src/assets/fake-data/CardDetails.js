@@ -27,9 +27,9 @@ const CardDetailArr = [
     calendar: "1",
     custom: "13+",
     location: "Europe",
-    title: "Corfu",
+    title: "Vatican City",
     subTitle: "Meinem seh blick noch lebt die dem nicht tränen was..",
-    cost: "996",
+    cost: "860",
     rating: "7.3",
     icon: "fas fa-star-half-alt",
   },
@@ -38,9 +38,9 @@ const CardDetailArr = [
     calendar: "1",
     custom: "13+",
     location: "Europe",
-    title: "Corfu",
+    title: "Rome",
     subTitle: "Meinem seh blick noch lebt die dem nicht tränen was..",
-    cost: "996",
+    cost: "2300",
     rating: "7.3",
     icon: "fas fa-star-half-alt",
   },
@@ -49,9 +49,9 @@ const CardDetailArr = [
     calendar: "1",
     custom: "13+",
     location: "Europe",
-    title: "Corfu",
+    title: "Milan",
     subTitle: "Meinem seh blick noch lebt die dem nicht tränen was..",
-    cost: "996",
+    cost: "1230",
     rating: "7.3",
     icon: "fas fa-star-half-alt",
   },
@@ -60,9 +60,21 @@ const CardDetailArr = [
     calendar: "1",
     custom: "13+",
     location: "Europe",
-    title: "Corfu",
+    title: "Seville",
     subTitle: "Meinem seh blick noch lebt die dem nicht tränen was..",
-    cost: "996",
+    cost: "1500",
+    rating: "7.3",
+    icon: "fas fa-star-half-alt",
+  },
+
+  {
+    img: card_02_img_03,
+    calendar: "1",
+    custom: "13+",
+    location: "Europe",
+    title: "Kis Ski School",
+    subTitle: "Meinem seh blick noch lebt die dem nicht tränen was..",
+    cost: "1600",
     rating: "7.3",
     icon: "fas fa-star-half-alt",
   },
@@ -71,20 +83,9 @@ const CardDetailArr = [
     calendar: "1",
     custom: "13+",
     location: "Europe",
-    title: "Corfu",
+    title: "Magic Of Italy",
     subTitle: "Meinem seh blick noch lebt die dem nicht tränen was..",
-    cost: "996",
-    rating: "7.3",
-    icon: "fas fa-star-half-alt",
-  },
-  {
-    img: card_02_img_03,
-    calendar: "1",
-    custom: "13+",
-    location: "Europe",
-    title: "Corfu",
-    subTitle: "Meinem seh blick noch lebt die dem nicht tränen was..",
-    cost: "996",
+    cost: "1000",
     rating: "7.3",
     icon: "fas fa-star-half-alt",
   },
@@ -93,10 +94,10 @@ const CardDetailArr = [
     calendar: "1",
     custom: "13+",
     location: "Europe",
-    title: "Corfu",
+    title: "Winter Action",
     subTitle: "Meinem seh blick noch lebt die dem nicht tränen was..",
-    cost: "996",
-    rating: "7.3",
+    cost: "960",
+    rating: "6.0",
     icon: "fas fa-star-half-alt",
   },
   {
@@ -104,9 +105,9 @@ const CardDetailArr = [
     calendar: "1",
     custom: "13+",
     location: "Europe",
-    title: "Corfu",
+    title: "Skiing In Alps",
     subTitle: "Meinem seh blick noch lebt die dem nicht tränen was..",
-    cost: "996",
+    cost: "450",
     rating: "7.3",
     icon: "fas fa-star-half-alt",
   },
@@ -115,9 +116,9 @@ const CardDetailArr = [
     calendar: "1",
     custom: "13+",
     location: "Europe",
-    title: "Corfu",
+    title: "Snow Surfing",
     subTitle: "Meinem seh blick noch lebt die dem nicht tränen was..",
-    cost: "996",
+    cost: "720",
     rating: "7.3",
     icon: "fas fa-star-half-alt",
   },
@@ -126,9 +127,9 @@ const CardDetailArr = [
     calendar: "1",
     custom: "13+",
     location: "Europe",
-    title: "Corfu",
+    title: "Active Winter",
     subTitle: "Meinem seh blick noch lebt die dem nicht tränen was..",
-    cost: "996",
+    cost: "3600",
     rating: "7.3",
     icon: "fas fa-star-half-alt",
   },
@@ -136,9 +137,19 @@ const CardDetailArr = [
 
 const getAllCards = () => CardDetailArr;
 
-const cardData = {
-  getAllCards,
- 
+const getCards_random = (count) => {
+  const max = CardDetailArr.length - count;
+  const min = 0;
+  const start = Math.floor(Math.random() * (max - min) + min);
+  return CardDetailArr.splice(start, start + count);
 };
+const getCards = (index,count) =>{
+  if( count > CardDetailArr.length - count - index){
+      return getCards_random(count) ;
+  }else{
+   return CardDetailArr.slice(index, index + count);
+  }
+}
+const cardData = { getAllCards, getCards ,getCards_random};
 
 export default cardData;

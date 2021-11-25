@@ -4,9 +4,26 @@ import "./cardDetails.scss";
 
 const CardDetails = (props) => {
   return (
-    <div className="card">
+    <div className="card ">
       <div className="card-header">
-      <img src={props.img} className="card-img-top" alt="..." />
+        <picture>
+          <source
+            media="(min-width:1200px)"
+            srcset={props.img}
+            style={{ width: "288px", height: "170px" }}
+          />
+          <source
+            media="(min-width:768px)"
+            srcset={props.img}
+            style={{ width: "328px", height: "193px" }}
+          />
+          <img
+            src={props.img}
+            className="card-img-top"
+            alt="not found"
+            style={{ width: "358px", height: "257px" }}
+          />
+        </picture>
         <div className="card-information">
           <p className="card-information-calendar">
             <i className="far fa-calendar-alt"></i>
@@ -28,8 +45,10 @@ const CardDetails = (props) => {
         <div className="card-cost__rating">
           <p className="card-cost">{"$" + props.cost}</p>
           <p className="card-rating">
-            <i className='fas fa-star-half-alt'></i>
-            {props.rating}
+            <i className={props.icon}></i>
+            {props.rating <= 7
+              ? props.rating + " Good"
+              : props.rating + " Superb"}
           </p>
         </div>
       </div>
@@ -45,7 +64,7 @@ CardDetails.propTypes = {
   title: PropTypes.string.isRequired,
   subTitle: PropTypes.string.isRequired,
   cost: PropTypes.number.isRequired,
-  rating: PropTypes.string.isRequired,
+  rating: PropTypes.number.isRequired,
   icon: PropTypes.string.isRequired,
 };
 export default CardDetails;
