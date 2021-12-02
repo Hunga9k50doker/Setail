@@ -40,6 +40,20 @@ import CustomTwo from "./img/other/custom2.png";
 import CustomThree from "./img/other/custom3.png";
 import CustomFour from "./img/other/custom4.png";
 
+
+//blogImg&Banner
+import BanBlogPage from "./img/banner_img/bgPages.jpg";
+import BlogOne from './img/blogImg&Banner/blog-img-1.jpg';
+import BlogTwo from './img/blogImg&Banner/blog-img-2.jpg';
+import BlogThree from './img/blogImg&Banner/blog-img-3.jpg';
+import BlogFour from './img/blogImg&Banner/blog-img-4.jpg';
+import BlogFive from './img/blogImg&Banner/blog-img-5.jpg';
+import BlogSix from './img/blogImg&Banner/blog-img-6.jpg';
+import BlogSeven from './img/blogImg&Banner/blog-img-7.jpg';
+
+
+
+
 export {
   BanTravelOne,
   BanTravelTwo,
@@ -64,8 +78,17 @@ export {
   PosterTravel,
   //custom
   CustomOne,
-CustomTwo,
-CustomThree,
-CustomFour,
-  
+  CustomTwo,
+  CustomThree,
+  CustomFour,
+  //blogImg&Banner
+  BanBlogPage,
+  BlogOne,
+  BlogTwo,
+  BlogThree,
+  BlogFour,
+  BlogFive,
+  BlogSix,
+  BlogSeven
+
 };
