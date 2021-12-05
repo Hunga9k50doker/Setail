@@ -38,7 +38,6 @@ import CustomTwo from "./img/other/custom2.png";
 import CustomThree from "./img/other/custom3.png";
 import CustomFour from "./img/other/custom4.png";
 
-<<<<<<< HEAD
 
 //blogImg&Banner
 import BanBlogPage from "./img/banner_img/bgPages.jpg";
@@ -54,7 +53,6 @@ import BlogNine from './img/blogImg&Banner/blog-img-9.jpg';
 
 
 
-=======
 //feature img
 import Corfu from "./img/featureImg/Corfu.jpg";
 import Vatican from "./img/featureImg/vatican.jpg";
@@ -93,7 +91,6 @@ import Winter9 from "./img/featureImg/winter9.jpg";
 import Winter10 from "./img/featureImg/winter10.jpg";
 
 //img card details
->>>>>>> 61aeeb8465e457d18e19f5582b30d2a762389cd8
 
 export {
   BanTravelOne,
@@ -122,7 +119,6 @@ export {
   CustomTwo,
   CustomThree,
   CustomFour,
-<<<<<<< HEAD
   //blogImg&Banner
   BanBlogPage,
   BlogOne,
@@ -133,9 +129,8 @@ export {
   BlogSix,
   BlogSeven,
   BlogEight,
-  BlogNine
+  BlogNine,
 
-=======
   //feature img
   Corfu,
   Vatican,
@@ -169,5 +164,4 @@ export {
   Winter8,
   Winter9,
   Winter10,
->>>>>>> 61aeeb8465e457d18e19f5582b30d2a762389cd8
 };
