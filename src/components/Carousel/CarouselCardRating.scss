@@ -1,0 +1,32 @@
+@import "../../styles/variables";
+@import "../../styles/global";
+
+.slider__card__rating {
+  position: relative;
+  margin-top: 80px;
+  width: 100vw !important;
+  align-items: center;
+  justify-content: center;
+
+  .slick-arrow {
+    display: block;
+    position: absolute;
+    z-index: 99;
+    width: fit-content;
+    height: fit-content;
+  }
+  .slick-prev,
+  .slick-next {
+    &::before{
+      top: 50%;
+      transform: translate(0, -50%);
+      font-size: 5rem;
+      color: $primary-color;
+    }
+  }
+
+  .slick-list {
+    height: 300px;
+    overflow-y: hidden;
+  }
+}

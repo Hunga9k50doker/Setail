@@ -1,18 +1,29 @@
-@import '../../../styles/variables';
-@import '../../../styles/global';
+@import "../../../styles/variables";
+@import "../../../styles/global";
 
-.component{
-    margin-top: 100px;
-    color: #000000;
-    font-size: 20px;
-    .img-side-area{
-        width: 100%;
-        justify-content:center;
-        .col{
-display:flex;
-align-items:center;
-justify-content: center;
-margin-top: 60px;margin-bottom: 80px;
-        }
+.component {
+  margin-top: 100px;
+  color: #000000;
+  font-size: 20px;
+  .img-side-area{
+    width: 100%;
+    justify-content: center;
+    .col {
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 60px;
+      margin-bottom: 80px;
     }
+  }
+  .area-slide-show-item-card {
+    background: $white-color--sub;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: fit-content;
+    width: 100vw !important;
+  }
 }

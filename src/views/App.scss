@@ -10,8 +10,8 @@
   z-index: 99;
 }
 .component {
-  margin-top: 70px;
-  min-height: 5000px;
+  margin-top: 70px !important;
+  min-height: 100vh;
 }
 
 .backToTop {

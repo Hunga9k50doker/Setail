@@ -1,0 +1,114 @@
+@import "../../../styles/variables";
+@import "../../../styles/global";
+
+.content {
+  .progress__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .progress__item {
+    width: 100%;
+    margin: 10px 0;
+    &:first-child {
+      .progress__fill {
+        width: 76%;
+      }
+    }
+    &:nth-child(2) {
+      .progress__fill {
+        width: 82%;
+
+      }
+    }
+
+    &:last-child {
+      .progress__fill {
+        width: 96%;        
+      }
+    }
+  }
+
+  .progress__title {
+    font-size: 1rem;
+    color: $black-color;
+    font-weight: 600;
+  }
+
+  .progress__bar {
+    width: 100%;
+    position: relative;
+    background: $second-color;
+    height: 24px;
+    border-radius: 4px;
+  }
+
+  .progress__fill {
+    position: relative;
+    height: 100%;
+    background: $primary-color;
+    &::after {
+      content: " ";
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 24px;
+      background: $bg-color--hover;
+    }
+    &::before {
+      content: " ";
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 24px;
+      background: $bg-color--hover;
+    }
+  }
+
+  .progress__percent {
+    font-weight: 600;
+    position: absolute;
+    right:10px;
+    top: 0;
+    bottom: 0;
+  }
+}
+
+// #play-progress{
+//     animation: animation1 1s ease-in-out;
+//     animation: animation2 1s ease-in-out;
+//     animation: animation3 1s ease-in-out;
+
+// }
+
+// // key frames 
+// @keyframes animation1 {
+//     from{
+//         width: 0;
+//     }
+//     to{
+//         width: 76%;
+//     }
+// }
+
+// @keyframes animation2 {
+//     from{
+//         width: 0;
+//     }
+//     to{
+//         width: 82%;
+//     }
+// }
+// @keyframes animation3 {
+//     from{
+//         width: 0;
+//     }
+//     to{
+//         width: 96%;
+//     }
+// }

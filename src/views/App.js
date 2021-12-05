@@ -2,9 +2,9 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { useEffect, useState } from "react";
 import "./App.scss";
-import NavOnTop from "../components/NavOnTop/NavOnTop";
-import Nav from "../components/Navigation/Nav";
-import Footer from "../components/footer/footer";
+import NavOnTop from "../containers/NavOnTop/NavOnTop";
+import Nav from "../containers/Navigation/Nav";
+import Footer from "../containers/Footer/footer";
 
 import HomeExotic from "./home/exoticDestinations/exotic";
 import HomeTravel from "./home/travelAgency/travel";

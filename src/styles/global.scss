@@ -13,6 +13,9 @@ h1,h2,h3,h4,h5,h6 {
 html {
   font-family: "Poppins",sans-serif;
   scroll-behavior: smooth;
+  overflow-x: hidden;
+margin: 0;
+padding: 0;
 }
 
 html::-webkit-scrollbar {
@@ -87,7 +90,7 @@ a {
 }
 
 .active {
-  color: $primary-color !important;
+  color: $primary-color ;
 }
 
 .button-circle {
@@ -128,4 +131,42 @@ a {
   width: 1px;
   height: 100%;
   background: rgba($black-color,0.3);
+}
+
+// custom css slick carousel
+.slide__card-slick {
+  width: 100vw !important;
+  align-items: center;
+  justify-content: center;
+  color: $black-color;
+
+  .slick-arrow {
+    display:none !important;
+    width: 100px;
+    height: 100px;
+    display: block;
+    position: absolute;
+    background: red;
+    z-index: 999;
+  }
+  .slick-list{
+    height: 620px;
+    overflow-y: hidden;
+  }
+ 
+  .slick-dots{
+    bottom: 25px;
+   li.slick-active button:before{
+      color: $primary-color !important;
+    }
+    button{
+      &:before {
+      font-size: 12px;
+       color: $primary-color;
+       
+      }
+      
+    }
+  }
+  
 }

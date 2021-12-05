@@ -1,8 +1,9 @@
 import "./Nav.scss";
 import "../../styles/global.scss";
 import { NavLink,Link } from "react-router-dom";
+import LogoHeader from "../../assets/img/logo/logo-header.png";
 
-const Nav = ({disabled}) => {
+const Nav = () => {
   const openModal = {
     position: "fixed",
     zIndex: "15",
@@ -40,24 +41,20 @@ const Nav = ({disabled}) => {
     <div className="nav">
       <Link to="/">
         <picture>
-          <source srcset="./logo/logo-footer.png" media="(min-width: 1025px)" />
-          <img
-            className="nav__logo"
-            src="./logo/logo-header.png"
-            alt="Not found"
-          />
+          <source srcSet={LogoHeader} media="(min-width: 1025px)" />
+          <img className="nav__logo" src={LogoHeader} alt="Not found" />
         </picture>
       </Link>
       <ul className="nav__list">
         <li className="nav__list-item nav__list-item-Home">
-          <h3 activeClassName="active" className="nav__list-item-title">
+          <h3 activeclassname="active" className="nav__list-item-title">
             Home
           </h3>
           <div className="nav__list-item-selections">
             <NavLink
               to="/"
               className="nav__list-item-selection"
-              activeClassName="active"
+              activeclassname="active"
               exact={true}
             >
               <p>Travel Agency</p>
@@ -65,14 +62,14 @@ const Nav = ({disabled}) => {
             <NavLink
               to="/home/winter-holidays"
               className="nav__list-item-selection"
-              activeClassName="active"
+              activeclassname="active"
             >
               <p>Winters Holidays</p>
             </NavLink>
             <NavLink
               to="/home/exotic-destinations"
               className="nav__list-item-selection"
-              activeClassName="active"
+              activeclassname="active"
             >
               <p>Exotic Destinations</p>
             </NavLink>
@@ -84,21 +81,21 @@ const Nav = ({disabled}) => {
             <NavLink
               to="/pages/about-us"
               className="nav__list-item-selection"
-              activeClassName="active"
+              activeclassname="active"
             >
               <p>About Us</p>
             </NavLink>
             <NavLink
               to="/pages/what-we-offer"
               className="nav__list-item-selection"
-              activeClassName="active"
+              activeclassname="active"
             >
               <p>What We Offer</p>
             </NavLink>
             <NavLink
               to="/pages/our-team"
               className="nav__list-item-selection"
-              activeClassName="active"
+              activeclassname="active"
             >
               <p>Our Team</p>
             </NavLink>
@@ -110,21 +107,21 @@ const Nav = ({disabled}) => {
             <NavLink
               to="/destinations/list"
               className="nav__list-item-selection"
-              activeClassName="active"
+              activeclassname="active"
             >
               <p>Destination List</p>
             </NavLink>
             <NavLink
               to="/destinations/slider"
               className="nav__list-item-selection"
-              activeClassName="active"
+              activeclassname="active"
             >
               <p>Destination Slider</p>
             </NavLink>
             <NavLink
               to="/destinations/item"
               className="nav__list-item-selection"
-              activeClassName="active"
+              activeclassname="active"
             >
               <p>Destination Item</p>
             </NavLink>
@@ -136,21 +133,21 @@ const Nav = ({disabled}) => {
             <NavLink
               to="/tours/standard-list"
               className="nav__list-item-selection"
-              activeClassName="active"
+              activeclassname="active"
             >
               <p>Standard List</p>
             </NavLink>
             <NavLink
               to="/tours/gallery-list"
               className="nav__list-item-selection"
-              activeClassName="active"
+              activeclassname="active"
             >
               <p>Gallery List</p>
             </NavLink>
             <NavLink
               to="/tours/split-list"
               className="nav__list-item-selection"
-              activeClassName="active"
+              activeclassname="active"
             >
               <p>Split List</p>
             </NavLink>
@@ -162,7 +159,7 @@ const Nav = ({disabled}) => {
             <NavLink
               to="/blog/masonry"
               className="nav__list-item-selection"
-              activeClassName="active"
+              activeclassname="active"
             >
               <p>Blog Masonry</p>
             </NavLink>
@@ -186,17 +183,17 @@ const Nav = ({disabled}) => {
               <i className="fas fa-chevron-right"></i>
               <ul className="sub-menu ">
                 <li className="sub-menu-item">
-                  <NavLink to="/blog/standard" activeClassName="active">
+                  <NavLink to="/blog/standard" activeclassname="active">
                     Standard
                   </NavLink>
                 </li>
                 <li className="sub-menu-item">
-                  <NavLink to="/blog/gallery" activeClassName="active">
+                  <NavLink to="/blog/gallery" activeclassname="active">
                     Gallery
                   </NavLink>
                 </li>
                 <li className="sub-menu-item">
-                  <NavLink to="/blog/NavLink" activeClassName="active">
+                  <NavLink to="/blog/NavLink" activeclassname="active">
                     NavLink
                   </NavLink>
                 </li>
@@ -210,14 +207,14 @@ const Nav = ({disabled}) => {
             <NavLink
               to="/shop/product-list"
               className="nav__list-item-selection"
-              activeClassName="active"
+              activeclassname="active"
             >
               <p>Product List</p>
             </NavLink>
             <NavLink
               to="/shop/product-single"
               className="nav__list-item-selection"
-              activeClassName="active"
+              activeclassname="active"
             >
               <p>Product Single</p>
             </NavLink>
@@ -244,12 +241,12 @@ const Nav = ({disabled}) => {
             <ul className="nav__list-item-selection sub-category">
               <li className="sub-category-item">Featured</li>
               <li className="sub-category-item">
-                <NavLink to="/elements/tour-list" activeClassName="active">
+                <NavLink to="/elements/tour-list" activeclassname="active">
                   Tour List
                 </NavLink>
               </li>
               <li className="sub-category-item">
-                <NavLink to="/elements/tour-carousel" activeClassName="active">
+                <NavLink to="/elements/tour-carousel" activeclassname="active">
                   Tour Carousel
                 </NavLink>
               </li>
@@ -299,7 +296,7 @@ const Nav = ({disabled}) => {
       <ul className="nav__innerRight">
         <li className="nav__innerRight-item nav__innerRight-item-cart">
           <i className="fas fa-shopping-cart"></i>
-          <div className="cart-category" >
+          <div className="cart-category">
             <p>No products in the cart.</p>
             <img className="no-cart-img" src="./img/th.jpg" alt="Not found" />
           </div>
@@ -318,7 +315,7 @@ const Nav = ({disabled}) => {
       </div>
       {/* ================search modal=========================== */}
       <div className="search-modal " onClick={() => openModal}>
-        <i class="fas fa-times close "></i>
+        <i className="fas fa-times close "></i>
         <form className="form-search">
           <input type="text" className="search-input" placeholder="Search..." />
           <button className="btn-search">Find now</button>
