@@ -1,10 +1,10 @@
 import React from "react";
 import "../../App.scss";
-import Banner from "../../../components/banner/banner";
+import "./masonry.scss"
 import {BlogBanner,BlogSection} from "../../../components/blogSection/blogSection";
 
 const Masonry = () => {
-  return <div className="component">
+  return <div className="masonry">
     <BlogBanner/>
     <BlogSection/>
   </div>

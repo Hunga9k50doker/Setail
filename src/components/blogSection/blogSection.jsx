@@ -1,6 +1,6 @@
 import './blogSection.scss';
 import { Link } from 'react-router-dom';
-import {BanBlogPage, BlogOne, BlogTwo, BlogThree, BlogFour, BlogFive, BlogSix, BlogSeven } from '../../assets/img';
+import { BanBlogPage, BlogOne, BlogTwo, BlogThree, BlogFour, BlogFive, BlogSix, BlogSeven, BlogEight, BlogNine } from '../../assets/img';
 
 const blog = [
     {
@@ -58,16 +58,16 @@ const BlogItems = (props) => {
     return (
         <article className="blog-item" >
             <Link to="" >
-                <img 
-                    src={props.blog.img} 
+                <img
+                    src={props.blog.img}
                     alt={`blog-img-${props.blog.id}`} />
                 <h4 className="title">{props.blog.title}</h4>
             </Link>
             <p>{props.blog.content}</p>
             <div className="post-info">
-                <Link className="time" to="">{props.blog.time}</Link>
-                <Link className="comment-count" to="">
-                    <span className="comment-icon" />
+                <Link className="time a--sub" to="">{props.blog.time}</Link>
+                <Link className="comment-count a--sub" to="">
+                    <i class="far fa-comment"></i>
                     2 Comment</Link>
             </div>
         </article>
@@ -76,16 +76,19 @@ const BlogItems = (props) => {
 const BlogSection = () => {
     return (
         <div className="blog-section">
+
             <div className="column">
                 <BlogItems
                     blog={blog[0]}
                 />
                 <div className="post-text">
                     <Link to="" className="quote">
-                        Ut audia iracu. An eaem die iste lique.
+                        "Ut audia iracu. An eaem die iste lique."
                     </Link>
                     <h5>Jenny Loren</h5>
-                    <span className="quotes-icon">,,</span>
+                    <div className="quotes-icon">
+                        <i class="fas fa-quote-right"></i>
+                    </div>
                 </div>
                 <BlogItems
                     blog={blog[5]}
@@ -98,6 +101,15 @@ const BlogSection = () => {
                 <BlogItems
                     blog={blog[3]}
                 />
+                <div className="post-text">
+                    <Link to="" className="quote">
+                        "Of eodia iracu. Au oauw qip eist liqua."
+                    </Link>
+                    <h5>Jenny Loren</h5>
+                    <div className="quotes-icon">
+                        <i class="fas fa-quote-right"></i>
+                    </div>
+                </div>
             </div>
             <div className="column">
                 <BlogItems
@@ -110,16 +122,17 @@ const BlogSection = () => {
                     blog={blog[6]}
                 />
             </div>
+            <button type="button" class="btn btn-load">LOAD MORE</button>
         </div>)
 }
 
 const BlogBanner = () => {
     return <div className="blog--banner">
-        <img src = {BanBlogPage} alt="blog-banner"/>
+        <img src={BanBlogPage} alt="blog-banner" />
         <div>
             <h1 id="a">Amazing tour</h1>
             <h2 id="b">Blog Masonry</h2>
         </div>
     </div>
 }
-export {BlogSection,BlogBanner};
+export { BlogSection, BlogBanner };

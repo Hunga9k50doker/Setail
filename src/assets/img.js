@@ -50,6 +50,8 @@ import BlogFour from './img/blogImg&Banner/blog-img-4.jpg';
 import BlogFive from './img/blogImg&Banner/blog-img-5.jpg';
 import BlogSix from './img/blogImg&Banner/blog-img-6.jpg';
 import BlogSeven from './img/blogImg&Banner/blog-img-7.jpg';
+import BlogEight from './img/blogImg&Banner/blog-img-8.jpg';
+import BlogNine from './img/blogImg&Banner/blog-img-9.jpg';
 
 
 
@@ -89,6 +91,8 @@ export {
   BlogFour,
   BlogFive,
   BlogSix,
-  BlogSeven
+  BlogSeven,
+  BlogEight,
+  BlogNine
 
 };
