@@ -1,0 +1,21 @@
+@import "../../../styles/variables";
+@import "../../../styles/global";
+.masonry {
+  width: 100%;
+  margin-top: 100px;
+  margin: 0px;
+  .items {
+    position: relative;
+    height: 1900px;
+    width: 100%;
+  }
+  .container {
+    background: #fff;
+    margin: 0px auto;
+    width: 1300px;
+    display: grid;
+    grid-template: auto auto auto;
+    align-items: start;
+    gap: 1rem;
+  }
+}
