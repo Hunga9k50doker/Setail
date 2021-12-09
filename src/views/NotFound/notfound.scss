@@ -1,0 +1,37 @@
+@import "../../styles/variables";
+@import "../../styles/global";
+
+.component {
+  .not__found {
+    min-height: 100vh;
+    background: url("../../assets/img/notFound/bgnotfound.jpg");
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    color: $white-color;
+width: 100%;
+img{
+    margin-top: 150px;
+
+}
+    p {
+      margin: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      border: none;
+      text-transform: uppercase;
+      background: $primary-color;
+      color: $white-color;
+      font-size: 1rem;
+      font-weight: 600;
+      margin: auto;
+
+      &:hover {
+        background: $bg-color--hover;
+      }
+    }
+  }
+}

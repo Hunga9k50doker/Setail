@@ -75,6 +75,10 @@ import Winter8 from "./img/featureImg/winter8.jpg";
 import Winter9 from "./img/featureImg/winter9.jpg";
 import Winter10 from "./img/featureImg/winter10.jpg";
 
+
+
+// notfound
+
 //img card details
 
 export {
