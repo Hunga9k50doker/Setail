@@ -90,6 +90,7 @@ import BlogEight from './img/blogImg&Banner/blog-img-8.jpg';
 import BlogNine from './img/blogImg&Banner/blog-img-9.jpg';
 
 //product
+import productBan from './img/banner_img/product-banner.jpg'
 import productImg1 from './img/product/shop-1-img-1-300x300.jpg';
 import productImg2 from './img/product/shop-1-img-2-300x300.jpg';
 import productImg3 from './img/product/shop-1-img-3-300x300.jpg';
@@ -186,6 +187,7 @@ export {
   BlogEight,
   BlogNine,
   //product
+  productBan,
   productImg1,
   productImg2,
   productImg3,

@@ -1,6 +1,6 @@
 import './BlogItem.scss';
 import { Link } from 'react-router-dom';
-import {BanBlogPage, BlogOne, BlogTwo, BlogThree, BlogFour, BlogFive, BlogSix, BlogSeven, BlogEight, BlogNine } from '../../assets/img';
+import {productBan,BanBlogPage, BlogOne, BlogTwo, BlogThree, BlogFour, BlogFive, BlogSix, BlogSeven, BlogEight, BlogNine } from '../../assets/img';
 
 
 const blogData = [
@@ -101,16 +101,15 @@ const postTextData= [
     },
     {
         author:'"Jenny Loren"',
-        content: "",
         icon:'fas fa-link',
     }
 ]
 const PostText = (props) => {
     return (
     <div className="post-text">
-        <Link to="" className="quote">
+        {props.postText.content&&<Link to="" className="quote">
             {props.postText.content}
-        </Link>
+        </Link>}
         <h5>{props.postText.author}</h5>
         <div className="quotes-icon">
             <i class={props.postText.icon}></i>
@@ -129,7 +128,7 @@ const banData = [
     },
     {
         name: 'ban-product',
-        img: BanBlogPage,
+        img: productBan,
         title: 'Shop',
         subtitle: 'Amazing Tour',
       },
@@ -137,7 +136,7 @@ const banData = [
 ]
 const Baner1 =(props)=> {
   return (
-      <div className={`baner ${props.banData.blog}`}> 
+      <div className={`banner1 ${props.banData.blog}`}> 
         <img src= {props.banData.img} alt='ban-blog-img' />
           <div>
               <h3 className="subtitle">{props.banData.subtitle}</h3>
