@@ -1,13 +1,12 @@
 
 import {useParams} from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 import cardData from "../../../assets/fake-data/CardDetails";
 
-const ItemDetail = () => {
-
+import Helmet from "../../Helmet/Helmet";
+const ContentItem = () => {
     let{slug} = useParams();
-    console.log('>>>>>>>>>>>>>>>'+slug);
-    // convert to slug 
 function to_slug(str)
 {
     // Chuyển hết sang chữ thường
@@ -39,20 +38,14 @@ function to_slug(str)
 }
 
 
-    return(
-        <div className="component">
-
-        <h1>
-            {cardData.getAllCards().map((item, index)=>(
-                to_slug(item.title) ===  String(slug) &&(
-                    <h2 key={index}>
-                        {item.title}
-                    </h2>
-                )
-            ))}
-        </h1>
+    return (
+      <Helmet title={slug}>
+        <div className="component nav__content">
+          <div className="row"></div>
+          <div className="row"></div>
         </div>
-    )
+      </Helmet>
+    );
 }
 
-export default ItemDetail;
+export default ContentItem;

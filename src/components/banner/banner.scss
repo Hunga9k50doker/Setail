@@ -3,12 +3,17 @@
 
 .ban {
   position: relative;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  background-attachment:fixed;
-  .img {
-    background: center;
+      width: 100vw;
+  height: 100vh;
+    max-height: 100vh;
+
+  // overflow: hidden;
+  background-size: 100% 100%;
+   background-repeat: no-repeat;
+  background-attachment: fixed;
+  img {
+
+    background-size: cover;
     width: 100%;
     height: 100%;
 
@@ -26,11 +31,14 @@
     .title {
       font-size: 7rem;
       font-weight: 800;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     }
     .subTitle {
       font-family: "Pacifico", sans-serif;
       font-size: 2rem;
       -webkit-font-smoothing: antialiased;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+
     }
   }
 }

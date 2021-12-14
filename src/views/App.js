@@ -49,7 +49,7 @@ import TypographyHeadings from "./elements/typography/columns";
 import TypographyColumns from "./elements/typography/headings";
 import TypographySectionTitle from "./elements/typography/sectionTitle";
 
-import ItemDetail from '../components/NavTabs/NavTabsContent/contentItem';
+import ItemDetail from '../components/tourItem/item';
 import NotFound from '../views/NotFound/notfound';
 
 

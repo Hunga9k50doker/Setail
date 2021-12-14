@@ -3,12 +3,15 @@ import React from "react";
 
 import "./NavTabs.scss";
 
-import SidebarSearch from "../../components/sidebars/sidebar_search";
+import SidebarBooking from "../../components/sidebars/siderbar_booking";
 
-import NavContentDate from "./NavTabsContent/date";
-import NavContentLowToHigh from './NavTabsContent/lowToHigh';
-import NavContentHighToLow from './NavTabsContent/highToLow';
-import NavContentAZ from './NavTabsContent/stringA_Z';
+import ContentItem from "./NavTabsContent/contentItem";
+import Location from "./NavTabsContent/location";
+import Gallery from "./NavTabsContent/gallery";
+import TourPlan from "./NavTabsContent/tourPlan";
+  
+
+
 
 const NavTabInfo = () => {
   return (
@@ -18,58 +21,73 @@ const NavTabInfo = () => {
           <button
             to
             class="nav-link active"
-            id="nav-date-tab"
+            id="nav-info-tab"
             data-bs-toggle="tab"
-            data-bs-target="#nav-date"
+            data-bs-target="#nav-info"
             type="button"
             role="tab"
-            aria-controls="nav-date"
+            aria-controls="nav-info"
             aria-selected="true"
           >
+            <i class="fas fa-book"></i>
+            Infomation
+          </button>
+          <button
+            to
+            class="nav-link"
+            id="nav-tour-plan-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nav-tour-plan"
+            type="button"
+            role="tab"
+            aria-controls="nav-tour-plan"
+            aria-selected="false"
+          >
             <i class="far fa-calendar-alt"></i>
-            Date
+            Tour Plan
+          </button>
+
+          <button
+            to
+            class="nav-link"
+            id="nav-location-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nav-location"
+            type="button"
+            role="tab"
+            aria-controls="nav-location"
+            aria-selected="false"
+          >
+            <i class="fas fa-search-location"></i>
+            Location
           </button>
           <button
             to
             class="nav-link"
-            id="nav-low-to-high-tab"
+            id="nav-gallery-tab"
             data-bs-toggle="tab"
-            data-bs-target="#nav-low-to-high"
+            data-bs-target="#nav-gallery"
             type="button"
             role="tab"
-            aria-controls="nav-low-to-high"
+            aria-controls="nav-gallery"
             aria-selected="false"
           >
-            <i class="fas fa-sort-amount-up"></i>
-            Price Low to High
+            <i class="fas fa-camera-retro"></i>
+            Gallery
           </button>
           <button
             to
             class="nav-link"
-            id="nav-high-to-low-tab"
+            id="nav-reviews-tab"
             data-bs-toggle="tab"
-            data-bs-target="#nav-high-to-low"
+            data-bs-target="#nav-reviews"
             type="button"
             role="tab"
-            aria-controls="nav-high-to-low"
+            aria-controls="nav-reviews"
             aria-selected="false"
           >
-            <i class="fas fa-sort-amount-down-alt"></i>
-            Price High to Low
-          </button>
-          <button
-            to
-            class="nav-link"
-            id="nav-name-tab"
-            data-bs-toggle="tab"
-            data-bs-target="#nav-name"
-            type="button"
-            role="tab"
-            aria-controls="nav-name"
-            aria-selected="false"
-          >
-            <i class="fas fa-sort-alpha-down"></i>
-            Name (A -Z)
+            <i class="far fa-comments"></i>
+            Reviews
           </button>
         </div>
       </nav>
@@ -78,42 +96,51 @@ const NavTabInfo = () => {
         <div class="tab-content" id="nav-tabContent">
           <div
             class="tab-pane fade show active"
-            id="nav-date"
+            id="nav-info"
             role="tabpanel"
-            aria-labelledby="nav-date-tab"
+            aria-labelledby="nav-info-tab"
           >
-            <NavContentDate />
+            <ContentItem />
           </div>
           <div
             class="tab-pane fade"
-            id="nav-low-to-high"
+            id="nav-tour-plan"
             role="tabpanel"
-            aria-labelledby="nav-low-to-high-tab"
+            aria-labelledby="nav-tour-plan-tab"
           >
-            <NavContentLowToHigh/>
+            <TourPlan />
+          </div>
+
+          <div
+            class="tab-pane fade"
+            id="nav-location"
+            role="tabpanel"
+            aria-labelledby="nav-location-tab"
+          >
+            <Location />
           </div>
           <div
             class="tab-pane fade"
-            id="nav-high-to-low"
+            id="nav-gallery"
             role="tabpanel"
-            aria-labelledby="nav-high-to-low-tab"
+            aria-labelledby="nav-gallery-tab"
           >
-            <NavContentHighToLow/>
+            <Gallery />
           </div>
           <div
             class="tab-pane fade"
-            id="nav-name"
+            id="nav-reviews"
             role="tabpanel"
-            aria-labelledby="nav-name-tab"
+            aria-labelledby="nav-reviews-tab"
           >
-            <NavContentAZ/>
+            {/* <NavContentHighToLow /> */}
           </div>
         </div>
       </div>
-        {/* sidebar */}
-        <div className="col col-xxl-3 col-lg-3 col-md-12 col-sm-12">
-          <SidebarSearch />
-        </div>
+      {/* sidebar */}
+      <div className="col col-xxl-3 col-lg-3 col-md-12 col-sm-12">
+        <SidebarBooking />
+      </div>
     </>
   );
 };

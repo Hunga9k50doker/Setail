@@ -29,6 +29,24 @@ const sydneyOpera = require("../img/featureImg/sydneyOpera.jpg").default;
 const Holand = require("../img/featureImg/Holand.jpg").default;
 const templeTour = require("../img/featureImg/templeTour.jpg").default;
 
+const destination_01_img_01 =
+  require("../img/destination_items/destionations-1-masonry-22.jpg").default;
+const destination_01_img_02 =
+  require("../img/destination_items/destionations-1-masonry-23.jpg").default;
+const destination_01_img_03 =
+  require("../img/destination_items/destionations-1-masonry-40.jpg").default;
+const destination_01_img_04 =
+  require("../img/destination_items/destionations-1-masonry-41.jpg").default;
+const destination_01_img_05 =
+  require("../img/destination_items/destionations-1-masonry-36.jpg").default;
+const destination_01_img_06 =
+  require("../img/destination_items/destionations-1-masonry-31.jpg").default;
+const destination_02_img_01 =
+  require("../img/destination_items/destionations-1-masonry-33.jpg").default;
+  const destination_02_img_02 =
+    require("../img/destination_items/destionations-1-masonry-39.jpg").default;
+const destination_03_img_01 =
+  require("../img/destination_items/destionations-1-masonry-38.jpg").default;
 const CardDetailArr = [
   {
     img: card_01_img_01,
@@ -39,7 +57,17 @@ const CardDetailArr = [
     subTitle: "Meinem seh blick noch lebt die dem nicht tränen was..",
     cost: "996",
     rating: "7.3",
-    
+    img__grid: {
+      destination_01_img_01,
+      destination_01_img_02,
+      destination_03_img_01,
+      destination_02_img_02,
+      destination_01_img_03,
+      destination_01_img_04,
+      destination_01_img_05,
+      destination_01_img_06,
+      destination_02_img_01,
+    },
   },
   {
     img: card_01_img_02,
@@ -50,7 +78,17 @@ const CardDetailArr = [
     subTitle: "Meinem seh blick noch lebt die dem nicht tränen was..",
     cost: "860",
     rating: "7.3",
-    
+    img__grid: {
+      destination_01_img_01,
+      destination_01_img_02,
+      destination_03_img_01,
+      destination_02_img_02,
+      destination_01_img_03,
+      destination_01_img_04,
+      destination_01_img_05,
+      destination_01_img_06,
+      destination_02_img_01,
+    },
   },
   {
     img: card_01_img_03,
@@ -61,7 +99,17 @@ const CardDetailArr = [
     subTitle: "Meinem seh blick noch lebt die dem nicht tränen was..",
     cost: "2300",
     rating: "7.3",
-    
+    img__grid: {
+      destination_01_img_01,
+      destination_01_img_02,
+      destination_03_img_01,
+      destination_02_img_02,
+      destination_01_img_03,
+      destination_01_img_04,
+      destination_01_img_05,
+      destination_01_img_06,
+      destination_02_img_01,
+    },
   },
   {
     img: card_01_img_04,
@@ -72,7 +120,17 @@ const CardDetailArr = [
     subTitle: "Meinem seh blick noch lebt die dem nicht tränen was..",
     cost: "1230",
     rating: "7.3",
-    
+    img__grid: {
+      destination_01_img_01,
+      destination_01_img_02,
+      destination_03_img_01,
+      destination_02_img_02,
+      destination_01_img_03,
+      destination_01_img_04,
+      destination_01_img_05,
+      destination_01_img_06,
+      destination_02_img_01,
+    },
   },
   {
     img: card_01_img_05,
@@ -83,7 +141,17 @@ const CardDetailArr = [
     subTitle: "Meinem seh blick noch lebt die dem nicht tränen was..",
     cost: "1500",
     rating: "7.3",
-    
+    img__grid: {
+      destination_01_img_01,
+      destination_01_img_02,
+      destination_03_img_01,
+      destination_02_img_02,
+      destination_01_img_03,
+      destination_01_img_04,
+      destination_01_img_05,
+      destination_01_img_06,
+      destination_02_img_01,
+    },
   },
 
   {
@@ -95,7 +163,17 @@ const CardDetailArr = [
     subTitle: "Meinem seh blick noch lebt die dem nicht tränen was..",
     cost: "1600",
     rating: "7.3",
-    
+    img__grid: {
+      destination_01_img_01,
+      destination_01_img_02,
+      destination_03_img_01,
+      destination_02_img_02,
+      destination_01_img_03,
+      destination_01_img_04,
+      destination_01_img_05,
+      destination_01_img_06,
+      destination_02_img_01,
+    },
   },
   {
     img: card_02_img_02,
@@ -106,7 +184,17 @@ const CardDetailArr = [
     subTitle: "Meinem seh blick noch lebt die dem nicht tränen was..",
     cost: "1000",
     rating: "7.3",
-    
+    img__grid: {
+      destination_01_img_01,
+      destination_01_img_02,
+      destination_03_img_01,
+      destination_02_img_02,
+      destination_01_img_03,
+      destination_01_img_04,
+      destination_01_img_05,
+      destination_01_img_06,
+      destination_02_img_01,
+    },
   },
   {
     img: card_02_img_04,
@@ -117,7 +205,17 @@ const CardDetailArr = [
     subTitle: "Meinem seh blick noch lebt die dem nicht tränen was..",
     cost: "960",
     rating: "6.0",
-    
+    img__grid: {
+      destination_01_img_01,
+      destination_01_img_02,
+      destination_03_img_01,
+      destination_02_img_02,
+      destination_01_img_03,
+      destination_01_img_04,
+      destination_01_img_05,
+      destination_01_img_06,
+      destination_02_img_01,
+    },
   },
   {
     img: card_02_img_05,
@@ -128,6 +226,17 @@ const CardDetailArr = [
     subTitle: "Meinem seh blick noch lebt die dem nicht tränen was..",
     cost: "450",
     rating: "7.3",
+    img__grid: {
+      destination_01_img_01,
+      destination_01_img_02,
+      destination_03_img_01,
+      destination_02_img_02,
+      destination_01_img_03,
+      destination_01_img_04,
+      destination_01_img_05,
+      destination_01_img_06,
+      destination_02_img_01,
+    },
   },
   {
     img: card_02_img_06,
@@ -138,7 +247,17 @@ const CardDetailArr = [
     subTitle: "Meinem seh blick noch lebt die dem nicht tränen was..",
     cost: "720",
     rating: "7.3",
-    
+    img__grid: {
+      destination_01_img_01,
+      destination_01_img_02,
+      destination_03_img_01,
+      destination_02_img_02,
+      destination_01_img_03,
+      destination_01_img_04,
+      destination_01_img_05,
+      destination_01_img_06,
+      destination_02_img_01,
+    },
   },
   {
     img: card_02_img_07,
@@ -149,6 +268,17 @@ const CardDetailArr = [
     subTitle: "Meinem seh blick noch lebt die dem nicht tränen was..",
     cost: "3600",
     rating: "7.3",
+    img__grid: {
+      destination_01_img_01,
+      destination_01_img_02,
+      destination_03_img_01,
+      destination_02_img_02,
+      destination_01_img_03,
+      destination_01_img_04,
+      destination_01_img_05,
+      destination_01_img_06,
+      destination_02_img_01,
+    },
   },
   {
     calendar: "1",
@@ -160,6 +290,17 @@ const CardDetailArr = [
       "Oiseau flots sans brides mes leur haleurs bons les hystériques, les   les peaux les taches dors, baiser de.Cieux poissons soleil et ce flamands les je. J'ai noirs et au lunules descendaient cheveux descendre drames. Sures île des.",
     cost: "1705",
     rating: "5.0",
+    img__grid: {
+      destination_01_img_01,
+      destination_01_img_02,
+      destination_03_img_01,
+      destination_02_img_02,
+      destination_01_img_03,
+      destination_01_img_04,
+      destination_01_img_05,
+      destination_01_img_06,
+      destination_02_img_01,
+    },
   },
   {
     calendar: "1",
@@ -171,6 +312,17 @@ const CardDetailArr = [
       "Dolores ipsum clita kasd duo lorem et, et dolores rebum magna ipsum eirmod magna labore, justo diam duo eirmod et.",
     cost: "1740",
     rating: "5.0",
+    img__grid: {
+      destination_01_img_01,
+      destination_01_img_02,
+      destination_03_img_01,
+      destination_02_img_02,
+      destination_01_img_03,
+      destination_01_img_04,
+      destination_01_img_05,
+      destination_01_img_06,
+      destination_02_img_01,
+    },
   },
   {
     calendar: "1",
@@ -182,6 +334,17 @@ const CardDetailArr = [
       "Evil though friends however grace thy near formed but, but as aisle albions time these was almost thy. Though evil.",
     cost: "1100",
     rating: "7.0",
+    img__grid: {
+      destination_01_img_01,
+      destination_01_img_02,
+      destination_03_img_01,
+      destination_02_img_02,
+      destination_01_img_03,
+      destination_01_img_04,
+      destination_01_img_05,
+      destination_01_img_06,
+      destination_02_img_01,
+    },
   },
   {
     calendar: "1",
@@ -193,6 +356,17 @@ const CardDetailArr = [
       "El para que aire despenada pulso de mármol y. Todo vilo ansioso y en huevos y los. Borrachos talco entonces.",
     cost: "1705",
     rating: "5.0",
+    img__grid: {
+      destination_01_img_01,
+      destination_01_img_02,
+      destination_03_img_01,
+      destination_02_img_02,
+      destination_01_img_03,
+      destination_01_img_04,
+      destination_01_img_05,
+      destination_01_img_06,
+      destination_02_img_01,
+    },
   },
   {
     calendar: "1",
@@ -204,6 +378,17 @@ const CardDetailArr = [
       "Your reclining leave sir burned dreaming my. The only bleak shaven seraphim unmerciful and a, implore entrance darkness desolate god.",
     cost: "963",
     rating: "5.3",
+    img__grid: {
+      destination_01_img_01,
+      destination_01_img_02,
+      destination_03_img_01,
+      destination_02_img_02,
+      destination_01_img_03,
+      destination_01_img_04,
+      destination_01_img_05,
+      destination_01_img_06,
+      destination_02_img_01,
+    },
   },
   {
     calendar: "1",
@@ -215,6 +400,17 @@ const CardDetailArr = [
       "Kynzathul hul owog kyniuhhad scemem fyomnok therthetyk, kethwe merth epedek buabeleul wylag kynzathul. Fyodumtul en byuntelen wegh scepsegud urodum. Ualmun.",
     cost: "2130",
     rating: "5.0",
+    img__grid: {
+      destination_01_img_01,
+      destination_01_img_02,
+      destination_03_img_01,
+      destination_02_img_02,
+      destination_01_img_03,
+      destination_01_img_04,
+      destination_01_img_05,
+      destination_01_img_06,
+      destination_02_img_01,
+    },
   },
   {
     calendar: "1",
@@ -226,6 +422,17 @@ const CardDetailArr = [
       "Porgiamo dea viviamo manifestamente tanto né le mortali, di quale con alla allo principio non se grazia sí, in di.",
     cost: "999",
     rating: "7.3",
+    img__grid: {
+      destination_01_img_01,
+      destination_01_img_02,
+      destination_03_img_01,
+      destination_02_img_02,
+      destination_01_img_03,
+      destination_01_img_04,
+      destination_01_img_05,
+      destination_01_img_06,
+      destination_02_img_01,
+    },
   },
   {
     calendar: "1",
@@ -237,6 +444,17 @@ const CardDetailArr = [
       "Kasd sadipscing rebum ut justo gubergren et sed erat, gubergren justo eos rebum diam dolore dolor kasd nonumy erat. Et.",
     cost: "1705",
     rating: "5.0",
+    img__grid: {
+      destination_01_img_01,
+      destination_01_img_02,
+      destination_03_img_01,
+      destination_02_img_02,
+      destination_01_img_03,
+      destination_01_img_04,
+      destination_01_img_05,
+      destination_01_img_06,
+      destination_02_img_01,
+    },
   },
   {
     calendar: "1",
@@ -248,6 +466,17 @@ const CardDetailArr = [
       "Menge herauf der des gleich sich hören früh mich noch labyrinthisch. Ich zu lied die erste ihr seelen lied schöne.",
     cost: "1705",
     rating: "5.0",
+    img__grid: {
+      destination_01_img_01,
+      destination_01_img_02,
+      destination_03_img_01,
+      destination_02_img_02,
+      destination_01_img_03,
+      destination_01_img_04,
+      destination_01_img_05,
+      destination_01_img_06,
+      destination_02_img_01,
+    },
   },
   {
     calendar: "1",
@@ -259,6 +488,17 @@ const CardDetailArr = [
       "Halal thudothlon en farad symeonnok fyon kyul urodum. Egyre hullothya wylag kyt fyon symeonnok urumemtuul ezes. Yg illen fugwa syrolmol.",
     cost: "888",
     rating: "6.0",
+    img__grid: {
+      destination_01_img_01,
+      destination_01_img_02,
+      destination_03_img_01,
+      destination_02_img_02,
+      destination_01_img_03,
+      destination_01_img_04,
+      destination_01_img_05,
+      destination_01_img_06,
+      destination_02_img_01,
+    },
   },
   {
     calendar: "1",
@@ -270,6 +510,17 @@ const CardDetailArr = [
       "Li unuvorte kie kusxante mi niajn. Vidi se sakon restajxon rumo min iris helpon bestoj, ni fine teron da cxiuj.",
     cost: "966",
     rating: "9.0",
+    img__grid: {
+      destination_01_img_01,
+      destination_01_img_02,
+      destination_03_img_01,
+      destination_02_img_02,
+      destination_01_img_03,
+      destination_01_img_04,
+      destination_01_img_05,
+      destination_01_img_06,
+      destination_02_img_01,
+    },
   },
   {
     calendar: "1",
@@ -281,6 +532,17 @@ const CardDetailArr = [
       "Kapti se kiujn nun povo por tial mallevis, venu lauxlongiru kaj sciis ni tial vi, sia survoje velojn longe pafilo,.",
     cost: "999",
     rating: "6.7",
+    img__grid: {
+      destination_01_img_01,
+      destination_01_img_02,
+      destination_03_img_01,
+      destination_02_img_02,
+      destination_01_img_03,
+      destination_01_img_04,
+      destination_01_img_05,
+      destination_01_img_06,
+      destination_02_img_01,
+    },
   },
   {
     calendar: "1",
@@ -292,6 +554,17 @@ const CardDetailArr = [
       "Je l'horizon les tendus océans fond la et plus. Braises immobilités et de de balottant la des, de ou qu'un.",
     cost: "920",
     rating: "5.0",
+    img__grid: {
+      destination_01_img_01,
+      destination_01_img_02,
+      destination_03_img_01,
+      destination_02_img_02,
+      destination_01_img_03,
+      destination_01_img_04,
+      destination_01_img_05,
+      destination_01_img_06,
+      destination_02_img_01,
+    },
   },
 
   {
@@ -304,6 +577,17 @@ const CardDetailArr = [
       "Aux regrette chantants d'oiseaux poetes tohu-bohus faisait je a le , anglais d'enfants île coup lassé parfums, a arbres ou.",
     cost: "1550",
     rating: "5.0",
+    img__grid: {
+      destination_01_img_01,
+      destination_01_img_02,
+      destination_03_img_01,
+      destination_02_img_02,
+      destination_01_img_03,
+      destination_01_img_04,
+      destination_01_img_05,
+      destination_01_img_06,
+      destination_02_img_01,
+    },
   },
   {
     calendar: "1",
@@ -315,6 +599,17 @@ const CardDetailArr = [
       "Et ea invidunt aliquyam sit sit magna dolor. Dolores takimata dolor sed erat, stet ipsum sed consetetur et, magna dolor.",
     cost: "550",
     rating: "5.0",
+    img__grid: {
+      destination_01_img_01,
+      destination_01_img_02,
+      destination_03_img_01,
+      destination_02_img_02,
+      destination_01_img_03,
+      destination_01_img_04,
+      destination_01_img_05,
+      destination_01_img_06,
+      destination_02_img_01,
+    },
   },
   {
     calendar: "1",
@@ -326,6 +621,17 @@ const CardDetailArr = [
       "Diam amet dolore dolore ea nonumy eirmod lorem. Justo stet sea sed kasd et dolor et. Amet eirmod dolor clita.",
     cost: "1550",
     rating: "5.0",
+    img__grid: {
+      destination_01_img_01,
+      destination_01_img_02,
+      destination_03_img_01,
+      destination_02_img_02,
+      destination_01_img_03,
+      destination_01_img_04,
+      destination_01_img_05,
+      destination_01_img_06,
+      destination_02_img_01,
+    },
   },
   {
     calendar: "1",
@@ -337,6 +643,17 @@ const CardDetailArr = [
       "Stet duo et voluptua gubergren et lorem nonumy, dolor et at stet justo kasd erat sadipscing et, sed labore amet.",
     cost: "1330",
     rating: "5.0",
+    img__grid: {
+      destination_01_img_01,
+      destination_01_img_02,
+      destination_03_img_01,
+      destination_02_img_02,
+      destination_01_img_03,
+      destination_01_img_04,
+      destination_01_img_05,
+      destination_01_img_06,
+      destination_02_img_01,
+    },
   },
   {
     calendar: "1",
@@ -348,6 +665,17 @@ const CardDetailArr = [
       "Justo consetetur duo et eos dolor at ipsum ea et sea, accusam sed gubergren kasd dolor et kasd lorem. Est.",
     cost: "1550",
     rating: "5.0",
+    img__grid: {
+      destination_01_img_01,
+      destination_01_img_02,
+      destination_03_img_01,
+      destination_02_img_02,
+      destination_01_img_03,
+      destination_01_img_04,
+      destination_01_img_05,
+      destination_01_img_06,
+      destination_02_img_01,
+    },
   },
 ];
 
@@ -376,7 +704,6 @@ const getSortParseCards = getCards_random(10).sort(function (a, b) {
 //   return SortParseCards.slice(start,end);
 // }
 // sort flow name A- Z
-
 
 const getSortStringCards = getCards_random(10).sort(function (a, b) {
   return ("" + a.title).localeCompare(b.title);
