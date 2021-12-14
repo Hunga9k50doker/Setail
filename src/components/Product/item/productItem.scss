@@ -1,6 +1,7 @@
+@import "../../../styles/variables";
+@import "../../../styles/global";
 .product-item {
-  margin: 100px;
-  width: 300px;
+  width: 280px;
   .img-container {
     position: relative;
     img {

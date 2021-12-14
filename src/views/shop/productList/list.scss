@@ -1,0 +1,44 @@
+@import "../../../styles/variables";
+@import "../../../styles/global";
+.search {
+  display: flex;
+  padding: 1.25rem 0px;
+  .ip-search {
+    height: 50px;
+    padding-left: 1rem;
+  }
+}
+.product-list {
+  position: relative;
+  width: 100%;
+  margin-top: 100px;
+  margin: 0px;
+  h5 {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .background {
+    padding: 2rem;
+    transform: translateY(-80px);
+    width: 1300px;
+    background: #fff;
+    margin: 0px auto;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    .left-col {
+      flex: 10;
+    }
+    .right-col {
+      flex: 3;
+      .popular-product {
+        margin-top: 2rem;
+      }
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+  }
+}

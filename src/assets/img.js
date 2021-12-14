@@ -109,7 +109,7 @@ import productImg15 from './img/product/shop-1-img-15-300x300.jpg';
 import productImg16 from './img/product/shop-1-img-16-300x300.jpg';
 import productImg17 from './img/product/shop-1-img-17-300x300.jpg';
 import productImg18 from './img/product/shop-1-img-18-300x300.jpg';
-
+import amazingTour from './img/product/amazing-tour.png';
 
 
 
@@ -206,5 +206,6 @@ export {
   productImg16,
   productImg17,
   productImg18,
+  amazingTour,
   
 };
