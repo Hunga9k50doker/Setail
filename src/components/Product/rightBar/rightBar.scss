@@ -1,7 +1,25 @@
 @import "../../../styles/variables";
 @import "../../../styles/global";
+.search {
+  display: flex;
+  padding: 1.25rem 0px;
+  .ip-search {
+    height: 50px;
+    padding-left: 1rem;
+    width: 82%;
+    background: #f8f8f8;
+    border: none;
+    outline: none;
+  }
 
+  button {
+    width: 18%;
+    background: #3abdc1;
+    border: none;
+  }
+}
 .price-filter {
+  margin-top: 2rem;
   h5 {
     font-size: 18px;
     font-weight: 600;
