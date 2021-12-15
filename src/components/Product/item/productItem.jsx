@@ -31,6 +31,15 @@ const shopData = [
         uPrice: false,
         price: '$41',
         rating: 4,
+        introduce: 'Consectetur adipiscing elit. In leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis montes nascetur ridiculus.',
+        SKU: '012',
+        Categories: 'Vintage',
+        Tag: ['Clothes','Summer','Vintage'],
+        Description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum ultricies aliquam. Done ultricies nec, pellent, consectetur adipiscing elit. Ieuismod orci. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus sit am.',
+        AddInfo: {
+            weight:'0.6 kg',
+            dismensions: '4 x 5 x 7 cm',
+        }
     },
     {
         name: 'Skis',
