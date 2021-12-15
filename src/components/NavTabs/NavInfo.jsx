@@ -9,6 +9,8 @@ import ContentItem from "./NavTabsContent/contentItem";
 import Location from "./NavTabsContent/location";
 import Gallery from "./NavTabsContent/gallery";
 import TourPlan from "./NavTabsContent/tourPlan";
+import Reviews from "./NavTabsContent/reviews";
+
   
 
 
@@ -133,7 +135,7 @@ const NavTabInfo = () => {
             role="tabpanel"
             aria-labelledby="nav-reviews-tab"
           >
-            {/* <NavContentHighToLow /> */}
+            <Reviews />
           </div>
         </div>
       </div>

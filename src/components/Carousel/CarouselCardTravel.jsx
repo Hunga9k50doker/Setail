@@ -16,7 +16,7 @@ const SlideCardTravel = () => {
     infinite: true,
     speed: 500,
     slidesToShow: 5,
-    // autoplay: true,
+    autoplay: true,
     slidesToScroll: 1,
   };
 

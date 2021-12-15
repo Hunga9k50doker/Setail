@@ -42,7 +42,7 @@ const Gallery = () => {
     <Helmet title={slug}>
       <div className="component nav__content">
         <div className="row">
-          <div className="col ">
+          <div className="gallery__item ">
             <h2 className="item__title">Tour Gallery</h2> <br />
             <p className="item__subtitle">
               Consetetur dolor justo dolore et et eirmod diam, sea no sea ipsum
@@ -54,88 +54,17 @@ const Gallery = () => {
               (item, index) =>
                 to_slug(item.title) === slug && (
                   <div key={index} className="item__img grid__container">
-                    <div class="grid__item">
-                      <Link className=" grid__item_link" to="#">
-                        <img
-                          className="item__grid__img"
-                          src={item.img__grid.destination_02_img_01}
-                          alt={"Can't load"}
-                        />
-                      </Link>
-                    </div>
-                    <div class="grid__item">
-                      <Link className=" grid__item_link" to="#">
-                        <img
-                          className="item__grid__img"
-                          src={item.img__grid.destination_01_img_01}
-                          alt={"Can't load"}
-                        />
-                      </Link>
-                    </div>
+                    {item.img__grid.slice(0, 9).map((e, id) => (
+                      <div key={id} className="grid__item">
+                          <img
+                            
+                            className="item__grid__img"
+                            src={e}
+                            alt={"Can't load"}
+                          />
+                      </div>
+                    ))}
 
-                    <div class="grid__item">
-                      <Link className=" grid__item_link" to="#">
-                        <img
-                          className="item__grid__img"
-                          src={item.img__grid.destination_01_img_02}
-                          alt={"Can't load"}
-                        />
-                      </Link>
-                    </div>
-                    <div class="grid__item">
-                      <Link className=" grid__item_link" to="#">
-                        <img
-                          className="item__grid__img"
-                          src={item.img__grid.destination_01_img_03}
-                          alt={"Can't load"}
-                        />
-                      </Link>
-                    </div>
-                    <div class="grid__item">
-                      <Link className=" grid__item_link" to="#">
-                        <img
-                          className="item__grid__img"
-                          src={item.img__grid.destination_01_img_04}
-                          alt={"Can't load"}
-                        />
-                      </Link>
-                    </div>
-                    <div class="grid__item">
-                      <Link className=" grid__item_link" to="#">
-                        <img
-                          className="item__grid__img"
-                          src={item.img__grid.destination_03_img_01}
-                          alt={"Can't load"}
-                        />
-                      </Link>
-                    </div>
-                    <div class="grid__item">
-                      <Link className=" grid__item_link" to="#">
-                        <img
-                          className="item__grid__img"
-                          src={item.img__grid.destination_02_img_02}
-                          alt={"Can't load"}
-                        />
-                      </Link>
-                    </div>
-                    <div class="grid__item">
-                      <Link className=" grid__item_link" to="#">
-                        <img
-                          className="item__grid__img"
-                          src={item.img__grid.destination_01_img_06}
-                          alt={"Can't load"}
-                        />
-                      </Link>
-                    </div>
-                    <div class="grid__item">
-                      <Link className=" grid__item_link" to="#">
-                        <img
-                          className="item__grid__img"
-                          src={item.img__grid.destination_01_img_05}
-                          alt={"Can't load"}
-                        />
-                      </Link>
-                    </div>
                   </div>
                 )
             )}
