@@ -2,7 +2,7 @@ import React from "react";
 import "../../App.scss";
 
 const TourList = () => {
-  return <div className="container">TourList</div>;
+  return <div className="component">TourList</div>;
 };
 
 export default TourList;

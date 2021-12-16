@@ -65,6 +65,7 @@ import Destination17 from "./img/featureImg/destination17.jpg";
 import Destination18 from "./img/featureImg/destination18.jpg";
 import Destination19 from "./img/featureImg/destination19.jpg";
 
+
 import Winter2 from "./img/featureImg/winter2.jpg";
 import Winter3 from "./img/featureImg/winter3.jpg";
 import Winter4 from "./img/featureImg/winter4.jpg";
@@ -74,6 +75,10 @@ import Winter7 from "./img/featureImg/winter7.jpg";
 import Winter8 from "./img/featureImg/winter8.jpg";
 import Winter9 from "./img/featureImg/winter9.jpg";
 import Winter10 from "./img/featureImg/winter10.jpg";
+
+
+
+// notfound
 
 
 
@@ -109,6 +114,11 @@ import productImg15 from './img/product/shop-1-img-15-300x300.jpg';
 import productImg16 from './img/product/shop-1-img-16-300x300.jpg';
 import productImg17 from './img/product/shop-1-img-17-300x300.jpg';
 import productImg18 from './img/product/shop-1-img-18-300x300.jpg';
+import productSingle1 from './img/product/shop-1-gallery-1.jpg';
+import productSingle2 from './img/product/shop-1-gallery-2.jpg';
+import productSingle3 from './img/product/shop-1-gallery-3.jpg';
+
+
 import amazingTour from './img/product/amazing-tour.png';
 
 
@@ -206,6 +216,9 @@ export {
   productImg16,
   productImg17,
   productImg18,
+  productSingle1,
+  productSingle2,
+  productSingle3,
   amazingTour,
   
 };

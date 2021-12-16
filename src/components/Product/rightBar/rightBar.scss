@@ -45,6 +45,17 @@
       transform: translateY(-1px);
     }
   }
+  .bottom-content {
+    margin: 1rem 0px;
+    display: flex;
+    justify-content: space-between;
+    .btn-filter {
+      padding: 0px;
+      font-weight: 600;
+      font-family: "Poppins", sans-serif;
+      color: #3fd0d4;
+    }
+  }
 }
 .product-mini {
   margin: 1rem 0px;

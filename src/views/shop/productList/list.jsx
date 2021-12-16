@@ -8,7 +8,6 @@ import {Baner1,banData} from "../../../components/blogItem/BlogItem"
 import {amazingTour} from "../../../assets/img"
 
 
-/// chưa sửa thanh filter
 const ShopList = () => {
   var [items,setItems] = useState([1,2,3,4,5,6,7,8,9,10,11,12])
   var [page,setPage] = useState(1)

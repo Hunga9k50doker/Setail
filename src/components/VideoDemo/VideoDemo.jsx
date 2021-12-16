@@ -25,7 +25,7 @@ const VideoDemo = (props) => {
           Sollst geliebet es helle trübhell heimat, stillestehn du warum nicht
           heut hast mein heut im.
         </p>
-        <div className="responsive-video-poster" >
+        <div className="responsive-video-poster">
           <button className="video__overlay">
             <div className="video__btn" onClick={handleEvents.hiddenBtn}>
               <img src={PosterBtn} alt="Not load" className="" />

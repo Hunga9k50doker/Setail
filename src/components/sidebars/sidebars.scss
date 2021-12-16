@@ -1,3 +1,150 @@
-@import '../../styles/variables';
-@import '../../styles/global';
+@import "../../styles/variables";
+@import "../../styles/global";
 
+.sidebar {
+  background: $primary-color;
+  padding: 10px 20px;
+  color: $white-color;
+  margin-top: 20px;
+  user-select: none;
+  &__item {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    &-title {
+      font-size: 1.3rem;
+      font-weight: 600;
+      letter-spacing: 1.1;
+      margin: 20px 10px;
+    }
+    &-subTitle {
+      font-size: 1.2rem;
+      width: 90%;
+      margin-bottom: 20px;
+    }
+
+    &-input {
+      position: relative;
+      color: $white-color;
+      margin: 5px 0;
+      font-size: 1.16rem;
+      width: 100%;
+      i {
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        transform: translate(0, -50%);
+        font-size: 1.2rem;
+      }
+      input {
+        border: none;
+        outline: none;
+        padding: 10px 0 10px 40px;
+        background: rgba($white-color, 0.3);
+        &::placeholder {
+          color: $white-color;
+        }
+      }
+    }
+    input[type="range"] {
+      -webkit-appearance: none;
+    }
+
+    input[type="range"]::-webkit-slider-runnable-track {
+      width: 100%;
+      height: 16px;
+      background: $white-color;
+      border: none;
+    }
+
+    input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      border: none;
+      height: 18px;
+      width: 16px;
+      background: $bg-color--hover;
+    }
+
+    input[type="range"]:focus::-webkit-slider-runnable-track {
+      background: #ccc;
+    }
+  }
+  .list__input {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    &-item {
+      margin: 5px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      input {
+        outline: none;
+        width: 18px;
+        height: 18px;
+      }
+      label {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  #date__booking::after {
+    color: transparent;
+  }
+  #date__booking::-webkit-calendar-picker-indicator {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 10px;
+    background: none;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  #date__booking::-webkit-datetime-edit {
+    color: $white-color;
+  }
+
+  .sidebar__message__booking i {
+    top: 20px;
+  }
+
+  #message__booking {
+    width: 100%;
+    border: none;
+    background: rgba($white-color, 0.3);
+    padding: 10px 0 10px 40px;
+    &:focus {
+      outline: none;
+    }
+    &::placeholder {
+      color: $white-color;
+    }
+  }
+
+  button {
+    font-size: 1rem;
+    font-weight: 600;
+    background: $white-color;
+    margin: 20px auto;
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    text-transform: uppercase;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+  .siderbar__item__btn {
+    button {
+      margin: 5px;
+    }
+  }
+}

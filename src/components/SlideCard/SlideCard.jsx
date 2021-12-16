@@ -1,5 +1,5 @@
 import React from "react";
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 
 import cardData from "../../assets/fake-data/CardDetails";
 
@@ -8,6 +8,9 @@ import CardDetails from "../cards/cardDetails/cardDetails";
 import "./slideCard.scss";
 console.log(cardData);
 const SlideCard = () => {
+
+
+
   return (
     <div className=" slides__card container ">
       <div className="row">
@@ -38,6 +41,7 @@ const SlideCard = () => {
                 <div key={index} className="row">
                   <div className="carousel-item active">
                     <div className="col col-lg-3 col-md-4 col-sm-12">
+                 
                       <CardDetails
                         img={item.img}
                         calendar={item.calendar}
@@ -46,9 +50,10 @@ const SlideCard = () => {
                         title={item.title}
                         subTitle={item.subTitle}
                         cost={Number(item.cost)}
-                        icon={item.icon}
                         rating={item.rating}
+                        icon={Number(item.rating) < 6 ?"fas fa-star-half-alt" : "fas fa-star"}
                       />
+                 
                     </div>
                   </div>
                 </div>

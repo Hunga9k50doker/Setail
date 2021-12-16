@@ -298,7 +298,7 @@ const Nav = () => {
           <i className="fas fa-shopping-cart"></i>
           <div className="cart-category">
             <p>No products in the cart.</p>
-            <img className="no-cart-img" src="./img/th.jpg" alt="Not found" />
+            <img className="no-cart-img" src={require('../../assets/img/other/empty-cart.png').default} alt="Not found" />
           </div>
         </li>
         <li className="nav__innerRight-item nav__innerRight-item-search">

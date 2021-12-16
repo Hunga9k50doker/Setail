@@ -1,5 +1,6 @@
 import "./productItem.scss"
 import {useState} from "react"
+import {Slider} from "react-slick"
 import {  
     productImg1,
     productImg2,
@@ -18,11 +19,12 @@ import {
     productImg15,
     productImg16,
     productImg17,
-    productImg18}
+    productImg18,
+    productSingle1,
+    productSingle2,
+    productSingle3,
+    }
 from '../../../assets/img'
-
-
-
 const shopData = [
     {
         name: 'Moderm hat',
@@ -31,6 +33,7 @@ const shopData = [
         uPrice: false,
         price: '$41',
         rating: 4,
+        gallery: [productSingle1,productSingle2,productSingle3],
         introduce: 'Consectetur adipiscing elit. In leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis montes nascetur ridiculus.',
         SKU: '012',
         Categories: 'Vintage',
@@ -178,22 +181,23 @@ const shopData = [
         rating: 5,
     },
 ]
+const RatingStar = ({rating})=>{
+    let star = ''
+    for (var i = 1; i <=5; i++){
+        if(i>rating)
+            star += '<i class="far fa-star"></i>'
+        else
+            star += '<i class="fas fa-star"></i>'
+    }
+    return <div className="star"
+        dangerouslySetInnerHTML={{__html:star}}
+    />
+}
 
 const ProductItem = ({shopData}) => {
     var [isAddCart,setCart] = useState(false);
 
-    function RatingStar(){
-        let star = ''
-        for (var i = 1; i <=5; i++){
-            if(i>shopData.rating)
-                star += '<i class="far fa-star"></i>'
-            else
-                star += '<i class="fas fa-star"></i>'
-        }
-        return <div className="star"
-            dangerouslySetInnerHTML={{__html:star}}
-        />
-    }
+
     const Button = function() {
         if(isAddCart)
             return <button 
@@ -232,9 +236,71 @@ const ProductItem = ({shopData}) => {
                     <p>{shopData.price}
                     </p>
                 </div>
-                {RatingStar()}
+                <RatingStar rating={shopData.rating}/>
             </div>
         </div>
     )
 }
-export {shopData, ProductItem}
+const Gallery = ({imgList})=> {
+    const settings= {
+        slidesToShow:1,
+        slidesToScroll: 1,
+        infinite:true,
+        speed:500,
+    }
+    return (
+        <div hidden className="img__slider">
+            <Slider {...settings}>
+            {imgList.map((e,i)=>
+                <div>
+                    <img src={e} alt={`img-gallery-${i+1}`} className="img-gallery" />
+                </div>)
+            }
+            </Slider>
+        </div>
+    )
+}
+const ProductItemDetails = ({itemData})=>{
+    const [productCount,setProductCount] = useState(1)
+    return (
+        <div className="product-details__container">
+            <div className="img__list">
+                <div><img src={itemData.img} alt="img-product" /></div>
+                <div className="img__list-bottom">
+                    {itemData.gallery.map((e,i)=> 
+                    <img src={e} alt={`img-gallery-${i+1}`} className="img__list-gallery" />)}
+                </div>
+            </div>
+            <div className="details">
+                <h1>{itemData.name}</h1>
+                <p>{itemData.price}</p>
+                <div>
+                    <RatingStar rating={itemData.rating}/>
+                    <p>(1 customer review)</p>
+                </div>
+                <p>{itemData.introduce}</p>
+                <form>
+                    <div>
+                        <input
+                            type="text" value={prodcutCount}
+                        />
+                        <div class="btn btn__ud">
+                            <button>&gt;</button>
+                            <button>&lt;</button>
+                        </div>
+                        <button 
+                            className="btn btn-product"
+                        >
+                            ADD TO CART
+                        </button>
+                    </div>
+                </form>
+
+            </div>
+            <Gallery imglist={[...itemData.img,...itemData.gallery]} />
+        </div>
+
+    )
+}
+
+export {shopData, ProductItem ,Gallery,ProductItemDetails}

@@ -1,5 +1,6 @@
 
 import React from "react";
+import "./single.scss";
 import "../../App.scss";
 
 const ShopSingle = () => {

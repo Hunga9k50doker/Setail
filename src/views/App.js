@@ -49,6 +49,10 @@ import TypographyHeadings from "./elements/typography/columns";
 import TypographyColumns from "./elements/typography/headings";
 import TypographySectionTitle from "./elements/typography/sectionTitle";
 
+import ItemDetail from '../components/tourItem/item';
+import NotFound from '../views/NotFound/notfound';
+
+
 function App() {
   // handleEvent btn back top
   // The back-to-top button is hidden at the beginning
@@ -81,126 +85,134 @@ function App() {
         <Switch>
           {/*=================== Home================== */}
 
-          <Route path="/" exact>
+          <Route exact path="/" >
             <HomeTravel />
           </Route>
-          <Route path="/home/winter-holidays">
+          <Route exact path="/home/winter-holidays">
             <HomeWinter
             />
           </Route>
-          <Route path="/home/exotic-destinations">
+          <Route exact path="/home/exotic-destinations">
             <HomeExotic />
           </Route>
 
           {/*=================== Pages================== */}
-          <Route path="/pages/about-us">
+          <Route exact path="/pages/about-us">
             <AboutUs />
           </Route>
-          <Route path="/pages/our-team">
+          <Route exact path="/pages/our-team">
             <OurTeam />
           </Route>
-          <Route path="/pages/what-we-offer">
+          <Route exact path="/pages/what-we-offer">
             <WhatWeOffer />
           </Route>
 
           {/*=================== Destinations================== */}
-          <Route path="/destinations/list">
+          <Route exact path="/destinations/list">
             <List />
           </Route>
-          <Route path="/destinations/slider">
+          <Route exact path="/destinations/slider">
             <Slider />
           </Route>
-          <Route path="/destinations/item">
+          <Route exact path="/destinations/item">
             <Item />
           </Route>
+          
 
           {/*=================== Tours================== */}
-          <Route path="/tours/gallery-list">
+          <Route exact path="/tours/gallery-list">
             <Gallery />
           </Route>
-          <Route path="/tours/standard-list">
+          <Route exact path="/tours/standard-list">
             <Standard />
           </Route>
-          <Route path="/tours/split-list">
+          <Route exact path="/tours/split-list">
             <Split />
+          </Route>
+          <Route exact path="/tour-item/:slug">
+            <ItemDetail />
           </Route>
 
           {/*=================== Blog================== */}
-          <Route path="/blog/masonry">
+          <Route exact path="/blog/masonry">
             <Masonry />
           </Route>
-          <Route path="/blog/gallery">
+          <Route exact path="/blog/gallery">
             <BlogGallery />
           </Route>
-          <Route path="/blog/NavLink">
+          <Route exact path="/blog/NavLink">
             <BlogLink />
           </Route>
-          <Route path="/blog/standard">
+          <Route exact path="/blog/standard">
             <BlogStandard />
           </Route>
-          <Route path="/blog/right-sidebar">
+          <Route exact path="/blog/right-sidebar">
             <RightStandard />
           </Route>
-          <Route path="/blog/left-sidebar">
+          <Route exact path="/blog/left-sidebar">
             <LeftStandard />
           </Route>
-          <Route path="/blog/without-sidebar">
+          <Route exact path="/blog/without-sidebar">
             <WithoutStandard />
           </Route>
 
           {/*=================== Shop================== */}
-          <Route path="/shop/product-list">
+          <Route exact path="/shop/product-list">
             <ShopList />
           </Route>
-          <Route path="/shop/product-single">
+          <Route exact path="/shop/product-single">
             <ShopSingle />
           </Route>
-          <Route path="/shop/three-columns">
+          <Route exact path="/shop/three-columns">
             <ThreeColumns />
           </Route>
-          <Route path="/shop/four-columns">
+          <Route exact path="/shop/four-columns">
             <FourColumns />
           </Route>
-          <Route path="/shop/full-width">
+          <Route exact path="/shop/full-width">
             <FullWidth />
           </Route>
 
           {/*=================== Elements================== */}
-          <Route path="/elements/tour-carousel">
+          <Route exact path="/elements/tour-carousel">
             <Carousel />
           </Route>
-          <Route path="/elements/tour-list">
+          <Route exact path="/elements/tour-list">
             <TourList />
           </Route>
-          <Route path="/elements/tour-filter">
+          <Route exact path="/elements/tour-filter">
             <Filter />
           </Route>
-          <Route path="/elements/team">
+          <Route exact path="/elements/team">
             <ElementsTeam />
           </Route>
-          <Route path="/elements/blog-list">
+          <Route exact path="/elements/blog-list">
             <ElementBlog />
           </Route>
-          <Route path="/elements/shop-list">
+          <Route exact path="/elements/shop-list">
             <ElementShop />
           </Route>
-          <Route path="/elements/accordions">
+          <Route exact path="/elements/accordions">
             <Accordions />
           </Route>
-          <Route path="/elements/tabs">
+          <Route exact path="/elements/tabs">
             <Tabs />
           </Route>
-          <Route path="/elements/buttons">
+          <Route exact path="/elements/buttons">
             <Buttons />
           </Route>
-          <Route path="/elements/columns">
+          <Route exact path="/elements/columns">
             <TypographyColumns />
           </Route>
-          <Route path="/elements/headings">
+          <Route exact path="/elements/headings">
             <TypographyHeadings />
           </Route>
-          <Route path="/elements/section-title">
+          <Route exact path="/elements/section-title">
             <TypographySectionTitle />
+          </Route>
+
+          <Route  path="*">
+            <NotFound />
           </Route>
         </Switch>
 

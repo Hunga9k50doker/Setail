@@ -16,46 +16,80 @@ const SearchBar = ()=>{
 }
 
 
-
 const PriceFilter = () =>{
+
     const [minPrice,setMinPrice] = useState(0);
     const [maxPrice,setMaxPrice] = useState(760);
+
     const minX = 0;
     const maxX = 760;
-    useEffect(() =>{
 
-    },[minPrice,maxPrice])
+    function minDragCounter(event){
+        const parent = document.querySelector(".drag-filter")
+        let position = Math.floor((event.pageX - parent.offsetLeft - parent.offsetParent.offsetLeft)
+            /parent.offsetWidth*maxX);
+        setMinPrice(()=> position)
+    }
+    function maxDragCounter(event){
+        const parent = document.querySelector(".drag-filter")
+        let position = Math.floor((event.pageX - parent.offsetLeft - parent.offsetParent.offsetLeft)
+            /parent.offsetWidth*maxX);
+        setMaxPrice(()=> position)
+    }
     useEffect(()=>{
-        var min = document.querySelector(".min-price")
-        min.addEventListener('drag',(e)=>{
-            var position = e.pageX - min.offsetParent.offsetLeft;
-            console.log(e.pageX + " " + min.offsetParent.offsetLeft)
-            if(position < minX){
-                position = minX;
-            }
-            if(position > maxX){
-                position = maxX;
-            }
-            if(position>maxPrice){
-                position=maxPrice;
-            }
-            setMinPrice(()=>{return position})
-        })
+        if(minPrice<minX){
+            setMinPrice(()=>minX)
+        }
+        if(minPrice>maxX){
+            setMinPrice(()=>maxX)
+        }
+        if(minPrice>maxPrice){
+            setMaxPrice((e)=>e+1)
+        }
+    },[minPrice])
+    useEffect(()=>{
+        if(maxPrice<minX){
+            setMaxPrice(()=>minX)
+        }
+        if(maxPrice>maxX){
+            setMaxPrice(()=>maxX)
+        }
+        if(maxPrice<minPrice){
+            setMinPrice((e)=>e-1)
+        }
+    })
+    useEffect(()=>{
+        const min = document.querySelector(".min-price")
+        const max = document.querySelector(".max-price")
+        if(min && max){
+            min.addEventListener('drag',minDragCounter)
+            min.addEventListener('dragend',minDragCounter)
+            max.addEventListener('drag',maxDragCounter)
+            max.addEventListener('dragend',maxDragCounter)
+        }
+        return () =>{
+            min.removeEventListener('drag',minDragCounter)
+            min.removeEventListener('dragend',minDragCounter)
+            max.removeEventListener('drag',maxDragCounter)
+            max.removeEventListener('dragend',maxDragCounter)
+        }
     },[])
+
     var styles = {
         progress: {
-            left : `${minPrice/760*100}%`,
-            right : `${((760-maxPrice)/760)*100}%`
+            left : `${minPrice/7.6}%`,
+            right : `${100-maxPrice/7.6}%`
         },
         min: {
             position: 'absolute',
-            left : `${minPrice/760*100}%`
+            left : `${minPrice/7.6}%`
         },
         max: {
             position: 'absolute',
-            right : `${((760-maxPrice)/760)*100}%`
+            right : `${((100-maxPrice/7.6))}%`
         }
     }
+
     return (
         <div className="price-filter">
             <h5 className="price-filter__header">Filter by Price</h5>
@@ -68,6 +102,7 @@ const PriceFilter = () =>{
                 <span 
                     className="min-price" 
                     style={styles.min}
+                    draggable="true"
                 ></span>
                 <span 
                     className="max-price" 
@@ -75,8 +110,8 @@ const PriceFilter = () =>{
                     draggable="true"
                 ></span>
             </div>
-            <div>
-                <span className="price-range">{`Price: $${minPrice} — $${maxPrice}`}</span>
+            <div className="bottom-content">
+                <span className="price-range">{`Price: $${minPrice} - $${maxPrice}`}</span>
                 <button className="btn btn-filter">filter</button>
             </div>
         </div>

@@ -1,3 +1,5 @@
+
+import {Link} from 'react-router-dom';
 import "./CustomContent.scss";
 const Content = (props) => {
   return (
@@ -8,7 +10,9 @@ const Content = (props) => {
             <h2 className="content__title">{props.title}</h2>
             <h3 className="content__subTitle">{props.subTitle}</h3>
             <p className="content__description">{props.description}</p>
+            <Link to='/tours/standard-list'>
             <button className="content__btn">Read more</button>
+            </Link>
           </div>
           <div className="col col-xl-4 col-lg-12 col-md-12 col-sm-12">
             <img src={props.img} alt="not found" className="content__img" />

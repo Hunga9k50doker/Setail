@@ -6,7 +6,7 @@ import "./about.scss";
 import BannerArr from "../../../assets/fake-data/Banner";
 import ContentData from "../../../assets/fake-data/Content";
 import getVideoData from "../../../assets/fake-data/Video";
-import card_selection_data from "../../../assets/fake-data/CardSelections";
+import cardData from "../../../assets/fake-data/CardDetails";
 import CardSelection from "../../../components/cards/cardSelection/cardSelection";
 // import components
 import Helmet from "../../../components/Helmet/Helmet";
@@ -16,6 +16,7 @@ import VideoDemo from "../../../components/VideoDemo/VideoDemo";
 import Selections from "../../../components/selections/selections";
 import SlideCardRating from "../../../components/Carousel/CarouselCardRating";
 import Sub from "../../../components/Subscribe/sub";
+import { Link } from "react-router-dom";
 //get data
 const getImgBanner = BannerArr.filter((e) => e.types === "banner_pages");
 const getContent1 = ContentData.filter((e) => e.id === "content_about_us_01");
@@ -42,6 +43,35 @@ const NewStyleVideo = styled.div`
 //   progressBars.map((e) => e.target.setAttribute("id", "play-progress"));
 // };
 const AboutUs = () => {
+  function to_slug(str) {
+    // Chuyển hết sang chữ thường
+    str = str.toLowerCase();
+
+    // xóa dấu
+    str = str.replace(/(à|á|ạ|ả|ã|â|ầ|ấ|ậ|ẩ|ẫ|ă|ằ|ắ|ặ|ẳ|ẵ)/g, "a");
+    str = str.replace(/(è|é|ẹ|ẻ|ẽ|ê|ề|ế|ệ|ể|ễ)/g, "e");
+    str = str.replace(/(ì|í|ị|ỉ|ĩ)/g, "i");
+    str = str.replace(/(ò|ó|ọ|ỏ|õ|ô|ồ|ố|ộ|ổ|ỗ|ơ|ờ|ớ|ợ|ở|ỡ)/g, "o");
+    str = str.replace(/(ù|ú|ụ|ủ|ũ|ư|ừ|ứ|ự|ử|ữ)/g, "u");
+    str = str.replace(/(ỳ|ý|ỵ|ỷ|ỹ)/g, "y");
+    str = str.replace(/(đ)/g, "d");
+
+    // Xóa ký tự đặc biệt
+    str = str.replace(/([^0-9a-z-\s])/g, "");
+
+    // Xóa khoảng trắng thay bằng ký tự -
+    str = str.replace(/(\s+)/g, "-");
+
+    // xóa phần dự - ở đầu
+    str = str.replace(/^-+/g, "");
+
+    // xóa phần dư - ở cuối
+    str = str.replace(/-+$/g, "");
+
+    // return
+    return str;
+  }
+
   return (
     <Helmet title="About Us" className="component">
       {/* banner */}
@@ -126,21 +156,26 @@ const AboutUs = () => {
       ))}
       {/* selection item */}
       <Selections>
-        {card_selection_data.getCards(2,12).map((item, index) => (
-          <div
+        {cardData.getCards_random(12).map((item, index) => (
+          <Link
+          to={"/tour-item/" + to_slug(item.title)}
             key={index}
             className="col col-xxl-3 col-lg-3 col-md-6 col-sm-12"
           >
+            {/* <Link to={"/tour-item/" + to_slug(item.title)}> */}
             <CardSelection
               img={item.img}
               title={item.title}
               rating={item.rating}
               cost={item.cost}
+              icon={Number(item.rating) < 6 ?"fas fa-star-half-alt" : "fas fa-star"}
+
             />
-          </div>
+            {/* </Link> */}
+          </Link>
         ))}
       </Selections>
-{/* rating */}
+      {/* rating */}
       <SlideCardRating />
       <Sub />
     </Helmet>

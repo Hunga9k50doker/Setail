@@ -6,11 +6,11 @@ const CardDetails = (props) => {
   return (
     <div className="card ">
       <div className="card-header">
-        <picture>
+        <picture className="card-img">
           <source
             media="(min-width:1200px)"
             srcset={props.img}
-            style={{ width: "288px", height: "170px" }}
+            // style={{ width: "288px", height: "170px" }}
           />
           <source
             media="(min-width:768px)"
@@ -21,9 +21,11 @@ const CardDetails = (props) => {
             src={props.img}
             className="card-img-top"
             alt="not found"
-            style={{ width: "358px", height: "257px" }}
+            // style={{ width: "358px", height: "257px" }}
           />
         </picture>
+      </div>
+      <div className="card-body">
         <div className="card-information">
           <p className="card-information-calendar">
             <i className="far fa-calendar-alt"></i>
@@ -38,10 +40,11 @@ const CardDetails = (props) => {
             <span>{props.location}</span>
           </p>
         </div>
-      </div>
-      <div className="card-body">
         <h3 className="card-title">{props.title}</h3>
+        
+        <div className="container__text">
         <p className="card-text">{props.subTitle}</p>
+        </div>
         <div className="card-cost__rating">
           <p className="card-cost">{"$" + props.cost}</p>
           <p className="card-rating">

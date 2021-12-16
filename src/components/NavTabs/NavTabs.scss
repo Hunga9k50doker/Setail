@@ -1,2 +1,35 @@
-@import '../../styles/variables';
-@import '../../styles/global';
+@import "../../styles/variables";
+@import "../../styles/global";
+
+.nav.nav__sidebar {
+  justify-content: flex-start;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.nav {
+  
+  &-tabs {
+    .nav-item {
+      border: none;
+    }
+    .nav-link {
+      color: $black-color;
+      text-transform: uppercase;
+      font-size: 1rem;
+      padding: 20px 20px;
+      font-weight: 600;
+
+      i {
+        margin: 0 10px;
+      }
+      &:hover {
+        color: $primary-color;
+      }
+    }
+    .nav-link.active {
+      color: $primary-color;
+    }
+  }
+}
