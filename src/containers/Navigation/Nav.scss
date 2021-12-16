@@ -1,7 +1,6 @@
 @import "../../styles/variables";
 @import "../../styles/global.scss";
 
-
 .nav {
   position: fixed;
   left: 0;
@@ -26,7 +25,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width:60%;
+    max-width: 60%;
     flex: 1;
     margin: 0 37px;
     &-item {
@@ -129,7 +128,7 @@
           opacity: 0;
           transform-origin: center left;
           transition: all 0.3s ease;
-              background: $white-color;
+          background: $white-color;
 
           &-item {
             width: 100%;
@@ -210,8 +209,8 @@
       padding: 37px 50px;
     }
 
-    &-item:focus-within  &-item-title{    
-        color:$primary-color;    
+    &-item:focus-within &-item-title {
+      color: $primary-color;
     }
   }
 
@@ -252,8 +251,8 @@
           &:after {
             @extend .bridge;
             height: 30px !important;
-           
-            width:150%;
+
+            width: 150%;
             top: -20px !important;
           }
           p {
@@ -282,7 +281,6 @@
     }
   }
 
-  
   // ===============modal====================
   .search-modal {
     position: fixed;
@@ -291,8 +289,8 @@
     left: 0;
     right: 0;
     bottom: 0;
+
     background: rgba($primary-color, 0.7);
-    transform: scale(0);
     transition: all 0.3s linear;
     .close {
       position: absolute;
@@ -301,60 +299,152 @@
       font-size: 40px;
       color: #fff;
       cursor: pointer;
-      &:hover{
+      &:hover {
         color: $text-color;
       }
     }
 
-    .form-search{
-      display:flex;
-      align-items:center;
+    .form-search {
+      display: flex;
+      align-items: center;
       justify-content: center;
       position: absolute;
       top: 50%;
-      left:50%;
-      transform: translate(-50%,-50%);
-      width:100%;
-      .search-input{
-        padding:30px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      .search-input {
+        padding: 30px;
         outline: none;
         font-size: 16px;
         border: none;
-        min-width:50%;
+        min-width: 50%;
       }
 
-      .btn-search{
+      .btn-search {
         padding: 30px;
         border: none;
         font-size: 16px;
         text-transform: uppercase;
-        background:$primary-color;
-        color:$white-color;
+        background: $primary-color;
+        color: $white-color;
         font-weight: 700;
         cursor: pointer;
-        &:hover{
-
+        &:hover {
           background: $bg-color--hover;
+        }
+      }
+    }
+  }
+  .search-modal:not(.active) {
+    transform: scale(0);
+  }
+  .search-modal.active {
+    transform: scale(1);
+  }
+
+  //================ canvas===============
+  .offcanvas {
+    overflow-y: auto;
+    min-width: 30vw;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .offcanvas-body {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-direction: column;
+      > h5 {
+        margin: 20px 0;
+      }
+      .offcanvals__logo {
+        margin-top: 200px;
+        img {
+          width: 200px;
+          height: 60px;
+        }
+      }
+      .offcanvas__subtitle {
+        font-size: 1rem;
+        text-align: center;
+      }
+      .offcanvas__title {
+        font-size: 1.4rem;
+        font-weight: 700;
+        margin: 30px 0;
+      }
+      .canvas__search {
+        min-height: 50px;
+        overflow: hidden;
+        input,
+        button {
+          height: 100%;
+          border: none;
+          outline: none;
+          padding: 10px 20px;
+        }
+        input {
+          background: rgba($black-color, 0.1);
+        }
+        button {
+          padding: 10px 20px;
+          background: $primary-color;
+          color: $white-color;
+          &:hover{
+            background: $bg-color--hover;
+          }
+          i {
+            font-size: 1.2rem;
+            text-align: center;
+          }
+        }
+      }
+
+      .list__social {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .item__social {
+          width: 50px;
+          height: 50px;
+          margin: 0 10px;
+          border-radius: 50%;
+          background: $primary-color;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          a{
+            color:$white-color;
+          }
+          &:hover{
+            cursor: pointer;
+            background: $bg-color--hover;
+          }
+          i {
+            font-size: 1.2rem;
+          }
         }
       }
     }
   }
 
   //account on <=low pocket
-  &-account{
+  &-account {
     position: absolute;
     top: 50%;
-    right:100px;
+    right: 100px;
     transform: translateY(-50%);
     font-size: 40px;
   }
 
   // disable
-  *[disabled]{
+  *[disabled] {
     opacity: 0.5;
     pointer-events: none;
   }
 }
 
 @import "../../styles/responsive.scss";
-

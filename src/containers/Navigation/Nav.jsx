@@ -1,19 +1,22 @@
 import "./Nav.scss";
 import "../../styles/global.scss";
-import { NavLink,Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import LogoHeader from "../../assets/img/logo/logo-header.png";
-
+import { CustomTitle, map } from "../../assets/img";
 const Nav = () => {
-  const openModal = {
-    position: "fixed",
-    zIndex: "15",
-    top: "0",
-    left: "0",
-    right: "0",
-    bottom: "0",
-    background: "rgba($primary-color, 0.7)",
-    transition: "all 0.3s linear",
-    transform: "scale(1)",
+  const modal = document.querySelector(".search-modal");
+  const item = document.querySelector(".search-input");
+
+  // let info = item.value
+  // let infoSearch =  info ;
+  // const SaveInfo = () => {
+  //   localStorage.setItem('infoSearch', infoSearch);
+  // }
+
+  // console.log(modal);
+  // open /close modal
+  const ToggleModal = () => {
+    modal.classList.toggle("active");
   };
 
   window.onscroll = function () {
@@ -30,17 +33,14 @@ const Nav = () => {
       document.querySelector(
         ".nav__list-item-Elements .nav__list-item-selections"
       ).style.top = "80px";
-    }else{
+    } else {
       document.querySelector(".nav").style.top = "42px";
-       document.querySelector(
-         ".nav__list-item-Elements .nav__list-item-selections"
-       ).style.top = "120px";
+      document.querySelector(
+        ".nav__list-item-Elements .nav__list-item-selections"
+      ).style.top = "120px";
     }
   }
 
-  function disabled(){
-
-  }
   return (
     <div className="nav">
       <Link to="/">
@@ -69,12 +69,13 @@ const Nav = () => {
               activeclassname="active"
               disabled
             >
-              <p >Winters Holidays</p>
+              <p>Winters Holidays</p>
             </NavLink>
             <NavLink
               to="/home/exotic-destinations"
               className="nav__list-item-selection"
-              activeclassname="active"    disabled
+              activeclassname="active"
+              disabled
             >
               <p>Exotic Destinations</p>
             </NavLink>
@@ -93,14 +94,16 @@ const Nav = () => {
             <NavLink
               to="/pages/what-we-offer"
               className="nav__list-item-selection"
-              activeclassname="active"    disabled
+              activeclassname="active"
+              disabled
             >
               <p>What We Offer</p>
             </NavLink>
             <NavLink
               to="/pages/our-team"
               className="nav__list-item-selection"
-              activeclassname="active"    disabled
+              activeclassname="active"
+              disabled
             >
               <p>Our Team</p>
             </NavLink>
@@ -112,21 +115,23 @@ const Nav = () => {
             <NavLink
               to="/destinations/list"
               className="nav__list-item-selection"
-              activeclassname="active"    
+              activeclassname="active"
             >
               <p>Destination List</p>
             </NavLink>
             <NavLink
               to="/destinations/slider"
               className="nav__list-item-selection"
-              activeclassname="active"   disabled
+              activeclassname="active"
+              disabled
             >
               <p>Destination Slider</p>
             </NavLink>
             <NavLink
               to="/destinations/item"
               className="nav__list-item-selection"
-              activeclassname="active" disabled
+              activeclassname="active"
+              disabled
             >
               <p>Destination Item</p>
             </NavLink>
@@ -145,14 +150,16 @@ const Nav = () => {
             <NavLink
               to="/tours/gallery-list"
               className="nav__list-item-selection"
-              activeclassname="active" disabled
+              activeclassname="active"
+              disabled
             >
               <p>Gallery List</p>
             </NavLink>
             <NavLink
               to="/tours/split-list"
               className="nav__list-item-selection"
-              activeclassname="active" disabled
+              activeclassname="active"
+              disabled
             >
               <p>Split List</p>
             </NavLink>
@@ -219,7 +226,8 @@ const Nav = () => {
             <NavLink
               to="/shop/product-single"
               className="nav__list-item-selection"
-              activeclassname="active" disabled
+              activeclassname="active"
+              disabled
             >
               <p>Product Single</p>
             </NavLink>
@@ -306,10 +314,18 @@ const Nav = () => {
             <img className="no-cart-img" src="./img/th.jpg" alt="Not found" />
           </div>
         </li>
-        <li className="nav__innerRight-item nav__innerRight-item-search">
+        <li
+          onClick={() => ToggleModal()}
+          className="nav__innerRight-item nav__innerRight-item-search"
+        >
           <i className="fas fa-search"></i>
         </li>
-        <li className="nav__innerRight-item nav__innerRight-item-category">
+        <li
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasRight"
+          aria-controls="offcanvasRight"
+          className="nav__innerRight-item nav__innerRight-item-category"
+        >
           <i className="fas fa-bars"></i>
         </li>
       </ul>
@@ -319,18 +335,109 @@ const Nav = () => {
         <i className="far fa-user-circle"></i>
       </div>
       {/* ================search modal=========================== */}
-      <div className="search-modal " onClick={() => openModal}>
+      <div className="search-modal" onClick={() => ToggleModal()}>
         <i className="fas fa-times close "></i>
-        <form className="form-search">
+        <form onClick={(e) => e.stopPropagation()} className="form-search">
           <input type="text" className="search-input" placeholder="Search..." />
           <button className="btn-search">Find now</button>
         </form>
       </div>
+      {/* ===============canvals================= */}
+
+      <div
+        class="offcanvas offcanvas-end"
+        tabindex="-1"
+        id="offcanvasRight"
+        aria-labelledby="offcanvasRightLabel"
+      >
+        <div class="offcanvas-header">
+          <button
+            type="button"
+            class="btn-close text-reset"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <h5 className="offcanvals__logo">
+            <img src={LogoHeader} alt="Not found" />
+          </h5>
+          <h5 id="offcanvasRightLabel">
+            <img src={CustomTitle} alt="Not found" />
+          </h5>
+          <h5 id="offcanvas__map">
+            <a
+              rel="noreferrer"
+              target="_blank"
+              href="https://goo.gl/maps/CtDU2ZbfngAxT2pe6"
+            >
+              <img src={map} alt="Not found" />
+            </a>
+          </h5>
+          <h5 className="offcanvas__subtitle">
+            Eos et ea vero et et clita elitr elitr justo dolores. Amet sed dolor
+            aliquyam sanctus et consetetur dolore invidunt. Ut erat takimata
+            justo et sed sea clita tempor diam,.
+          </h5>
+          <h3 className="offcanvas__title">Find Your Destination</h3>
+          <form
+            action="
+          #"
+            className="canvas__search"
+          >
+            <input
+              placeholder="Search..."
+              type="text"
+              name="search"
+              id="search"
+            />
+            <button>
+              <i class="fab fa-searchengin"></i>
+            </button>
+          </form>
+          <h3 className="offcanvas__title">Follow Me</h3>
+          <ul className="list__social">
+            <li className="item__social">
+              <a
+                href="https://twitter.com/home"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <i className=" fab fa-twitter"></i>
+              </a>
+            </li>
+            <li className="item__social">
+              <a
+                href="https://www.pinterest.com/qodeinteractive/"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <i className=" fab fa-pinterest-p"></i>
+              </a>
+            </li>
+            <li className="item__social">
+              <a
+                href="https://www.instagram.com/nguyenhung9104/"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <i className=" fab fa-instagram"></i>
+              </a>
+            </li>
+            <li className="item__social">
+              <a
+                href="https://www.facebook.com/profile.php?id=100047468063150"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <i className=" fab fa-facebook-f"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   );
-
-  
 };
-
 
 export default Nav;
