@@ -1,1 +1,30 @@
+@import "../../../styles/variables";
+@import "../../../styles/global";
 
+.product-list-single {
+  position: relative;
+  width: 100%;
+  margin-top: 100px;
+  margin: 0px;
+  h5 {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .background {
+    padding: 2rem;
+    transform: translateY(-80px);
+    width: 1300px;
+    background: #fff;
+    margin: 0px auto;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  h1 {
+    margin: 4rem 0 1rem 0;
+    font-size: 1.875rem;
+    font-weight: 600;
+  }
+  .related-product {
+    display: flex;
+    justify-content: space-between;
+  }
+}

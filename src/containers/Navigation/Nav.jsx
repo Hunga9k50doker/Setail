@@ -1,6 +1,6 @@
 import "./Nav.scss";
 import "../../styles/global.scss";
-import { NavLink,Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import LogoHeader from "../../assets/img/logo/logo-header.png";
 
 const Nav = () => {
@@ -30,17 +30,15 @@ const Nav = () => {
       document.querySelector(
         ".nav__list-item-Elements .nav__list-item-selections"
       ).style.top = "80px";
-    }else{
+    } else {
       document.querySelector(".nav").style.top = "42px";
-       document.querySelector(
-         ".nav__list-item-Elements .nav__list-item-selections"
-       ).style.top = "120px";
+      document.querySelector(
+        ".nav__list-item-Elements .nav__list-item-selections"
+      ).style.top = "120px";
     }
   }
 
-  function disabled(){
-
-  }
+  function disabled() {}
   return (
     <div className="nav">
       <Link to="/">
@@ -69,12 +67,13 @@ const Nav = () => {
               activeclassname="active"
               disabled
             >
-              <p >Winters Holidays</p>
+              <p>Winters Holidays</p>
             </NavLink>
             <NavLink
               to="/home/exotic-destinations"
               className="nav__list-item-selection"
-              activeclassname="active"    disabled
+              activeclassname="active"
+              disabled
             >
               <p>Exotic Destinations</p>
             </NavLink>
@@ -93,14 +92,16 @@ const Nav = () => {
             <NavLink
               to="/pages/what-we-offer"
               className="nav__list-item-selection"
-              activeclassname="active"    disabled
+              activeclassname="active"
+              disabled
             >
               <p>What We Offer</p>
             </NavLink>
             <NavLink
               to="/pages/our-team"
               className="nav__list-item-selection"
-              activeclassname="active"    disabled
+              activeclassname="active"
+              disabled
             >
               <p>Our Team</p>
             </NavLink>
@@ -112,21 +113,23 @@ const Nav = () => {
             <NavLink
               to="/destinations/list"
               className="nav__list-item-selection"
-              activeclassname="active"    
+              activeclassname="active"
             >
               <p>Destination List</p>
             </NavLink>
             <NavLink
               to="/destinations/slider"
               className="nav__list-item-selection"
-              activeclassname="active"   disabled
+              activeclassname="active"
+              disabled
             >
               <p>Destination Slider</p>
             </NavLink>
             <NavLink
               to="/destinations/item"
               className="nav__list-item-selection"
-              activeclassname="active" disabled
+              activeclassname="active"
+              disabled
             >
               <p>Destination Item</p>
             </NavLink>
@@ -145,14 +148,16 @@ const Nav = () => {
             <NavLink
               to="/tours/gallery-list"
               className="nav__list-item-selection"
-              activeclassname="active" disabled
+              activeclassname="active"
+              disabled
             >
               <p>Gallery List</p>
             </NavLink>
             <NavLink
               to="/tours/split-list"
               className="nav__list-item-selection"
-              activeclassname="active" disabled
+              activeclassname="active"
+              disabled
             >
               <p>Split List</p>
             </NavLink>
@@ -219,7 +224,7 @@ const Nav = () => {
             <NavLink
               to="/shop/product-single"
               className="nav__list-item-selection"
-              activeclassname="active" disabled
+              activeclassname="active"
             >
               <p>Product Single</p>
             </NavLink>
@@ -328,9 +333,6 @@ const Nav = () => {
       </div>
     </div>
   );
-
-  
 };
-
 
 export default Nav;
