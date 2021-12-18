@@ -2,7 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./views/App.js";
 import "./styles/global.scss";
-import './assets/font/fontawesome-free-5.15.3-web/css/all.min.css';
+import "./styles/responsive.scss";
+import "./assets/font/fontawesome-free-5.15.3-web/css/all.min.css";
 
 import reportWebVitals from "./reportWebVitals";
 

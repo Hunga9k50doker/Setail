@@ -11,7 +11,7 @@ const SidebarSearch = () => {
         </p>
         <ul className="sidebar__item-inputs">
           <li className="sidebar__item-input">
-            <i class="fab fa-searchengin"></i>
+            <i className="fab fa-searchengin"></i>
             <input
               type="text"
               name="name_tour"
@@ -20,7 +20,7 @@ const SidebarSearch = () => {
             />
           </li>
           <li className="sidebar__item-input">
-            <i class="far fa-compass"></i>
+            <i className="far fa-compass"></i>
             <input
               type="text"
               name="where_tour"
@@ -29,7 +29,7 @@ const SidebarSearch = () => {
             />
           </li>
           <li className="sidebar__item-input">
-            <i class="fas fa-calendar-week"></i>
+            <i className="fas fa-calendar-week"></i>
             <input
               type="text"
               name="time_tour"

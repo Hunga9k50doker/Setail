@@ -2,7 +2,8 @@ import './tourFilter.scss';
 
 const TourFilter = (props) => {
 
-    return (
+  return (
+      <div className="tour"> 
       <form className="tour__filter">
         <ul className="tour__filter-list">
           <li className="tour__filter-item">
@@ -45,6 +46,7 @@ const TourFilter = (props) => {
           </li>
         </ul>
       </form>
+      </div>
     );
 };
 

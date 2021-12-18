@@ -15,9 +15,35 @@ const SlideCardTravel = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 5,
+    slidesToShow: 3,
     autoplay: true,
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 400,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   const NewStyle = styled.div`
@@ -25,7 +51,7 @@ const SlideCardTravel = () => {
       &-header {
         position: relative;
         padding: unset;
-        max-height: 165px ;
+        max-height: 165px;
         overflow: hidden;
         background: red;
       }
@@ -77,8 +103,11 @@ const SlideCardTravel = () => {
                   subTitle={item.subTitle}
                   cost={Number(item.cost)}
                   rating={item.rating}
-                  icon={Number(item.rating) < 6 ? "fas fa-star-half-alt" : "fas fa-star"}
-
+                  icon={
+                    Number(item.rating) < 6
+                      ? "fas fa-star-half-alt"
+                      : "fas fa-star"
+                  }
                 />
               </NewStyle>
             </Link>

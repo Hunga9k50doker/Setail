@@ -1,11 +1,13 @@
 @import "../styles/variables";
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import "../styles/responsive.scss";
 
 .App {
   position: relative;
+  overflow: hidden;
 }
 
-.nav{
+.nav {
   z-index: 99;
 }
 .component {
@@ -31,3 +33,4 @@
     transform: scale(1.2);
   }
 }
+

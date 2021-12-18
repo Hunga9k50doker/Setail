@@ -8,9 +8,6 @@ import CardDetails from "../cards/cardDetails/cardDetails";
 import "./slideCard.scss";
 console.log(cardData);
 const SlideCard = () => {
-
-
-
   return (
     <div className=" slides__card container ">
       <div className="row">
@@ -40,8 +37,7 @@ const SlideCard = () => {
               {cardData.getAllCards().map((item, index) => (
                 <div key={index} className="row">
                   <div className="carousel-item active">
-                    <div className="col col-lg-3 col-md-4 col-sm-12">
-                 
+                    <div className="col col-lg-3 col-md-4 col-12">
                       <CardDetails
                         img={item.img}
                         calendar={item.calendar}
@@ -51,9 +47,12 @@ const SlideCard = () => {
                         subTitle={item.subTitle}
                         cost={Number(item.cost)}
                         rating={item.rating}
-                        icon={Number(item.rating) < 6 ?"fas fa-star-half-alt" : "fas fa-star"}
+                        icon={
+                          Number(item.rating) < 6
+                            ? "fas fa-star-half-alt"
+                            : "fas fa-star"
+                        }
                       />
-                 
                     </div>
                   </div>
                 </div>

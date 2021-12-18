@@ -1,14 +1,12 @@
-
-import './banner.scss';
-
+import React from "react";
+import { BgSydneyOpera } from "../../assets/img";
+import "./banner.scss";
 const Banner = (props) => {
   return (
     <div
       className="ban"
       style={{
-        background: `url(${
-          require("../../assets/img/banner_img/bgOurteamIteam.jpg").default
-        })`,
+        background: `url(${BgSydneyOpera})`,
       }}
     >
       <img srcSet={props.img} alt={props.img} />
@@ -20,4 +18,5 @@ const Banner = (props) => {
     </div>
   );
 };
+
 export default Banner;

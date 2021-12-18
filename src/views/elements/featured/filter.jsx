@@ -2,7 +2,7 @@ import React from "react";
 import "../../App.scss";
 
 const Filter = () => {
-  return <div className="container">Filter</div>;
+  return <div className="component">Filter</div>;
 };
 
 export default Filter;

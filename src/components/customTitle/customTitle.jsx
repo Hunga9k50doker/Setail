@@ -5,7 +5,7 @@ import "./customTitle.scss";
 const CustomTitle = (props) => {
   return (
     <div className="col lg-12 md-12 sm-12">
-      <div className="customTitle">
+      <div className="customTitle container">
         <h3>{props.content}</h3>
         <h2>{props.title}</h2>
         <p>{props.subTitle}</p>

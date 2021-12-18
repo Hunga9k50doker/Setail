@@ -1,16 +1,24 @@
 @import "../../styles/variables";
 @import "../../styles/global";
 
-ul,li,p{
+ul,
+li,
+p {
   margin: 0;
 }
 .nav__onTop {
+  position: relative;
+  z-index: 77;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 0 0 18px;
   background: #1c1c1c;
   color: #fff;
+  height: 42px;
+  &:hover {
+    z-index: 100;
+  }
   &-leftInner,
   &-rightInner {
     display: flex;
@@ -85,10 +93,11 @@ ul,li,p{
       background: $bg-color--hover;
       color: #fff;
       display: flex;
+      z-index: 999;
       align-items: center;
       height: 100%;
       margin: 0;
-      padding: 12.5px 10px;
+      padding: 12px 10px;
       justify-content: space-around;
       p {
         display: inline-block;
@@ -103,7 +112,7 @@ ul,li,p{
 
     &-account {
       background: $primary-color;
-      padding: 14px 10px 13px 16px;
+      padding: 14px 10px 10px 16px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -119,6 +128,129 @@ ul,li,p{
   &-leftInner {
     i {
       color: $primary-color;
+    }
+  }
+}
+
+// login/register
+.modal.acccount {
+  width: 100vw;
+  background: rgba($white-color, 0.9);
+  .modal-content {
+    position: relative;
+    border: none;
+    background: $primary-color;
+    .nav-item {
+      flex: 1;
+      .nav-link {
+        border-radius: unset;
+        text-transform: uppercase;
+        width: 100%;
+        padding: 20px 30px;
+
+        background: $bg-color--hover;
+        font-weight: 600;
+        color: $white-color !important;
+      }
+      .nav-link.active {
+        background: $primary-color;
+      }
+    }
+    .nav {
+      position: relative;
+      top: -100%;
+    }
+    .tab-pane {
+      min-width: 300px;
+      min-height: 300px;
+      color: $white-color;
+      .form {
+        &__title {
+          font-size: 1.4rem;
+          padding: 20px 40px 10px 40px;
+          font-weight: 600;
+        }
+        &__subtitle {
+          font-size: 1rem;
+          margin: 20px 0;
+          padding: 0 40px;
+        }
+        &__body {
+          padding: 0 40px;
+
+          &__input {
+            position: relative;
+            background: rgba($white-color, 0.2);
+            margin: 10px 0;
+            i {
+              position: absolute;
+              top: 50%;
+              left: 20px;
+              transform: translate(0, -50%);
+            }
+            input {
+              border: none;
+              outline: none;
+              padding: 10px 20px 10px 50px;
+              width: 100%;
+              color: $white-color;
+              background: rgba($white-color, 0.2);
+              &::placeholder {
+                color: $white-color;
+              }
+            }
+
+            input[type="submit"] {
+              background: $white-color;
+              text-transform: uppercase;
+              font-weight: 600;
+              color: $black-color;
+              &:hover {
+                color: $white-color;
+                background: $bg-color--hover;
+              }
+            }
+          }
+          &__input__register {
+            margin: 20px 0 40px 0;
+          }
+
+          &__input__radio {
+            margin: 10px 0 10px 0;
+            display: flex;
+            align-items: center;
+            //  justify-content: center;
+            input {
+              margin-right: 5px;
+            }
+            label {
+              font-size: 1rem;
+            }
+          }
+          .forgot__password {
+            font-size: 1rem;
+          }
+        }
+        &__footer {
+          display: flex;
+          align-items: center;
+          // justify-content: center;
+          button {
+            flex: 1;
+            border: none;
+            padding: 20px 30px;
+            text-transform: uppercase;
+            color: $white-color;
+            font-weight: 700;
+            &:first-child {
+              background: #3b5998;
+            }
+            &:last-child {
+              background: #dd4b39;
+            }
+          }
+        }
+      }
     }
   }
 }

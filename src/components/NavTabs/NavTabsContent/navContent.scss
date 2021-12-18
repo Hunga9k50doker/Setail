@@ -2,6 +2,12 @@
 @import "../../../styles/global";
 
 .nav__content.component {
+  // .card {
+  //   img {
+  //     height: 256px !important;
+  //   }
+  // }
+
   .item__title {
     font-weight: 700;
     font-size: 1.4rem;
@@ -380,7 +386,7 @@
         .start__rating {
           flex: 2;
           font-size: 1rem;
-          i{
+          i {
             cursor: pointer;
             margin: 0 2px;
           }

@@ -1,4 +1,4 @@
-import './rowDetails.scss';
+import "./rowDetails.scss";
 import {
   CustomOne,
   CustomTwo,
@@ -30,22 +30,22 @@ const details = [
   },
 ];
 const RowDetails = () => {
-    return (
-      <div className="row__details container">
-        <div className="row ">
-          {details.map((item, index) => (
-            <div
-              key={index}
-              className="col col-lg-3 col-md-3 col-sm-12 details-item"
-            >
-              <img src={item.img} alt="" />
-              <h3>{item.title}</h3>
-              <p>{item.subTitle}</p>
-            </div>
-          ))}
-        </div>
+  return (
+    <div className="row__details container">
+      <div className="row ">
+        {details.map((item, index) => (
+          <div
+            key={index}
+            className="col col-xxl-3 col-lg-12 col-md-12 col-12 details-item"
+          >
+            <img src={item.img} alt="" />
+            <h3>{item.title}</h3>
+            <p>{item.subTitle}</p>
+          </div>
+        ))}
       </div>
-    );
-}
+    </div>
+  );
+};
 
-export default RowDetails
+export default RowDetails;

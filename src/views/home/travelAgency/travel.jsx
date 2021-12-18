@@ -44,10 +44,6 @@ const content2 = {
   subTitle: "By into murmured murmured door surely and soul at thee,.",
 };
 
-
-
-
-
 const HomeTravel = () => {
   function to_slug(str) {
     // Chuyển hết sang chữ thường
@@ -108,15 +104,16 @@ const HomeTravel = () => {
           <Link
             to={"/tour-item/" + to_slug(item.title)}
             key={index}
-            className="col col-xxl-3 col-lg-3 col-md-6 col-sm-12"
+            className="col col-xxl-3 col-lg-6 col-md-6 col-12"
           >
             <CardSelection
               img={item.img}
               title={item.title}
               rating={item.rating}
               cost={Number(item.cost)}
-              icon={Number(item.rating) < 6 ?"fas fa-star-half-alt" : "fas fa-star"}
-
+              icon={
+                Number(item.rating) < 6 ? "fas fa-star-half-alt" : "fas fa-star"
+              }
             />
           </Link>
         ))}

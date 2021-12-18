@@ -2,7 +2,7 @@ import React from "react";
 import "../../App.scss";
 
 const ThreeColumns = () => {
-  return <div className="container">ThreeColumns</div>;
+  return <div className="component">ThreeColumns</div>;
 };
 
 export default ThreeColumns;

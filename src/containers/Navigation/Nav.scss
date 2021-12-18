@@ -6,7 +6,7 @@
   left: 0;
   right: 0;
   top: 42px;
-  z-index: 999;
+  z-index: 88;
   transition: all 0.3s ease;
   display: flex;
   align-items: center;
@@ -31,8 +31,8 @@
     &-item {
       position: relative;
       transition: all 0.5s ease;
-      padding: 28px 0px;
       padding: 28px 37px;
+      // width: 100%;
       font-size: 15px;
       cursor: pointer;
       color: $text-color;
@@ -43,7 +43,8 @@
       &-title {
         position: relative;
         font-weight: 700;
-        font-size: 1.2rem;
+        font-size: 1rem;
+
         margin-bottom: 0;
         &:after {
           @extend .hover-slide-below;
@@ -59,7 +60,7 @@
         flex-direction: column;
         position: absolute;
         border-radius: 2px;
-        top: 82px;
+        top: 75px;
         left: 0;
         background: $white-color;
         width: calc(150% + 50px);
@@ -202,7 +203,7 @@
     &-item:nth-child(7) &-item-selections {
       display: flex;
       position: fixed;
-      top: 120px;
+      top: 117px;
       left: 0;
       width: 100vw;
       flex-direction: row;
@@ -284,7 +285,7 @@
   // ===============modal====================
   .search-modal {
     position: fixed;
-    z-index: 15;
+    z-index: 100;
     top: 0;
     left: 0;
     right: 0;
@@ -347,7 +348,6 @@
   .offcanvas {
     overflow-y: auto;
     min-width: 30vw;
-
     &::-webkit-scrollbar {
       display: none;
     }
@@ -393,7 +393,7 @@
           padding: 10px 20px;
           background: $primary-color;
           color: $white-color;
-          &:hover{
+          &:hover {
             background: $bg-color--hover;
           }
           i {
@@ -416,10 +416,10 @@
           display: flex;
           align-items: center;
           justify-content: center;
-          a{
-            color:$white-color;
+          a {
+            color: $white-color;
           }
-          &:hover{
+          &:hover {
             cursor: pointer;
             background: $bg-color--hover;
           }
@@ -445,6 +445,55 @@
     opacity: 0.5;
     pointer-events: none;
   }
+  // ====================ancodion nav <=lowPC===================
+  .accordion__nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100vw;
+    transition: all 0.3s linear;
+    // box-shadow:  1px 2px solid rgba(0, 0, 0, 0.2);
+  }
+  .accordion__nav:not(.active) {
+    transform-origin: center top;
+    transform: scaleY(0);
+  }
+  .accordion__nav.active {
+    transform-origin: top center;
+    transform: scaleY(1);
+  }
+
+  .nav__list-item-selection {
+    display: flex;
+    flex: 1;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    &:first-child {
+      padding-top: 0;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .nav__list-item-selection.sub-category {
+    // justify-content: flex-start;
+    .sub-category-item {
+      text-align: left;
+      flex: 1;
+      margin: 10px 0;
+    }
+  }
+
+  .accordion-body-element {
+    display: flex;
+    // align-items: flex-start;
+
+    .sub-category-item:first-child {
+      font-weight: 700;
+      color: $primary-color;
+    }
+  }
 }
 
-@import "../../styles/responsive.scss";
+// @import "../../styles/responsive.scss";

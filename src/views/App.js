@@ -1,7 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { useEffect, useState } from "react";
-import "./App.scss";
 import NavOnTop from "../containers/NavOnTop/NavOnTop";
 import Nav from "../containers/Navigation/Nav";
 import Footer from "../containers/Footer/footer";
@@ -49,9 +48,10 @@ import TypographyHeadings from "./elements/typography/columns";
 import TypographyColumns from "./elements/typography/headings";
 import TypographySectionTitle from "./elements/typography/sectionTitle";
 
-import ItemDetail from '../components/tourItem/item';
-import NotFound from '../views/NotFound/notfound';
+import ItemDetail from "../components/tourItem/item";
+import NotFound from "../views/NotFound/notfound";
 
+import "./App.scss";
 
 function App() {
   // handleEvent btn back top
@@ -85,12 +85,11 @@ function App() {
         <Switch>
           {/*=================== Home================== */}
 
-          <Route exact path="/" >
+          <Route exact path="/">
             <HomeTravel />
           </Route>
           <Route exact path="/home/winter-holidays">
-            <HomeWinter
-            />
+            <HomeWinter />
           </Route>
           <Route exact path="/home/exotic-destinations">
             <HomeExotic />
@@ -117,7 +116,6 @@ function App() {
           <Route exact path="/destinations/item">
             <Item />
           </Route>
-          
 
           {/*=================== Tours================== */}
           <Route exact path="/tours/gallery-list">
@@ -211,7 +209,7 @@ function App() {
             <TypographySectionTitle />
           </Route>
 
-          <Route  path="*">
+          <Route path="*">
             <NotFound />
           </Route>
         </Switch>

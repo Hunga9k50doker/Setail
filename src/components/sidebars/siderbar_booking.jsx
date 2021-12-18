@@ -11,7 +11,7 @@ const SidebarBooking = () => {
           </p>
           <ul className="sidebar__item-inputs">
             <li className="sidebar__item-input">
-              <i class="far fa-user"></i>
+              <i className="far fa-user"></i>
               <input
                 type="text"
                 name="username"
@@ -20,7 +20,7 @@ const SidebarBooking = () => {
               />
             </li>
             <li className="sidebar__item-input">
-              <i class="far fa-envelope"></i>
+              <i className="far fa-envelope"></i>
               <input
                 type="email"
                 name="email"
@@ -29,7 +29,7 @@ const SidebarBooking = () => {
               />
             </li>
             <li className="sidebar__item-input">
-              <i class="far fa-envelope"></i>
+              <i className="far fa-envelope"></i>
               <input
                 type="email"
                 name="email"
@@ -38,7 +38,7 @@ const SidebarBooking = () => {
               />
             </li>
             <li className="sidebar__item-input">
-              <i class="fas fa-phone"></i>
+              <i className="fas fa-phone"></i>
               <input
                 type="number"
                 name="phone__number"
@@ -49,7 +49,7 @@ const SidebarBooking = () => {
             <li className="sidebar__item-input">
               <label htmlFor="date__booking">
 
-              <i class="fas fa-calendar-week"></i>
+              <i className="fas fa-calendar-week"></i>
               </label>
 
               <input
@@ -61,7 +61,7 @@ const SidebarBooking = () => {
               />
             </li>
             <li className="sidebar__item-input">
-              <i class="fas fa-thumbtack"></i>
+              <i className="fas fa-thumbtack"></i>
               <input
                 type="number"
                 name="number__ticket"
@@ -70,7 +70,7 @@ const SidebarBooking = () => {
               />
             </li>
             <li className="sidebar__message__booking sidebar__item-input">
-              <i class="far fa-comments"></i>
+              <i className="far fa-comments"></i>
               <textarea
                 name="message__booking"
                 id="message__booking"

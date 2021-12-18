@@ -60,7 +60,7 @@ const Reviews = () => {
                       <>
                         {item.rating < 7 ? (
                           <p>
-                            <i class="fas fa-star-half-alt"></i> Good
+                            <i className="fas fa-star-half-alt"></i> Good
                           </p>
                         ) : (
                           <p>
@@ -103,7 +103,7 @@ const Reviews = () => {
                           <p>{e.rating}</p>
                           <div className="user__rating">
                             <div className="row">
-                              <div className="col">
+                              <div className="col col-xl-3 col-lg-3 col-md-6 col-12">
                                 <>
                                   {item.review__details.map(
                                     (element, k) =>
@@ -123,7 +123,7 @@ const Reviews = () => {
                                   )}
                                 </>
                               </div>
-                              <div className="col">
+                              <div className="col col-xl-3 col-lg-3 col-md-6 col-12">
                                 <>
                                   {item.review__details.map(
                                     (element, k) =>
@@ -143,7 +143,7 @@ const Reviews = () => {
                                   )}
                                 </>
                               </div>
-                              <div className="col">
+                              <div className="col col-xl-3 col-lg-3 col-md-6 col-12">
                                 <>
                                   {item.review__details.map(
                                     (element, k) =>
@@ -177,7 +177,7 @@ const Reviews = () => {
                     <h3 className="form__title">Post a Comment</h3>
                     <div className="user__rating">
                       <div className="row">
-                        <div className="col">
+                        <div className="col col-xl-3 col-lg-3 col-md-6 col-12">
                           <>
                             {item.review__details.map(
                               (element, k) =>
@@ -185,11 +185,11 @@ const Reviews = () => {
                                   <h6 className="user__rating__title">
                                     <p>{element.title}</p>
                                     <div className="start__rating">
-                                      <i class="far fa-star"></i>
-                                      <i class="far fa-star"></i>
-                                      <i class="far fa-star"></i>
-                                      <i class="far fa-star"></i>
-                                      <i class="far fa-star"></i>
+                                      <i className="far fa-star"></i>
+                                      <i className="far fa-star"></i>
+                                      <i className="far fa-star"></i>
+                                      <i className="far fa-star"></i>
+                                      <i className="far fa-star"></i>
                                     </div>
                                   </h6>
                                 )
@@ -200,18 +200,18 @@ const Reviews = () => {
                                   <h6 className="user__rating__title">
                                     <p>{element.title}</p>
                                     <div className="start__rating">
-                                      <i class="far fa-star"></i>
-                                      <i class="far fa-star"></i>
-                                      <i class="far fa-star"></i>
-                                      <i class="far fa-star"></i>
-                                      <i class="far fa-star"></i>
+                                      <i className="far fa-star"></i>
+                                      <i className="far fa-star"></i>
+                                      <i className="far fa-star"></i>
+                                      <i className="far fa-star"></i>
+                                      <i className="far fa-star"></i>
                                     </div>
                                   </h6>
                                 )
                             )}
                           </>
                         </div>
-                        <div className="col">
+                        <div className="col col-xl-3 col-lg-3 col-md-6 col-12">
                           <>
                             {item.review__details.map(
                               (element, k) =>
@@ -219,11 +219,11 @@ const Reviews = () => {
                                   <h6 className="user__rating__title">
                                     <p>{element.title}</p>
                                     <div className="start__rating">
-                                      <i class="far fa-star"></i>
-                                      <i class="far fa-star"></i>
-                                      <i class="far fa-star"></i>
-                                      <i class="far fa-star"></i>
-                                      <i class="far fa-star"></i>
+                                      <i className="far fa-star"></i>
+                                      <i className="far fa-star"></i>
+                                      <i className="far fa-star"></i>
+                                      <i className="far fa-star"></i>
+                                      <i className="far fa-star"></i>
                                     </div>
                                   </h6>
                                 )
@@ -234,18 +234,18 @@ const Reviews = () => {
                                   <h6 className="user__rating__title">
                                     <p>{element.title}</p>
                                     <div className="start__rating">
-                                      <i class="far fa-star"></i>
-                                      <i class="far fa-star"></i>
-                                      <i class="far fa-star"></i>
-                                      <i class="far fa-star"></i>
-                                      <i class="far fa-star"></i>
+                                      <i className="far fa-star"></i>
+                                      <i className="far fa-star"></i>
+                                      <i className="far fa-star"></i>
+                                      <i className="far fa-star"></i>
+                                      <i className="far fa-star"></i>
                                     </div>
                                   </h6>
                                 )
                             )}
                           </>
                         </div>
-                        <div className="col">
+                        <div className="col col-xl-3 col-lg-3 col-md-6 col-12">
                           <>
                             {item.review__details.map(
                               (element, k) =>
@@ -253,11 +253,11 @@ const Reviews = () => {
                                   <h6 className="user__rating__title">
                                     <p>{element.title}</p>
                                     <div className="start__rating">
-                                      <i class="far fa-star"></i>
-                                      <i class="far fa-star"></i>
-                                      <i class="far fa-star"></i>
-                                      <i class="far fa-star"></i>
-                                      <i class="far fa-star"></i>
+                                      <i className="far fa-star"></i>
+                                      <i className="far fa-star"></i>
+                                      <i className="far fa-star"></i>
+                                      <i className="far fa-star"></i>
+                                      <i className="far fa-star"></i>
                                     </div>
                                   </h6>
                                 )
@@ -268,11 +268,11 @@ const Reviews = () => {
                                   <h6 className="user__rating__title">
                                     <p>{element.title}</p>
                                     <div className="start__rating">
-                                      <i class="far fa-star"></i>
-                                      <i class="far fa-star"></i>
-                                      <i class="far fa-star"></i>
-                                      <i class="far fa-star"></i>
-                                      <i class="far fa-star"></i>
+                                      <i className="far fa-star"></i>
+                                      <i className="far fa-star"></i>
+                                      <i className="far fa-star"></i>
+                                      <i className="far fa-star"></i>
+                                      <i className="far fa-star"></i>
                                     </div>
                                   </h6>
                                 )

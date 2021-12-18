@@ -8,9 +8,10 @@ import cardData from "../../assets/fake-data/CardDetails";
 import Helmet from "../Helmet/Helmet";
 import Banner from "../../components/banner/banner";
 import Selections from "../../components/selections/selections";
+import { BgSydneyOpera } from "../../assets/img";
 
 import NavTabInfo from "../NavTabs/NavInfo";
-import Sub from '../Subscribe/sub';
+import Sub from "../Subscribe/sub";
 // const getImgBanner = BannerArr.filter((e) => e.types === "banner_tours");
 const NewStyleSelection = styled.div`
   .selections {
@@ -64,7 +65,7 @@ const ItemDetail = () => {
               <Banner
                 // bgUrl={require("../../assets/img/banner_img/bgOurteamIteam.jpg").default}
                 key={index}
-                // img={item.img}
+                img={BgSydneyOpera}
                 title={item.title}
                 subTitle="Amazing Tour"
                 description={item.description}
@@ -80,7 +81,7 @@ const ItemDetail = () => {
           </Selections>
         </NewStyleSelection>
       </div>
-      <Sub/>
+      <Sub />
     </Helmet>
   );
 };

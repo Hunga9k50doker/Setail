@@ -11,18 +11,14 @@ import Gallery from "./NavTabsContent/gallery";
 import TourPlan from "./NavTabsContent/tourPlan";
 import Reviews from "./NavTabsContent/reviews";
 
-  
-
-
-
 const NavTabInfo = () => {
   return (
     <>
       <nav>
-        <div class="nav__sidebar nav nav-tabs" id="nav-tab" role="tablist">
+        <div className="nav__sidebar nav nav-tabs" id="nav-tab" role="tablist">
           <button
             to
-            class="nav-link active"
+            className="nav-link active"
             id="nav-info-tab"
             data-bs-toggle="tab"
             data-bs-target="#nav-info"
@@ -31,12 +27,12 @@ const NavTabInfo = () => {
             aria-controls="nav-info"
             aria-selected="true"
           >
-            <i class="fas fa-book"></i>
+            <i className="fas fa-book"></i>
             Infomation
           </button>
           <button
             to
-            class="nav-link"
+            className="nav-link"
             id="nav-tour-plan-tab"
             data-bs-toggle="tab"
             data-bs-target="#nav-tour-plan"
@@ -45,13 +41,13 @@ const NavTabInfo = () => {
             aria-controls="nav-tour-plan"
             aria-selected="false"
           >
-            <i class="far fa-calendar-alt"></i>
+            <i className="far fa-calendar-alt"></i>
             Tour Plan
           </button>
 
           <button
             to
-            class="nav-link"
+            className="nav-link"
             id="nav-location-tab"
             data-bs-toggle="tab"
             data-bs-target="#nav-location"
@@ -60,12 +56,12 @@ const NavTabInfo = () => {
             aria-controls="nav-location"
             aria-selected="false"
           >
-            <i class="fas fa-search-location"></i>
+            <i className="fas fa-search-location"></i>
             Location
           </button>
           <button
             to
-            class="nav-link"
+            className="nav-link"
             id="nav-gallery-tab"
             data-bs-toggle="tab"
             data-bs-target="#nav-gallery"
@@ -74,12 +70,12 @@ const NavTabInfo = () => {
             aria-controls="nav-gallery"
             aria-selected="false"
           >
-            <i class="fas fa-camera-retro"></i>
+            <i className="fas fa-camera-retro"></i>
             Gallery
           </button>
           <button
             to
-            class="nav-link"
+            className="nav-link"
             id="nav-reviews-tab"
             data-bs-toggle="tab"
             data-bs-target="#nav-reviews"
@@ -88,16 +84,16 @@ const NavTabInfo = () => {
             aria-controls="nav-reviews"
             aria-selected="false"
           >
-            <i class="far fa-comments"></i>
+            <i className="far fa-comments"></i>
             Reviews
           </button>
         </div>
       </nav>
 
-      <div className="col col-xxl-9 col-lg-9 col-md-12 col-sm-12">
-        <div class="tab-content" id="nav-tabContent">
+      <div className="col col-xxl-9 col-lg-12 col-md-12 col-12">
+        <div className="tab-content" id="nav-tabContent">
           <div
-            class="tab-pane fade show active"
+            className="tab-pane fade show active"
             id="nav-info"
             role="tabpanel"
             aria-labelledby="nav-info-tab"
@@ -105,7 +101,7 @@ const NavTabInfo = () => {
             <ContentItem />
           </div>
           <div
-            class="tab-pane fade"
+            className="tab-pane fade"
             id="nav-tour-plan"
             role="tabpanel"
             aria-labelledby="nav-tour-plan-tab"
@@ -114,7 +110,7 @@ const NavTabInfo = () => {
           </div>
 
           <div
-            class="tab-pane fade"
+            className="tab-pane fade"
             id="nav-location"
             role="tabpanel"
             aria-labelledby="nav-location-tab"
@@ -122,7 +118,7 @@ const NavTabInfo = () => {
             <Location />
           </div>
           <div
-            class="tab-pane fade"
+            className="tab-pane fade"
             id="nav-gallery"
             role="tabpanel"
             aria-labelledby="nav-gallery-tab"
@@ -130,7 +126,7 @@ const NavTabInfo = () => {
             <Gallery />
           </div>
           <div
-            class="tab-pane fade"
+            className="tab-pane fade"
             id="nav-reviews"
             role="tabpanel"
             aria-labelledby="nav-reviews-tab"
@@ -140,7 +136,7 @@ const NavTabInfo = () => {
         </div>
       </div>
       {/* sidebar */}
-      <div className="col col-xxl-3 col-lg-3 col-md-12 col-sm-12">
+      <div className="col col-xxl-3 col-lg-12 col-md-12 col-12">
         <SidebarBooking />
       </div>
     </>

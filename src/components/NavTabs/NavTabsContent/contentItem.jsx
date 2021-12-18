@@ -51,25 +51,25 @@ const ContentItem = () => {
                   </h2>
 
                   <h3 className="item__rating">
-                    {/* <i class="far fa-star"></i>
-              <i class="far fa-star"></i>
-              <i class="far fa-star"></i>
-              <i class="far fa-star"></i> */}
+                    {/* <i className="far fa-star"></i>
+              <i className="far fa-star"></i>
+              <i className="far fa-star"></i>
+              <i className="far fa-star"></i> */}
                     {item.rating <= 7 ? (
                       <>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                        <i className="far fa-star"></i>
                       </>
                     ) : (
                       <>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
                       </>
                     )}
                     <p>(1 review)</p>
@@ -77,14 +77,14 @@ const ContentItem = () => {
                   <p className="item__subtitle">{item.subTitle}</p>
                   <div className="item__list__btn">
                     <button className="item__btn__calendar">
-                      <i class="far fa-calendar"></i>1
+                      <i className="far fa-calendar"></i>1
                     </button>
                     <button className="item__btn__age">
-                      <i class="fas fa-user"></i>
+                      <i className="fas fa-user"></i>
                       {item.age} Age
                     </button>
                     <button className="item__btn__location">
-                      <i class="fas fa-map-marker-alt"></i>
+                      <i className="fas fa-map-marker-alt"></i>
                       {item.location}
                     </button>
                   </div>
@@ -92,8 +92,7 @@ const ContentItem = () => {
                     <li className="item__info">
                       <h6>Destination</h6>
                       <div className="item__detail item__link">
-                        <Link to="#">
-                          {item.title} Tour</Link>
+                        <Link to="#">{item.title} Tour</Link>
                       </div>
                     </li>
                     <li className="item__info">
@@ -125,21 +124,21 @@ const ContentItem = () => {
                       <div className="item__detail">
                         <h6>
                           <p>
-                            <i class="far fa-check-circle"></i>
+                            <i className="far fa-check-circle"></i>
                             <span>5 Star Accommodation</span>
                           </p>
                           <p>
-                            <i class="far fa-check-circle"></i>
+                            <i className="far fa-check-circle"></i>
                             <span>Breakfast</span>
                           </p>
                         </h6>
                         <h6>
                           <p>
-                            <i class="far fa-check-circle"></i>
+                            <i className="far fa-check-circle"></i>
                             <span>Airport Transfer</span>
                           </p>
                           <p>
-                            <i class="far fa-check-circle"></i>
+                            <i className="far fa-check-circle"></i>
                             <span>Personal Guide</span>
                           </p>
                         </h6>
@@ -150,13 +149,13 @@ const ContentItem = () => {
                       <div className="item__detail">
                         <h6>
                           <p>
-                            <i class="fas fa-ban"></i>
+                            <i className="fas fa-ban"></i>
                             <span>Gallery Ticket</span>
                           </p>
                         </h6>
                         <h6>
                           <p>
-                            <i class="fas fa-ban"></i>
+                            <i className="fas fa-ban"></i>
                             <span>Lunch</span>
                           </p>
                         </h6>
@@ -174,7 +173,7 @@ const ContentItem = () => {
 
                   <div className="row item__list__img ">
                     {item.img__grid.slice(8, 11).map((e, id) => (
-                      <div key={id} className="col col-lg-4 col-md-4 col-sm-12">
+                      <div key={id} className="col col-lg-4 col-md-4 col-12">
                         <div className="grid__item">
                           <img
                             className="grid__item__img"
