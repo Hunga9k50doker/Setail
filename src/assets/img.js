@@ -26,6 +26,7 @@ export {
   Paris,
   CardEmpty,
   CustomTitle,
+
   map,
   BgSydneyOpera,
   //poster and btn video
@@ -38,4 +39,4 @@ export {
   CustomFour,
  
   
-};
+ };

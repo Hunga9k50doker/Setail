@@ -302,7 +302,7 @@ const Nav = () => {
             <i className="fas fa-bars"></i>
           </li>
           <li
-            onClick={()=>showCategory()}
+            onClick={() => showCategory()}
             className="nav__innerRight-item nav__innerRight-item-category nav__bar__lowPc"
           >
             <i className="fas fa-bars"></i>
@@ -760,7 +760,7 @@ const Nav = () => {
               </div>
             </div>
           </div>
-          <div className="accordion-item">
+          <div className="accordion-item accordion-item-elements ">
             <h2 className="accordion-header" id="headingSeven">
               <button
                 className="accordion-button collapsed"
@@ -851,3 +851,4 @@ const Nav = () => {
 };
 
 export default Nav;
+

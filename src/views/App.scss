@@ -24,7 +24,7 @@
   background: #999;
   right: 20px;
   bottom: 50px;
-  z-index: 12;
+  z-index: 9999;
   cursor: pointer;
   transform: scale(1);
   transition: all 0.3s ease;
@@ -33,4 +33,3 @@
     transform: scale(1.2);
   }
 }
-

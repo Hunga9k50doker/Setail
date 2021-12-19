@@ -14,10 +14,16 @@
     display: none;
   }
   //
+  .accordion {
+    display: none;
+  }
 }
 
 //============== <=low pc
 @media (max-width: 1024px) {
+  .accordion {
+    display: block;
+  }
   .nav__onTop {
     display: none;
   }
