@@ -43,7 +43,11 @@
     }
     .rating {
       display: flex;
+      align-items: center;
       margin-bottom: 2rem;
+      p {
+        margin-left: 5px;
+      }
       .star {
         margin-right: 1rem;
       }

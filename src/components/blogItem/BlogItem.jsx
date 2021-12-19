@@ -103,7 +103,7 @@ const BlogItem = (props) => {
           {props.blog.time}
         </Link>
         <Link className="comment-count a--sub" to="">
-          <i class="far fa-comment"></i>2 Comment
+          <i className="far fa-comment"></i>2 Comment
         </Link>
       </div>
     </article>

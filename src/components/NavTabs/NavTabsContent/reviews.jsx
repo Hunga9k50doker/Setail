@@ -1,12 +1,32 @@
 import { useParams } from "react-router-dom";
 // import { Link } from "react-router-dom";
 import React from "react";
+import { RatingStarInput, RatingStar } from "../../../utils/ratingStart";
 
 import card__data from "../../../assets/fake-data/CardUsers";
 import cardData from "../../../assets/fake-data/CardDetails";
 
 import Helmet from "../../Helmet/Helmet";
 const Reviews = () => {
+  // const RatingStarInput = () => {
+  //   var [star, setStar] = useState(0);
+  //   var $ = [];
+  //   for (let i = 0; i <= 4; i++) {
+  //     $ = [
+  //       ...$,
+  //       <label
+  //         className="rating__label"
+  //         key={i}
+  //         for={`rating${i + 1}`}
+  //         onClick={() => {
+  //           setStar(() => i + 1);
+  //         }}
+  //       >
+  //         <i className={`${i < star ? "fas" : "far"} fa-star`}></i>
+  //       </label>,
+  //     ];
+  //   }
+
   let { slug } = useParams();
   function to_slug(str) {
     // Chuyển hết sang chữ thường
@@ -109,7 +129,10 @@ const Reviews = () => {
                                     (element, k) =>
                                       element.title === "Rating" && (
                                         <h6 className="user__rating__title">
-                                          {element.title} {element.percent}
+                                          {element.title}
+                                          <RatingStar
+                                            rating={element.percent / 20}
+                                          />
                                         </h6>
                                       )
                                   )}
@@ -117,7 +140,10 @@ const Reviews = () => {
                                     (element, k) =>
                                       element.title === "Hospitality" && (
                                         <h6 className="user__rating__title">
-                                          {element.title} {element.percent}
+                                          {element.title}{" "}
+                                          <RatingStar
+                                            rating={element.percent / 20}
+                                          />
                                         </h6>
                                       )
                                   )}
@@ -129,7 +155,10 @@ const Reviews = () => {
                                     (element, k) =>
                                       element.title === "Comfort" && (
                                         <h6 className="user__rating__title">
-                                          {element.title} {element.percent}
+                                          {element.title}{" "}
+                                          <RatingStar
+                                            rating={element.percent / 20}
+                                          />
                                         </h6>
                                       )
                                   )}
@@ -137,7 +166,10 @@ const Reviews = () => {
                                     (element, k) =>
                                       element.title === "Hygiene" && (
                                         <h6 className="user__rating__title">
-                                          {element.title} {element.percent}
+                                          {element.title}{" "}
+                                          <RatingStar
+                                            rating={element.percent / 20}
+                                          />
                                         </h6>
                                       )
                                   )}
@@ -149,7 +181,10 @@ const Reviews = () => {
                                     (element, k) =>
                                       element.title === "Food" && (
                                         <h6 className="user__rating__title">
-                                          {element.title} {element.percent}
+                                          {element.title}{" "}
+                                          <RatingStar
+                                            rating={element.percent / 20}
+                                          />
                                         </h6>
                                       )
                                   )}
@@ -157,7 +192,10 @@ const Reviews = () => {
                                     (element, k) =>
                                       element.title === "Reception" && (
                                         <h6 className="user__rating__title">
-                                          {element.title} {element.percent}
+                                          {element.title}{" "}
+                                          <RatingStar
+                                            rating={element.percent / 20}
+                                          />
                                         </h6>
                                       )
                                   )}
@@ -165,7 +203,9 @@ const Reviews = () => {
                               </div>
                             </div>
                           </div>
-                          <p>October 10, 2018 at 9:09 am</p>
+                          <p className="time__reviews">
+                            October 10, 2018 at 9:09 am
+                          </p>
                         </div>
                       </React.Fragment>
                     ))}
@@ -184,13 +224,7 @@ const Reviews = () => {
                                 element.title === "Rating" && (
                                   <h6 className="user__rating__title">
                                     <p>{element.title}</p>
-                                    <div className="start__rating">
-                                      <i className="far fa-star"></i>
-                                      <i className="far fa-star"></i>
-                                      <i className="far fa-star"></i>
-                                      <i className="far fa-star"></i>
-                                      <i className="far fa-star"></i>
-                                    </div>
+                                    <RatingStarInput />
                                   </h6>
                                 )
                             )}
@@ -199,13 +233,7 @@ const Reviews = () => {
                                 element.title === "Hospitality" && (
                                   <h6 className="user__rating__title">
                                     <p>{element.title}</p>
-                                    <div className="start__rating">
-                                      <i className="far fa-star"></i>
-                                      <i className="far fa-star"></i>
-                                      <i className="far fa-star"></i>
-                                      <i className="far fa-star"></i>
-                                      <i className="far fa-star"></i>
-                                    </div>
+                                    <RatingStarInput />
                                   </h6>
                                 )
                             )}
@@ -218,13 +246,7 @@ const Reviews = () => {
                                 element.title === "Comfort" && (
                                   <h6 className="user__rating__title">
                                     <p>{element.title}</p>
-                                    <div className="start__rating">
-                                      <i className="far fa-star"></i>
-                                      <i className="far fa-star"></i>
-                                      <i className="far fa-star"></i>
-                                      <i className="far fa-star"></i>
-                                      <i className="far fa-star"></i>
-                                    </div>
+                                    <RatingStarInput />
                                   </h6>
                                 )
                             )}
@@ -233,13 +255,7 @@ const Reviews = () => {
                                 element.title === "Hygiene" && (
                                   <h6 className="user__rating__title">
                                     <p>{element.title}</p>
-                                    <div className="start__rating">
-                                      <i className="far fa-star"></i>
-                                      <i className="far fa-star"></i>
-                                      <i className="far fa-star"></i>
-                                      <i className="far fa-star"></i>
-                                      <i className="far fa-star"></i>
-                                    </div>
+                                    <RatingStarInput />
                                   </h6>
                                 )
                             )}
@@ -252,13 +268,7 @@ const Reviews = () => {
                                 element.title === "Food" && (
                                   <h6 className="user__rating__title">
                                     <p>{element.title}</p>
-                                    <div className="start__rating">
-                                      <i className="far fa-star"></i>
-                                      <i className="far fa-star"></i>
-                                      <i className="far fa-star"></i>
-                                      <i className="far fa-star"></i>
-                                      <i className="far fa-star"></i>
-                                    </div>
+                                    <RatingStarInput />
                                   </h6>
                                 )
                             )}
@@ -267,13 +277,7 @@ const Reviews = () => {
                                 element.title === "Reception" && (
                                   <h6 className="user__rating__title">
                                     <p>{element.title}</p>
-                                    <div className="start__rating">
-                                      <i className="far fa-star"></i>
-                                      <i className="far fa-star"></i>
-                                      <i className="far fa-star"></i>
-                                      <i className="far fa-star"></i>
-                                      <i className="far fa-star"></i>
-                                    </div>
+                                    <RatingStarInput />
                                   </h6>
                                 )
                             )}

@@ -1,7 +1,8 @@
 import "./sectionSingle.scss";
 import { useState, useEffect } from "react";
-import { RatingStar } from "./productItem";
+import { RatingStar } from "../../../utils/ratingStart";
 import { user6 } from "../../../assets/img";
+import { RatingStarInput } from "../../../utils/ratingStart";
 const ProductItemDetails = ({ itemData }) => {
   var [productCount, setProductCount] = useState(1);
   // var [slideImg, setSlideImg] = useState(0);
@@ -34,7 +35,19 @@ const ProductItemDetails = ({ itemData }) => {
         <h1>{itemData.name}</h1>
         <p className="price">{itemData.price}</p>
         <div className="rating">
-          <RatingStar rating={itemData.rating} />
+          {itemData.rating < 5 ? (
+            <>
+              <i className="fas fa-star"></i> <i className="fas fa-star"></i>{" "}
+              <i className="fas fa-star"></i> <i className="fas fa-star"></i>{" "}
+              <i className="far fa-star"> </i>
+            </>
+          ) : (
+            <>
+              <i className="fas fa-star"></i>
+              <i className="fas fa-star"></i> <i className="fas fa-star"></i>{" "}
+              <i className="fas fa-star"></i> <i className="fas fa-star"></i>
+            </>
+          )}
           <p>(1 customer review)</p>
         </div>
         <p className="introduce">{itemData.introduce}</p>
@@ -45,20 +58,20 @@ const ProductItemDetails = ({ itemData }) => {
               type="text"
               value={productCount}
             />
-            <div class="btn btn__ud">
+            <div className="btn btn__ud">
               <button
                 onClick={() => {
                   setProductCount((e) => e + 1);
                 }}
               >
-                <i class="fas fa-chevron-up"></i>
+                <i className="fas fa-chevron-up"></i>
               </button>
               <button
                 onClick={() => {
                   setProductCount((e) => (e == 1 ? 1 : e - 1));
                 }}
               >
-                <i class="fas fa-chevron-down"></i>
+                <i className="fas fa-chevron-down"></i>
               </button>
             </div>
           </div>
@@ -89,36 +102,6 @@ const ProductItemDetails = ({ itemData }) => {
   );
 };
 
-const RatingStarInput = () => {
-  var [star, setStar] = useState(0);
-  var $ = [];
-  for (let i = 0; i <= 4; i++) {
-    $ = [
-      ...$,
-      <label
-        className="rating__label"
-        key={i}
-        for={`rating${i + 1}`}
-        onClick={() => {
-          setStar(() => i + 1);
-        }}
-      >
-        <i className={`${i < star ? "fas" : "far"} fa-star`}></i>
-      </label>,
-    ];
-  }
-  return (
-    <div className="star-input">
-      <input type="radio" name="rating" id="rating1" value="1" hidden />
-      <input type="radio" name="rating" id="rating2" value="2" hidden />
-      <input type="radio" name="rating" id="rating3" value="3" hidden />
-      <input type="radio" name="rating" id="rating4" value="4" hidden />
-      <input type="radio" name="rating" id="rating5" value="5" hidden />
-      {$}
-    </div>
-  );
-};
-
 const ReviewProduct = () => {
   return (
     <div className="review-product-container">
@@ -127,6 +110,17 @@ const ReviewProduct = () => {
         <img src={user6} alt="user-avartar" />
         <div>
           <RatingStar rating={4} />
+          {4 < 5 ? (
+            <>
+              <i className="fas fa-star"></i> <i className="fas fa-star"></i>{" "}
+              <i className="fas fa-star"></i> <i className="far fa-star"> </i>
+            </>
+          ) : (
+            <>
+              <i className="fas fa-star"></i> <i className="fas fa-star"></i>{" "}
+              <i className="fas fa-star"></i> <i className="fas fa-star"></i>
+            </>
+          )}
           <h4>John Mills – September 26, 2018</h4>
           <p>Lorem ipsum dolor sit ametco nsec te tuer adipiscing elitae.</p>
         </div>

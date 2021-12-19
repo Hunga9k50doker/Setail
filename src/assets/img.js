@@ -1,12 +1,8 @@
-
-
-
-
 //other
 import Paris from "./img/other/paris.png";
 import CustomTitle from "./img/other/sidearea-img-2.png";
 import CardEmpty from "./img/other/empty-cart.png";
-import map from './img/other/map.jpg';
+import map from "./img/other/map.jpg";
 import BgSydneyOpera from "./img/banner_img/bgOurteamIteam.jpg";
 //poster and btn of video
 import PosterBtn from "./img/imgVideo/btnYoutube.png";
@@ -17,7 +13,6 @@ import CustomOne from "./img/other/custom.png";
 import CustomTwo from "./img/other/custom2.png";
 import CustomThree from "./img/other/custom3.png";
 import CustomFour from "./img/other/custom4.png";
-
 
 //feature img
 import Corfu from "./img/featureImg/Corfu.jpg";
@@ -58,7 +53,6 @@ import Winter10 from "./img/featureImg/winter10.jpg";
 
 // notfound
 
-
 //blogImg&Banner
 import BanBlogPage from "./img/banner_img/bgPages.jpg";
 import BlogOne from "./img/blogImg&Banner/blog-img-1.jpg";
@@ -70,7 +64,6 @@ import BlogSix from "./img/blogImg&Banner/blog-img-6.jpg";
 import BlogSeven from "./img/blogImg&Banner/blog-img-7.jpg";
 import BlogEight from "./img/blogImg&Banner/blog-img-8.jpg";
 import BlogNine from "./img/blogImg&Banner/blog-img-9.jpg";
-
 
 import BanElementsTour from "./img/banner_img/bgElementsTour.jpg";
 
@@ -109,14 +102,11 @@ import user5 from "./img/user/user5.png";
 import user6 from "./img/user/user6.png";
 import user7 from "./img/user/user7.png";
 
-
 export {
-  
   //other
   Paris,
   CardEmpty,
   CustomTitle,
-
   map,
   BgSydneyOpera,
   //poster and btn video
@@ -127,6 +117,81 @@ export {
   CustomTwo,
   CustomThree,
   CustomFour,
- 
-  
- };
+  //feature img
+  Corfu,
+  Vatican,
+  Rome,
+  Manila,
+  Destination1,
+  Destination2,
+  Destination3,
+  Destination4,
+  Destination5,
+  Destination6,
+  Destination7,
+  Destination8,
+  Destination9,
+  Destination10,
+  Destination11,
+  Destination12,
+  Destination13,
+  Destination14,
+  Destination15,
+  Destination16,
+  Destination17,
+  Destination18,
+  Destination19,
+  Winter2,
+  Winter3,
+  Winter4,
+  Winter5,
+  Winter6,
+  Winter7,
+  Winter8,
+  Winter9,
+  Winter10,
+  //blogImg&Banner
+  BanBlogPage,
+  BlogOne,
+  BlogTwo,
+  BlogThree,
+  BlogFour,
+  BlogFive,
+  BlogSix,
+  BlogSeven,
+  BlogEight,
+  BlogNine,
+  BanElementsTour,
+  //product
+  productBan,
+  productImg1,
+  productImg2,
+  productImg3,
+  productImg4,
+  productImg5,
+  productImg6,
+  productImg7,
+  productImg8,
+  productImg9,
+  productImg10,
+  productImg11,
+  productImg12,
+  productImg13,
+  productImg14,
+  productImg15,
+  productImg16,
+  productImg17,
+  productImg18,
+  productSingle1,
+  productSingle2,
+  productSingle3,
+  amazingTour,
+  //user
+  user1,
+  user2,
+  user3,
+  user4,
+  user5,
+  user6,
+  user7,
+};

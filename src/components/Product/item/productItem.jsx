@@ -1,5 +1,5 @@
 import "./productItem.scss";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import {
   productImg1,
   productImg2,
@@ -182,15 +182,6 @@ const shopData = [
   },
 ];
 
-const RatingStar = ({ rating }) => {
-  let star = "";
-  for (var i = 1; i <= 5; i++) {
-    if (i > rating) star += '<i class="far fa-star"></i>';
-    else star += '<i class="fas fa-star"></i>';
-  }
-  return <div className="star" dangerouslySetInnerHTML={{ __html: star }} />;
-};
-
 const ProductItem = ({ shopData }) => {
   var [isAddCart, setCart] = useState(false);
 
@@ -241,10 +232,25 @@ const ProductItem = ({ shopData }) => {
           {shopData.uPrice && <p className="line-through">{shopData.uPrice}</p>}
           <p>{shopData.price}</p>
         </div>
-        <RatingStar rating={shopData.rating} />
+        <div className="rating">
+          {shopData.rating < 5 ? (
+            <>
+              <i className="fas fa-star"></i> <i className="fas fa-star"></i>{" "}
+              <i className="fas fa-star"></i> <i className="fas fa-star"></i>{" "}
+              <i className="far fa-star"> </i>
+            </>
+          ) : (
+            <>
+              <i className="fas fa-star"></i>
+              <i className="fas fa-star"></i> <i className="fas fa-star"></i>{" "}
+              <i className="fas fa-star"></i> <i className="fas fa-star"></i>
+            </>
+          )}
+        </div>
+        {/* <React.Fragment rating={shopData.rating} /> */}
       </div>
     </div>
   );
 };
 
-export { shopData, ProductItem, RatingStar };
+export { shopData, ProductItem };

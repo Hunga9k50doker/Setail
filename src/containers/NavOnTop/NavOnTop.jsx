@@ -140,11 +140,11 @@ const NavOnTop = () => {
                   </h6>
                   <div className="form__body">
                     <div className="form__body__input">
-                      <i class="fas fa-user"></i>
+                      <i className="fas fa-user"></i>
                       <input type="text" placeholder="User name" />
                     </div>
                     <div className="form__body__input">
-                      <i class="fas fa-lock"></i>
+                      <i className="fas fa-lock"></i>
                       <input type="password" placeholder="Password" />
                     </div>
                     <div className="form__body__input__radio">
@@ -187,19 +187,19 @@ const NavOnTop = () => {
                   </h6>
                   <div className="form__body">
                     <div className="form__body__input">
-                      <i class="fas fa-user"></i>
+                      <i className="fas fa-user"></i>
                       <input type="text" placeholder="User name" />
                     </div>
                     <div className="form__body__input">
-                      <i class="fas fa-envelope"></i>
+                      <i className="fas fa-envelope"></i>
                       <input type="email" placeholder="Email" />
                     </div>
                     <div className="form__body__input">
-                      <i class="fas fa-lock"></i>
+                      <i className="fas fa-lock"></i>
                       <input type="password" placeholder="Password" />
                     </div>
                     <div className="form__body__input">
-                      <i class="fas fa-lock"></i>
+                      <i className="fas fa-lock"></i>
                       <input type="password" placeholder="Password" />
                     </div>
 
@@ -214,7 +214,6 @@ const NavOnTop = () => {
                 </form>
               </div>
             </div>
-         
           </div>
         </div>
       </div>

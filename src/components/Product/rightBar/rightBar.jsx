@@ -142,8 +142,8 @@ const ProductMini = ({ shopData }) => {
   function RatingStar() {
     let star = "";
     for (var i = 1; i <= 5; i++) {
-      if (i > shopData.rating) star += '<i class="far fa-star"></i>';
-      else star += '<i class="fas fa-star"></i>';
+      if (i > shopData.rating) star += '<i className="far fa-star"></i>';
+      else star += '<i className="fas fa-star"></i>';
     }
     return <div className="star" dangerouslySetInnerHTML={{ __html: star }} />;
   }
