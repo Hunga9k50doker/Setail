@@ -89,6 +89,8 @@ import BlogSeven from "./img/blogImg&Banner/blog-img-7.jpg";
 import BlogEight from "./img/blogImg&Banner/blog-img-8.jpg";
 import BlogNine from "./img/blogImg&Banner/blog-img-9.jpg";
 
+import BanElementsTour from "./img/banner_img/bgElementsTour.jpg";
+
 //product
 import productBan from "./img/banner_img/product-banner.jpg";
 import productImg1 from "./img/product/shop-1-img-1-300x300.jpg";
@@ -195,6 +197,7 @@ export {
   BlogSeven,
   BlogEight,
   BlogNine,
+  BanElementsTour,
   //product
   productBan,
   productImg1,
