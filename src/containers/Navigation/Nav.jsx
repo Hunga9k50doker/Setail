@@ -215,7 +215,37 @@ const Nav = () => {
           </li>{" "}
           <li className="nav__list-item nav__list-item-Shop">
             <h3 className="nav__list-item-title">Shop</h3>
-            <div className="nav__list-item-selections"></div>
+            <div className="nav__list-item-selections">
+              <NavLink
+                to="/shop/product-list"
+                className="nav__list-item-selection"
+                activeclassname="active"
+              >
+                <p>Product List</p>
+              </NavLink>
+              <NavLink
+                to="/shop/product-single"
+                className="nav__list-item-selection"
+                activeclassname="active"
+              >
+                <p>Product Single</p>
+              </NavLink>
+              <div disabled className="nav__list-item-selection">
+                <p>Shop Layout</p>
+                <i className="fas fa-chevron-right"></i>
+                <ul className="sub-menu">
+                  <li className="sub-menu-item">
+                    <NavLink to="/shop/three-columns">Three Columns</NavLink>
+                  </li>
+                  <li className="sub-menu-item">
+                    <NavLink to="/shop/four-columns">Four Columns</NavLink>
+                  </li>
+                  <li className="sub-menu-item">
+                    <NavLink to="/shop/full-width">Full Width</NavLink>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </li>{" "}
           <li className="nav__list-item nav__list-item-Elements">
             <h3 className="nav__list-item-title">Elements</h3>
@@ -851,4 +881,3 @@ const Nav = () => {
 };
 
 export default Nav;
-
