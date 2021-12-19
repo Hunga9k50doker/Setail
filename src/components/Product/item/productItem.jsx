@@ -1,6 +1,5 @@
 import "./productItem.scss";
 import { useState, useEffect } from "react";
-import { Slider } from "react-slick";
 import {
   productImg1,
   productImg2,
