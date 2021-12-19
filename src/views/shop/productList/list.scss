@@ -1,0 +1,95 @@
+@import "../../../styles/variables";
+@import "../../../styles/global";
+
+.product-list {
+  position: relative;
+  width: 100%;
+  margin-top: 100px;
+  margin: 0px;
+
+  h5 {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .background {
+    padding: 2rem;
+    transform: translateY(-80px);
+    width: 1300px;
+    background: #fff;
+    margin: 0px auto;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    .left-col {
+      flex: 10;
+      .top-content {
+        display: flex;
+        justify-content: space-between;
+        padding: 1.25rem 0px;
+        div {
+          select {
+            height: 50px;
+            width: 230px;
+            border: none;
+            outline: none;
+            background: #f8f8f8;
+            color: #687380;
+            padding-left: 1rem;
+          }
+        }
+      }
+      .container {
+        display: flex;
+        margin-top: 2rem;
+        justify-content: space-between;
+        padding: 0px;
+      }
+      .bottom-content {
+        width: 100%;
+        div {
+          display: flex;
+          justify-content: center;
+          margin: 2rem auto;
+          gap: 1rem;
+          font-weight: bold;
+          font-size: 14px;
+          font-family: "Poppins", sans-serif;
+          span {
+            color: #000;
+          }
+          button {
+            border: none;
+            background: none;
+            font-weight: bold;
+            font-size: 14px;
+            font-family: "Poppins", sans-serif;
+          }
+          button:hover {
+            color: #3fd0d4;
+          }
+          #page {
+            color: rgb(167, 167, 167);
+          }
+          #page:hover {
+            color: #000;
+          }
+        }
+      }
+    }
+    .right-col {
+      flex: 3;
+      .popular-product {
+        margin-top: 2rem;
+      }
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    #img-amazing-tour {
+      margin: 2rem auto;
+    }
+  }
+}
