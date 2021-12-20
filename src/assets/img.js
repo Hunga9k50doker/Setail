@@ -115,15 +115,15 @@ import user6 from "./img/user/user6.png";
 import user7 from "./img/user/user7.png";
 
 //our Team members
-import ourTeam1 from "./img/ourteam/ourTeam1.jpg";
-import ourTeam2 from "./img/ourteam/ourTeam2.jpg";
-import ourTeam3 from "./img/ourteam/ourTeam3.jpg";
-import ourTeam4 from "./img/ourteam/ourTeam4.jpg";
-import ourTeam5 from "./img/ourteam/ourTeam5.jpg";
-import ourTeam6 from "./img/ourteam/ourTeam6.jpg";
-import ourTeam7 from "./img/ourteam/ourTeam7.jpg";
-import ourTeam8 from "./img/ourteam/ourTeam8.jpg";
-import ourTeam9 from "./img/ourteam/ourTeam9.jpg";
+import ourTeam10 from "./img/ourteam/ourteam10.jpg";
+import ourTeam11 from "./img/ourteam/ourteam11.jpg";
+import ourTeam12 from "./img/ourteam/ourteam12.jpg";
+import ourTeam4 from "./img/ourteam/ourteam4.jpg";
+import ourTeam5 from "./img/ourteam/ourteam5.jpg";
+import ourTeam6 from "./img/ourteam/ourteam6.jpg";
+import ourTeam7 from "./img/ourteam/ourteam7.jpg";
+import ourTeam8 from "./img/ourteam/ourteam8.jpg";
+import ourTeam9 from "./img/ourteam/ourteam9.jpg";
 
 export {
   //other
@@ -228,9 +228,9 @@ export {
   TourFeatureImg9,
   TourFeatureImg10,
   //ourTeam
-  ourTeam1,
-  ourTeam2,
-  ourTeam3,
+  ourTeam10,
+  ourTeam11,
+  ourTeam12,
   ourTeam4,
   ourTeam5,
   ourTeam6,
