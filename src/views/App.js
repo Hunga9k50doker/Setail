@@ -52,6 +52,7 @@ import ItemDetail from "../components/tourItem/item";
 import NotFound from "../views/NotFound/notfound";
 
 import "./App.scss";
+// import ComponentExample from "./test";
 
 function App() {
   // handleEvent btn back top
@@ -208,7 +209,7 @@ function App() {
           <Route exact path="/elements/section-title">
             <TypographySectionTitle />
           </Route>
-
+        
           <Route path="*">
             <NotFound />
           </Route>

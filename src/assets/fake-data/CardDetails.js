@@ -51,6 +51,7 @@ const destination_02_img_02 =
   require("../img/destination_items/destionations-1-masonry-39.jpg").default;
 const destination_03_img_01 =
   require("../img/destination_items/destionations-1-masonry-38.jpg").default;
+
 const CardDetailArr = [
   {
     img: card_01_img_01,
@@ -69,12 +70,7 @@ const CardDetailArr = [
       { title: "Hospitality", percent: "60" },
       { title: "Hygiene", percent: "100" },
       { title: "Reception", percent: "40" },
-      // percent__rating: '60',
-      // percent__comfort: '100',
-      // percent__food: '80',
-      // percent__hopitality: '60',
-      // percent__hygine: '100',
-      // percent__reception: '40',
+      
     ],
     img__grid: [
       destination_02_img_01,
@@ -107,12 +103,7 @@ const CardDetailArr = [
       { title: "Hospitality", percent: "60" },
       { title: "Hygiene", percent: "100" },
       { title: "Reception", percent: "40" },
-      // percent__rating: '60',
-      // percent__comfort: '100',
-      // percent__food: '80',
-      // percent__hopitality: '60',
-      // percent__hygine: '100',
-      // percent__reception: '40',
+      
     ],
     img__grid: [
       destination_02_img_01,
@@ -145,12 +136,7 @@ const CardDetailArr = [
       { title: "Hospitality", percent: "60" },
       { title: "Hygiene", percent: "100" },
       { title: "Reception", percent: "40" },
-      // percent__rating: '60',
-      // percent__comfort: '100',
-      // percent__food: '80',
-      // percent__hopitality: '60',
-      // percent__hygine: '100',
-      // percent__reception: '40',
+      
     ],
     img__grid: [
       destination_02_img_01,
@@ -183,12 +169,7 @@ const CardDetailArr = [
       { title: "Hospitality", percent: "60" },
       { title: "Hygiene", percent: "100" },
       { title: "Reception", percent: "40" },
-      // percent__rating: '60',
-      // percent__comfort: '100',
-      // percent__food: '80',
-      // percent__hopitality: '60',
-      // percent__hygine: '100',
-      // percent__reception: '40',
+      
     ],
     img__grid: [
       destination_02_img_01,
@@ -221,12 +202,7 @@ const CardDetailArr = [
       { title: "Hospitality", percent: "60" },
       { title: "Hygiene", percent: "100" },
       { title: "Reception", percent: "40" },
-      // percent__rating: '60',
-      // percent__comfort: '100',
-      // percent__food: '80',
-      // percent__hopitality: '60',
-      // percent__hygine: '100',
-      // percent__reception: '40',
+      
     ],
     img__grid: [
       destination_02_img_01,
@@ -260,12 +236,7 @@ const CardDetailArr = [
       { title: "Hospitality", percent: "60" },
       { title: "Hygiene", percent: "100" },
       { title: "Reception", percent: "40" },
-      // percent__rating: '60',
-      // percent__comfort: '100',
-      // percent__food: '80',
-      // percent__hopitality: '60',
-      // percent__hygine: '100',
-      // percent__reception: '40',
+      
     ],
     img__grid: [
       destination_02_img_01,
@@ -298,12 +269,7 @@ const CardDetailArr = [
       { title: "Hospitality", percent: "60" },
       { title: "Hygiene", percent: "100" },
       { title: "Reception", percent: "40" },
-      // percent__rating: '60',
-      // percent__comfort: '100',
-      // percent__food: '80',
-      // percent__hopitality: '60',
-      // percent__hygine: '100',
-      // percent__reception: '40',
+      
     ],
     img__grid: [
       destination_02_img_01,
@@ -336,12 +302,7 @@ const CardDetailArr = [
       { title: "Hospitality", percent: "60" },
       { title: "Hygiene", percent: "100" },
       { title: "Reception", percent: "40" },
-      // percent__rating: '60',
-      // percent__comfort: '100',
-      // percent__food: '80',
-      // percent__hopitality: '60',
-      // percent__hygine: '100',
-      // percent__reception: '40',
+      
     ],
     img__grid: [
       destination_02_img_01,
@@ -374,12 +335,7 @@ const CardDetailArr = [
       { title: "Hospitality", percent: "60" },
       { title: "Hygiene", percent: "100" },
       { title: "Reception", percent: "40" },
-      // percent__rating: '60',
-      // percent__comfort: '100',
-      // percent__food: '80',
-      // percent__hopitality: '60',
-      // percent__hygine: '100',
-      // percent__reception: '40',
+      
     ],
     img__grid: [
       destination_02_img_01,
@@ -412,12 +368,7 @@ const CardDetailArr = [
       { title: "Hospitality", percent: "60" },
       { title: "Hygiene", percent: "100" },
       { title: "Reception", percent: "40" },
-      // percent__rating: '60',
-      // percent__comfort: '100',
-      // percent__food: '80',
-      // percent__hopitality: '60',
-      // percent__hygine: '100',
-      // percent__reception: '40',
+      
     ],
     img__grid: [
       destination_02_img_01,
@@ -450,12 +401,7 @@ const CardDetailArr = [
       { title: "Hospitality", percent: "60" },
       { title: "Hygiene", percent: "100" },
       { title: "Reception", percent: "40" },
-      // percent__rating: '60',
-      // percent__comfort: '100',
-      // percent__food: '80',
-      // percent__hopitality: '60',
-      // percent__hygine: '100',
-      // percent__reception: '40',
+      
     ],
     img__grid: [
       destination_02_img_01,
@@ -489,12 +435,7 @@ const CardDetailArr = [
       { title: "Hospitality", percent: "60" },
       { title: "Hygiene", percent: "100" },
       { title: "Reception", percent: "40" },
-      // percent__rating: '60',
-      // percent__comfort: '100',
-      // percent__food: '80',
-      // percent__hopitality: '60',
-      // percent__hygine: '100',
-      // percent__reception: '40',
+      
     ],
     img__grid: [
       destination_02_img_01,
@@ -528,12 +469,7 @@ const CardDetailArr = [
       { title: "Hospitality", percent: "60" },
       { title: "Hygiene", percent: "100" },
       { title: "Reception", percent: "40" },
-      // percent__rating: '60',
-      // percent__comfort: '100',
-      // percent__food: '80',
-      // percent__hopitality: '60',
-      // percent__hygine: '100',
-      // percent__reception: '40',
+      
     ],
     img__grid: [
       destination_02_img_01,
@@ -567,12 +503,7 @@ const CardDetailArr = [
       { title: "Hospitality", percent: "60" },
       { title: "Hygiene", percent: "100" },
       { title: "Reception", percent: "40" },
-      // percent__rating: '60',
-      // percent__comfort: '100',
-      // percent__food: '80',
-      // percent__hopitality: '60',
-      // percent__hygine: '100',
-      // percent__reception: '40',
+      
     ],
     img__grid: [
       destination_02_img_01,
@@ -606,12 +537,7 @@ const CardDetailArr = [
       { title: "Hospitality", percent: "60" },
       { title: "Hygiene", percent: "100" },
       { title: "Reception", percent: "40" },
-      // percent__rating: '60',
-      // percent__comfort: '100',
-      // percent__food: '80',
-      // percent__hopitality: '60',
-      // percent__hygine: '100',
-      // percent__reception: '40',
+      
     ],
     img__grid: [
       destination_02_img_01,
@@ -645,12 +571,7 @@ const CardDetailArr = [
       { title: "Hospitality", percent: "60" },
       { title: "Hygiene", percent: "100" },
       { title: "Reception", percent: "40" },
-      // percent__rating: '60',
-      // percent__comfort: '100',
-      // percent__food: '80',
-      // percent__hopitality: '60',
-      // percent__hygine: '100',
-      // percent__reception: '40',
+      
     ],
     img__grid: [
       destination_02_img_01,
@@ -684,12 +605,7 @@ const CardDetailArr = [
       { title: "Hospitality", percent: "60" },
       { title: "Hygiene", percent: "100" },
       { title: "Reception", percent: "40" },
-      // percent__rating: '60',
-      // percent__comfort: '100',
-      // percent__food: '80',
-      // percent__hopitality: '60',
-      // percent__hygine: '100',
-      // percent__reception: '40',
+      
     ],
     img__grid: [
       destination_02_img_01,
@@ -723,12 +639,7 @@ const CardDetailArr = [
       { title: "Hospitality", percent: "60" },
       { title: "Hygiene", percent: "100" },
       { title: "Reception", percent: "40" },
-      // percent__rating: '60',
-      // percent__comfort: '100',
-      // percent__food: '80',
-      // percent__hopitality: '60',
-      // percent__hygine: '100',
-      // percent__reception: '40',
+      
     ],
     img__grid: [
       destination_02_img_01,
@@ -762,12 +673,7 @@ const CardDetailArr = [
       { title: "Hospitality", percent: "60" },
       { title: "Hygiene", percent: "100" },
       { title: "Reception", percent: "40" },
-      // percent__rating: '60',
-      // percent__comfort: '100',
-      // percent__food: '80',
-      // percent__hopitality: '60',
-      // percent__hygine: '100',
-      // percent__reception: '40',
+      
     ],
     img__grid: [
       destination_02_img_01,
@@ -801,12 +707,7 @@ const CardDetailArr = [
       { title: "Hospitality", percent: "60" },
       { title: "Hygiene", percent: "100" },
       { title: "Reception", percent: "40" },
-      // percent__rating: '60',
-      // percent__comfort: '100',
-      // percent__food: '80',
-      // percent__hopitality: '60',
-      // percent__hygine: '100',
-      // percent__reception: '40',
+      
     ],
     img__grid: [
       destination_02_img_01,
@@ -840,12 +741,7 @@ const CardDetailArr = [
       { title: "Hospitality", percent: "60" },
       { title: "Hygiene", percent: "100" },
       { title: "Reception", percent: "40" },
-      // percent__rating: '60',
-      // percent__comfort: '100',
-      // percent__food: '80',
-      // percent__hopitality: '60',
-      // percent__hygine: '100',
-      // percent__reception: '40',
+      
     ],
     img__grid: [
       destination_02_img_01,
@@ -879,12 +775,7 @@ const CardDetailArr = [
       { title: "Hospitality", percent: "60" },
       { title: "Hygiene", percent: "100" },
       { title: "Reception", percent: "40" },
-      // percent__rating: '60',
-      // percent__comfort: '100',
-      // percent__food: '80',
-      // percent__hopitality: '60',
-      // percent__hygine: '100',
-      // percent__reception: '40',
+      
     ],
     img__grid: [
       destination_02_img_01,
@@ -918,12 +809,7 @@ const CardDetailArr = [
       { title: "Hospitality", percent: "60" },
       { title: "Hygiene", percent: "100" },
       { title: "Reception", percent: "40" },
-      // percent__rating: '60',
-      // percent__comfort: '100',
-      // percent__food: '80',
-      // percent__hopitality: '60',
-      // percent__hygine: '100',
-      // percent__reception: '40',
+      
     ],
     img__grid: [
       destination_02_img_01,
@@ -957,12 +843,7 @@ const CardDetailArr = [
       { title: "Hospitality", percent: "60" },
       { title: "Hygiene", percent: "100" },
       { title: "Reception", percent: "40" },
-      // percent__rating: '60',
-      // percent__comfort: '100',
-      // percent__food: '80',
-      // percent__hopitality: '60',
-      // percent__hygine: '100',
-      // percent__reception: '40',
+      
     ],
     img__grid: [
       destination_02_img_01,
@@ -997,12 +878,7 @@ const CardDetailArr = [
       { title: "Hospitality", percent: "60" },
       { title: "Hygiene", percent: "100" },
       { title: "Reception", percent: "40" },
-      // percent__rating: '60',
-      // percent__comfort: '100',
-      // percent__food: '80',
-      // percent__hopitality: '60',
-      // percent__hygine: '100',
-      // percent__reception: '40',
+      
     ],
     img__grid: [
       destination_02_img_01,
@@ -1036,12 +912,7 @@ const CardDetailArr = [
       { title: "Hospitality", percent: "60" },
       { title: "Hygiene", percent: "100" },
       { title: "Reception", percent: "40" },
-      // percent__rating: '60',
-      // percent__comfort: '100',
-      // percent__food: '80',
-      // percent__hopitality: '60',
-      // percent__hygine: '100',
-      // percent__reception: '40',
+      
     ],
     img__grid: [
       destination_02_img_01,
@@ -1075,12 +946,7 @@ const CardDetailArr = [
       { title: "Hospitality", percent: "60" },
       { title: "Hygiene", percent: "100" },
       { title: "Reception", percent: "40" },
-      // percent__rating: '60',
-      // percent__comfort: '100',
-      // percent__food: '80',
-      // percent__hopitality: '60',
-      // percent__hygine: '100',
-      // percent__reception: '40',
+      
     ],
     img__grid: [
       destination_02_img_01,
@@ -1114,12 +980,7 @@ const CardDetailArr = [
       { title: "Hospitality", percent: "60" },
       { title: "Hygiene", percent: "100" },
       { title: "Reception", percent: "40" },
-      // percent__rating: '60',
-      // percent__comfort: '100',
-      // percent__food: '80',
-      // percent__hopitality: '60',
-      // percent__hygine: '100',
-      // percent__reception: '40',
+      
     ],
     img__grid: [
       destination_02_img_01,
@@ -1153,12 +1014,7 @@ const CardDetailArr = [
       { title: "Hospitality", percent: "60" },
       { title: "Hygiene", percent: "100" },
       { title: "Reception", percent: "40" },
-      // percent__rating: '60',
-      // percent__comfort: '100',
-      // percent__food: '80',
-      // percent__hopitality: '60',
-      // percent__hygine: '100',
-      // percent__reception: '40',
+      
     ],
     img__grid: [
       destination_02_img_01,
@@ -1190,29 +1046,18 @@ const getSortCards = getCards_random(10).sort(function (a, b) {
   return Number(a.cost) - Number(b.cost);
 });
 
-// const getSortCards = (start,end) =>{
-//   return SortCards.slice(start,end);
-// }
+
 // sort high to low
 const getSortParseCards = getCards_random(10).sort(function (a, b) {
   return Number(b.cost) - Number(a.cost);
 });
-// const getSortParseCards = (start,end) =>{
-//   return SortParseCards.slice(start,end);
-// }
-// sort flow name A- Z
 
+
+// sort flow name A- Z
 const getSortStringCards = getCards_random(10).sort(function (a, b) {
   return ("" + a.title).localeCompare(b.title);
 });
 
-// const SortStringCards = getAllCards().sort(function (a, b) {
-//   return ("" + a.title).localeCompare(b.title);
-// });
-// const getSortStringCards = (start,end) =>{
-//   return SortStringCards.slice(start,end);
-// }
-// console.log(getSortStringCards(0,9));
 
 const cardData = {
   getAllCards,

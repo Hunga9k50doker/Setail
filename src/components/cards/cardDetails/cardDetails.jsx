@@ -10,7 +10,6 @@ const CardDetails = (props) => {
           <source
             media="(min-width:1200px)"
             srcset={props.img}
-            // style={{ width: "288px", height: "170px" }}
           />
           <source
             media="(min-width:768px)"
@@ -21,7 +20,6 @@ const CardDetails = (props) => {
             src={props.img}
             className="card-img-top"
             alt="not found"
-            // style={{ width: "358px", height: "257px" }}
           />
         </picture>
       </div>
@@ -58,16 +56,16 @@ const CardDetails = (props) => {
     </div>
   );
 };
-
-CardDetails.propTypes = {
-  img: PropTypes.string.isRequired,
-  calendar: PropTypes.string.isRequired,
-  custom: PropTypes.string.isRequired,
-  location: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  subTitle: PropTypes.string.isRequired,
-  cost: PropTypes.number.isRequired,
-  rating: PropTypes.number.isRequired,
-  icon: PropTypes.string.isRequired,
-};
 export default CardDetails;
+
+// CardDetails.propTypes = {
+//   img: PropTypes.string.isRequired,
+//   calendar: PropTypes.string.isRequired,
+//   custom: PropTypes.string.isRequired,
+//   location: PropTypes.string.isRequired,
+//   title: PropTypes.string.isRequired,
+//   subTitle: PropTypes.string.isRequired,
+//   cost: PropTypes.number.isRequired,
+//   rating: PropTypes.number.isRequired,
+//   icon: PropTypes.string.isRequired,
+// };

@@ -2,7 +2,7 @@ import "./Nav.scss";
 import "../../styles/global.scss";
 import { NavLink, Link } from "react-router-dom";
 import LogoHeader from "../../assets/img/logo/logo-header.png";
-import { CustomTitle, map } from "../../assets/img";
+import { CustomTitle, map, CardEmpty } from "../../assets/img";
 const Nav = () => {
   const modal = document.querySelector(".search-modal");
   const ancor = document.querySelector(".accordion__nav");
@@ -314,7 +314,7 @@ const Nav = () => {
             <i className="fas fa-shopping-cart"></i>
             <div className="cart-category">
               <p>No products in the cart.</p>
-              <img className="no-cart-img" src="./img/th.jpg" alt="Not found" />
+              <img className="no-cart-img" src={CardEmpty} alt="Not found" />
             </div>
           </li>
           <li
