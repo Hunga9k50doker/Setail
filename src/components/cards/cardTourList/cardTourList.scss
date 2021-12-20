@@ -1,7 +1,153 @@
 .feature-tour__card {
   position: relative;
+  overflow: hidden;
+
   width: 100%;
+  color: #fff;
+  font-family: Poppins, sans-serif;
+  img {
+    display: block;
+    height: 100%;
+    max-width: 120%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+  }
   div {
+    z-index: 2;
     position: absolute;
+  }
+  .text {
+    bottom: 5%;
+    width: 100%;
+    text-align: center;
+    font-size: 1.125rem;
+    font-weight: 600;
+    span {
+      display: block;
+    }
+  }
+  .top-right-info {
+    padding: 0.8rem 2.5rem;
+    top: 0;
+    right: 0;
+    background: #3fd0d4;
+  }
+  &:hover {
+    .feature-tour__img {
+      transform: scale(1.05);
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+  &:hover::before {
+    height: 50%;
+  }
+  &::before {
+    z-index: 1;
+    content: "";
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    height: 30%;
+    transition: all 0.3s ease;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  }
+}
+.tour-gallery-item {
+  .tour-gallery-item__img {
+    position: relative;
+    overflow: hidden;
+    img {
+      width: 100%;
+    }
+    &:hover {
+      img {
+        transform: scale(1.05);
+        transition: all 0.5s linear;
+      }
+    }
+    &::before {
+      z-index: 1;
+      content: "";
+      width: 100%;
+      bottom: 0;
+      position: absolute;
+      height: 10%;
+      transition: all 0.5s ease;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    }
+    &:hover::before {
+      height: 40%;
+    }
+  }
+  .bottom-content {
+    font-family: Poppins, sans-serif;
+    background: #fff;
+    padding: 3rem 0;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    h4 {
+      font-size: 1.375rem;
+      font-weight: 600;
+    }
+    p {
+      font: size 0.875rem;
+    }
+    span {
+      font-size: 1rem;
+      font-weight: 600;
+    }
+  }
+}
+.tour-masonry-item {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+  &:hover {
+    img {
+      transform: scale(1.05);
+      transition: all 0.5s linear;
+    }
+  }
+  &::before {
+    z-index: 1;
+    content: "";
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    height: 30%;
+    transition: all 0.5s ease;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  }
+  &:hover::before {
+    height: 40%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+  }
+  .tour-masonry-item__text {
+    position: absolute;
+    width: 100%;
+    padding: 1.5rem;
+    bottom: 0;
+    color: #fff;
+    z-index: 2;
+    font-family: Poppins, sans-serif;
+    .info {
+      display: flex;
+      justify-content: space-between;
+      span {
+        font-weight: 600;
+      }
+    }
+    i {
+      margin-right: 1rem;
+    }
   }
 }
