@@ -5,21 +5,11 @@ import { user6 } from "../../../assets/img";
 import { RatingStarInput } from "../../../utils/ratingStart";
 const ProductItemDetails = ({ itemData }) => {
   var [productCount, setProductCount] = useState(1);
-  // var [slideImg, setSlideImg] = useState(0);
-  // const imgSliderURL = [itemData.img, ...itemData.gallery];
+ 
 
   return (
     <div className="product-details__container">
-      {/* <div className="image-slider__container">
-        <img
-          id="img-slider"
-          src={imgSliderURL[slideImg]}
-          alt={`product-img-${slideImg}`}
-        />
-        <button>&lt;</button>
-        <button>&gt;</button>
-        <button>x</button>
-      </div> */}
+   
       <div className="img__list">
         <img src={itemData.img} alt="img-product" className="img-product" />
         {itemData.gallery.map((e, i) => (

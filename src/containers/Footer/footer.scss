@@ -5,19 +5,19 @@
   position: relative;
   bottom: 0;
   background: $bg-footer;
-  color: $white-color ;
+  color: $white-color;
   padding-top: 106px;
   font-family: "Poppins";
   font-size: 14px;
   clear: none;
   a:hover {
-    color: $primary-color ;
+    color: $primary-color;
   }
   .col:first-child {
     h5 {
       margin: 20px 0;
       font-size: 18px;
-      color: $text-color;
+      color: $text-color--sub;
     }
 
     ul {
@@ -32,7 +32,7 @@
       a {
         color: $white-color;
         &:hover {
-          color: $primary-color ;
+          color: $primary-color;
         }
       }
     }
@@ -51,7 +51,7 @@
   &__content {
     font-size: 14px;
     letter-spacing: 1px;
-    color: $text-color;
+    color: $text-color--sub;
     font-weight: 300;
     &-item:not(:first-child) {
       margin-top: 26px;
@@ -74,14 +74,14 @@
       position: relative;
       display: flex;
       align-items: center;
-      overflow:hidden;
+      overflow: hidden;
       i {
         position: absolute;
         top: calc(50% - 4px);
-        left:10px;
-        transform: translate(0,-50%);
+        left: 10px;
+        transform: translate(0, -50%);
         display: inline-block;
-        background: $text-color;
+        background: $text-color--sub;
         font-size: 18px;
       }
       input,
@@ -91,10 +91,10 @@
         margin: 9px 0px;
         padding: 16px 10px;
         border: none;
-        background: $text-color;
+        background: $text-color--sub;
         font-size: 15px;
       }
-      input{
+      input {
         padding-left: 40px;
       }
     }

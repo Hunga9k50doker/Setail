@@ -90,7 +90,7 @@ const PriceFilter = () => {
     };
   }, []);
 
-  var styles = {
+  let styles = {
     progress: {
       left: `${minPrice / 7.6}%`,
       right: `${100 - maxPrice / 7.6}%`,
