@@ -8,7 +8,7 @@ p {
 }
 .nav__onTop {
   position: relative;
-  z-index: 77;
+  z-index: 666;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -16,9 +16,7 @@ p {
   background: #1c1c1c;
   color: #fff;
   height: 42px;
-  &:hover {
-    z-index: 100;
-  }
+
   &-leftInner,
   &-rightInner {
     display: flex;
