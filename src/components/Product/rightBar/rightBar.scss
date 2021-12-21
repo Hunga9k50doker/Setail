@@ -3,6 +3,9 @@
 .search {
   display: flex;
   padding: 1.25rem 0px;
+  form {
+    width: 100%;
+  }
   .ip-search {
     height: 50px;
     padding-left: 1rem;
@@ -14,6 +17,7 @@
 
   button {
     width: 18%;
+    height: 50px;
     background: #3abdc1;
     border: none;
   }

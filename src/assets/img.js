@@ -51,6 +51,18 @@ import Winter8 from "./img/featureImg/winter8.jpg";
 import Winter9 from "./img/featureImg/winter9.jpg";
 import Winter10 from "./img/featureImg/winter10.jpg";
 
+//TourfeatureImg
+import TourFeatureImg1 from "./img/featureImg/tour-featured-img-1.jpg";
+import TourFeatureImg2 from "./img/featureImg/tour-featured-img-2.jpg";
+import TourFeatureImg3 from "./img/featureImg/tour-featured-img-3.jpg";
+import TourFeatureImg4 from "./img/featureImg/tour-featured-img-4.jpg";
+import TourFeatureImg5 from "./img/featureImg/tour-featured-img-5.jpg";
+import TourFeatureImg6 from "./img/featureImg/tour-featured-img-6.jpg";
+import TourFeatureImg7 from "./img/featureImg/tour-featured-img-7.jpg";
+import TourFeatureImg8 from "./img/featureImg/tour-featured-img-8.jpg";
+import TourFeatureImg9 from "./img/featureImg/tour-featured-img-9.jpg";
+import TourFeatureImg10 from "./img/featureImg/tour-featured-img-10.jpg";
+
 // notfound
 
 //blogImg&Banner
@@ -101,6 +113,17 @@ import user4 from "./img/user/user4.png";
 import user5 from "./img/user/user5.png";
 import user6 from "./img/user/user6.png";
 import user7 from "./img/user/user7.png";
+
+//our Team members
+import ourTeam10 from "./img/ourteam/ourteam10.jpg";
+import ourTeam11 from "./img/ourteam/ourteam11.jpg";
+import ourTeam12 from "./img/ourteam/ourteam12.jpg";
+import ourTeam4 from "./img/ourteam/ourteam4.jpg";
+import ourTeam5 from "./img/ourteam/ourteam5.jpg";
+import ourTeam6 from "./img/ourteam/ourteam6.jpg";
+import ourTeam7 from "./img/ourteam/ourteam7.jpg";
+import ourTeam8 from "./img/ourteam/ourteam8.jpg";
+import ourTeam9 from "./img/ourteam/ourteam9.jpg";
 
 export {
   //other
@@ -194,4 +217,24 @@ export {
   user5,
   user6,
   user7,
+  TourFeatureImg1,
+  TourFeatureImg2,
+  TourFeatureImg3,
+  TourFeatureImg4,
+  TourFeatureImg5,
+  TourFeatureImg6,
+  TourFeatureImg7,
+  TourFeatureImg8,
+  TourFeatureImg9,
+  TourFeatureImg10,
+  //ourTeam
+  ourTeam10,
+  ourTeam11,
+  ourTeam12,
+  ourTeam4,
+  ourTeam5,
+  ourTeam6,
+  ourTeam7,
+  ourTeam8,
+  ourTeam9,
 };

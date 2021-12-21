@@ -1,0 +1,64 @@
+.team-holder-item {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+  img {
+    width: 100%;
+  }
+  &:hover {
+    .popup-card {
+      transform: translateY(0);
+    }
+  }
+  .popup-card {
+    background: #3fd0d4;
+    width: 100%;
+    padding: 2rem;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(100%);
+    transition: all 0.5s ease;
+    font-family: "Poppins", sans-serif;
+    h5 {
+      font-weight: 600;
+    }
+    p {
+      font-size: 0.875rem;
+    }
+    .social-network {
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      i {
+        color: #fff;
+        transition: all 0.3 ease;
+      }
+      i:hover {
+        color: #23a9af;
+      }
+    }
+  }
+}
+.team-holder-item__bellow {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+  img {
+    width: 100%;
+  }
+  .info {
+    font-family: Poppins, sans-serif;
+    h5 {
+      margin-top: 0.3rem;
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+    p {
+      font-size: 1rem;
+      font-weight: 600;
+    }
+  }
+}

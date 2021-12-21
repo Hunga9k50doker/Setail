@@ -8,8 +8,10 @@ import { Baner1, banData } from "../../../components/blogItem/BlogItem";
 import {
   featureTourData,
   FeatureTour,
+  TourGalleryItem,
+  TourMasonryItem,
 } from "../../../components/cards/cardTourList/cardTourList";
-const $ = cardData.getCards_random(3);
+const $ = cardData.getAllCards();
 
 const TourList = () => {
   function to_slug(str) {
@@ -43,8 +45,8 @@ const TourList = () => {
   return (
     <div className="tour-list grid">
       <Baner1 banData={banData[2]} />
-      <section className="tour-card-list row ">
-        {$.map((item, index) => (
+      <section className="tour-card-list row grey">
+        {[$[10], $[9], $[8]].map((item, index) => (
           <Link
             to={"/tour-item/" + to_slug(item.title)}
             key={index}
@@ -67,13 +69,27 @@ const TourList = () => {
           </Link>
         ))}
       </section>
-      {/* <section className="destination-tour row">
-        {featureTourData.map((item, index) => (
+      <section className="destination-tour row ">
+        {featureTourData.row1.map((item, index) => (
           <Link className="col col-xxl-3" key={index} to="/">
             <FeatureTour data={item} />
           </Link>
         ))}
-      </section> */}
+      </section>
+      <section className="tour-gallery row grey">
+        {featureTourData.row2.map((item, index) => (
+          <Link className="col col-xxl-3" key={index} to="/">
+            <TourGalleryItem data={item} />
+          </Link>
+        ))}
+      </section>
+      <section className="tour-masonry row">
+        {featureTourData.row3.map((item, index) => (
+          <Link className={`grid-item-${index}`} key={index} to="/">
+            <TourMasonryItem data={item} />
+          </Link>
+        ))}
+      </section>
     </div>
   );
 };
