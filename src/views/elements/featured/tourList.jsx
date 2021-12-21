@@ -11,7 +11,6 @@ import {
   TourGalleryItem,
   TourMasonryItem,
 } from "../../../components/cards/cardTourList/cardTourList";
-import { CardSelection } from "../../../components/cards/cardSelection/cardSelection";
 const $ = cardData.getAllCards();
 
 const TourList = () => {

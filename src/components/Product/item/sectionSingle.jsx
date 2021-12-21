@@ -5,11 +5,9 @@ import { user6 } from "../../../assets/img";
 import { RatingStarInput } from "../../../utils/ratingStart";
 const ProductItemDetails = ({ itemData }) => {
   var [productCount, setProductCount] = useState(1);
- 
 
   return (
     <div className="product-details__container">
-   
       <div className="img__list">
         <img src={itemData.img} alt="img-product" className="img-product" />
         {itemData.gallery.map((e, i) => (
@@ -100,17 +98,6 @@ const ReviewProduct = () => {
         <img src={user6} alt="user-avartar" />
         <div>
           <RatingStar rating={4} />
-          {4 < 5 ? (
-            <>
-              <i className="fas fa-star"></i> <i className="fas fa-star"></i>{" "}
-              <i className="fas fa-star"></i> <i className="far fa-star"> </i>
-            </>
-          ) : (
-            <>
-              <i className="fas fa-star"></i> <i className="fas fa-star"></i>{" "}
-              <i className="fas fa-star"></i> <i className="fas fa-star"></i>
-            </>
-          )}
           <h4>John Mills – September 26, 2018</h4>
           <p>Lorem ipsum dolor sit ametco nsec te tuer adipiscing elitae.</p>
         </div>
