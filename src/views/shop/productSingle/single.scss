@@ -13,18 +13,27 @@
   .background {
     padding: 2rem;
     transform: translateY(-80px);
-    width: 1300px;
+    width: 87%;
     background: #fff;
     margin: 0px auto;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  }
-  h1 {
-    margin: 4rem 0 1rem 0;
-    font-size: 1.875rem;
-    font-weight: 600;
+    h1 {
+      margin: 4rem 0 1rem 0;
+      font-size: 1.875rem;
+      font-weight: 600;
+    }
   }
   .related-product {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    flex: 1 1 1 1;
+    flex-grow: 1;
+    flex-shrink: 1;
+    .item {
+      min-width: 220px;
+      max-width: 290px;
+    }
   }
 }

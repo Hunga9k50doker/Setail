@@ -21,7 +21,9 @@ const ShopSingle = () => {
         <h1>Related Products</h1>
         <div className="related-product">
           {relatedProduct.map((e, i) => (
-            <ProductItem key={i} shopData={shopData[e]} />
+            <div className="item">
+              <ProductItem key={i} shopData={shopData[e]} />
+            </div>
           ))}
         </div>
       </div>

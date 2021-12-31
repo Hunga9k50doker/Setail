@@ -14,7 +14,7 @@
   .background {
     padding: 2rem;
     transform: translateY(-80px);
-    width: 1300px;
+    width: 87%;
     background: #fff;
     margin: 0px auto;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
@@ -22,11 +22,16 @@
     justify-content: space-between;
     gap: 2rem;
     .left-col {
-      flex: 10;
+      width: 76%;
       .top-content {
         display: flex;
         justify-content: space-between;
         padding: 1.25rem 0px;
+        flex-wrap: wrap;
+        span {
+          height: 50px;
+          padding: 0.6rem 0rem;
+        }
         div {
           select {
             height: 50px;
@@ -44,6 +49,16 @@
         margin-top: 2rem;
         justify-content: space-between;
         padding: 0px;
+        flex-wrap: wrap;
+        flex: 1 1 1;
+        flex-grow: 1;
+        flex-shrink: 1;
+        .item {
+          flex: 1;
+          min-width: 225px;
+          max-width: 300px;
+          margin: 0px auto 2rem auto;
+        }
       }
       .bottom-content {
         width: 100%;
@@ -78,7 +93,7 @@
       }
     }
     .right-col {
-      flex: 3;
+      width: 23%;
       .popular-product {
         margin-top: 2rem;
       }
