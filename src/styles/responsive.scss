@@ -149,6 +149,13 @@
   .product-details__container {
     flex-direction: column;
   }
+  .tour-list {
+    .tour-masonry {
+      .container {
+        grid-template-columns: auto auto auto !important;
+      }
+    }
+  }
 }
 
 // =========<= tablet============
@@ -468,6 +475,7 @@
       font-size: 2.2rem !important;
     }
   }
+  // blog masonry
   .masonry {
     .background {
       .container {
@@ -480,6 +488,7 @@
       }
     }
   }
+  //product single
   .product-single__tab {
     .tabs-item {
       width: 100% !important;
@@ -488,6 +497,20 @@
     .bottom {
       .review-product__item {
         flex-direction: column;
+      }
+    }
+  }
+  //tour list
+  .tour-list {
+    .row {
+      padding: 2.5rem !important;
+    }
+    .tour-masonry {
+      .container {
+        display: block !important;
+        .grid-item + .grid-item {
+          margin-top: 1.5rem;
+        }
       }
     }
   }

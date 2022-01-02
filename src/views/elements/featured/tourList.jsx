@@ -71,24 +71,26 @@ const TourList = () => {
       </section>
       <section className="destination-tour row ">
         {featureTourData.row1.map((item, index) => (
-          <Link className="col col-xxl-3" key={index} to="/">
+          <Link className="item" key={index} to="/">
             <FeatureTour data={item} />
           </Link>
         ))}
       </section>
       <section className="tour-gallery row grey">
         {featureTourData.row2.map((item, index) => (
-          <Link className="col col-xxl-3" key={index} to="/">
+          <Link className="item" key={index} to="/">
             <TourGalleryItem data={item} />
           </Link>
         ))}
       </section>
       <section className="tour-masonry row">
-        {featureTourData.row3.map((item, index) => (
-          <Link className={`grid-item-${index}`} key={index} to="/">
-            <TourMasonryItem data={item} />
-          </Link>
-        ))}
+        <div className="container">
+          {featureTourData.row3.map((item, index) => (
+            <Link className={`grid-item grid-item-${index}`} key={index} to="/">
+              <TourMasonryItem data={item} />
+            </Link>
+          ))}
+        </div>
       </section>
     </div>
   );

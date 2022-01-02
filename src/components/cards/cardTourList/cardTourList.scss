@@ -1,14 +1,13 @@
 .feature-tour__card {
   position: relative;
   overflow: hidden;
-
   width: 100%;
   color: #fff;
   font-family: Poppins, sans-serif;
   img {
     display: block;
     height: 100%;
-    max-width: 120%;
+    max-width: 100%;
     object-fit: cover;
     transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
@@ -86,7 +85,7 @@
   .bottom-content {
     font-family: Poppins, sans-serif;
     background: #fff;
-    padding: 3rem 0;
+    padding: 3rem 0.5rem;
     width: 100%;
     text-align: center;
     color: #000;
