@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const RatingStarInput = () => {
-  var [star, setStar] = useState(0);
+  var [star, setStar] = useState(3);
   var $ = [];
   for (let i = 0; i <= 4; i++) {
     $ = [
@@ -37,8 +37,7 @@ const RatingStar = ({ rating }) => {
     if (i > rating) star += '<i class="far fa-star"></i>';
     else star += '<i class="fas fa-star"></i>';
   }
-  return <p
-    className="star" dangerouslySetInnerHTML={{ __html: star }} />;
+  return <p class="star" dangerouslySetInnerHTML={{ __html: star }} />;
 };
 
 export { RatingStarInput, RatingStar };

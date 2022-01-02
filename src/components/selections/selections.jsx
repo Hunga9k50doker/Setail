@@ -8,7 +8,9 @@ const Selections = ({ children }) => {
       className="selections container"
     >
       <div className="grid">
-        <div className="row ">{children}</div>
+        <div className="row " >
+          {children}
+        </div>
       </div>
     </div>
   );
