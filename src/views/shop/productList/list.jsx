@@ -54,7 +54,9 @@ const ShopList = () => {
           </div>
           <div className="container">
             {items.map((e, i) => (
-              <ProductItem key={i} shopData={shopData[e - 1]} />
+              <div className="item">
+                <ProductItem key={i} shopData={shopData[e - 1]} />
+              </div>
             ))}
           </div>
           <div className="bottom-content">

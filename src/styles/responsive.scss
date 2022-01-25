@@ -111,6 +111,51 @@
       flex-direction: column;
     }
   }
+  .banner1 {
+    .title {
+      font-size: 3.625rem !important;
+    }
+  }
+  .background {
+    transform: translateY(-40px) !important;
+  }
+  .masonry {
+    .post-text {
+      a {
+        font-size: 1.125rem !important;
+      }
+    }
+    .background {
+      .container {
+        max-width: 100%;
+      }
+    }
+  }
+
+  .product-list {
+    .background {
+      flex-direction: column;
+      .top-content {
+        padding: 0px !important;
+      }
+      .left-col {
+        width: 100% !important;
+      }
+      .right-col {
+        width: 100% !important;
+      }
+    }
+  }
+  .product-details__container {
+    flex-direction: column;
+  }
+  .tour-list {
+    .tour-masonry {
+      .container {
+        grid-template-columns: auto auto auto !important;
+      }
+    }
+  }
 }
 
 // =========<= tablet============
@@ -213,6 +258,50 @@
     &:nth-child(7) {
       grid-column: 1 / span 2 !important;
       grid-row: 6 / span 1 !important;
+    }
+  }
+  .baner1 {
+    .title {
+      font-size: 58px;
+    }
+  }
+  .masonry {
+    .background {
+      .container {
+        grid-template-columns: 45% 45%;
+        padding: 1.5rem 1rem;
+        max-width: 100%;
+        .item-3 {
+          grid-row: 5/10;
+        }
+        .item-5 {
+          grid-row: 8/15;
+        }
+        .item-6 {
+          grid-row: 10/15;
+        }
+        .item-9 {
+          grid-row: 15/22;
+        }
+        .item-4 {
+          grid-row: 15/17;
+        }
+        .item-7 {
+          grid-row: 17/22;
+        }
+        .item-8 {
+          grid-row: 22/ 24;
+        }
+        .item-10 {
+          grid-row: 22/27;
+        }
+        .item-11 {
+          grid-row: 24/29;
+        }
+        .item-12 {
+          grid-row: 27/28;
+        }
+      }
     }
   }
 }
@@ -375,6 +464,54 @@
     padding: 20px 40px !important;
     img {
       transform: scale(0.8);
+    }
+  }
+
+  .banner1 {
+    .subtitle {
+      font-size: 1.6rem !important;
+    }
+    .title {
+      font-size: 2.2rem !important;
+    }
+  }
+  // blog masonry
+  .masonry {
+    .background {
+      .container {
+        display: flex;
+        flex-direction: column;
+        padding: 1.25rem;
+        .post-item {
+          width: 100%;
+        }
+      }
+    }
+  }
+  //product single
+  .product-single__tab {
+    .tabs-item {
+      width: 100% !important;
+      text-align: left !important;
+    }
+    .bottom {
+      .review-product__item {
+        flex-direction: column;
+      }
+    }
+  }
+  //tour list
+  .tour-list {
+    .row {
+      padding: 2.5rem !important;
+    }
+    .tour-masonry {
+      .container {
+        display: block !important;
+        .grid-item + .grid-item {
+          margin-top: 1.5rem;
+        }
+      }
     }
   }
 }

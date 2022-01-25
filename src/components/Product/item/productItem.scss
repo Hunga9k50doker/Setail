@@ -1,7 +1,7 @@
 @import "../../../styles/variables";
 @import "../../../styles/global";
 .product-item {
-  width: 280px;
+  width: 100%;
   .img-container {
     position: relative;
     img {
@@ -49,7 +49,7 @@
     display: block;
   }
   .product-name {
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     font-size: 18px;
     font-weight: bold;
     color: #212121;

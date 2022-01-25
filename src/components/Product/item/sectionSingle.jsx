@@ -9,15 +9,16 @@ const ProductItemDetails = ({ itemData }) => {
   return (
     <div className="product-details__container">
       <div className="img__list">
-        <img src={itemData.img} alt="img-product" className="img-product" />
-        {itemData.gallery.map((e, i) => (
-          <img
-            key={i}
-            src={e}
-            alt={`img-gallery-${i + 1}`}
-            className="img-gallery"
-          />
-        ))}
+        <div className="img-product">
+          <img src={itemData.img} alt="img-product" />
+        </div>
+        <div className="gallery">
+          {itemData.gallery.map((e, i) => (
+            <div className="img-gallery" key={i}>
+              <img src={e} alt={`img-gallery-${i + 1}`} />
+            </div>
+          ))}
+        </div>
       </div>
       <div className="info">
         <h1>{itemData.name}</h1>
