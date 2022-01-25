@@ -273,17 +273,7 @@
             .item__pb__percent {
               position: relative;
               background: $primary-color;
-              &:nth-child(1) {
-                width: 60%;
-              }
-              //   &:nth-child(2){
-              //   width: 100%;
-
-              // }
-              //   &:nth-child(1){
-              //   width: 60%;
-
-              // }
+             
               &::after {
                 content: " ";
                 position: absolute;
@@ -348,7 +338,13 @@
         justify-content: space-between;
         margin: 10px 0;
         font-weight: 600;
-        font-size: 0.7rem;
+        font-size: 0.8rem;
+        .star {
+          flex: 2;
+        }
+        p {
+          flex: 1;
+        }
         i {
           color: $primary-color;
           margin: 0 2px;
@@ -396,7 +392,7 @@
         .star-input {
           display: flex;
           align-items: center;
-          justify-content: flex-end;
+          justify-content: flex-start;
           flex: 2;
           font-size: 0.8rem;
           i {

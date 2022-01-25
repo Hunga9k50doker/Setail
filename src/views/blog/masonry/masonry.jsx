@@ -13,12 +13,13 @@ import {
 } from "../../../components/blogItem/BlogItem.jsx";
 
 const Masonry = () => {
-  var [loadItems, setLoaded] = useState([]);
-  var [showButton, setShowButton] = useState(true);
+
+  const [loadItems, setLoaded] = useState([]);
+  const [showButton, setShowButton] = useState(true);
   // let width = screen.width;
   // console.log(width);
   const clickHandler = () => {
-    console.log("clickHandler");
+    // console.log("clickHandler");
     setShowButton(() => false);
     setLoaded(() => {
       return [

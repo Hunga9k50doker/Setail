@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 const card_01_img_01 = require("../img/featureImg/Corfu.jpg").default;
 const card_01_img_02 = require("../img/featureImg/vatican.jpg").default;
 const card_01_img_03 = require("../img/featureImg/rome.jpg").default;
@@ -61,8 +63,8 @@ const CardDetailArr = [
     location: "Europe",
     title: "Corfu",
     subTitle: "Meinem seh blick noch lebt die dem nicht tränen was..",
-    cost: "996",
-    rating: "7.3",
+    cost: 996,
+    rating: 7.3,
     review__details: [
       { title: "Rating", percent: "60" },
       { title: "Comfort", percent: "100" },
@@ -70,7 +72,6 @@ const CardDetailArr = [
       { title: "Hospitality", percent: "60" },
       { title: "Hygiene", percent: "100" },
       { title: "Reception", percent: "40" },
-      
     ],
     img__grid: [
       destination_02_img_01,
@@ -94,16 +95,15 @@ const CardDetailArr = [
     location: "Europe",
     title: "Vatican City",
     subTitle: "Meinem seh blick noch lebt die dem nicht tränen was..",
-    cost: "860",
-    rating: "7.3",
+    cost: 860,
+    rating: 7.3,
     review__details: [
-      { title: "Rating", percent: "60" },
+      { title: "Rating", percent: "100" },
       { title: "Comfort", percent: "100" },
       { title: "Food", percent: "80" },
-      { title: "Hospitality", percent: "60" },
+      { title: "Hospitality", percent: "100" },
       { title: "Hygiene", percent: "100" },
       { title: "Reception", percent: "40" },
-      
     ],
     img__grid: [
       destination_02_img_01,
@@ -127,16 +127,15 @@ const CardDetailArr = [
     location: "Europe",
     title: "Rome",
     subTitle: "Meinem seh blick noch lebt die dem nicht tränen was..",
-    cost: "2300",
-    rating: "7.3",
+    cost: 2300,
+    rating: 7.3,
     review__details: [
-      { title: "Rating", percent: "60" },
-      { title: "Comfort", percent: "100" },
+      { title: "Rating", percent: "40" },
+      { title: "Comfort", percent: "40" },
       { title: "Food", percent: "80" },
       { title: "Hospitality", percent: "60" },
       { title: "Hygiene", percent: "100" },
       { title: "Reception", percent: "40" },
-      
     ],
     img__grid: [
       destination_02_img_01,
@@ -160,16 +159,15 @@ const CardDetailArr = [
     location: "Europe",
     title: "Milan",
     subTitle: "Meinem seh blick noch lebt die dem nicht tränen was..",
-    cost: "1230",
-    rating: "7.3",
+    cost: 1230,
+    rating: 7.3,
     review__details: [
       { title: "Rating", percent: "60" },
-      { title: "Comfort", percent: "100" },
-      { title: "Food", percent: "80" },
+      { title: "Comfort", percent: "40" },
+      { title: "Food", percent: "100" },
       { title: "Hospitality", percent: "60" },
       { title: "Hygiene", percent: "100" },
       { title: "Reception", percent: "40" },
-      
     ],
     img__grid: [
       destination_02_img_01,
@@ -193,16 +191,15 @@ const CardDetailArr = [
     location: "Europe",
     title: "Seville",
     subTitle: "Meinem seh blick noch lebt die dem nicht tränen was..",
-    cost: "1500",
-    rating: "7.3",
+    cost: 1500,
+    rating: 7.3,
     review__details: [
       { title: "Rating", percent: "60" },
-      { title: "Comfort", percent: "100" },
+      { title: "Comfort", percent: "60" },
       { title: "Food", percent: "80" },
       { title: "Hospitality", percent: "60" },
       { title: "Hygiene", percent: "100" },
       { title: "Reception", percent: "40" },
-      
     ],
     img__grid: [
       destination_02_img_01,
@@ -227,16 +224,15 @@ const CardDetailArr = [
     location: "Europe",
     title: "Kis Ski School",
     subTitle: "Meinem seh blick noch lebt die dem nicht tränen was..",
-    cost: "1600",
-    rating: "7.3",
+    cost: 1600,
+    rating: 7.3,
     review__details: [
-      { title: "Rating", percent: "60" },
-      { title: "Comfort", percent: "100" },
+      { title: "Rating", percent: "40" },
+      { title: "Comfort", percent: "40" },
       { title: "Food", percent: "80" },
       { title: "Hospitality", percent: "60" },
       { title: "Hygiene", percent: "100" },
       { title: "Reception", percent: "40" },
-      
     ],
     img__grid: [
       destination_02_img_01,
@@ -260,16 +256,15 @@ const CardDetailArr = [
     location: "Europe",
     title: "Magic Of Italy",
     subTitle: "Meinem seh blick noch lebt die dem nicht tränen was..",
-    cost: "1000",
-    rating: "7.3",
+    cost: 1000,
+    rating: 7.3,
     review__details: [
       { title: "Rating", percent: "60" },
-      { title: "Comfort", percent: "100" },
+      { title: "Comfort", percent: "40" },
       { title: "Food", percent: "80" },
       { title: "Hospitality", percent: "60" },
       { title: "Hygiene", percent: "100" },
       { title: "Reception", percent: "40" },
-      
     ],
     img__grid: [
       destination_02_img_01,
@@ -293,16 +288,15 @@ const CardDetailArr = [
     location: "Europe",
     title: "Winter Action",
     subTitle: "Meinem seh blick noch lebt die dem nicht tränen was..",
-    cost: "960",
-    rating: "6.0",
+    cost: 960,
+    rating: 6.0,
     review__details: [
       { title: "Rating", percent: "60" },
-      { title: "Comfort", percent: "100" },
-      { title: "Food", percent: "80" },
+      { title: "Comfort", percent: "60" },
+      { title: "Food", percent: "60" },
       { title: "Hospitality", percent: "60" },
       { title: "Hygiene", percent: "100" },
       { title: "Reception", percent: "40" },
-      
     ],
     img__grid: [
       destination_02_img_01,
@@ -326,16 +320,15 @@ const CardDetailArr = [
     location: "Europe",
     title: "Skiing In Alps",
     subTitle: "Meinem seh blick noch lebt die dem nicht tränen was..",
-    cost: "450",
-    rating: "7.3",
+    cost: 450,
+    rating: 7.3,
     review__details: [
-      { title: "Rating", percent: "60" },
+      { title: "Rating", percent: "100" },
       { title: "Comfort", percent: "100" },
-      { title: "Food", percent: "80" },
+      { title: "Food", percent: "100" },
       { title: "Hospitality", percent: "60" },
       { title: "Hygiene", percent: "100" },
       { title: "Reception", percent: "40" },
-      
     ],
     img__grid: [
       destination_02_img_01,
@@ -359,16 +352,15 @@ const CardDetailArr = [
     location: "Europe",
     title: "Snow Surfing",
     subTitle: "Meinem seh blick noch lebt die dem nicht tränen was..",
-    cost: "720",
-    rating: "7.3",
+    cost: 720,
+    rating: 7.3,
     review__details: [
       { title: "Rating", percent: "60" },
-      { title: "Comfort", percent: "100" },
+      { title: "Comfort", percent: "60" },
       { title: "Food", percent: "80" },
       { title: "Hospitality", percent: "60" },
-      { title: "Hygiene", percent: "100" },
+      { title: "Hygiene", percent: "60" },
       { title: "Reception", percent: "40" },
-      
     ],
     img__grid: [
       destination_02_img_01,
@@ -392,16 +384,15 @@ const CardDetailArr = [
     location: "Europe",
     title: "Active Winter",
     subTitle: "Meinem seh blick noch lebt die dem nicht tränen was..",
-    cost: "3600",
-    rating: "7.3",
+    cost: 3600,
+    rating: 7.3,
     review__details: [
       { title: "Rating", percent: "60" },
-      { title: "Comfort", percent: "100" },
+      { title: "Comfort", percent: "40" },
       { title: "Food", percent: "80" },
       { title: "Hospitality", percent: "60" },
       { title: "Hygiene", percent: "100" },
       { title: "Reception", percent: "40" },
-      
     ],
     img__grid: [
       destination_02_img_01,
@@ -426,16 +417,15 @@ const CardDetailArr = [
     img: Spain,
     subTitle:
       "Oiseau flots sans brides mes leur haleurs bons les hystériques, les   les peaux les taches dors, baiser de.Cieux poissons soleil et ce flamands les je. J'ai noirs et au lunules descendaient cheveux descendre drames. Sures île des.",
-    cost: "1705",
-    rating: "5.0",
+    cost: 1705,
+    rating: 5.0,
     review__details: [
-      { title: "Rating", percent: "60" },
+      { title: "Rating", percent: "40" },
       { title: "Comfort", percent: "100" },
       { title: "Food", percent: "80" },
       { title: "Hospitality", percent: "60" },
       { title: "Hygiene", percent: "100" },
       { title: "Reception", percent: "40" },
-      
     ],
     img__grid: [
       destination_02_img_01,
@@ -460,16 +450,15 @@ const CardDetailArr = [
     img: Tarragona,
     subTitle:
       "Dolores ipsum clita kasd duo lorem et, et dolores rebum magna ipsum eirmod magna labore, justo diam duo eirmod et.",
-    cost: "1740",
-    rating: "5.0",
+    cost: 1740,
+    rating: 5.0,
     review__details: [
-      { title: "Rating", percent: "60" },
+      { title: "Rating", percent: "100" },
       { title: "Comfort", percent: "100" },
       { title: "Food", percent: "80" },
       { title: "Hospitality", percent: "60" },
-      { title: "Hygiene", percent: "100" },
+      { title: "Hygiene", percent: "40" },
       { title: "Reception", percent: "40" },
-      
     ],
     img__grid: [
       destination_02_img_01,
@@ -494,16 +483,15 @@ const CardDetailArr = [
     img: Marid,
     subTitle:
       "Evil though friends however grace thy near formed but, but as aisle albions time these was almost thy. Though evil.",
-    cost: "1100",
-    rating: "7.0",
+    cost: 1100,
+    rating: 7.0,
     review__details: [
-      { title: "Rating", percent: "60" },
-      { title: "Comfort", percent: "100" },
+      { title: "Rating", percent: "80" },
+      { title: "Comfort", percent: "80" },
       { title: "Food", percent: "80" },
       { title: "Hospitality", percent: "60" },
       { title: "Hygiene", percent: "100" },
       { title: "Reception", percent: "40" },
-      
     ],
     img__grid: [
       destination_02_img_01,
@@ -528,16 +516,15 @@ const CardDetailArr = [
     img: Bacelona,
     subTitle:
       "El para que aire despenada pulso de mármol y. Todo vilo ansioso y en huevos y los. Borrachos talco entonces.",
-    cost: "1705",
-    rating: "5.0",
+    cost: 1705,
+    rating: 5.0,
     review__details: [
-      { title: "Rating", percent: "60" },
-      { title: "Comfort", percent: "100" },
+      { title: "Rating", percent: "100" },
+      { title: "Comfort", percent: "40" },
       { title: "Food", percent: "80" },
       { title: "Hospitality", percent: "60" },
       { title: "Hygiene", percent: "100" },
       { title: "Reception", percent: "40" },
-      
     ],
     img__grid: [
       destination_02_img_01,
@@ -562,16 +549,15 @@ const CardDetailArr = [
     img: Kosigan,
     subTitle:
       "Your reclining leave sir burned dreaming my. The only bleak shaven seraphim unmerciful and a, implore entrance darkness desolate god.",
-    cost: "963",
-    rating: "5.3",
+    cost: 963,
+    rating: 5.3,
     review__details: [
-      { title: "Rating", percent: "60" },
+      { title: "Rating", percent: "100" },
       { title: "Comfort", percent: "100" },
       { title: "Food", percent: "80" },
       { title: "Hospitality", percent: "60" },
       { title: "Hygiene", percent: "100" },
       { title: "Reception", percent: "40" },
-      
     ],
     img__grid: [
       destination_02_img_01,
@@ -596,16 +582,15 @@ const CardDetailArr = [
     img: Taipe,
     subTitle:
       "Kynzathul hul owog kyniuhhad scemem fyomnok therthetyk, kethwe merth epedek buabeleul wylag kynzathul. Fyodumtul en byuntelen wegh scepsegud urodum. Ualmun.",
-    cost: "2130",
-    rating: "5.0",
+    cost: 2130,
+    rating: 5.0,
     review__details: [
       { title: "Rating", percent: "60" },
-      { title: "Comfort", percent: "100" },
+      { title: "Comfort", percent: "60" },
       { title: "Food", percent: "80" },
       { title: "Hospitality", percent: "60" },
       { title: "Hygiene", percent: "100" },
       { title: "Reception", percent: "40" },
-      
     ],
     img__grid: [
       destination_02_img_01,
@@ -630,16 +615,15 @@ const CardDetailArr = [
     img: Tainan,
     subTitle:
       "Porgiamo dea viviamo manifestamente tanto né le mortali, di quale con alla allo principio non se grazia sí, in di.",
-    cost: "999",
-    rating: "7.3",
+    cost: 999,
+    rating: 7.3,
     review__details: [
-      { title: "Rating", percent: "60" },
-      { title: "Comfort", percent: "100" },
+      { title: "Rating", percent: "40" },
+      { title: "Comfort", percent: "40" },
       { title: "Food", percent: "80" },
       { title: "Hospitality", percent: "60" },
       { title: "Hygiene", percent: "100" },
       { title: "Reception", percent: "40" },
-      
     ],
     img__grid: [
       destination_02_img_01,
@@ -664,16 +648,15 @@ const CardDetailArr = [
     img: Taiwan,
     subTitle:
       "Kasd sadipscing rebum ut justo gubergren et sed erat, gubergren justo eos rebum diam dolore dolor kasd nonumy erat. Et.",
-    cost: "1705",
-    rating: "5.0",
+    cost: 1705,
+    rating: 5.0,
     review__details: [
       { title: "Rating", percent: "60" },
-      { title: "Comfort", percent: "100" },
+      { title: "Comfort", percent: "40" },
       { title: "Food", percent: "80" },
       { title: "Hospitality", percent: "60" },
       { title: "Hygiene", percent: "100" },
       { title: "Reception", percent: "40" },
-      
     ],
     img__grid: [
       destination_02_img_01,
@@ -698,16 +681,15 @@ const CardDetailArr = [
     img: Bali,
     subTitle:
       "Menge herauf der des gleich sich hören früh mich noch labyrinthisch. Ich zu lied die erste ihr seelen lied schöne.",
-    cost: "1705",
-    rating: "5.0",
+    cost: 1705,
+    rating: 5.0,
     review__details: [
       { title: "Rating", percent: "60" },
-      { title: "Comfort", percent: "100" },
+      { title: "Comfort", percent: "60" },
       { title: "Food", percent: "80" },
       { title: "Hospitality", percent: "60" },
       { title: "Hygiene", percent: "100" },
       { title: "Reception", percent: "40" },
-      
     ],
     img__grid: [
       destination_02_img_01,
@@ -732,16 +714,15 @@ const CardDetailArr = [
     img: Ubud,
     subTitle:
       "Halal thudothlon en farad symeonnok fyon kyul urodum. Egyre hullothya wylag kyt fyon symeonnok urumemtuul ezes. Yg illen fugwa syrolmol.",
-    cost: "888",
-    rating: "6.0",
+    cost: 888,
+    rating: 6.0,
     review__details: [
       { title: "Rating", percent: "60" },
-      { title: "Comfort", percent: "100" },
+      { title: "Comfort", percent: "40" },
       { title: "Food", percent: "80" },
-      { title: "Hospitality", percent: "60" },
+      { title: "Hospitality", percent: "40" },
       { title: "Hygiene", percent: "100" },
       { title: "Reception", percent: "40" },
-      
     ],
     img__grid: [
       destination_02_img_01,
@@ -766,16 +747,15 @@ const CardDetailArr = [
     img: Siminyak,
     subTitle:
       "Li unuvorte kie kusxante mi niajn. Vidi se sakon restajxon rumo min iris helpon bestoj, ni fine teron da cxiuj.",
-    cost: "966",
-    rating: "9.0",
+    cost: 966,
+    rating: 9.0,
     review__details: [
       { title: "Rating", percent: "60" },
-      { title: "Comfort", percent: "100" },
-      { title: "Food", percent: "80" },
+      { title: "Comfort", percent: "60" },
+      { title: "Food", percent: "60" },
       { title: "Hospitality", percent: "60" },
       { title: "Hygiene", percent: "100" },
       { title: "Reception", percent: "40" },
-      
     ],
     img__grid: [
       destination_02_img_01,
@@ -800,16 +780,15 @@ const CardDetailArr = [
     img: Denpasar,
     subTitle:
       "Kapti se kiujn nun povo por tial mallevis, venu lauxlongiru kaj sciis ni tial vi, sia survoje velojn longe pafilo,.",
-    cost: "999",
-    rating: "6.7",
+    cost: 999,
+    rating: 6.7,
     review__details: [
       { title: "Rating", percent: "60" },
-      { title: "Comfort", percent: "100" },
+      { title: "Comfort", percent: "20" },
       { title: "Food", percent: "80" },
       { title: "Hospitality", percent: "60" },
-      { title: "Hygiene", percent: "100" },
+      { title: "Hygiene", percent: "60" },
       { title: "Reception", percent: "40" },
-      
     ],
     img__grid: [
       destination_02_img_01,
@@ -834,16 +813,15 @@ const CardDetailArr = [
     img: WineTasting,
     subTitle:
       "Je l'horizon les tendus océans fond la et plus. Braises immobilités et de de balottant la des, de ou qu'un.",
-    cost: "920",
-    rating: "5.0",
+    cost: 920,
+    rating: 5.0,
     review__details: [
       { title: "Rating", percent: "60" },
-      { title: "Comfort", percent: "100" },
+      { title: "Comfort", percent: "60" },
       { title: "Food", percent: "80" },
       { title: "Hospitality", percent: "60" },
-      { title: "Hygiene", percent: "100" },
+      { title: "Hygiene", percent: "40" },
       { title: "Reception", percent: "40" },
-      
     ],
     img__grid: [
       destination_02_img_01,
@@ -869,16 +847,15 @@ const CardDetailArr = [
     img: camping,
     subTitle:
       "Aux regrette chantants d'oiseaux poetes tohu-bohus faisait je a le , anglais d'enfants île coup lassé parfums, a arbres ou.",
-    cost: "1550",
-    rating: "5.0",
+    cost: 1550,
+    rating: 5.0,
     review__details: [
       { title: "Rating", percent: "60" },
-      { title: "Comfort", percent: "100" },
+      { title: "Comfort", percent: "40" },
       { title: "Food", percent: "80" },
       { title: "Hospitality", percent: "60" },
       { title: "Hygiene", percent: "100" },
-      { title: "Reception", percent: "40" },
-      
+      { title: "Reception", percent: "60" },
     ],
     img__grid: [
       destination_02_img_01,
@@ -903,16 +880,15 @@ const CardDetailArr = [
     img: sydneyOpera,
     subTitle:
       "Et ea invidunt aliquyam sit sit magna dolor. Dolores takimata dolor sed erat, stet ipsum sed consetetur et, magna dolor.",
-    cost: "550",
-    rating: "5.0",
+    cost: 550,
+    rating: 5.0,
     review__details: [
       { title: "Rating", percent: "60" },
       { title: "Comfort", percent: "100" },
       { title: "Food", percent: "80" },
-      { title: "Hospitality", percent: "60" },
-      { title: "Hygiene", percent: "100" },
+      { title: "Hospitality", percent: "80" },
+      { title: "Hygiene", percent: "20" },
       { title: "Reception", percent: "40" },
-      
     ],
     img__grid: [
       destination_02_img_01,
@@ -937,16 +913,15 @@ const CardDetailArr = [
     img: caving,
     subTitle:
       "Diam amet dolore dolore ea nonumy eirmod lorem. Justo stet sea sed kasd et dolor et. Amet eirmod dolor clita.",
-    cost: "1550",
-    rating: "5.0",
+    cost: 1550,
+    rating: 5.0,
     review__details: [
       { title: "Rating", percent: "60" },
       { title: "Comfort", percent: "100" },
       { title: "Food", percent: "80" },
       { title: "Hospitality", percent: "60" },
-      { title: "Hygiene", percent: "100" },
+      { title: "Hygiene", percent: "60" },
       { title: "Reception", percent: "40" },
-      
     ],
     img__grid: [
       destination_02_img_01,
@@ -971,16 +946,15 @@ const CardDetailArr = [
     img: Holand,
     subTitle:
       "Stet duo et voluptua gubergren et lorem nonumy, dolor et at stet justo kasd erat sadipscing et, sed labore amet.",
-    cost: "1330",
-    rating: "5.0",
+    cost: 1330,
+    rating: 5.0,
     review__details: [
       { title: "Rating", percent: "60" },
       { title: "Comfort", percent: "100" },
       { title: "Food", percent: "80" },
       { title: "Hospitality", percent: "60" },
-      { title: "Hygiene", percent: "100" },
-      { title: "Reception", percent: "40" },
-      
+      { title: "Hygiene", percent: "50" },
+      { title: "Reception", percent: "60" },
     ],
     img__grid: [
       destination_02_img_01,
@@ -1005,16 +979,15 @@ const CardDetailArr = [
     img: templeTour,
     subTitle:
       "Justo consetetur duo et eos dolor at ipsum ea et sea, accusam sed gubergren kasd dolor et kasd lorem. Est.",
-    cost: "1550",
-    rating: "5.0",
+    cost: 1550,
+    rating: 5.0,
     review__details: [
       { title: "Rating", percent: "60" },
-      { title: "Comfort", percent: "100" },
+      { title: "Comfort", percent: "60" },
       { title: "Food", percent: "80" },
       { title: "Hospitality", percent: "60" },
       { title: "Hygiene", percent: "100" },
       { title: "Reception", percent: "40" },
-      
     ],
     img__grid: [
       destination_02_img_01,
@@ -1046,18 +1019,15 @@ const getSortCards = getCards_random(10).sort(function (a, b) {
   return Number(a.cost) - Number(b.cost);
 });
 
-
 // sort high to low
 const getSortParseCards = getCards_random(10).sort(function (a, b) {
   return Number(b.cost) - Number(a.cost);
 });
 
-
 // sort flow name A- Z
 const getSortStringCards = getCards_random(10).sort(function (a, b) {
   return ("" + a.title).localeCompare(b.title);
 });
-
 
 const cardData = {
   getAllCards,

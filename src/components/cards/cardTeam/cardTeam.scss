@@ -21,11 +21,23 @@
     transform: translateY(100%);
     transition: all 0.5s ease;
     font-family: "Poppins", sans-serif;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 40%;
     h5 {
       font-weight: 600;
     }
-    p {
+    &-text {
       font-size: 0.875rem;
+      display: -webkit-box;
+      -webkit-box-oriant: vertical;
+      -webkit-line-clamp: 3;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      flex: 1;
     }
     .social-network {
       display: flex;

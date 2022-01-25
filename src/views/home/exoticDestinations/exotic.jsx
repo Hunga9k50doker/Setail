@@ -5,7 +5,7 @@ import '../../App.scss';
 const HomeExotic = () => {
 
  
-        return <div className="container">Exotic</div>;
+        return <div className="component">Exotic</div>;
     
 }
 

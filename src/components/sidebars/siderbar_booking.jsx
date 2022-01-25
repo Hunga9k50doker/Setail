@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "./sidebars.scss";
 const SidebarBooking = () => {
-  const isValid = document.querySelector(".check__valid");
+  // const isValid = document.querySelector(".check__valid");
   const $$ = document.querySelectorAll(".sidebar__booking input[required]");
   const notifi = document.querySelector(".notification");
   console.log($$);
@@ -63,6 +63,7 @@ const SidebarBooking = () => {
                   type="number"
                   name="phone__number"
                   id="phone__number"
+                  min={0}
                   placeholder="Phone"
                 />
               </li>
@@ -88,6 +89,7 @@ const SidebarBooking = () => {
                   id="number__ticket"
                   required
                   placeholder="Number of tickets*"
+                  min={0}
                 />
               </li>
               <li className="sidebar__message__booking sidebar__item-input">

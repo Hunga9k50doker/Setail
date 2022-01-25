@@ -1,0 +1,76 @@
+@import "../../styles/variables";
+@import "../../styles/global";
+
+.slide__banner {
+  @extend .slide__card-slick;
+}
+
+.slider__card__rating {
+  position: relative;
+  margin-top: 80px;
+  width: 100vw !important;
+  align-items: center;
+  justify-content: center;
+
+  .slick-arrow {
+    display: block;
+    position: absolute;
+    z-index: 99;
+    width: fit-content;
+    height: fit-content;
+  }
+  .slick-prev,
+  .slick-next {
+    &::before {
+      top: 50%;
+      transform: translate(0, -50%);
+      font-size: 5rem;
+      color: $primary-color;
+    }
+  }
+
+  .slick-list {
+    height: 300px;
+    overflow-y: hidden;
+  }
+}
+.slide__card {
+  @extend .slide__card-slick;
+  .slick-slide {
+    margin: 40px 10px 20px 10px;
+  }
+}
+// card reviews
+.slide__card__review {
+  position: relative;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: 90vh;
+  color: $white-color;
+  text-align: center;
+  margin-bottom: 60px;
+  .review__title {
+    font-size: 3rem;
+    font-weight: 700;
+    padding-top: 100px;
+  }
+  .review__subtitle {
+    font-size: 1.2rem;
+    margin: 20px;
+  }
+  .star {
+    i {
+      font-size: 0.7rem;
+      margin: 0 2px;
+    }
+  }
+  .slick-dots {
+    position: absolute;
+    top: 50%;
+  }
+}
+
+.team-holder-item {
+  margin-top: 120px;
+}

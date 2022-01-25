@@ -4,9 +4,9 @@ import "./team.scss";
 import { Baner1, banData } from "../../../components/blogItem/BlogItem";
 import {
   TeamHolderItem,
-  teamData,
   TeamHolderBelow,
 } from "../../../components/cards/cardTeam/cardTeam";
+import { teamData } from "../../../assets/fake-data/CardTeams";
 
 const ElementTeam = () => {
   return (

@@ -43,8 +43,6 @@ const Standard = () => {
             <div className="row ">
               <NavTabFilter />
             </div>
-
-           
           </Selections>
         </NewStyleSelection>
       </div>

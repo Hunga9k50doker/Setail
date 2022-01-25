@@ -11,9 +11,12 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
   background: $white-color;
+
   &__logo {
+    position: relative;
+    z-index: 1;
     cursor: pointer;
     max-width: 150px;
     height: 50px;
@@ -238,10 +241,10 @@
         position: relative;
         .cart-category {
           position: absolute;
-          top: 50px;
-          right: 0;
-          width: 300px;
-          min-height: 300px;
+          top: 48px;
+          right: -20px;
+          width: 240px;
+          min-height: 240px;
           box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
           text-align: center;
           transform: scaleY(0);
@@ -249,6 +252,19 @@
           transition: all 0.3s ease;
           border-radius: 4px;
           background: $white-color;
+          &:before {
+            content: " ";
+            position: absolute;
+            top: 0;
+            right: 20px;
+            width: 20px;
+            height: 20px;
+            transform: translateY(-100%);
+            border-bottom: 10px solid rgb(189, 178, 178);
+            border-right: 10px solid transparent;
+            border-left: 10px solid transparent;
+            z-index: 999;
+          }
           &:after {
             @extend .bridge;
             height: 30px !important;
@@ -290,7 +306,6 @@
     left: 0;
     right: 0;
     bottom: 0;
-
     background: rgba($primary-color, 0.7);
     transition: all 0.3s linear;
     .close {

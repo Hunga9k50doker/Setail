@@ -7,6 +7,8 @@ import { Link } from "react-router-dom";
 
 const NavOnTop = () => {
   // document.querySelector("modal").modal({ backdrop: "static", keyboard: false });
+  // const abs = document.getElementsByClassName("nav__onTop");
+  // console.log(abs);
   return (
     <>
       <div className="nav__onTop">
@@ -88,7 +90,7 @@ const NavOnTop = () => {
         id="exampleModalToggle"
         aria-hidden="true"
         aria-labelledby="exampleModalToggleLabel"
-        tabindex="-1"
+        tabIndex="-1"
       >
         <div className="modal-dialog modal-dialog-centered">
           <div className="modal-content">

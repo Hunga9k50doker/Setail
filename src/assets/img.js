@@ -4,6 +4,7 @@ import CustomTitle from "./img/other/sidearea-img-2.png";
 import CardEmpty from "./img/other/empty-cart.png";
 import map from "./img/other/map.jpg";
 import BgSydneyOpera from "./img/banner_img/bgOurteamIteam.jpg";
+import BgWinter from "./img/banner_img/bgWinter2.jpg";
 //poster and btn of video
 import PosterBtn from "./img/imgVideo/btnYoutube.png";
 import PosterTravel from "./img/imgVideo/travelBgMp4.jpg";
@@ -132,6 +133,7 @@ export {
   CustomTitle,
   map,
   BgSydneyOpera,
+  BgWinter,
   //poster and btn video
   PosterBtn,
   PosterTravel,

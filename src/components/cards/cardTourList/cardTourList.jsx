@@ -153,7 +153,7 @@ const TourMasonryItem = ({ data }) => {
             </div>
           ) : (
             <div>
-              <i class="fas fa-star-half-alt"></i>
+              <i className="fas fa-star-half-alt"></i>
               <span>{`${data.rating} Good`}</span>
             </div>
           )}

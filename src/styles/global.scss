@@ -80,6 +80,18 @@ a {
   color: #505050;
 }
 
+.btn-primary {
+  cursor: pointer;
+  background: $primary-color;
+  padding: 10px 20px;
+  border: none;
+  color: $white-color;
+  font-weight: 600;
+  margin: 20px 0 50px 0;
+  &:hover {
+    background: $bg-color--hover;
+  }
+}
 .bridge {
   content: "";
   position: absolute;

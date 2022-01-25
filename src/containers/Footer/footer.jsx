@@ -4,6 +4,7 @@ import "../../styles/grid.scss";
 import LogoFooter from "../../assets/img/logo/logo-header.png";
 
 const Footer = () => {
+  
   return (
     <>
       <footer className="footer ">

@@ -1,31 +1,31 @@
-@import '../../styles/variables';
-@import '../../styles/global';
+@import "../../styles/variables";
+@import "../../styles/global";
 
-.row__details{
-    margin-top: 160px;
-    .details-item{
-        text-align: center;
-        display:flex;
-        align-items:center;
-        justify-content: center;
-        flex-direction: column;
-        img{
-            transform: translateY(0);
-            transition: all 0.3s ease;
-            &:hover{
-            transform: translateY(-10px);
-
-            }
-        }
-       h3{
-           margin-top: 40px;margin-bottom: 20px;
-           font-size: 1.2rem;
-           font-weight: bold;
-       }
-        p{
-            color: $text-color;
-            flex:1;
-            font-size: 1rem;
-        }
+.row__details {
+  margin-top: 100px;
+  .details-item {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    img {
+      transform: translateY(0);
+      transition: all 0.3s ease;
+      &:hover {
+        transform: translateY(-10px);
+      }
     }
+    h3 {
+      margin-top: 40px;
+      margin-bottom: 20px;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+    p {
+      color: $text-color;
+      flex: 1;
+      font-size: 1rem;
+    }
+  }
 }

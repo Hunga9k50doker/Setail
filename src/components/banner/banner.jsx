@@ -20,3 +20,9 @@ const Banner = (props) => {
 };
 
 export default Banner;
+
+// class Example extends React.Component  {
+//   render() {
+//     return <h1>I'm a functional component!</h1>;
+//   }
+// };

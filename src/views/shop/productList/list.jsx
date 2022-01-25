@@ -16,8 +16,8 @@ import { Baner1, banData } from "../../../components/blogItem/BlogItem";
 import { amazingTour } from "../../../assets/img";
 
 const ShopList = () => {
-  var [items, setItems] = useState([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]);
-  var [page, setPage] = useState(1);
+  const [items, setItems] = useState([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]);
+  const [page, setPage] = useState(1);
   const popularItems = [6, 4, 3];
   function changePage() {
     console.log(1);

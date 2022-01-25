@@ -57,32 +57,48 @@ import "./App.scss";
 function App() {
   // handleEvent btn back top
   // The back-to-top button is hidden at the beginning
+
   const [showButton, setShowButton] = useState(false);
+
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      if (window.pageYOffset > 300) {
-        setShowButton(true);
-      } else {
-        setShowButton(false);
-      }
+      scrollFunction();
     });
   }, []);
-
+  function scrollFunction() {
+    if (window.scrollY > 30) {
+      document.querySelector(".nav.nav__category").style.top = "0";
+      document.querySelector(
+        ".nav__list-item-Elements .nav__list-item-selections"
+      ).style.top = "75px";
+    } else {
+      document.querySelector(".nav.nav__category").style.top = "42px";
+      document.querySelector(
+        ".nav__list-item-Elements .nav__list-item-selections"
+      ).style.top = "117px";
+      setShowButton(false);
+    }
+    if (window.scrollY > 300) {
+      setShowButton(true);
+    }
+  }
   // This function will scroll the window to the top
   const scrollToTop = () => {
     window.scrollTo(0, 0);
   };
 
   return (
-    <Router>
-      <div className="App">
+    <div className="App">
+      <Router>
         <NavOnTop />
         <Nav />
-        {showButton && (
-          <button className="backToTop" onClick={scrollToTop}>
-            Top
-          </button>
-        )}
+        <>
+          {showButton && (
+            <button className="backToTop" onClick={scrollToTop}>
+              <i className="fas fa-arrow-up"></i>
+            </button>
+          )}
+        </>
         <Switch>
           {/*=================== Home================== */}
 
@@ -209,15 +225,15 @@ function App() {
           <Route exact path="/elements/section-title">
             <TypographySectionTitle />
           </Route>
-        
+
           <Route path="*">
             <NotFound />
           </Route>
         </Switch>
 
         <Footer />
-      </div>
-    </Router>
+      </Router>
+    </div>
   );
 }
 

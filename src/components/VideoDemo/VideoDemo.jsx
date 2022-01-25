@@ -19,12 +19,7 @@ const VideoDemo = (props) => {
           backgroundAttachment: "fixed",
         }}
       >
-        <h3>Go & Discover</h3>
-        <h2>Breathtaking Cities</h2>
-        <p>
-          Sollst geliebet es helle trübhell heimat, stillestehn du warum nicht
-          heut hast mein heut im.
-        </p>
+        <div className="video__title">{props.children}</div>
         <div className="responsive-video-poster">
           <button className="video__overlay">
             <div className="video__btn" onClick={handleEvents.hiddenBtn}>
@@ -35,6 +30,7 @@ const VideoDemo = (props) => {
           <iframe
             title="this is a video"
             src={props.path}
+            // href={props.path}
             className="video__source"
             frameBorder="0"
             allow="autoplay; fullscreen;accelerometer;gyroscope;encrypted-media; picture-in-picture"

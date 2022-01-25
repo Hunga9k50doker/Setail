@@ -1,3 +1,4 @@
+import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -5,7 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import card_data from "../../assets/fake-data/CardUsers";
 import CardRating from "../cards/cardRating/cardRating";
 
-import "./CarouselCardRating.scss";
+import "./Carousel.scss";
 
 const SlideCardRating = () => {
   const settings = {
@@ -23,7 +24,13 @@ const SlideCardRating = () => {
           <div className="item" key={index}>
             <CardRating
               img={item.img}
-              description={'"' + item.rating + '"'}
+              description={
+                '"' +
+                item.rating__info.map((e, id) => {
+                  return `${id === 0 && e.rating}`;
+                }) +
+                '"'
+              }
               name={item.name}
             />
           </div>

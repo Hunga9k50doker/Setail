@@ -1,5 +1,9 @@
 const banner_home_img_01 = require("../img/banner_img/bgTravel1.jpg").default;
 const banner_home_img_02 = require("../img/banner_img/bgTravel2.jpg").default;
+const banner_winter_img_01 = require("../img/banner_img/bgWinter1.jpg").default;
+const banner_winter_img_02 = require("../img/banner_img/bgWinter2.jpg").default;
+const banner_exotic_img_01 = require("../img/banner_img/bgExotic1.jpg").default;
+const banner_exotic_img_02 = require("../img/banner_img/bgWinter2.jpg").default;
 const banner_pages_img_01 = require("../img/banner_img/bgPages.jpg").default;
 const banner_destinations_img_01 =
   require("../img/banner_img/bgDestinationList.jpg").default;
@@ -24,8 +28,42 @@ const BannerArr = [
     bgUrl: "",
   },
   {
+    types: "banner_winter_travel",
+    img: banner_winter_img_01,
+    title: "Winter Vacations",
+    subTitle: "Enjoy Your",
+    description:
+      "Diam vero takimata rebum eos sadipscing sadipscing clita takimata rebum nonumy. Amet vero ut erat dolor invidunt. Eirmod eos gubergren.",
+    bgUrl: "",
+  },
+  {
+    types: "banner_winter_travel",
+    img: banner_winter_img_02,
+    title: "Snow Aventure",
+    subTitle: "From Alps",
+    description:
+      "Diam consetetur sadipscing sed accusam eos invidunt vero ipsum. Voluptua eos diam gubergren et labore rebum. Sed voluptua diam ut.",
+    bgUrl: "",
+  },
+  {
+    types: "banner_exotic_travel",
+    img: banner_exotic_img_01,
+    title: "",
+    subTitle: "",
+    description: "",
+    bgUrl: "",
+  },
+  {
+    types: "banner_exotic_travel",
+    img: banner_exotic_img_02,
+    title: "",
+    subTitle: "",
+    description: "",
+    bgUrl: "",
+  },
+  {
     types: "banner_pages",
-    img:banner_pages_img_01,
+    img: banner_pages_img_01,
     title: "About Us",
     subTitle: "Amazing",
     description: "",
@@ -45,7 +83,7 @@ const BannerArr = [
     title: "Tours Search Pages",
     subTitle: "",
     description: " ",
-    bgUrl:banner_tours_img_01,
+    bgUrl: banner_tours_img_01,
   },
 ];
 

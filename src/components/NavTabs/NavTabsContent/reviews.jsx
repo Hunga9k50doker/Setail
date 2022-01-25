@@ -5,57 +5,11 @@ import { RatingStarInput, RatingStar } from "../../../utils/ratingStart";
 
 import card__data from "../../../assets/fake-data/CardUsers";
 import cardData from "../../../assets/fake-data/CardDetails";
+import { to_slug } from "../../../utils/utils";
 
 import Helmet from "../../Helmet/Helmet";
 const Reviews = () => {
-  // const RatingStarInput = () => {
-  //   var [star, setStar] = useState(0);
-  //   var $ = [];
-  //   for (let i = 0; i <= 4; i++) {
-  //     $ = [
-  //       ...$,
-  //       <label
-  //         className="rating__label"
-  //         key={i}
-  //         for={`rating${i + 1}`}
-  //         onClick={() => {
-  //           setStar(() => i + 1);
-  //         }}
-  //       >
-  //         <i className={`${i < star ? "fas" : "far"} fa-star`}></i>
-  //       </label>,
-  //     ];
-  //   }
-
   let { slug } = useParams();
-  function to_slug(str) {
-    // Chuyển hết sang chữ thường
-    str = str.toLowerCase();
-
-    // xóa dấu
-    str = str.replace(/(à|á|ạ|ả|ã|â|ầ|ấ|ậ|ẩ|ẫ|ă|ằ|ắ|ặ|ẳ|ẵ)/g, "a");
-    str = str.replace(/(è|é|ẹ|ẻ|ẽ|ê|ề|ế|ệ|ể|ễ)/g, "e");
-    str = str.replace(/(ì|í|ị|ỉ|ĩ)/g, "i");
-    str = str.replace(/(ò|ó|ọ|ỏ|õ|ô|ồ|ố|ộ|ổ|ỗ|ơ|ờ|ớ|ợ|ở|ỡ)/g, "o");
-    str = str.replace(/(ù|ú|ụ|ủ|ũ|ư|ừ|ứ|ự|ử|ữ)/g, "u");
-    str = str.replace(/(ỳ|ý|ỵ|ỷ|ỹ)/g, "y");
-    str = str.replace(/(đ)/g, "d");
-
-    // Xóa ký tự đặc biệt
-    str = str.replace(/([^0-9a-z-\s])/g, "");
-
-    // Xóa khoảng trắng thay bằng ký tự -
-    str = str.replace(/(\s+)/g, "-");
-
-    // xóa phần dự - ở đầu
-    str = str.replace(/^-+/g, "");
-
-    // xóa phần dư - ở cuối
-    str = str.replace(/-+$/g, "");
-
-    // return
-    return str;
-  }
 
   return (
     <Helmet title={slug}>
@@ -102,7 +56,7 @@ const Reviews = () => {
                           </h6>
                           <div className="item__pb">
                             <p
-                              style={{ width: `${element.percent}` }}
+                              style={{ width: `${element.percent}%` }}
                               className="item__pb__percent"
                             >
                               ''
@@ -123,13 +77,13 @@ const Reviews = () => {
                           <p>{e.rating}</p>
                           <div className="user__rating">
                             <div className="row">
-                              <div className="col col-xl-3 col-lg-3 col-md-6 col-12">
+                              <div className="col col-xl-4 col-lg-4 col-md-6 col-12">
                                 <>
                                   {item.review__details.map(
                                     (element, k) =>
                                       element.title === "Rating" && (
                                         <h6 className="user__rating__title">
-                                          {element.title}
+                                          <p>{element.title}</p>
                                           <RatingStar
                                             rating={element.percent / 20}
                                           />
@@ -140,7 +94,7 @@ const Reviews = () => {
                                     (element, k) =>
                                       element.title === "Hospitality" && (
                                         <h6 className="user__rating__title">
-                                          {element.title}{" "}
+                                          <p>{element.title} </p>
                                           <RatingStar
                                             rating={element.percent / 20}
                                           />
@@ -149,13 +103,13 @@ const Reviews = () => {
                                   )}
                                 </>
                               </div>
-                              <div className="col col-xl-3 col-lg-3 col-md-6 col-12">
+                              <div className="col col-xl-4 col-lg-4 col-md-6 col-12">
                                 <>
                                   {item.review__details.map(
                                     (element, k) =>
                                       element.title === "Comfort" && (
                                         <h6 className="user__rating__title">
-                                          {element.title}{" "}
+                                          <p>{element.title} </p>
                                           <RatingStar
                                             rating={element.percent / 20}
                                           />
@@ -166,7 +120,7 @@ const Reviews = () => {
                                     (element, k) =>
                                       element.title === "Hygiene" && (
                                         <h6 className="user__rating__title">
-                                          {element.title}{" "}
+                                          <p>{element.title} </p>
                                           <RatingStar
                                             rating={element.percent / 20}
                                           />
@@ -175,13 +129,13 @@ const Reviews = () => {
                                   )}
                                 </>
                               </div>
-                              <div className="col col-xl-3 col-lg-3 col-md-6 col-12">
+                              <div className="col col-xl-4 col-lg-4 col-md-6 col-12">
                                 <>
                                   {item.review__details.map(
                                     (element, k) =>
                                       element.title === "Food" && (
                                         <h6 className="user__rating__title">
-                                          {element.title}{" "}
+                                          <p>{element.title} </p>
                                           <RatingStar
                                             rating={element.percent / 20}
                                           />
@@ -192,7 +146,7 @@ const Reviews = () => {
                                     (element, k) =>
                                       element.title === "Reception" && (
                                         <h6 className="user__rating__title">
-                                          {element.title}{" "}
+                                          <p>{element.title} </p>
                                           <RatingStar
                                             rating={element.percent / 20}
                                           />
@@ -217,13 +171,15 @@ const Reviews = () => {
                     <h3 className="form__title">Post a Comment</h3>
                     <div className="user__rating">
                       <div className="row">
-                        <div className="col col-xl-3 col-lg-3 col-md-6 col-12">
+                        <div className="col col-xl-4 col-lg-4 col-md-6 col-12">
                           <>
                             {item.review__details.map(
                               (element, k) =>
                                 element.title === "Rating" && (
                                   <h6 className="user__rating__title">
-                                    <p>{element.title}</p>
+                                    <p>
+                                      <p>{element.title}</p>
+                                    </p>
                                     <RatingStarInput />
                                   </h6>
                                 )
@@ -232,20 +188,24 @@ const Reviews = () => {
                               (element, k) =>
                                 element.title === "Hospitality" && (
                                   <h6 className="user__rating__title">
-                                    <p>{element.title}</p>
+                                    <p>
+                                      <p>{element.title}</p>
+                                    </p>
                                     <RatingStarInput />
                                   </h6>
                                 )
                             )}
                           </>
                         </div>
-                        <div className="col col-xl-3 col-lg-3 col-md-6 col-12">
+                        <div className="col col-xl-4 col-lg-4 col-md-6 col-12">
                           <>
                             {item.review__details.map(
                               (element, k) =>
                                 element.title === "Comfort" && (
                                   <h6 className="user__rating__title">
-                                    <p>{element.title}</p>
+                                    <p>
+                                      <p>{element.title}</p>
+                                    </p>
                                     <RatingStarInput />
                                   </h6>
                                 )
@@ -254,20 +214,24 @@ const Reviews = () => {
                               (element, k) =>
                                 element.title === "Hygiene" && (
                                   <h6 className="user__rating__title">
-                                    <p>{element.title}</p>
+                                    <p>
+                                      <p>{element.title}</p>
+                                    </p>
                                     <RatingStarInput />
                                   </h6>
                                 )
                             )}
                           </>
                         </div>
-                        <div className="col col-xl-3 col-lg-3 col-md-6 col-12">
+                        <div className="col col-xl-4 col-lg-4 col-md-6 col-12">
                           <>
                             {item.review__details.map(
                               (element, k) =>
                                 element.title === "Food" && (
                                   <h6 className="user__rating__title">
-                                    <p>{element.title}</p>
+                                    <p>
+                                      <p>{element.title}</p>
+                                    </p>
                                     <RatingStarInput />
                                   </h6>
                                 )
@@ -276,7 +240,9 @@ const Reviews = () => {
                               (element, k) =>
                                 element.title === "Reception" && (
                                   <h6 className="user__rating__title">
-                                    <p>{element.title}</p>
+                                    <p>
+                                      <p>{element.title}</p>
+                                    </p>
                                     <RatingStarInput />
                                   </h6>
                                 )
