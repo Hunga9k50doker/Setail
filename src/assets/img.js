@@ -5,6 +5,7 @@ import CardEmpty from "./img/other/empty-cart.png";
 import map from "./img/other/map.jpg";
 import BgSydneyOpera from "./img/banner_img/bgOurteamIteam.jpg";
 import BgWinter from "./img/banner_img/bgWinter2.jpg";
+import BgOffer2 from "./img/banner_img/offerBanner.jpg";
 //poster and btn of video
 import PosterBtn from "./img/imgVideo/btnYoutube.png";
 import PosterTravel from "./img/imgVideo/travelBgMp4.jpg";
@@ -134,6 +135,7 @@ export {
   map,
   BgSydneyOpera,
   BgWinter,
+  BgOffer2,
   //poster and btn video
   PosterBtn,
   PosterTravel,

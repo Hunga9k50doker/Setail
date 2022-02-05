@@ -51,16 +51,19 @@ const AboutUs = () => {
     <Helmet title="About Us">
       <div className="component about__us">
         {/* banner */}
-        {getImgBanner.map((item, index) => (
-          <Banner
-            key={index}
-            bgUrl={item.bgUrl}
-            img={item.img}
-            title={item.title}
-            subTitle={item.subTitle}
-            description={item.description}
-          ></Banner>
-        ))}
+        {getImgBanner.map(
+          (item, index) =>
+            index === 0 && (
+              <Banner
+                key={index}
+                bgUrl={item.bgUrl}
+                img={item.img}
+                title={item.title}
+                subTitle={item.subTitle}
+                description={item.description}
+              ></Banner>
+            )
+        )}
         {/* sub content */}
         {getContent1.map((item, index) => (
           <CustomContent

@@ -20,6 +20,7 @@ import CardSelection from "../../../components/cards/cardSelection/cardSelection
 import Selections from "../../../components/selections/selections";
 import { BgWinter } from "../../../assets/img";
 import { to_slug } from "../../../utils/utils";
+import CardDetails from "../../../components/cards/cardDetails/cardDetails";
 
 import Banner from "../../../components/banner/banner";
 import "../../App.scss";
@@ -34,9 +35,6 @@ const getImgBanner = BannerArr.filter(
 const getVideoData = VideoData.filter((e) => e.id === "video_winter_travel");
 // console.log(getImgBanner);
 
-const imgArea = {
-  img: Paris,
-};
 const content1 = {
   content: "Try Now",
   title: "Winter Sports",
@@ -124,7 +122,30 @@ const HomeWinter = () => {
         </CarouselBanner>
       </NewStyleSlick>
 
-      <SlideCardTravel />
+      <SlideCardTravel>
+        {cardData
+          .getAllCards()
+          .filter((c) => c.type === "winter")
+          .map((item, index) => (
+            <Link key={index} to={"/tour-item/" + to_slug(item.title)}>
+              <CardDetails
+                img={item.img}
+                calendar={item.calendar}
+                custom={item.custom}
+                location={item.location}
+                title={item.title}
+                subTitle={item.subTitle}
+                cost={Number(item.cost)}
+                rating={item.rating}
+                icon={
+                  Number(item.rating) < 6
+                    ? "fas fa-star-half-alt"
+                    : "fas fa-star"
+                }
+              />
+            </Link>
+          ))}
+      </SlideCardTravel>
 
       {/* sub title */}
       <CustomTitle
@@ -175,21 +196,32 @@ const HomeWinter = () => {
       {/* selection item  */}
       <NewStyleSelection>
         <Selections>
-          {cardData.getCards_random(3).map((item, index) => (
-            <div key={index} className="col col-xxl-4 col-lg-6 col-md-6 col-12">
-              <NewStyleItem>
-                <Link to={"/tour-item/" + to_slug(item.title)}>
-                  <CardSelection
-                    img={item.img}
-                    title={item.title}
-                    rating={item.rating}
-                    cost={Number(item.cost)}
-                    // icon={Number(item.rating) < 6 ?"fas fa-star-half-alt" : "fas fa-star"}
-                  />
-                </Link>
-              </NewStyleItem>
-            </div>
-          ))}
+          {cardData
+            .getAllCards()
+            .filter(
+              (e) =>
+                e.title === "Slovenia" ||
+                e.title === "France" ||
+                e.title === "Switgerland"
+            )
+            .map((item, index) => (
+              <div
+                key={index}
+                className="col col-xxl-4 col-lg-6 col-md-6 col-12"
+              >
+                <NewStyleItem>
+                  <Link to={"/tour-item/" + to_slug(item.title)}>
+                    <CardSelection
+                      img={item.img}
+                      title={item.title}
+                      rating={item.rating}
+                      cost={Number(item.cost)}
+                      // icon={Number(item.rating) < 6 ?"fas fa-star-half-alt" : "fas fa-star"}
+                    />
+                  </Link>
+                </NewStyleItem>
+              </div>
+            ))}
         </Selections>
       </NewStyleSelection>
     </Helmet>

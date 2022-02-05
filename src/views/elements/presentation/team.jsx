@@ -12,7 +12,7 @@ const ElementTeam = () => {
   return (
     <div className="our-team">
       <Baner1 banData={{ ...banData[2], title: "Team" }} />
-      <section className="team-holder row">
+      <section className="team-holder row row__team">
         {teamData
           .filter((e) => !!e.content)
           .map((item, index) => (
@@ -21,7 +21,7 @@ const ElementTeam = () => {
             </div>
           ))}
       </section>
-      <section className="team-holder__bellow row grey">
+      <section className="team-holder__bellow row row__team grey">
         {teamData
           .filter((e) => !!e.position)
           .map((item, index) => (

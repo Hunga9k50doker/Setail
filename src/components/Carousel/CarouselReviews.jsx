@@ -49,7 +49,9 @@ const SlideCardReview = (props) => {
       className=" slide__card__review "
       style={{ backgroundImage: `url(${props.bgUrl})` }}
     >
-      <h2 className="review__title">TOP REVIEWS</h2>
+      <h2 className="review__title" style={{ marginTop: "100px" }}>
+        TOP REVIEWS
+      </h2>
       <h3 className="review__subtitle">
         Eirmod lorem et gubergren et diam erat consetetur et dolor, sit magna
         sanctus accusam invidunt dolor amet. Dolor sed et.

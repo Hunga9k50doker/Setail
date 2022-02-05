@@ -65,6 +65,6 @@ const SlideCard = () => {
   );
 };
 
-SlideCard.propTypes = {};
+// SlideCard.propTypes = {};
 
 export default SlideCard;

@@ -1,5 +1,6 @@
 const content_img_aboutUs_01 = require("../img/other/aboutUs.png").default;
-const content_img_aboutUs_02 = require('../img/other/aboutUs1.png').default;
+const content_img_aboutUs_02 = require("../img/other/aboutUs1.png").default;
+const content_img_ourTeam_01 = require("../img/ourteam/ourteam9.jpg").default;
 
 const ContentData = [
   {
@@ -17,7 +18,16 @@ const ContentData = [
     title: "Our Popular Tours",
     subTitle:
       "N'ont ravie roulis ainsi a poeme. Nos jaune t'exiles j'ai gouffres. Des baigné ô et éternels je drames presque. Récifs.",
-    description:'',
+    description: "",
+  },
+  {
+    id: "content_our_team_01",
+    img: content_img_ourTeam_01,
+    title: "Our Perfect Team",
+    subTitle:
+      "Dolore sed et elitr stet nonumy dolor. Lorem diam dolor sanctus magna at sit dolor. Eirmod invidunt stet vero amet.",
+    description:
+      "Clita nonumy sit sit erat ipsum est justo ipsum sea sadipscing, amet nonumy stet nonumy sed sit nonumy aliquyam sadipscing, eos no sit ea consetetur sit dolores et, sanctus magna.Amet sit sit et aliquyam eirmod consetetur. Sed clita voluptua labore ea. Eirmod sit takimata elitr sit gubergren sanctus et.",
   },
 ];
 

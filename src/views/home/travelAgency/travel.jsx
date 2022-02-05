@@ -19,6 +19,7 @@ import SlideCardRating from "../../../components/Carousel/CarouselCardRating";
 import CarouselBanner from "../../../components/Carousel/CarouselBanner";
 import Banner from "../../../components/banner/banner";
 import { to_slug } from "../../../utils/utils";
+import CardDetails from "../../../components/cards/cardDetails/cardDetails";
 
 import "../../App.scss";
 import "./travel.scss";
@@ -134,7 +135,27 @@ const HomeTravel = () => {
           title={content2.title}
           subTitle={content2.subTitle}
         />
-        <SlideCardTravel />
+        <SlideCardTravel>
+          {cardData.getCards_random(12).map((item, index) => (
+            <Link key={index} to={"/tour-item/" + to_slug(item.title)}>
+              <CardDetails
+                img={item.img}
+                calendar={item.calendar}
+                custom={item.custom}
+                location={item.location}
+                title={item.title}
+                subTitle={item.subTitle}
+                cost={Number(item.cost)}
+                rating={item.rating}
+                icon={
+                  Number(item.rating) < 6
+                    ? "fas fa-star-half-alt"
+                    : "fas fa-star"
+                }
+              />
+            </Link>
+          ))}
+        </SlideCardTravel>
       </div>
       {/* rating */}
       <SlideCardRating />

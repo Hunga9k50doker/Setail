@@ -51,7 +51,7 @@ const teamData = [
     img: ourTeam12,
     position: "Translator",
     content:
-      "Consetetur nonumy clita diam kasd elitr accusam duo justo dolore labore, sanctus diam duo est erat sanctus eirmod dolores dolores..",
+      "Consetetur nonumy clita diam kasd elitr accusam duo justo dolore labore, sanctus diam duo est erat sanctus eirmod dolores dolores...",
   },
 ];
 

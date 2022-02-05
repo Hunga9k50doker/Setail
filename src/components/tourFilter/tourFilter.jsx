@@ -1,11 +1,11 @@
-import './tourFilter.scss';
+import "./tourFilter.scss";
 
-const TourFilter = (props) => {
-
+const TourFilter = ({ children }) => {
   return (
-      <div className="tour"> 
+    <div className="tour">
       <form className="tour__filter">
         <ul className="tour__filter-list">
+          {children}
           <li className="tour__filter-item">
             <i className="far fa-compass"></i>
             <input type="text" placeholder="Where to?" />
@@ -46,8 +46,8 @@ const TourFilter = (props) => {
           </li>
         </ul>
       </form>
-      </div>
-    );
+    </div>
+  );
 };
 
 export default TourFilter;

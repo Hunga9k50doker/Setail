@@ -167,13 +167,18 @@ a {
   color: $black-color;
 
   .slick-arrow {
-    display: none !important;
+    // display: none !important;
     width: 100px;
-    height: 100px;
     display: block;
     position: absolute;
-    background: red;
     z-index: 999;
+    padding: 0 120px;
+    height: 100%;
+
+    &:after,
+    &:before {
+      font-size: 3rem;
+    }
   }
   .slick-list {
     height: 620px;
@@ -192,4 +197,18 @@ a {
       }
     }
   }
+}
+
+// card teams
+.row__team.row {
+  padding: 6.875rem 0px;
+  justify-content: center;
+  display: flex;
+  gap: 2rem;
+  .item {
+    width: 20%;
+  }
+}
+.grey {
+  background: #f1f1f1;
 }

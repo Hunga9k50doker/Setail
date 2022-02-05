@@ -1,0 +1,85 @@
+@import "../../../styles/variables";
+@import "../../../styles/global";
+.offer__subscribe {
+  background: url(../../../assets//img/banner_img/bgPagesOffer2.jpg) no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__item {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:first-child {
+      padding: 50px 20px;
+
+      margin-left: 80px;
+      color: $white-color;
+      background: $primary-color;
+      flex: 1;
+    }
+    &:last-child {
+      position: relative;
+      margin-right: 80px;
+      flex: 2;
+      overflow: hidden;
+      img {
+        height: 50vh;
+      }
+      p {
+        position: absolute;
+        left: 80px;
+        bottom: 20px;
+        font-family: "Pacifico", sans-serif;
+        font-style: italic;
+        font-size: 1.6rem;
+        color: $white-color;
+        letter-spacing: 1.2;
+        line-height: 120%;
+      }
+    }
+    .footer__form {
+      margin: 0;
+    }
+    .footer__title {
+      letter-spacing: 1;
+      font-size: 1.4rem;
+    }
+    .footer__text {
+      color: $white-color;
+    }
+    button {
+      border: none;
+      font-weight: 600;
+      background: $white-color;
+      &:hover {
+        background: $bg-color--hover;
+        color: $white-color;
+      }
+    }
+    i {
+      background: unset;
+    }
+    input {
+      background: rgba($white-color, 0.3);
+      &::-webkit-input-placeholder {
+        color: $white-color;
+      }
+      &::-moz-placeholder {
+        color: $white-color;
+      }
+      &:-ms-input-placeholder {
+        color: $white-color;
+      }
+      &::-ms-input-placeholder {
+        color: $white-color;
+      }
+      &::placeholder {
+        color: $white-color;
+      }
+    }
+  }
+}

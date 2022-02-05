@@ -7,7 +7,12 @@ const TeamHolderItem = ({ data }) => {
       <img src={data.img} alt={data.name} />
       <div className="popup-card">
         <h5>{data.name}</h5>
-        <p className="popup-card-text">{data.content}</p>
+        <p
+          className="popup-card-text"
+        
+        >
+          {data.content}
+        </p>
         <div className="social-network">
           <a href="https://twitter.com/home">
             <i className="fab fa-twitter"></i>

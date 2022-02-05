@@ -1,6 +1,15 @@
 @import "../../styles/variables";
 @import "../../styles/global";
 
+.card {
+  &-header {
+    position: relative;
+    padding: unset;
+    max-height: 165px;
+    overflow: hidden;
+    background: red;
+  }
+}
 .slide__banner {
   @extend .slide__card-slick;
 }
@@ -16,7 +25,11 @@
     display: block;
     position: absolute;
     z-index: 99;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
   }
   .slick-prev,
@@ -36,6 +49,9 @@
 }
 .slide__card {
   @extend .slide__card-slick;
+  .slick-arrow {
+    display: none !important;
+  }
   .slick-slide {
     margin: 40px 10px 20px 10px;
   }
@@ -48,14 +64,21 @@
   background-size: cover;
   max-height: 90vh;
   color: $white-color;
-  text-align: center;
   margin-bottom: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+
   .review__title {
     font-size: 3rem;
     font-weight: 700;
     padding-top: 100px;
   }
   .review__subtitle {
+    max-width: 700px;
+    margin: auto;
     font-size: 1.2rem;
     margin: 20px;
   }
@@ -73,4 +96,82 @@
 
 .team-holder-item {
   margin-top: 120px;
+}
+
+.selection__postmark {
+  position: relative;
+  min-height: 100vh;
+  background-image: url(../../assets//img/banner_img/bgExotic3.jpg);
+  background-attachment: fixed;
+  .slick-track {
+    top: calc(50% - 50px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // padding-left: 100px;
+    // margin-right: 140px;
+  }
+
+  .card__stamp {
+    position: relative;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0;
+
+    &:hover {
+      .card__stamp__content {
+        transform: scale(1);
+        color: $black-color;
+      }
+    }
+    &__img {
+      border: 13px solid transparent;
+
+      -o-border-image: url(../../assets/img/stamps/border__stamp.png) 17 round;
+      border-image: url(../../assets/img/stamps/border__stamp.png) 17 round;
+    }
+
+    &__content {
+      position: absolute;
+      bottom: -25%;
+      right: 25%;
+      width: 150px;
+      height: 150px;
+      box-shadow: 2px 2px 4px rgba(#ccc, 0.3);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      overflow: hidden;
+      background: $white-color;
+      transform: scale(0);
+      transition: all 0.6s ease-in-out;
+      .card__stamp__title {
+        font-weight: 600;
+        font-size: 1.2rem;
+        margin-top: 20px;
+      }
+
+      .card__stamp__subTitle {
+        font-weight: 300;
+        font-size: 1rem;
+        display: -webkit-box;
+        -webkit-box-oriant: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin: 0 10px 20px 10px;
+        vertical-align: middle;
+      }
+    }
+  }
+  .slick-center {
+    .card__stamp {
+      .card__stamp__content {
+        transform: scale(1) !important;
+      }
+    }
+  }
 }

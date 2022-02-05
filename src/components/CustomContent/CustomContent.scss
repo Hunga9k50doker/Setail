@@ -5,13 +5,13 @@
   margin: 100px 0 0 0;
   overflow: hidden;
   color: $text-color;
-  text-align:left;
+  text-align: left;
 
   &__subTitle,
   &__title,
   &__description,
   &__btn {
-      display: inline-block;
+    display: inline-block;
     max-width: 80%;
     margin-left: 40px;
   }
@@ -21,8 +21,8 @@
     font-weight: 700;
   }
   &__subTitle {
-    font-size: 1.3rem;
-    margin: 30px inherit ;
+    font-size: 1.2rem;
+    margin: 40px inherit;
   }
   &__description {
     display: -webkit-box;

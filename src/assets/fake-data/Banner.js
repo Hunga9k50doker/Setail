@@ -3,8 +3,12 @@ const banner_home_img_02 = require("../img/banner_img/bgTravel2.jpg").default;
 const banner_winter_img_01 = require("../img/banner_img/bgWinter1.jpg").default;
 const banner_winter_img_02 = require("../img/banner_img/bgWinter2.jpg").default;
 const banner_exotic_img_01 = require("../img/banner_img/bgExotic1.jpg").default;
-const banner_exotic_img_02 = require("../img/banner_img/bgWinter2.jpg").default;
+const banner_exotic_img_02 = require("../img/banner_img/bgExotic2.jpg").default;
 const banner_pages_img_01 = require("../img/banner_img/bgPages.jpg").default;
+const banner_pages_img_02 =
+  require("../img/banner_img/bgPagesOffer.jpg").default;
+const banner_pages_img_03 = require("../img/banner_img/bgOurteam.jpg").default;
+
 const banner_destinations_img_01 =
   require("../img/banner_img/bgDestinationList.jpg").default;
 const banner_tours_img_01 = require("../img/banner_img/bgTours.jpg").default;
@@ -68,6 +72,22 @@ const BannerArr = [
     subTitle: "Amazing",
     description: "",
     bgUrl: banner_pages_img_01,
+  },
+  {
+    types: "banner_pages",
+    img: banner_pages_img_02,
+    title: "What We Offer",
+    subTitle: "Amazing tours",
+    description: "",
+    bgUrl: banner_pages_img_02,
+  },
+  {
+    types: "banner_pages",
+    img: banner_pages_img_03,
+    title: "Our Team",
+    subTitle: "Amazing tours",
+    description: "",
+    bgUrl: banner_pages_img_03,
   },
   {
     types: "banner_destinations",

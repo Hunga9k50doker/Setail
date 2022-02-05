@@ -11,6 +11,9 @@ const card_02_img_04 = require("../img/featureImg/winter4.jpg").default;
 const card_02_img_05 = require("../img/featureImg/winter5.jpg").default;
 const card_02_img_06 = require("../img/featureImg/winter6.jpg").default;
 const card_02_img_07 = require("../img/featureImg/winter7.jpg").default;
+const card_02_img_08 = require("../img/featureImg/winter8.jpg").default;
+const card_02_img_09 = require("../img/featureImg/winter9.jpg").default;
+const card_02_img_10 = require("../img/featureImg/winter10.jpg").default;
 
 const Spain = require("../img/featureImg/spain.jpg").default;
 const Tarragona = require("../img/featureImg/tarragonaTravel.jpg").default;
@@ -25,7 +28,6 @@ const Ubud = require("../img/featureImg/unbu.jpg").default;
 const Siminyak = require("../img/featureImg/siminyak.jpg").default;
 const Denpasar = require("../img/featureImg/Denpasar.jpg").default;
 const WineTasting = require("../img/featureImg/wine.jpg").default;
-const camping = require("../img/featureImg/camping.jpg").default;
 const caving = require("../img/featureImg/caving.jpg").default;
 const sydneyOpera = require("../img/featureImg/sydneyOpera.jpg").default;
 const Holand = require("../img/featureImg/Holand.jpg").default;
@@ -220,6 +222,7 @@ const CardDetailArr = [
     img: card_02_img_03,
     calendar: "1",
     custom: "13+",
+    type: "winter",
     age: "13",
     location: "Europe",
     title: "Kis Ski School",
@@ -250,6 +253,7 @@ const CardDetailArr = [
   },
   {
     img: card_02_img_02,
+    type: "winter",
     calendar: "1",
     custom: "13+",
     age: "13",
@@ -284,6 +288,8 @@ const CardDetailArr = [
     img: card_02_img_04,
     calendar: "1",
     custom: "13+",
+    type: "winter",
+
     age: "13",
     location: "Europe",
     title: "Winter Action",
@@ -314,6 +320,7 @@ const CardDetailArr = [
   },
   {
     img: card_02_img_05,
+    type: "winter",
     calendar: "1",
     custom: "13+",
     age: "13",
@@ -347,6 +354,7 @@ const CardDetailArr = [
   {
     img: card_02_img_06,
     calendar: "1",
+    type: "winter",
     custom: "13+",
     age: "13",
     location: "Europe",
@@ -379,10 +387,111 @@ const CardDetailArr = [
   {
     img: card_02_img_07,
     calendar: "1",
+    type: "winter",
     custom: "13+",
     age: "13",
     location: "Europe",
     title: "Active Winter",
+    subTitle: "Meinem seh blick noch lebt die dem nicht tränen was..",
+    cost: 3600,
+    rating: 7.3,
+    review__details: [
+      { title: "Rating", percent: "60" },
+      { title: "Comfort", percent: "40" },
+      { title: "Food", percent: "80" },
+      { title: "Hospitality", percent: "60" },
+      { title: "Hygiene", percent: "100" },
+      { title: "Reception", percent: "40" },
+    ],
+    img__grid: [
+      destination_02_img_01,
+      destination_01_img_01,
+      destination_01_img_02,
+      destination_01_img_03,
+      destination_01_img_04,
+      destination_03_img_01,
+      destination_02_img_02,
+      destination_01_img_05,
+      destination_01_img_06,
+      destination_01_img_07,
+      destination_01_img_08,
+    ],
+  },
+  {
+    img: card_02_img_08,
+    type: "winter",
+    calendar: "1",
+    custom: "13+",
+    age: "13",
+    location: "Europe",
+    title: "Slovenia",
+    subTitle: "Meinem seh blick noch lebt die dem nicht tränen was..",
+    cost: 3600,
+    rating: 7.3,
+    review__details: [
+      { title: "Rating", percent: "60" },
+      { title: "Comfort", percent: "40" },
+      { title: "Food", percent: "80" },
+      { title: "Hospitality", percent: "60" },
+      { title: "Hygiene", percent: "100" },
+      { title: "Reception", percent: "40" },
+    ],
+    img__grid: [
+      destination_02_img_01,
+      destination_01_img_01,
+      destination_01_img_02,
+      destination_01_img_03,
+      destination_01_img_04,
+      destination_03_img_01,
+      destination_02_img_02,
+      destination_01_img_05,
+      destination_01_img_06,
+      destination_01_img_07,
+      destination_01_img_08,
+    ],
+  },
+  {
+    img: card_02_img_09,
+    type: "winter",
+    calendar: "1",
+    custom: "13+",
+    age: "13",
+    location: "Europe",
+    title: "France",
+    subTitle: "Meinem seh blick noch lebt die dem nicht tränen was..",
+    cost: 3600,
+    rating: 7.3,
+    review__details: [
+      { title: "Rating", percent: "60" },
+      { title: "Comfort", percent: "40" },
+      { title: "Food", percent: "80" },
+      { title: "Hospitality", percent: "60" },
+      { title: "Hygiene", percent: "100" },
+      { title: "Reception", percent: "40" },
+    ],
+    img__grid: [
+      destination_02_img_01,
+      destination_01_img_01,
+      destination_01_img_02,
+      destination_01_img_03,
+      destination_01_img_04,
+      destination_03_img_01,
+      destination_02_img_02,
+      destination_01_img_05,
+      destination_01_img_06,
+      destination_01_img_07,
+      destination_01_img_08,
+    ],
+  },
+
+  {
+    type: "winter",
+    img: card_02_img_10,
+    calendar: "1",
+    custom: "13+",
+    age: "13",
+    location: "Europe",
+    title: "Switgerland",
     subTitle: "Meinem seh blick noch lebt die dem nicht tränen was..",
     cost: 3600,
     rating: 7.3,
@@ -838,39 +947,6 @@ const CardDetailArr = [
     ],
   },
 
-  {
-    calendar: "1",
-    custom: "13+",
-    age: "13",
-    location: "Europe",
-    title: "Camping",
-    img: camping,
-    subTitle:
-      "Aux regrette chantants d'oiseaux poetes tohu-bohus faisait je a le , anglais d'enfants île coup lassé parfums, a arbres ou.",
-    cost: 1550,
-    rating: 5.0,
-    review__details: [
-      { title: "Rating", percent: "60" },
-      { title: "Comfort", percent: "40" },
-      { title: "Food", percent: "80" },
-      { title: "Hospitality", percent: "60" },
-      { title: "Hygiene", percent: "100" },
-      { title: "Reception", percent: "60" },
-    ],
-    img__grid: [
-      destination_02_img_01,
-      destination_01_img_01,
-      destination_01_img_02,
-      destination_01_img_03,
-      destination_01_img_04,
-      destination_03_img_01,
-      destination_02_img_02,
-      destination_01_img_05,
-      destination_01_img_06,
-      destination_01_img_07,
-      destination_01_img_08,
-    ],
-  },
   {
     calendar: "1",
     custom: "13+",

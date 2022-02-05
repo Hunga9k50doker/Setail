@@ -2,11 +2,6 @@
 @import "../../../styles/global";
 
 .nav__content.component {
-  // .card {
-  //   img {
-  //     height: 256px !important;
-  //   }
-  // }
 
   .item__title {
     font-weight: 700;
@@ -273,7 +268,7 @@
             .item__pb__percent {
               position: relative;
               background: $primary-color;
-             
+
               &::after {
                 content: " ";
                 position: absolute;
@@ -367,6 +362,18 @@
         outline: none;
         border-radius: unset;
         color: $white-color;
+        &::-webkit-input-placeholder {
+          color: $white-color;
+        }
+        &::-moz-placeholder {
+          color: $white-color;
+        }
+        &:-ms-input-placeholder {
+          color: $white-color;
+        }
+        &::-ms-input-placeholder {
+          color: $white-color;
+        }
         &::placeholder {
           color: $white-color;
         }

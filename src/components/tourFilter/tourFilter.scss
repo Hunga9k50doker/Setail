@@ -28,7 +28,7 @@
 
     i {
       margin-left: 10px;
-      color: rgba($text-color, 0.5 );
+      color: rgba($text-color, 0.5);
     }
     input,
     select {
@@ -41,22 +41,23 @@
       border: none;
     }
     option {
-        padding:5px;
+      padding: 5px;
     }
-    &:not(:first-child, :last-child){
-        input,select{
-            margin-right: 10px;
-        }
+    &:not(:first-child, :last-child) {
+      input,
+      select {
+        margin-right: 10px;
+      }
     }
     &:not(:first-child, :last-child)::before {
       @extend .storage;
     }
     &:last-child {
       flex: 0.7;
-      &:hover{
-          input{
-              background: $bg-color--hover;
-          }
+      &:hover {
+        input {
+          background: $bg-color--hover;
+        }
       }
       input {
         font-size: 1.2rem;
@@ -64,6 +65,20 @@
         background: $primary-color;
         color: $white-color;
       }
+    }
+  }
+  &-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+
+    h3 {
+      width: 100%;
+      font-size: 1.4rem;
+      font-weight: 700;
+      padding-top: 20px;
     }
   }
 }
