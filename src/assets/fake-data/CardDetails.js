@@ -55,6 +55,18 @@ const destination_02_img_02 =
   require("../img/destination_items/destionations-1-masonry-39.jpg").default;
 const destination_03_img_01 =
   require("../img/destination_items/destionations-1-masonry-38.jpg").default;
+const carousel_slider_img_01 =
+  require("../img/destination_items/carousel-img-1.jpg").default;
+const carousel_slider_img_02 =
+  require("../img/destination_items/carousel-img-2.jpg").default;
+const carousel_slider_img_03 =
+  require("../img/destination_items/carousel-img-3.jpg").default;
+const carousel_slider_img_04 =
+  require("../img/destination_items/carousel-img-4.jpg").default;
+const carousel_slider_img_05 =
+  require("../img/destination_items/carousel-img-5.jpg").default;
+const carousel_slider_img_06 =
+  require("../img/destination_items/carousel-img-6.jpg").default;
 
 const CardDetailArr = [
   {
@@ -223,6 +235,8 @@ const CardDetailArr = [
     calendar: "1",
     custom: "13+",
     type: "winter",
+    description:
+      "Diam stet lorem tempor et takimata duo et et amet sed. Erat est eos sed dolore consetetur voluptua et, erat takimata takimata ut et et duo, rebum dolor accusam elitr diam, at stet stet accusam sit, eirmod consetetur vero voluptua et dolor amet sea et, vero dolor amet vero sadipscing at vero et rebum accusam, sadipscing sed sed elitr eirmod ut, clita dolore sit amet eos. Nonumy kasd eos stet ipsum sed, takimata diam et at ipsum takimata at et,.Eirmod no sed duo dolor dolor elitr dolor invidunt elitr, ea duo dolores aliquyam clita.",
     age: "13",
     location: "Europe",
     title: "Kis Ski School",
@@ -254,6 +268,8 @@ const CardDetailArr = [
   {
     img: card_02_img_02,
     type: "winter",
+    description:
+      "Diam stet lorem tempor et takimata duo et et amet sed. Erat est eos sed dolore consetetur voluptua et, erat takimata takimata ut et et duo, rebum dolor accusam elitr diam, at stet stet accusam sit, eirmod consetetur vero voluptua et dolor amet sea et, vero dolor amet vero sadipscing at vero et rebum accusam, sadipscing sed sed elitr eirmod ut, clita dolore sit amet eos. Nonumy kasd eos stet ipsum sed, takimata diam et at ipsum takimata at et,.Eirmod no sed duo dolor dolor elitr dolor invidunt elitr, ea duo dolores aliquyam clita.",
     calendar: "1",
     custom: "13+",
     age: "13",
@@ -289,6 +305,8 @@ const CardDetailArr = [
     calendar: "1",
     custom: "13+",
     type: "winter",
+    description:
+      "Diam stet lorem tempor et takimata duo et et amet sed. Erat est eos sed dolore consetetur voluptua et, erat takimata takimata ut et et duo, rebum dolor accusam elitr diam, at stet stet accusam sit, eirmod consetetur vero voluptua et dolor amet sea et, vero dolor amet vero sadipscing at vero et rebum accusam, sadipscing sed sed elitr eirmod ut, clita dolore sit amet eos. Nonumy kasd eos stet ipsum sed, takimata diam et at ipsum takimata at et,.Eirmod no sed duo dolor dolor elitr dolor invidunt elitr, ea duo dolores aliquyam clita.",
 
     age: "13",
     location: "Europe",
@@ -321,6 +339,8 @@ const CardDetailArr = [
   {
     img: card_02_img_05,
     type: "winter",
+    description:
+      "Diam stet lorem tempor et takimata duo et et amet sed. Erat est eos sed dolore consetetur voluptua et, erat takimata takimata ut et et duo, rebum dolor accusam elitr diam, at stet stet accusam sit, eirmod consetetur vero voluptua et dolor amet sea et, vero dolor amet vero sadipscing at vero et rebum accusam, sadipscing sed sed elitr eirmod ut, clita dolore sit amet eos. Nonumy kasd eos stet ipsum sed, takimata diam et at ipsum takimata at et,.Eirmod no sed duo dolor dolor elitr dolor invidunt elitr, ea duo dolores aliquyam clita.",
     calendar: "1",
     custom: "13+",
     age: "13",
@@ -355,6 +375,8 @@ const CardDetailArr = [
     img: card_02_img_06,
     calendar: "1",
     type: "winter",
+    description:
+      "Diam stet lorem tempor et takimata duo et et amet sed. Erat est eos sed dolore consetetur voluptua et, erat takimata takimata ut et et duo, rebum dolor accusam elitr diam, at stet stet accusam sit, eirmod consetetur vero voluptua et dolor amet sea et, vero dolor amet vero sadipscing at vero et rebum accusam, sadipscing sed sed elitr eirmod ut, clita dolore sit amet eos. Nonumy kasd eos stet ipsum sed, takimata diam et at ipsum takimata at et,.Eirmod no sed duo dolor dolor elitr dolor invidunt elitr, ea duo dolores aliquyam clita.",
     custom: "13+",
     age: "13",
     location: "Europe",
@@ -388,6 +410,8 @@ const CardDetailArr = [
     img: card_02_img_07,
     calendar: "1",
     type: "winter",
+    description:
+      "Diam stet lorem tempor et takimata duo et et amet sed. Erat est eos sed dolore consetetur voluptua et, erat takimata takimata ut et et duo, rebum dolor accusam elitr diam, at stet stet accusam sit, eirmod consetetur vero voluptua et dolor amet sea et, vero dolor amet vero sadipscing at vero et rebum accusam, sadipscing sed sed elitr eirmod ut, clita dolore sit amet eos. Nonumy kasd eos stet ipsum sed, takimata diam et at ipsum takimata at et,.Eirmod no sed duo dolor dolor elitr dolor invidunt elitr, ea duo dolores aliquyam clita.",
     custom: "13+",
     age: "13",
     location: "Europe",
@@ -420,6 +444,8 @@ const CardDetailArr = [
   {
     img: card_02_img_08,
     type: "winter",
+    description:
+      "Diam stet lorem tempor et takimata duo et et amet sed. Erat est eos sed dolore consetetur voluptua et, erat takimata takimata ut et et duo, rebum dolor accusam elitr diam, at stet stet accusam sit, eirmod consetetur vero voluptua et dolor amet sea et, vero dolor amet vero sadipscing at vero et rebum accusam, sadipscing sed sed elitr eirmod ut, clita dolore sit amet eos. Nonumy kasd eos stet ipsum sed, takimata diam et at ipsum takimata at et,.Eirmod no sed duo dolor dolor elitr dolor invidunt elitr, ea duo dolores aliquyam clita.",
     calendar: "1",
     custom: "13+",
     age: "13",
@@ -453,6 +479,8 @@ const CardDetailArr = [
   {
     img: card_02_img_09,
     type: "winter",
+    description:
+      "Diam stet lorem tempor et takimata duo et et amet sed. Erat est eos sed dolore consetetur voluptua et, erat takimata takimata ut et et duo, rebum dolor accusam elitr diam, at stet stet accusam sit, eirmod consetetur vero voluptua et dolor amet sea et, vero dolor amet vero sadipscing at vero et rebum accusam, sadipscing sed sed elitr eirmod ut, clita dolore sit amet eos. Nonumy kasd eos stet ipsum sed, takimata diam et at ipsum takimata at et,.Eirmod no sed duo dolor dolor elitr dolor invidunt elitr, ea duo dolores aliquyam clita.",
     calendar: "1",
     custom: "13+",
     age: "13",
@@ -486,6 +514,8 @@ const CardDetailArr = [
 
   {
     type: "winter",
+    description:
+      "Diam stet lorem tempor et takimata duo et et amet sed. Erat est eos sed dolore consetetur voluptua et, erat takimata takimata ut et et duo, rebum dolor accusam elitr diam, at stet stet accusam sit, eirmod consetetur vero voluptua et dolor amet sea et, vero dolor amet vero sadipscing at vero et rebum accusam, sadipscing sed sed elitr eirmod ut, clita dolore sit amet eos. Nonumy kasd eos stet ipsum sed, takimata diam et at ipsum takimata at et,.Eirmod no sed duo dolor dolor elitr dolor invidunt elitr, ea duo dolores aliquyam clita.",
     img: card_02_img_10,
     calendar: "1",
     custom: "13+",
@@ -1055,6 +1085,216 @@ const CardDetailArr = [
     img: templeTour,
     subTitle:
       "Justo consetetur duo et eos dolor at ipsum ea et sea, accusam sed gubergren kasd dolor et kasd lorem. Est.",
+    cost: 1550,
+    rating: 5.0,
+    review__details: [
+      { title: "Rating", percent: "60" },
+      { title: "Comfort", percent: "60" },
+      { title: "Food", percent: "80" },
+      { title: "Hospitality", percent: "60" },
+      { title: "Hygiene", percent: "100" },
+      { title: "Reception", percent: "40" },
+    ],
+    img__grid: [
+      destination_02_img_01,
+      destination_01_img_01,
+      destination_01_img_02,
+      destination_01_img_03,
+      destination_01_img_04,
+      destination_03_img_01,
+      destination_02_img_02,
+      destination_01_img_05,
+      destination_01_img_06,
+      destination_01_img_07,
+      destination_01_img_08,
+    ],
+  },
+  {
+    calendar: "1",
+    custom: "13+",
+    type: "carousel__slider",
+    description:
+      "Diam stet lorem tempor et takimata duo et et amet sed. Erat est eos sed dolore consetetur voluptua et, erat takimata takimata ut et et duo, rebum dolor accusam elitr diam, at stet stet accusam sit, eirmod consetetur vero voluptua et dolor amet sea et, vero dolor amet vero sadipscing at vero et rebum accusam, sadipscing sed sed elitr eirmod ut, clita dolore sit amet eos. Nonumy kasd eos stet ipsum sed, takimata diam et at ipsum takimata at et,.Eirmod no sed duo dolor dolor elitr dolor invidunt elitr, ea duo dolores aliquyam clita.",
+    age: "13",
+    location: "Europe",
+    title: "Exotic Places",
+    img: carousel_slider_img_01,
+    subTitle: "Tropical",
+    cost: 1550,
+    rating: 5.0,
+    review__details: [
+      { title: "Rating", percent: "60" },
+      { title: "Comfort", percent: "60" },
+      { title: "Food", percent: "80" },
+      { title: "Hospitality", percent: "60" },
+      { title: "Hygiene", percent: "100" },
+      { title: "Reception", percent: "40" },
+    ],
+    img__grid: [
+      destination_02_img_01,
+      destination_01_img_01,
+      destination_01_img_02,
+      destination_01_img_03,
+      destination_01_img_04,
+      destination_03_img_01,
+      destination_02_img_02,
+      destination_01_img_05,
+      destination_01_img_06,
+      destination_01_img_07,
+      destination_01_img_08,
+    ],
+  },
+  {
+    calendar: "1",
+    custom: "13+",
+    age: "13",
+    location: "Europe",
+    type: "carousel__slider",
+    description:
+      "Diam stet lorem tempor et takimata duo et et amet sed. Erat est eos sed dolore consetetur voluptua et, erat takimata takimata ut et et duo, rebum dolor accusam elitr diam, at stet stet accusam sit, eirmod consetetur vero voluptua et dolor amet sea et, vero dolor amet vero sadipscing at vero et rebum accusam, sadipscing sed sed elitr eirmod ut, clita dolore sit amet eos. Nonumy kasd eos stet ipsum sed, takimata diam et at ipsum takimata at et,.Eirmod no sed duo dolor dolor elitr dolor invidunt elitr, ea duo dolores aliquyam clita.",
+    title: "Far Places",
+    img: carousel_slider_img_02,
+    subTitle: "Stunning",
+    cost: 1550,
+    rating: 5.0,
+    review__details: [
+      { title: "Rating", percent: "60" },
+      { title: "Comfort", percent: "60" },
+      { title: "Food", percent: "80" },
+      { title: "Hospitality", percent: "60" },
+      { title: "Hygiene", percent: "100" },
+      { title: "Reception", percent: "40" },
+    ],
+    img__grid: [
+      destination_02_img_01,
+      destination_01_img_01,
+      destination_01_img_02,
+      destination_01_img_03,
+      destination_01_img_04,
+      destination_03_img_01,
+      destination_02_img_02,
+      destination_01_img_05,
+      destination_01_img_06,
+      destination_01_img_07,
+      destination_01_img_08,
+    ],
+  },
+  {
+    calendar: "1",
+    custom: "13+",
+    age: "13",
+    location: "Europe",
+    title: "Holiday",
+    img: carousel_slider_img_03,
+    subTitle: "Relaxing",
+    type: "carousel__slider",
+    description:
+      "Diam stet lorem tempor et takimata duo et et amet sed. Erat est eos sed dolore consetetur voluptua et, erat takimata takimata ut et et duo, rebum dolor accusam elitr diam, at stet stet accusam sit, eirmod consetetur vero voluptua et dolor amet sea et, vero dolor amet vero sadipscing at vero et rebum accusam, sadipscing sed sed elitr eirmod ut, clita dolore sit amet eos. Nonumy kasd eos stet ipsum sed, takimata diam et at ipsum takimata at et,.Eirmod no sed duo dolor dolor elitr dolor invidunt elitr, ea duo dolores aliquyam clita.",
+    cost: 1550,
+    rating: 5.0,
+    review__details: [
+      { title: "Rating", percent: "60" },
+      { title: "Comfort", percent: "60" },
+      { title: "Food", percent: "80" },
+      { title: "Hospitality", percent: "60" },
+      { title: "Hygiene", percent: "100" },
+      { title: "Reception", percent: "40" },
+    ],
+    img__grid: [
+      destination_02_img_01,
+      destination_01_img_01,
+      destination_01_img_02,
+      destination_01_img_03,
+      destination_01_img_04,
+      destination_03_img_01,
+      destination_02_img_02,
+      destination_01_img_05,
+      destination_01_img_06,
+      destination_01_img_07,
+      destination_01_img_08,
+    ],
+  },
+  {
+    calendar: "1",
+    custom: "13+",
+    age: "13",
+    location: "Europe",
+    title: "Wine Tour",
+    img: carousel_slider_img_04,
+    subTitle: "Romantic",
+    cost: 1550,
+    type: "carousel__slider",
+    description:
+      "Diam stet lorem tempor et takimata duo et et amet sed. Erat est eos sed dolore consetetur voluptua et, erat takimata takimata ut et et duo, rebum dolor accusam elitr diam, at stet stet accusam sit, eirmod consetetur vero voluptua et dolor amet sea et, vero dolor amet vero sadipscing at vero et rebum accusam, sadipscing sed sed elitr eirmod ut, clita dolore sit amet eos. Nonumy kasd eos stet ipsum sed, takimata diam et at ipsum takimata at et,.Eirmod no sed duo dolor dolor elitr dolor invidunt elitr, ea duo dolores aliquyam clita.",
+    rating: 5.0,
+    review__details: [
+      { title: "Rating", percent: "60" },
+      { title: "Comfort", percent: "60" },
+      { title: "Food", percent: "80" },
+      { title: "Hospitality", percent: "60" },
+      { title: "Hygiene", percent: "100" },
+      { title: "Reception", percent: "40" },
+    ],
+    img__grid: [
+      destination_02_img_01,
+      destination_01_img_01,
+      destination_01_img_02,
+      destination_01_img_03,
+      destination_01_img_04,
+      destination_03_img_01,
+      destination_02_img_02,
+      destination_01_img_05,
+      destination_01_img_06,
+      destination_01_img_07,
+      destination_01_img_08,
+    ],
+  },
+  {
+    calendar: "1",
+    custom: "13+",
+    type: "carousel__slider",
+    description:
+      "Diam stet lorem tempor et takimata duo et et amet sed. Erat est eos sed dolore consetetur voluptua et, erat takimata takimata ut et et duo, rebum dolor accusam elitr diam, at stet stet accusam sit, eirmod consetetur vero voluptua et dolor amet sea et, vero dolor amet vero sadipscing at vero et rebum accusam, sadipscing sed sed elitr eirmod ut, clita dolore sit amet eos. Nonumy kasd eos stet ipsum sed, takimata diam et at ipsum takimata at et,.Eirmod no sed duo dolor dolor elitr dolor invidunt elitr, ea duo dolores aliquyam clita.",
+    age: "13",
+    location: "Europe",
+    title: "Country Side",
+    img: carousel_slider_img_05,
+    subTitle: "Relaxing",
+    cost: 1550,
+    rating: 5.0,
+    review__details: [
+      { title: "Rating", percent: "60" },
+      { title: "Comfort", percent: "60" },
+      { title: "Food", percent: "80" },
+      { title: "Hospitality", percent: "60" },
+      { title: "Hygiene", percent: "100" },
+      { title: "Reception", percent: "40" },
+    ],
+    img__grid: [
+      destination_02_img_01,
+      destination_01_img_01,
+      destination_01_img_02,
+      destination_01_img_03,
+      destination_01_img_04,
+      destination_03_img_01,
+      destination_02_img_02,
+      destination_01_img_05,
+      destination_01_img_06,
+      destination_01_img_07,
+      destination_01_img_08,
+    ],
+  },
+  {
+    type: "carousel__slider",
+    description:
+      "Diam stet lorem tempor et takimata duo et et amet sed. Erat est eos sed dolore consetetur voluptua et, erat takimata takimata ut et et duo, rebum dolor accusam elitr diam, at stet stet accusam sit, eirmod consetetur vero voluptua et dolor amet sea et, vero dolor amet vero sadipscing at vero et rebum accusam, sadipscing sed sed elitr eirmod ut, clita dolore sit amet eos. Nonumy kasd eos stet ipsum sed, takimata diam et at ipsum takimata at et,.Eirmod no sed duo dolor dolor elitr dolor invidunt elitr, ea duo dolores aliquyam clita.",
+    calendar: "1",
+    custom: "13+",
+    age: "13",
+    location: "Europe",
+    title: "Haking",
+    img: carousel_slider_img_06,
+    subTitle: "Active",
     cost: 1550,
     rating: 5.0,
     review__details: [

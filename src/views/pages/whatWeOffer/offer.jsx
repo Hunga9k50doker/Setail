@@ -178,13 +178,14 @@ const WhatWeOffer = () => {
       <NewStyleSelection>
         <Selections>
           {cardData
-            .getCards_random(3)
+            .getAllCards()
             .filter(
               (e) =>
                 e.title !== "Slovenia" &&
                 e.title !== "France" &&
                 e.title !== "Switgerland"
             )
+            .slice(0, 3)
             .map((item, index) => (
               <div
                 key={index}

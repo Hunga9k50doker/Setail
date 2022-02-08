@@ -15,6 +15,9 @@ const CardDetails = (props) => {
           />
           <img src={props.img} className="card-img-top" alt="not found" />
         </picture>
+        <h5 className="card__header__text">
+          Special offer
+        </h5>
       </div>
       <div className="card-body">
         <div className="card-information">

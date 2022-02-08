@@ -78,6 +78,9 @@ a {
   text-decoration: none;
   display: inline-block;
   color: #505050;
+  &:hover {
+    color: $primary-color;
+  }
 }
 
 .btn-primary {

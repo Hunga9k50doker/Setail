@@ -210,7 +210,7 @@ const HomeWinter = () => {
                 className="col col-xxl-4 col-lg-6 col-md-6 col-12"
               >
                 <NewStyleItem>
-                  <Link to={"/tour-item/" + to_slug(item.title)}>
+                  <Link to={"/destinations/" + to_slug(item.title)}>
                     <CardSelection
                       img={item.img}
                       title={item.title}

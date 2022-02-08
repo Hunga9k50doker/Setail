@@ -37,5 +37,12 @@
       -webkit-font-smoothing: antialiased;
       text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     }
+    .description {
+      max-width: 60%;
+      margin: auto;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
   }
 }

@@ -102,7 +102,7 @@ const Nav = () => {
               <p>Destination Slider</p>
             </NavLink>
             <NavLink
-              to="/destinations/item"
+              to="/destinations/slovenia"
               className="nav__list-item-selection"
               activeclassname="active"
             >

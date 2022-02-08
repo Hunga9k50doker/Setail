@@ -52,7 +52,6 @@ import ItemDetail from "../components/tourItem/item";
 import NotFound from "../views/NotFound/notfound";
 
 import "./App.scss";
-// import ComponentExample from "./test";
 
 function App() {
   // handleEvent btn back top
@@ -86,7 +85,6 @@ function App() {
   const scrollToTop = () => {
     window.scrollTo(0, 0);
   };
-
   return (
     <div className="App">
       <Router>
@@ -130,7 +128,7 @@ function App() {
           <Route exact path="/destinations/slider">
             <Slider />
           </Route>
-          <Route exact path="/destinations/item">
+          <Route exact path="/destinations/:slug">
             <Item />
           </Route>
 

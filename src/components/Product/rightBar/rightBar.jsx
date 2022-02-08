@@ -129,7 +129,7 @@ const tag = ["Accessories", "Beach", "Camping", "Summer", "Vintage", "Winter"];
 const Categories = () => {
   return (
     <div className="category-list">
-      <h5>Categories</h5>
+      <h5 className="sidebar__item__title">Categories</h5>
       <ul>
         {tag.map((e, index) => (
           <li key={index + 1}>

@@ -1,0 +1,128 @@
+@import "../../styles/variables";
+@import "../../styles/global";
+
+.form {
+  background: $primary-color;
+  color: $white-color;
+  margin-top: 20px;
+  padding: 20px 20px 50px 20px;
+  margin-bottom: 20px;
+
+  input,
+  textarea,
+  .input-group-text {
+    background: rgba($white-color, 0.3);
+    border: none;
+    outline: none;
+    border-radius: unset;
+    color: $white-color;
+    &::-webkit-input-placeholder {
+      color: $white-color;
+    }
+    &::-moz-placeholder {
+      color: $white-color;
+    }
+    &:-ms-input-placeholder {
+      color: $white-color;
+    }
+    &::-ms-input-placeholder {
+      color: $white-color;
+    }
+    &::placeholder {
+      color: $white-color;
+    }
+  }
+
+  .form__description {
+    padding: 20px;
+    table {
+      width: 100%;
+    }
+
+    tr {
+      vertical-align: middle;
+    }
+    td {
+      padding: 10px 20px 10px 0;
+      font-size: 1rem;
+      section {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+      }
+      i {
+        width: 10px;
+        height: 10px;
+        margin-right: 24px;
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .form__title {
+    font-weight: 600;
+    font-size: 1.4rem;
+  }
+  .form__subtitle {
+    font-size: 1rem;
+  }
+  i {
+    background: unset;
+  }
+
+  .user__rating__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1rem;
+    font-weight: 300;
+    // width: 100%;
+    p {
+      flex: 1;
+    }
+    .star-input {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex: 2;
+      font-size: 0.8rem;
+      i {
+        color: $white-color !important;
+        cursor: pointer;
+        margin: 0 2px;
+      }
+    }
+  }
+  .form-check-label {
+    font-size: 1rem;
+  }
+  .form-check {
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+  }
+  #invalidCheck {
+    margin-right: 10px;
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+    background: $white-color;
+    width: 20px;
+    height: 20px;
+  }
+  button[type="submit"] {
+    width: 100%;
+    background: $white-color;
+    color: $black-color;
+    text-transform: uppercase;
+    border: none;
+    padding: 10px 15px;
+    font-weight: 600;
+    font-size: 1rem;
+
+    &:hover {
+      color: $white-color;
+      background: $bg-color--hover;
+    }
+  }
+}

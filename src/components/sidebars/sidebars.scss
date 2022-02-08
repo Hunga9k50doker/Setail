@@ -6,6 +6,9 @@
   padding: 10px 20px;
   color: $white-color;
   margin-top: 20px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
   &__item {
     position: relative;
@@ -50,6 +53,22 @@
         color: $white-color;
         font-size: 1rem;
         width: 100%;
+        &::-webkit-input-placeholder {
+          color: $white-color;
+          font-size: 1rem;
+        }
+        &::-moz-placeholder {
+          color: $white-color;
+          font-size: 1rem;
+        }
+        &:-ms-input-placeholder {
+          color: $white-color;
+          font-size: 1rem;
+        }
+        &::-ms-input-placeholder {
+          color: $white-color;
+          font-size: 1rem;
+        }
         &::placeholder {
           color: $white-color;
           font-size: 1rem;
@@ -131,6 +150,18 @@
     &:focus {
       outline: none;
     }
+    &::-webkit-input-placeholder {
+      color: $white-color;
+    }
+    &::-moz-placeholder {
+      color: $white-color;
+    }
+    &:-ms-input-placeholder {
+      color: $white-color;
+    }
+    &::-ms-input-placeholder {
+      color: $white-color;
+    }
     &::placeholder {
       color: $white-color;
     }
@@ -153,6 +184,76 @@
   .siderbar__item__btn {
     button {
       margin: 5px;
+    }
+  }
+
+  &__item {
+    &__title {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin: 20px 0 10px 0px;
+    }
+    &__description,
+    a {
+      font-size: 1rem;
+    }
+    .sidebar__list__item {
+      font-size: 1rem;
+      display: flex;
+      align-items: flex-start;
+      margin: 10px 0;
+      justify-content: center;
+      img {
+        width: 100px;
+        height: 100px;
+      }
+      &__content {
+        margin-left: 10px;
+        &__title {
+          font-size: 1rem;
+          font-weight: 700;
+        }
+        &__time {
+          color: $text-color--sub;
+        }
+      }
+    }
+    &__tags {
+      a {
+        padding: 10px 15px;
+        background: $primary-color;
+        color: $white-color;
+        font-size: 1;
+        font-weight: 600;
+        margin: 5px;
+        &:hover {
+          background: $bg-color--hover;
+        }
+
+        &:nth-of-type(n + 1) {
+          padding: auto 20px;
+        }
+      }
+    }
+    .item__social {
+      width: 50px;
+      height: 50px;
+      background: $primary-color;
+      border-radius: 50%;
+      margin: 5px;
+      position: relative;
+      i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1rem;
+        color: $white-color;
+      }
+      &:hover {
+        cursor: pointer;
+        background: $bg-color--hover;
+      }
     }
   }
 }

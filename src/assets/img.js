@@ -6,6 +6,11 @@ import map from "./img/other/map.jpg";
 import BgSydneyOpera from "./img/banner_img/bgOurteamIteam.jpg";
 import BgWinter from "./img/banner_img/bgWinter2.jpg";
 import BgOffer2 from "./img/banner_img/offerBanner.jpg";
+import Destination_img_item_01 from "../assets/img/destination_items/destionations-1-gallery-1.jpg";
+import Destination_img_item_02 from "../assets/img/destination_items/destionations-1-gallery-2.jpg";
+
+// img side bar
+import img_side_01 from "../assets/img/img__sidebar/destionations-sidebar-img.jpg";
 //poster and btn of video
 import PosterBtn from "./img/imgVideo/btnYoutube.png";
 import PosterTravel from "./img/imgVideo/travelBgMp4.jpg";
@@ -136,6 +141,10 @@ export {
   BgSydneyOpera,
   BgWinter,
   BgOffer2,
+  Destination_img_item_01,
+  Destination_img_item_02,
+  // img__side__bar
+img_side_01,
   //poster and btn video
   PosterBtn,
   PosterTravel,

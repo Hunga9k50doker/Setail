@@ -7,7 +7,7 @@
     padding: unset;
     max-height: 165px;
     overflow: hidden;
-    background: red;
+    background: $white-color;
   }
 }
 .slide__banner {
@@ -173,5 +173,34 @@
         transform: scale(1) !important;
       }
     }
+  }
+}
+
+.card__slider {
+  position: relative;
+  color: $white-color;
+  &__img {
+    width: 100%;
+    height: 100%;
+    background-size: center;
+  }
+  &__title,
+  &__subtitle {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 100%;
+    text-align: center;
+  }
+  &__title {
+    bottom: 40px;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  &__subtitle {
+    bottom: 90px;
+    font-family: "Pacifico", sans-serif;
+    font-style: italic;
+    letter-spacing: 2px;
   }
 }
