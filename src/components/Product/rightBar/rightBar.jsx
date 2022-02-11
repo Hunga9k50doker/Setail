@@ -1,6 +1,6 @@
-import "./rightBar.scss";
-
 import { useState, useEffect, useLayoutEffect } from "react";
+import { Link } from "react-router-dom";
+import "./rightBar.scss";
 
 const SearchBar = () => {
   return (
@@ -124,19 +124,13 @@ const PriceFilter = () => {
   );
 };
 
-const tag = ["Accessories", "Beach", "Camping", "Summer", "Vintage", "Winter"];
-
-const Categories = () => {
+const Categories = ({ children }) => {
+  // let { slug } = useParams();
+  // console.log(slug, "123");
   return (
     <div className="category-list">
       <h5 className="sidebar__item__title">Categories</h5>
-      <ul>
-        {tag.map((e, index) => (
-          <li key={index + 1}>
-            <a href="">{e}</a>
-          </li>
-        ))}
-      </ul>
+      <ul>{children}</ul>
     </div>
   );
 };

@@ -1,5 +1,7 @@
 import "./BlogItem.scss";
 import { Link } from "react-router-dom";
+
+import { to_slug, get_random } from "../../utils/utils";
 import {
   productBan,
   BanElementsTour,
@@ -89,22 +91,106 @@ const blogData = [
     time: "December 1, 2016",
   },
 ];
-
-const BlogItem = (props) => {
+const tag = ["camera", "city", "fun", "summer", "travel", "winter"];
+const BlogItem = (props, { children }) => {
   return (
     <article className="blog-item">
-      <Link to="">
+      <Link to={"/" + to_slug(props.blog.title)}>
         <img src={props.blog.img} alt={`blog-img-${props.blog.id}`} />
+        <h3 className="type__category">{props.blog.type}</h3>
         <h4 className="title">{props.blog.title}</h4>
       </Link>
-      <p>{props.blog.content}</p>
+      <p className="blog__content">{props.blog.content}</p>
+      <p className="description">
+        Al elit omnes impedit ius, vel et hinc agam fabulas. Ut audiam invenire
+        iracundia vim. En eam dico similique, ut sint posse sit, eum sumo diam
+        ea. Liber consectetuer in mei, sea in imperdiet assueverit contentiones,
+        an his cibo blandit tacimates. Iusto iudicabit similique id velex, in
+        sea rebum deseruisse appellantur. Lorem ipsum Alienum phaedrum torquatos
+        nec eu, vis detraxit pericu in mei, vix aperiri vix at,dolor sit amet.
+        blandit dicant definition.Sit delicata persequeris ex, in sea rebum
+        deseruisse appellantur. Lorem ipsum dolor sit amet.Eos ei nisl graecis,
+        vix aperiri consequat an. Eius lorem. <br />
+        <br />
+        <p className="heightline__desc">
+          “Ei elit omnes impedit ius, vel et hinc agam fabulas. Ut audiamre
+          iracundia vim. An eame, ut sint posse sumo diam ea. Cu omnis.”
+        </p>
+        <br /> Ei elit omnes impedit ius, vel et hinc agam fabulas. Ut audiam
+        invenire iracundia vim. An eam dico similique, ut sint posse sit, eum
+        sumo diam ea. Liber consectetuer in mei, sea in imperdiet assueverit
+        contentiones, an his cibo blandit tacimates. Iusto iudicabit similique
+        idefinitionem eos an.Sit delicata persequeris ex, in sea rebum
+        deseruisse appellantur. Lorem ipsum dolor si vix aperiri consequat an.
+      </p>
+
+      <div className="row ">
+        <div className="col col-xxl-4 col-xl-4 col-md-4 col-sm-12">
+          <img className="blog__img" src={props.blog.blogImg1} alt="" />
+        </div>
+        <div className="col col-xxl-8 col-xl-8 col-md-8 col-sm-12">
+          <img className="blog__img" src={props.blog.blogImg2} alt="" />
+        </div>
+      </div>
+
+      <p className="description">
+        Labore voluptua diam dolor est stet ea sit amet lorem, invidunt dolore
+        dolore dolores nonumy at. Consetetur at et amet.Lorem magna no at amet
+        ut takimata dolores ipsum magna. Consetetur ipsum gubergren lorem labore
+        ipsum tempor dolor dolores duo..
+      </p>
       <div className="post-info">
-        <Link className="time a--sub" to="">
-          {props.blog.time}
-        </Link>
-        <Link className="comment-count a--sub" to="">
-          <i className="far fa-comment"></i>2 Comment
-        </Link>
+        <div className="post-info-left">
+          <Link to="/" className="time a--sub">
+            {props.blog.time}
+          </Link>
+          <Link to="#comment__blog" className="comment-count a--sub">
+            <i className="far fa-comment mx-1"></i>2 Comments
+          </Link>
+        </div>
+        <div className="post-info-right">
+          <li className="social__item">
+            <a href="https://twitter.com/home" rel="noreferrer" target="_blank">
+              <i className=" fab fa-twitter"></i>
+            </a>
+          </li>
+          <li className="social__item">
+            <a
+              href="https://www.pinterest.com/qodeinteractive/"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <i className=" fab fa-pinterest-p"></i>
+            </a>
+          </li>
+          <li className="social__item">
+            <a
+              href="https://www.instagram.com/nguyenhung9104/"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <i className=" fab fa-instagram"></i>
+            </a>
+          </li>
+          <li className="social__item">
+            <a
+              href="https://www.facebook.com/profile.php?id=100047468063150"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <i className=" fab fa-facebook-f"></i>
+            </a>
+          </li>
+        </div>
+      </div>
+      <br />
+
+      <div className="list__tags">
+        {get_random(tag, 3).map((e, id) => (
+          <Link key={id} to="#">
+            {e}
+          </Link>
+        ))}
       </div>
     </article>
   );

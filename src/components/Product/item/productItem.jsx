@@ -214,7 +214,7 @@ const ProductItem = ({ shopData }) => {
       <div className="img-container">
         {/* img */}
         <a href="#">
-          <img src={shopData.img} alt={shopData.name} />
+          <img  src={shopData.img} alt={shopData.name} />
         </a>
         {/* hover button */}
         <div className="overlay">{Button()}</div>

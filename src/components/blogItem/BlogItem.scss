@@ -1,9 +1,25 @@
-@import "../../styles/global";
+@import "../../styles/global.scss";
 @import "../../styles/variables";
 @import url("https://fonts.googleapis.com/css?family=Satisfy");
 .blog-item {
+  position: relative;
   width: 100%;
+  -moz-column-break-inside: avoid;
   break-inside: avoid;
+
+  .type__category {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px 15px;
+    background: $white-color;
+    color: $primary-color;
+    font-family: "Satisfy", sans-serif;
+    font-style: italic;
+    letter-spacing: 1.2px;
+    font-weight: 300;
+    display: none;
+  }
   .title {
     color: #000;
     font-size: 22px;
@@ -15,6 +31,36 @@
   }
   img {
     width: 100%;
+    height: 100%;
+  }
+  .blog__img {
+    display: none;
+    max-height: 282px;
+    margin: 10px 0;
+  }
+  .description,
+  .heightline__desc {
+    display: none;
+  }
+  .post-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    font-family: Poppins, sans-serif;
+
+    a {
+      width: -webkit-fit-content !important;
+      width: -moz-fit-content !important;
+      width: fit-content !important;
+    }
+    &-right {
+      i {
+        font-size: 1rem;
+        margin: 5px 10px;
+        display: none;
+      }
+    }
   }
   .a--sub {
     color: #000;
@@ -35,10 +81,28 @@
   a:hover {
     color: #60d7df;
   }
-  p {
-    font-family: Poppins, sans-serif;
-    font-size: 0.875rem;
+  .blog__content {
     color: rgb(65, 65, 65);
+    font-size: 1rem;
+  }
+
+  .list__tags {
+    display: none;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+
+    a {
+      font-size: 1rem;
+      width: -webkit-fit-content !important;
+      width: -moz-fit-content !important;
+      width: fit-content !important;
+      margin: 0 5px;
+      font-weight: 700;
+      padding: 10px 20px;
+      background: $primary-color;
+      color: $white-color;
+    }
   }
 }
 .post-text {
@@ -84,11 +148,14 @@
 .banner1 {
   position: relative;
   width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   // transform: translateY(-80px);
   img {
     width: 100%;
     max-height: 600px;
+    -webkit-filter: brightness(0.8);
     filter: brightness(0.8);
   }
   div {

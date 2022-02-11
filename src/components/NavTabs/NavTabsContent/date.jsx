@@ -65,6 +65,12 @@ const NavContentDate = () => {
               </Link>
             )
           )}
+        {/* <Pagination
+          data={cardData.getAllCards()}
+          RenderComponent={<CardDetails />}
+          pageLimit={5}
+          dataLimit={12}
+        /> */}
       </div>
     </div>
   );

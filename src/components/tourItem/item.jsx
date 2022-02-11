@@ -18,7 +18,7 @@ const NewStyleSelection = styled.div`
   .selections {
     padding: 50px 0;
     background: #fff;
-    transform: translateY(-150px);
+    transform: translateY(-70px);
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 0;

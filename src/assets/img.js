@@ -88,24 +88,24 @@ import BanElementsTour from "./img/banner_img/bgElementsTour.jpg";
 
 //product
 import productBan from "./img/banner_img/product-banner.jpg";
-import productImg1 from "./img/product/shop-1-img-1-300x300.jpg";
-import productImg2 from "./img/product/shop-1-img-2-300x300.jpg";
-import productImg3 from "./img/product/shop-1-img-3-300x300.jpg";
-import productImg4 from "./img/product/shop-1-img-4-300x300.jpg";
-import productImg5 from "./img/product/shop-1-img-5-300x300.jpg";
-import productImg6 from "./img/product/shop-1-img-6-300x300.jpg";
-import productImg7 from "./img/product/shop-1-img-7-300x300.jpg";
-import productImg8 from "./img/product/shop-1-img-8-300x300.jpg";
-import productImg9 from "./img/product/shop-1-img-9-300x300.jpg";
-import productImg10 from "./img/product/shop-1-img-10-300x300.jpg";
-import productImg11 from "./img/product/shop-1-img-11-300x300.jpg";
-import productImg12 from "./img/product/shop-1-img-12-300x300.jpg";
-import productImg13 from "./img/product/shop-1-img-13-300x300.jpg";
-import productImg14 from "./img/product/shop-1-img-14-300x300.jpg";
-import productImg15 from "./img/product/shop-1-img-15-300x300.jpg";
-import productImg16 from "./img/product/shop-1-img-16-300x300.jpg";
-import productImg17 from "./img/product/shop-1-img-17-300x300.jpg";
-import productImg18 from "./img/product/shop-1-img-18-300x300.jpg";
+import productImg1 from "./img/product/shop-1-img-1-single.jpg";
+import productImg2 from "./img/product/shop-1-img-2-768x672.jpg";
+import productImg3 from "./img/product/shop-1-img-3-768x672.jpg";
+import productImg4 from "./img/product/shop-1-img-4-768x672.jpg";
+import productImg5 from "./img/product/shop-1-img-5-768x672.jpg";
+import productImg6 from "./img/product/shop-1-img-6-768x672.jpg";
+import productImg7 from "./img/product/shop-1-img-7-600x525.jpg";
+import productImg8 from "./img/product/shop-1-img-8-600x525.jpg";
+import productImg9 from "./img/product/shop-1-img-9-600x525.jpg";
+import productImg10 from "./img/product/shop-1-img-10-600x525.jpg";
+import productImg11 from "./img/product/shop-1-img-11-600x525.jpg";
+import productImg12 from "./img/product/shop-1-img-12-600x525.jpg";
+import productImg13 from "./img/product/shop-1-img-13-600x525.jpg";
+import productImg14 from "./img/product/shop-1-img-14-600x525.jpg";
+import productImg15 from "./img/product/shop-1-img-15-600x525.jpg";
+import productImg16 from "./img/product/shop-1-img-16-600x525.jpg";
+import productImg17 from "./img/product/shop-1-img-17-600x525.jpg";
+import productImg18 from "./img/product/shop-1-img-18-600x525.jpg";
 import productSingle1 from "./img/product/shop-1-gallery-1.jpg";
 import productSingle2 from "./img/product/shop-1-gallery-2.jpg";
 import productSingle3 from "./img/product/shop-1-gallery-3.jpg";
@@ -144,7 +144,7 @@ export {
   Destination_img_item_01,
   Destination_img_item_02,
   // img__side__bar
-img_side_01,
+  img_side_01,
   //poster and btn video
   PosterBtn,
   PosterTravel,

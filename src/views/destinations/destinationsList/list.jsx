@@ -22,7 +22,7 @@ const NewStyleSelection = styled.div`
     padding: 50px 0;
     background: #fff;
 
-    transform: translateY(-150px);
+    transform: translateY(-100px);
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1), -2px 2px 4px rgba(0, 0, 0, 0.1);
   }
 `;
@@ -55,7 +55,6 @@ const NewStyleItem = styled.div`
   }
 `;
 const List = () => {
-
   return (
     <Helmet title="Destination List">
       <div className="component destination__list">

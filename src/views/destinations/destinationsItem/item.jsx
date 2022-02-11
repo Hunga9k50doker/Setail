@@ -3,7 +3,6 @@ import React from "react";
 import { useParams } from "react-router-dom";
 
 import cardData from "../../../assets/fake-data/CardDetails";
-import data__blog from "../../../assets/fake-data/CardBlogs";
 // import components
 import Helmet from "../../../components/Helmet/Helmet";
 import Banner from "../../../components/banner/banner";

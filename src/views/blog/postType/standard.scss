@@ -1,0 +1,31 @@
+@import "../../../styles/variables";
+@import "../../../styles/global";
+#comment {
+  margin: 100px 0;
+  .title {
+    font-weight: 700;
+    font-size: 2rem;
+  }
+  .card__reviews {
+    padding: 0;
+
+    .img__user {
+      width: 100px;
+    }
+    .card__content {
+      .card__place {
+        font-size: 1.4rem;
+      }
+      .card__rating__start {
+        color: $primary-color;
+      }
+      .card__text {
+        font-size: 1rem;
+      }
+      .card__time {
+        font-weight: 600;
+        font-size: 1rem;
+      }
+    }
+  }
+}

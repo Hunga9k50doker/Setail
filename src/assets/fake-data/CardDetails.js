@@ -78,7 +78,7 @@ const CardDetailArr = [
     title: "Corfu",
     subTitle: "Meinem seh blick noch lebt die dem nicht tränen was..",
     cost: 996,
-    rating: 7.3,
+    rating: "7.3",
     review__details: [
       { title: "Rating", percent: "60" },
       { title: "Comfort", percent: "100" },
@@ -110,7 +110,7 @@ const CardDetailArr = [
     title: "Vatican City",
     subTitle: "Meinem seh blick noch lebt die dem nicht tränen was..",
     cost: 860,
-    rating: 7.3,
+    rating: "7.3",
     review__details: [
       { title: "Rating", percent: "100" },
       { title: "Comfort", percent: "100" },
@@ -142,7 +142,7 @@ const CardDetailArr = [
     title: "Rome",
     subTitle: "Meinem seh blick noch lebt die dem nicht tränen was..",
     cost: 2300,
-    rating: 7.3,
+    rating: "7.3",
     review__details: [
       { title: "Rating", percent: "40" },
       { title: "Comfort", percent: "40" },
@@ -174,7 +174,7 @@ const CardDetailArr = [
     title: "Milan",
     subTitle: "Meinem seh blick noch lebt die dem nicht tränen was..",
     cost: 1230,
-    rating: 7.3,
+    rating: "7.3",
     review__details: [
       { title: "Rating", percent: "60" },
       { title: "Comfort", percent: "40" },
@@ -206,7 +206,7 @@ const CardDetailArr = [
     title: "Seville",
     subTitle: "Meinem seh blick noch lebt die dem nicht tränen was..",
     cost: 1500,
-    rating: 7.3,
+    rating: "7.3",
     review__details: [
       { title: "Rating", percent: "60" },
       { title: "Comfort", percent: "60" },
@@ -242,7 +242,7 @@ const CardDetailArr = [
     title: "Kis Ski School",
     subTitle: "Meinem seh blick noch lebt die dem nicht tränen was..",
     cost: 1600,
-    rating: 7.3,
+    rating: "7.3",
     review__details: [
       { title: "Rating", percent: "40" },
       { title: "Comfort", percent: "40" },
@@ -277,7 +277,7 @@ const CardDetailArr = [
     title: "Magic Of Italy",
     subTitle: "Meinem seh blick noch lebt die dem nicht tränen was..",
     cost: 1000,
-    rating: 7.3,
+    rating: "7.3",
     review__details: [
       { title: "Rating", percent: "60" },
       { title: "Comfort", percent: "40" },
@@ -313,7 +313,7 @@ const CardDetailArr = [
     title: "Winter Action",
     subTitle: "Meinem seh blick noch lebt die dem nicht tränen was..",
     cost: 960,
-    rating: 6.0,
+    rating: "6.0",
     review__details: [
       { title: "Rating", percent: "60" },
       { title: "Comfort", percent: "60" },
@@ -348,7 +348,7 @@ const CardDetailArr = [
     title: "Skiing In Alps",
     subTitle: "Meinem seh blick noch lebt die dem nicht tränen was..",
     cost: 450,
-    rating: 7.3,
+    rating: "7.3",
     review__details: [
       { title: "Rating", percent: "100" },
       { title: "Comfort", percent: "100" },
@@ -383,7 +383,7 @@ const CardDetailArr = [
     title: "Snow Surfing",
     subTitle: "Meinem seh blick noch lebt die dem nicht tränen was..",
     cost: 720,
-    rating: 7.3,
+    rating: "7.3",
     review__details: [
       { title: "Rating", percent: "60" },
       { title: "Comfort", percent: "60" },
@@ -418,7 +418,7 @@ const CardDetailArr = [
     title: "Active Winter",
     subTitle: "Meinem seh blick noch lebt die dem nicht tränen was..",
     cost: 3600,
-    rating: 7.3,
+    rating: "7.3",
     review__details: [
       { title: "Rating", percent: "60" },
       { title: "Comfort", percent: "40" },
@@ -453,7 +453,7 @@ const CardDetailArr = [
     title: "Slovenia",
     subTitle: "Meinem seh blick noch lebt die dem nicht tränen was..",
     cost: 3600,
-    rating: 7.3,
+    rating: "7.3",
     review__details: [
       { title: "Rating", percent: "60" },
       { title: "Comfort", percent: "40" },
@@ -488,7 +488,7 @@ const CardDetailArr = [
     title: "France",
     subTitle: "Meinem seh blick noch lebt die dem nicht tränen was..",
     cost: 3600,
-    rating: 7.3,
+    rating: "7.3",
     review__details: [
       { title: "Rating", percent: "60" },
       { title: "Comfort", percent: "40" },
@@ -524,7 +524,7 @@ const CardDetailArr = [
     title: "Switgerland",
     subTitle: "Meinem seh blick noch lebt die dem nicht tränen was..",
     cost: 3600,
-    rating: 7.3,
+    rating: "7.3",
     review__details: [
       { title: "Rating", percent: "60" },
       { title: "Comfort", percent: "40" },
@@ -557,7 +557,7 @@ const CardDetailArr = [
     subTitle:
       "Oiseau flots sans brides mes leur haleurs bons les hystériques, les   les peaux les taches dors, baiser de.Cieux poissons soleil et ce flamands les je. J'ai noirs et au lunules descendaient cheveux descendre drames. Sures île des.",
     cost: 1705,
-    rating: 5.0,
+    rating: "5.0",
     review__details: [
       { title: "Rating", percent: "40" },
       { title: "Comfort", percent: "100" },
@@ -590,7 +590,7 @@ const CardDetailArr = [
     subTitle:
       "Dolores ipsum clita kasd duo lorem et, et dolores rebum magna ipsum eirmod magna labore, justo diam duo eirmod et.",
     cost: 1740,
-    rating: 5.0,
+    rating: "5.0",
     review__details: [
       { title: "Rating", percent: "100" },
       { title: "Comfort", percent: "100" },
@@ -623,7 +623,7 @@ const CardDetailArr = [
     subTitle:
       "Evil though friends however grace thy near formed but, but as aisle albions time these was almost thy. Though evil.",
     cost: 1100,
-    rating: 7.0,
+    rating: "7.0",
     review__details: [
       { title: "Rating", percent: "80" },
       { title: "Comfort", percent: "80" },
@@ -656,7 +656,7 @@ const CardDetailArr = [
     subTitle:
       "El para que aire despenada pulso de mármol y. Todo vilo ansioso y en huevos y los. Borrachos talco entonces.",
     cost: 1705,
-    rating: 5.0,
+    rating: "5.0",
     review__details: [
       { title: "Rating", percent: "100" },
       { title: "Comfort", percent: "40" },
@@ -689,7 +689,7 @@ const CardDetailArr = [
     subTitle:
       "Your reclining leave sir burned dreaming my. The only bleak shaven seraphim unmerciful and a, implore entrance darkness desolate god.",
     cost: 963,
-    rating: 5.3,
+    rating: "5.3",
     review__details: [
       { title: "Rating", percent: "100" },
       { title: "Comfort", percent: "100" },
@@ -722,7 +722,7 @@ const CardDetailArr = [
     subTitle:
       "Kynzathul hul owog kyniuhhad scemem fyomnok therthetyk, kethwe merth epedek buabeleul wylag kynzathul. Fyodumtul en byuntelen wegh scepsegud urodum. Ualmun.",
     cost: 2130,
-    rating: 5.0,
+    rating: "5.0",
     review__details: [
       { title: "Rating", percent: "60" },
       { title: "Comfort", percent: "60" },
@@ -755,7 +755,7 @@ const CardDetailArr = [
     subTitle:
       "Porgiamo dea viviamo manifestamente tanto né le mortali, di quale con alla allo principio non se grazia sí, in di.",
     cost: 999,
-    rating: 7.3,
+    rating: "7.3",
     review__details: [
       { title: "Rating", percent: "40" },
       { title: "Comfort", percent: "40" },
@@ -788,7 +788,7 @@ const CardDetailArr = [
     subTitle:
       "Kasd sadipscing rebum ut justo gubergren et sed erat, gubergren justo eos rebum diam dolore dolor kasd nonumy erat. Et.",
     cost: 1705,
-    rating: 5.0,
+    rating: "5.0",
     review__details: [
       { title: "Rating", percent: "60" },
       { title: "Comfort", percent: "40" },
@@ -821,7 +821,7 @@ const CardDetailArr = [
     subTitle:
       "Menge herauf der des gleich sich hören früh mich noch labyrinthisch. Ich zu lied die erste ihr seelen lied schöne.",
     cost: 1705,
-    rating: 5.0,
+    rating: "5.0",
     review__details: [
       { title: "Rating", percent: "60" },
       { title: "Comfort", percent: "60" },
@@ -854,7 +854,7 @@ const CardDetailArr = [
     subTitle:
       "Halal thudothlon en farad symeonnok fyon kyul urodum. Egyre hullothya wylag kyt fyon symeonnok urumemtuul ezes. Yg illen fugwa syrolmol.",
     cost: 888,
-    rating: 6.0,
+    rating: "6.0",
     review__details: [
       { title: "Rating", percent: "60" },
       { title: "Comfort", percent: "40" },
@@ -887,7 +887,7 @@ const CardDetailArr = [
     subTitle:
       "Li unuvorte kie kusxante mi niajn. Vidi se sakon restajxon rumo min iris helpon bestoj, ni fine teron da cxiuj.",
     cost: 966,
-    rating: 9.0,
+    rating: "9.0",
     review__details: [
       { title: "Rating", percent: "60" },
       { title: "Comfort", percent: "60" },
@@ -920,7 +920,7 @@ const CardDetailArr = [
     subTitle:
       "Kapti se kiujn nun povo por tial mallevis, venu lauxlongiru kaj sciis ni tial vi, sia survoje velojn longe pafilo,.",
     cost: 999,
-    rating: 6.7,
+    rating: "6.7",
     review__details: [
       { title: "Rating", percent: "60" },
       { title: "Comfort", percent: "20" },
@@ -953,7 +953,7 @@ const CardDetailArr = [
     subTitle:
       "Je l'horizon les tendus océans fond la et plus. Braises immobilités et de de balottant la des, de ou qu'un.",
     cost: 920,
-    rating: 5.0,
+    rating: "5.0",
     review__details: [
       { title: "Rating", percent: "60" },
       { title: "Comfort", percent: "60" },
@@ -987,7 +987,7 @@ const CardDetailArr = [
     subTitle:
       "Et ea invidunt aliquyam sit sit magna dolor. Dolores takimata dolor sed erat, stet ipsum sed consetetur et, magna dolor.",
     cost: 550,
-    rating: 5.0,
+    rating: "5.0",
     review__details: [
       { title: "Rating", percent: "60" },
       { title: "Comfort", percent: "100" },
@@ -1020,7 +1020,7 @@ const CardDetailArr = [
     subTitle:
       "Diam amet dolore dolore ea nonumy eirmod lorem. Justo stet sea sed kasd et dolor et. Amet eirmod dolor clita.",
     cost: 1550,
-    rating: 5.0,
+    rating: "5.0",
     review__details: [
       { title: "Rating", percent: "60" },
       { title: "Comfort", percent: "100" },
@@ -1053,7 +1053,7 @@ const CardDetailArr = [
     subTitle:
       "Stet duo et voluptua gubergren et lorem nonumy, dolor et at stet justo kasd erat sadipscing et, sed labore amet.",
     cost: 1330,
-    rating: 5.0,
+    rating: "5.0",
     review__details: [
       { title: "Rating", percent: "60" },
       { title: "Comfort", percent: "100" },
@@ -1086,7 +1086,7 @@ const CardDetailArr = [
     subTitle:
       "Justo consetetur duo et eos dolor at ipsum ea et sea, accusam sed gubergren kasd dolor et kasd lorem. Est.",
     cost: 1550,
-    rating: 5.0,
+    rating: "5.0",
     review__details: [
       { title: "Rating", percent: "60" },
       { title: "Comfort", percent: "60" },
@@ -1121,7 +1121,7 @@ const CardDetailArr = [
     img: carousel_slider_img_01,
     subTitle: "Tropical",
     cost: 1550,
-    rating: 5.0,
+    rating: "5.0",
     review__details: [
       { title: "Rating", percent: "60" },
       { title: "Comfort", percent: "60" },
@@ -1156,7 +1156,7 @@ const CardDetailArr = [
     img: carousel_slider_img_02,
     subTitle: "Stunning",
     cost: 1550,
-    rating: 5.0,
+    rating: "5.0",
     review__details: [
       { title: "Rating", percent: "60" },
       { title: "Comfort", percent: "60" },
@@ -1191,7 +1191,7 @@ const CardDetailArr = [
     description:
       "Diam stet lorem tempor et takimata duo et et amet sed. Erat est eos sed dolore consetetur voluptua et, erat takimata takimata ut et et duo, rebum dolor accusam elitr diam, at stet stet accusam sit, eirmod consetetur vero voluptua et dolor amet sea et, vero dolor amet vero sadipscing at vero et rebum accusam, sadipscing sed sed elitr eirmod ut, clita dolore sit amet eos. Nonumy kasd eos stet ipsum sed, takimata diam et at ipsum takimata at et,.Eirmod no sed duo dolor dolor elitr dolor invidunt elitr, ea duo dolores aliquyam clita.",
     cost: 1550,
-    rating: 5.0,
+    rating: "5.0",
     review__details: [
       { title: "Rating", percent: "60" },
       { title: "Comfort", percent: "60" },
@@ -1226,7 +1226,7 @@ const CardDetailArr = [
     type: "carousel__slider",
     description:
       "Diam stet lorem tempor et takimata duo et et amet sed. Erat est eos sed dolore consetetur voluptua et, erat takimata takimata ut et et duo, rebum dolor accusam elitr diam, at stet stet accusam sit, eirmod consetetur vero voluptua et dolor amet sea et, vero dolor amet vero sadipscing at vero et rebum accusam, sadipscing sed sed elitr eirmod ut, clita dolore sit amet eos. Nonumy kasd eos stet ipsum sed, takimata diam et at ipsum takimata at et,.Eirmod no sed duo dolor dolor elitr dolor invidunt elitr, ea duo dolores aliquyam clita.",
-    rating: 5.0,
+    rating: "5.0",
     review__details: [
       { title: "Rating", percent: "60" },
       { title: "Comfort", percent: "60" },
@@ -1261,7 +1261,7 @@ const CardDetailArr = [
     img: carousel_slider_img_05,
     subTitle: "Relaxing",
     cost: 1550,
-    rating: 5.0,
+    rating: "5.0",
     review__details: [
       { title: "Rating", percent: "60" },
       { title: "Comfort", percent: "60" },
@@ -1296,7 +1296,7 @@ const CardDetailArr = [
     img: carousel_slider_img_06,
     subTitle: "Active",
     cost: 1550,
-    rating: 5.0,
+    rating: "5.0",
     review__details: [
       { title: "Rating", percent: "60" },
       { title: "Comfort", percent: "60" },

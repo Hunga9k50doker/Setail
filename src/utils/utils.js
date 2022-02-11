@@ -70,4 +70,72 @@ function to_slug(str) {
   return str;
 }
 
-export { RatingStarInput, RatingStar, to_slug };
+// pagination
+function Pagination({ data, RenderComponent, pageLimit, dataLimit }) {
+  const [pages] = useState(Math.round(data.length / dataLimit));
+  const [currentPage, setCurrentPage] = useState(1);
+
+  function nextPage() {
+    setCurrentPage((page) => page + 1);
+  }
+  function prePage() {
+    setCurrentPage((page) => page - 1);
+  }
+  function changePage(e) {
+    const page = Number(e.target.textContent);
+    setCurrentPage(page);
+  }
+  function getPaginateData() {
+    const startIndex = currentPage * dataLimit - dataLimit;
+    const endIndex = startIndex + dataLimit;
+    return data.slice(startIndex, endIndex);
+  }
+  function getGroupPage() {
+    let start = Math.floor((currentPage - 1) / pageLimit) * pageLimit;
+    return new Array(pageLimit).fill().map((_, id) => start + id + 1);
+  }
+  return (
+    <>
+      <div className="container__data">
+        {getPaginateData().map((e, id) => (
+          <RenderComponent key={id} data={e} />
+        ))}
+      </div>
+      <div className="pagination">
+        <button
+          onClick={prePage}
+          className={`btn_pre btn_pagi ${currentPage === 1 ? "disabled" : ""}`}
+        >
+          Pre
+        </button>
+        {getGroupPage().map((e, id) => (
+          <button
+            key={id}
+            onClick={changePage}
+            className={`btn_pagi ${currentPage === e ? "active" : "null"}`}
+          >
+            {e}
+          </button>
+        ))}
+        <button
+          onClick={nextPage}
+          className={`btn_next btn_pagi ${
+            currentPage === pages ? "disabled" : ""
+          }`}
+        >
+          Next
+        </button>
+      </div>
+    </>
+  );
+}
+
+// get random
+const get_random = (arr, count) => {
+  const max = arr.length - count;
+  const min = 0;
+  const start = Math.floor(Math.random() * (max - min) + min);
+  return arr.slice(start, start + count);
+};
+
+export { RatingStarInput, RatingStar, to_slug, Pagination, get_random };

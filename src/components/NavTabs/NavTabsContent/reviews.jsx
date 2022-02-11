@@ -82,7 +82,7 @@ const Reviews = () => {
                                   {item.review__details.map(
                                     (element, k) =>
                                       element.title === "Rating" && (
-                                        <h6 className="user__rating__title">
+                                        <h6 key={k} className="user__rating__title">
                                           <p>{element.title}</p>
                                           <RatingStar
                                             rating={element.percent / 20}
@@ -93,7 +93,7 @@ const Reviews = () => {
                                   {item.review__details.map(
                                     (element, k) =>
                                       element.title === "Hospitality" && (
-                                        <h6 className="user__rating__title">
+                                        <h6 key={k} className="user__rating__title">
                                           <p>{element.title} </p>
                                           <RatingStar
                                             rating={element.percent / 20}
@@ -108,7 +108,7 @@ const Reviews = () => {
                                   {item.review__details.map(
                                     (element, k) =>
                                       element.title === "Comfort" && (
-                                        <h6 className="user__rating__title">
+                                        <h6 key={k} className="user__rating__title">
                                           <p>{element.title} </p>
                                           <RatingStar
                                             rating={element.percent / 20}
@@ -119,7 +119,7 @@ const Reviews = () => {
                                   {item.review__details.map(
                                     (element, k) =>
                                       element.title === "Hygiene" && (
-                                        <h6 className="user__rating__title">
+                                        <h6 key={k} className="user__rating__title">
                                           <p>{element.title} </p>
                                           <RatingStar
                                             rating={element.percent / 20}
@@ -134,7 +134,7 @@ const Reviews = () => {
                                   {item.review__details.map(
                                     (element, k) =>
                                       element.title === "Food" && (
-                                        <h6 className="user__rating__title">
+                                        <h6 key={k} className="user__rating__title">
                                           <p>{element.title} </p>
                                           <RatingStar
                                             rating={element.percent / 20}
@@ -145,7 +145,7 @@ const Reviews = () => {
                                   {item.review__details.map(
                                     (element, k) =>
                                       element.title === "Reception" && (
-                                        <h6 className="user__rating__title">
+                                        <h6 key={k} className="user__rating__title">
                                           <p>{element.title} </p>
                                           <RatingStar
                                             rating={element.percent / 20}
@@ -176,7 +176,7 @@ const Reviews = () => {
                             {item.review__details.map(
                               (element, k) =>
                                 element.title === "Rating" && (
-                                  <h6 className="user__rating__title">
+                                  <h6 key={k} className="user__rating__title">
                                     <p>
                                       <p>{element.title}</p>
                                     </p>
@@ -187,7 +187,7 @@ const Reviews = () => {
                             {item.review__details.map(
                               (element, k) =>
                                 element.title === "Hospitality" && (
-                                  <h6 className="user__rating__title">
+                                  <h6 key={k} className="user__rating__title">
                                     <p>
                                       <p>{element.title}</p>
                                     </p>
@@ -202,7 +202,7 @@ const Reviews = () => {
                             {item.review__details.map(
                               (element, k) =>
                                 element.title === "Comfort" && (
-                                  <h6 className="user__rating__title">
+                                  <h6 key={k} className="user__rating__title">
                                     <p>
                                       <p>{element.title}</p>
                                     </p>
@@ -213,7 +213,7 @@ const Reviews = () => {
                             {item.review__details.map(
                               (element, k) =>
                                 element.title === "Hygiene" && (
-                                  <h6 className="user__rating__title">
+                                  <h6 key={k} className="user__rating__title">
                                     <p>
                                       <p>{element.title}</p>
                                     </p>
@@ -228,7 +228,7 @@ const Reviews = () => {
                             {item.review__details.map(
                               (element, k) =>
                                 element.title === "Food" && (
-                                  <h6 className="user__rating__title">
+                                  <h6 key={k} className="user__rating__title">
                                     <p>
                                       <p>{element.title}</p>
                                     </p>
@@ -239,7 +239,7 @@ const Reviews = () => {
                             {item.review__details.map(
                               (element, k) =>
                                 element.title === "Reception" && (
-                                  <h6 className="user__rating__title">
+                                  <h6 key={k} className="user__rating__title">
                                     <p>
                                       <p>{element.title}</p>
                                     </p>

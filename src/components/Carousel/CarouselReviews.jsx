@@ -16,6 +16,7 @@ const SlideCardReview = (props) => {
     slidesToShow: 3,
     autoplay: true,
     slidesToScroll: 1,
+    
     responsive: [
       {
         breakpoint: 1024,

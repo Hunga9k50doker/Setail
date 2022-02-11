@@ -24,16 +24,13 @@ import Split from "./tours/splitList/split";
 import Masonry from "./blog/masonry/masonry";
 import BlogGallery from "./blog/postType/gallery";
 import BlogLink from "./blog/postType/link";
-import BlogStandard from "./blog/postType/standard";
-import LeftStandard from "./blog/standard/leftStandard";
-import RightStandard from "./blog/standard/rightStandard";
-import WithoutStandard from "./blog/standard/withoutStandard";
+import TypeStandard from "./blog/postType/standard";
+import BlogStandard from "./blog/standard/BlogStandard";
+import { BlogItem } from "../components/blogItem/BlogItem";
 
 import ShopList from "./shop/productList/list";
 import ShopSingle from "./shop/productSingle/single";
-import FourColumns from "./shop/shopLayout/fourColumns";
-import ThreeColumns from "./shop/shopLayout/threeColumns";
-import FullWidth from "./shop/shopLayout/fullWidth";
+import ShopLayout from "./shop/shopLayout/shopLayout";
 
 import Accordions from "./elements/classic/accordions";
 import Buttons from "./elements/classic/buttons";
@@ -99,7 +96,9 @@ function App() {
         </>
         <Switch>
           {/*=================== Home================== */}
-
+          <Route exact path="/:slug">
+            <TypeStandard />
+          </Route>
           <Route exact path="/">
             <HomeTravel />
           </Route>
@@ -157,16 +156,19 @@ function App() {
             <BlogLink />
           </Route>
           <Route exact path="/blog/standard">
-            <BlogStandard />
+            <TypeStandard />
           </Route>
           <Route exact path="/blog/right-sidebar">
-            <RightStandard />
+            <BlogStandard />
           </Route>
           <Route exact path="/blog/left-sidebar">
-            <LeftStandard />
+            <BlogStandard />
           </Route>
           <Route exact path="/blog/without-sidebar">
-            <WithoutStandard />
+            <BlogStandard />
+          </Route>
+          <Route exact path="/blog/category/:slug">
+            <BlogStandard />
           </Route>
 
           {/*=================== Shop================== */}
@@ -177,13 +179,13 @@ function App() {
             <ShopSingle />
           </Route>
           <Route exact path="/shop/three-columns">
-            <ThreeColumns />
+            <ShopLayout />
           </Route>
           <Route exact path="/shop/four-columns">
-            <FourColumns />
+            <ShopLayout />
           </Route>
           <Route exact path="/shop/full-width">
-            <FullWidth />
+            <ShopLayout />
           </Route>
 
           {/*=================== Elements================== */}

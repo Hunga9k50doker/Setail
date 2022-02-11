@@ -5,8 +5,10 @@ import data__blog from "../../assets/fake-data/CardBlogs";
 // ip components
 import { SearchBar, Categories } from "../Product/rightBar/rightBar";
 import { FormFollow } from "../forms/forms";
+import { get_random, to_slug } from "../../utils/utils";
 import "./sidebars.scss";
 const Sidebar = () => {
+  const arr = ["Adventure", "Food", "Travel", "New Year", "Summer"];
   return (
     <div className="side__bar">
       <SearchBar />
@@ -18,13 +20,21 @@ const Sidebar = () => {
           kasd lorem, justo elitr invidunt.
         </p>
       </div>
-      <Categories />
+      <Categories>
+        <>
+          {get_random(arr, 5).map((e, index) => (
+            <li key={index + 1}>
+              <Link to={`/blog/category/` + to_slug(e)}>{e}</Link>
+            </li>
+          ))}
+        </>
+      </Categories>
       <FormFollow />
       <div className="sidebar__item">
         <h2 className="sidebar__item__title">Lastest Posts</h2>
         <ul className="sidebar__list">
           {data__blog.getCards_random(3).map((e, id) => (
-            <li className="sidebar__list__item">
+            <li key={id + 1} className="sidebar__list__item">
               <img src={e.img} alt="Not found" />
               <Link to="#" className="sidebar__list__item__content">
                 <h3 className="sidebar__list__item__content__title">

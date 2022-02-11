@@ -8,7 +8,6 @@ import BannerArr from "../../../assets/fake-data/Banner";
 import Helmet from "../../../components/Helmet/Helmet";
 import Banner from "../../../components/banner/banner";
 import Selections from "../../../components/selections/selections";
-
 import NavTabFilter from "../../../components/NavTabs/NavFilter";
 
 const getImgBanner = BannerArr.filter((e) => e.types === "banner_tours");
@@ -16,7 +15,7 @@ const NewStyleSelection = styled.div`
   .selections {
     padding: 50px 0;
     background: #fff;
-    transform: translateY(-150px);
+    transform: translateY(-70px);
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 0;

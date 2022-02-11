@@ -4,6 +4,9 @@
   width: 100%;
   .img-container {
     position: relative;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
     img {
       width: 100%;
     }
@@ -63,6 +66,9 @@
     justify-content: space-between;
     div {
       font-weight: 500;
+      i {
+        font-size: 0.8rem !important;
+      }
       .line-through {
         margin-right: 1rem;
         color: #d4d3d3;

@@ -3,7 +3,7 @@ import "./forms.scss";
 // =======form responed============
 const FormResponed = (props) => {
   return (
-    <form className="row g-3 needs-validation form" novalidate>
+    <form className="row g-3 needs-validation form" noValidate>
       <h3 className="form__title">{props.title}</h3>
       <p className="form__subtitle">{props.subtitle}</p>
       <div className="user__rating"></div>
@@ -56,7 +56,7 @@ const FormResponed = (props) => {
       <div className="col-12">
         <div className="form-check">
           <input type="checkbox" value="" id="invalidCheck" required />
-          <label className="form-check-label" for="invalidCheck">
+          <label className="form-check-label"htmlFor="invalidCheck">
             Save my name, email, and website in this browser for the next time I
             comment.
           </label>

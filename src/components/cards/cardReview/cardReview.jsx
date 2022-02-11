@@ -9,6 +9,7 @@ const CardReview = (props) => {
         <p className="card__rating__start">{props.star}</p>
         <p className="card__text">{props.description}</p>
         <h5 className="card__name__user">{props.name}</h5>
+        <h5 className="card__time">{props.time}</h5>
       </div>
     </div>
   );
