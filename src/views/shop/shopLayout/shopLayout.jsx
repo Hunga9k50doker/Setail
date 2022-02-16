@@ -61,7 +61,7 @@ const ShopLayout = () => {
                           : `${
                               ref === "/shop/four-columns"
                                 ? `col col-xxl-3 col-xl-3 col-md-6 col-sm-12 py-4`
-                                : `col col-xxl-2 col-xl-2 col-md-4 col-sm-12 py-4`
+                                : `col col-xxl-2 col-xl-2 col-md-4 col-sm-12 py-4 full-width`
                             }`
                       }
                     >

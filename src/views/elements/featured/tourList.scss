@@ -2,12 +2,14 @@
   width: 100%;
   .banner1 {
     img {
+      height: -webkit-fit-content;
+      height: -moz-fit-content;
       height: fit-content;
     }
   }
   .row {
     display: flex;
-    padding: 6.875rem 6rem;
+    // padding: 6.875rem 6rem;
     justify-content: center;
     gap: 1.5rem;
     // flex-shrink: 1;

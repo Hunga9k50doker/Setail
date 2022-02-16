@@ -9,9 +9,6 @@ import CarouselSlider from "../../../components/Carousel/CarouselSlider";
 
 import "../../App.scss";
 import "./slider.scss";
-  var nav_on_top = document.querySelector(".nav__onTop");
-
-console.log(nav_on_top);
 
 const Slider = () => {
   return (

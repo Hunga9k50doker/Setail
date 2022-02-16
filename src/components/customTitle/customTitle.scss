@@ -1,22 +1,23 @@
-@import '../../styles/variables';
-@import '../../styles/global';
+@import "../../styles/variables";
+@import "../../styles/global";
 
 .customTitle {
-    display:flex;
-    align-items:center;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 120px;
-    h3{
-        font-family: 'Pacifico',sans-serif;
-        color: $primary-color;
-    }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 120px;
+  text-align: center;
+  h3 {
+    font-family: "Pacifico", sans-serif;
+    color: $primary-color;
+  }
 
-    h2{
-
-        font-size: 4rem;
-        font-weight: 700;
-    }
-
-
+  h2 {
+    font-size: 4rem;
+    font-weight: 700;
+  }
+  p {
+    max-width: 600px;
+  }
 }

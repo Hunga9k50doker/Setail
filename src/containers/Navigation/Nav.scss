@@ -90,6 +90,8 @@
         p {
           position: relative;
           display: inline-block;
+          width: -webkit-fit-content;
+          width: -moz-fit-content;
           width: fit-content;
           &:after {
             @extend .hover-slide-below;
@@ -141,6 +143,8 @@
             a {
               position: relative;
               display: inline-block;
+              width: -webkit-fit-content;
+              width: -moz-fit-content;
               width: fit-content;
               &:after {
                 @extend .hover-slide-below;
@@ -184,6 +188,8 @@
           }
           a {
             position: relative;
+            width: -webkit-fit-content;
+            width: -moz-fit-content;
             width: fit-content;
             &:after {
               @extend .hover-slide-below;
@@ -252,19 +258,7 @@
           transition: all 0.3s ease;
           border-radius: 4px;
           background: $white-color;
-          &:before {
-            content: " ";
-            position: absolute;
-            top: 0;
-            right: 20px;
-            width: 20px;
-            height: 20px;
-            transform: translateY(-100%);
-            border-bottom: 10px solid rgb(189, 178, 178);
-            border-right: 10px solid transparent;
-            border-left: 10px solid transparent;
-            z-index: 999;
-          }
+
           &:after {
             @extend .bridge;
             height: 30px !important;
@@ -352,11 +346,12 @@
       }
     }
   }
-  .search-modal:not(.active) {
+  .search-modal {
     transform: scale(0);
   }
   .search-modal.active {
     transform: scale(1);
+    visibility: visible;
   }
 
   //================ canvas===============
@@ -503,7 +498,7 @@
       }
     }
   }
-  .accordion__nav:not(.active) {
+  .accordion__nav {
     transform-origin: center top;
     transform: scaleY(0);
   }

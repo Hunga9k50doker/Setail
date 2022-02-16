@@ -228,7 +228,7 @@ const ProductItem = ({ shopData }) => {
         {shopData.name}
       </a>
       <div className="info">
-        <div>
+        <div className="info-rice">
           {shopData.uPrice && <p className="line-through">{shopData.uPrice}</p>}
           <p>{shopData.price}</p>
         </div>

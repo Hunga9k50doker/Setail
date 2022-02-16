@@ -1,0 +1,143 @@
+@import "../../../styles/variables";
+@import "../../../styles/global";
+.component {
+  .container__grey {
+    max-width: 1200px;
+    margin: auto;
+
+    .anccordion {
+      section {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+      }
+    }
+  }
+  .anccordion {
+    margin: 10px 0;
+    section {
+      padding: 10px 15px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      transition: all 0.5s ease-in-out;
+    }
+    &__title {
+      font-size: 1rem;
+      font-weight: 700;
+      margin: 0 0 0 4px;
+      text-transform: uppercase;
+    }
+    &__icon {
+      width: 20px;
+      height: 100%;
+      text-align: center;
+    }
+    &__content {
+      font-size: 1rem;
+      padding-left: 20px;
+      margin-top: 10px;
+    }
+    &__content__wrapper {
+      transition: all 0.3s linear;
+      color: #000;
+      transform-origin: top center;
+      height: 0;
+      overflow: hidden;
+    }
+    .anccordion__content__wrapper.active {
+      transform-origin: center top;
+      height: 100px;
+    }
+  }
+
+  .card__detail {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+
+    &__title {
+      font-size: 1.4rem;
+      font-weight: 700;
+    }
+    &__desc {
+      font-size: 1rem;
+      margin: 20px 0;
+    }
+    .btn {
+      background: $primary-color;
+      color: $white-color;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 1rem;
+      border-radius: unset;
+      letter-spacing: 1.2px;
+      padding: 14px 42px;
+      flex: 1;
+      text-overflow: nowrap;
+      &:hover {
+        background: $bg-color--hover;
+      }
+      .hidden {
+        display: none;
+      }
+      i {
+        font-size: 1rem;
+        margin-left: 10px;
+      }
+    }
+    .active {
+      position: relative;
+      background: unset;
+      text-transform: lowercase;
+      color: $black-color;
+      &::after {
+        content: " ";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+
+        width: 100%;
+        height: 2px;
+        background: $black-color;
+        transform-origin: center right;
+        transition: transform 0.3s ease;
+        transform: scaleX(0);
+      }
+      &::before {
+        content: " ";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background: $black-color;
+        transform-origin: center left;
+        transition: transform 0.3s ease;
+        transform: scaleX(1);
+      }
+
+      &:hover::after {
+        transform-origin: center left;
+        transition: transform 0.3s;
+        transform: scaleX(1);
+        transition-delay: 0.2s;
+      }
+      &:hover::before {
+        transform-origin: center right;
+        transition: transform 0.3s;
+        transform: scaleX(0);
+      }
+    }
+  }
+}
+
+.element__tabs {
+  .container {
+    min-height: 60vh;
+  }
+  p {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+}

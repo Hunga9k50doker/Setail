@@ -32,7 +32,7 @@ import ShopList from "./shop/productList/list";
 import ShopSingle from "./shop/productSingle/single";
 import ShopLayout from "./shop/shopLayout/shopLayout";
 
-import Accordions from "./elements/classic/accordions";
+import ElementAccordions from "./elements/classic/accordions";
 import Buttons from "./elements/classic/buttons";
 import Tabs from "./elements/classic/tabs";
 import Carousel from "./elements/featured/carousel";
@@ -41,8 +41,8 @@ import TourList from "./elements/featured/tourList";
 import ElementShop from "./elements/presentation/shop";
 import ElementBlog from "./elements/presentation/blog";
 import ElementsTeam from "./elements/presentation/team";
-import TypographyHeadings from "./elements/typography/columns";
-import TypographyColumns from "./elements/typography/headings";
+import TypographyHeadings from "./elements/typography/headings";
+import TypographyColumns from "./elements/typography/columns";
 import TypographySectionTitle from "./elements/typography/sectionTitle";
 
 import ItemDetail from "../components/tourItem/item";
@@ -58,6 +58,9 @@ function App() {
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
+      scrollFunction();
+    });
+    return window.removeEventListener("scroll", () => {
       scrollFunction();
     });
   }, []);
@@ -89,7 +92,7 @@ function App() {
         <Nav />
         <>
           {showButton && (
-            <button className="backToTop" onClick={scrollToTop}>
+            <button className="backToTop" onClick={() => scrollToTop()}>
               <i className="fas fa-arrow-up"></i>
             </button>
           )}
@@ -208,7 +211,7 @@ function App() {
             <ElementShop />
           </Route>
           <Route exact path="/elements/accordions">
-            <Accordions />
+            <ElementAccordions />
           </Route>
           <Route exact path="/elements/tabs">
             <Tabs />

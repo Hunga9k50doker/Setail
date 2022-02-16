@@ -1,29 +1,29 @@
-import React from "react";
+import React, { useState, useRef, useEffect } from "react";
 import "./Nav.scss";
 import "../../styles/global.scss";
 import { NavLink, Link } from "react-router-dom";
 import LogoHeader from "../../assets/img/logo/logo-header.png";
 import { CustomTitle, map, CardEmpty } from "../../assets/img";
-const ancor = document.querySelector(".nav__category .accordion__nav");
-const searchModal = document.querySelector(".nav__category .search-modal");
-const abs = document.querySelector(".nav");
-console.log(searchModal);
-console.log(abs);
+
 const Nav = () => {
-  // const searchModal = React.useRef();
+  const [showModal, setShowModal] = useState(false);
+  const [showAncordion, setShowAncordion] = useState(false);
 
-  // open /close modal
-  function ToggleModal() {
-    searchModal.classList.toggle("active");
-  }
-  function showCategory() {
-    ancor.classList.toggle("active");
-  }
-
+  const modalRef = useRef();
+  // console.log(modalRef);
+  useEffect(() => {
+    const clickOutSide = (e) => {
+      if (e.target === modalRef.current) setShowModal(false);
+    };
+    window.addEventListener("click", clickOutSide);
+    return () => {
+      window.removeEventListener("click", clickOutSide);
+    };
+  }, []);
   return (
     <div className="nav nav__category">
       <Link to="/">
-        <picture style={{ position: "relative", zIndex: "9999" }}>
+        <picture style={{ position: "relative", zIndex: "99" }}>
           <source srcSet={LogoHeader} media="(min-width: 1025px)" />
           <img className="nav__logo" src={LogoHeader} alt="Not found" />
         </picture>
@@ -286,7 +286,7 @@ const Nav = () => {
           </div>
         </li>
         <li
-          onClick={ToggleModal}
+          onClick={() => setShowModal(true)}
           className="nav__innerRight-item nav__innerRight-item-search"
         >
           <i className="fas fa-search"></i>
@@ -300,7 +300,7 @@ const Nav = () => {
           <i className="fas fa-bars"></i>
         </li>
         <li
-          onClick={() => showCategory()}
+          onClick={() => setShowAncordion(!showAncordion)}
           className="nav__innerRight-item nav__innerRight-item-category nav__bar__lowPc"
         >
           <i className="fas fa-bars"></i>
@@ -408,9 +408,13 @@ const Nav = () => {
         </div>
       </div>
       {/* ================search modal=========================== */}
-      <div style={{ zIndex: "777" }} className="search-modal">
+      <div
+        ref={modalRef}
+        style={{ zIndex: "777" }}
+        className={`search-modal ${showModal ? "active" : ""}`}
+      >
         <i
-          onClick={ToggleModal}
+          onClick={() => setShowModal(false)}
           className="fas fa-times close "
           // ref={searchModal}
         ></i>
@@ -425,7 +429,10 @@ const Nav = () => {
       </div>
 
       {/* ======ancordion category=========== */}
-      <div className="accordion accordion__nav" id="accordionExample">
+      <div
+        className={`accordion accordion__nav ${showAncordion ? "active" : ""}`}
+        id="accordionExample"
+      >
         <div className="accordion-item">
           <h2 className="accordion-header" id="headingOne">
             <button

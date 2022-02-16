@@ -1,0 +1,29 @@
+@import "../../../styles/variables";
+@import "../../../styles/global";
+.component {
+  .container {
+    top: 0;
+  }
+  .blog__item__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1rem;
+    a {
+      &:first-child {
+        font-weight: 700;
+        margin: 10px 0;
+      }
+    }
+  }
+  .our-team {
+    .banner1 {
+      img {
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
+      }
+    }
+  }
+}

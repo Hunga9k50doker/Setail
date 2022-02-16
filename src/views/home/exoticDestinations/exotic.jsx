@@ -72,7 +72,8 @@ const NewStyleReview = styled.div`
     color: #000;
   }
 `;
-const NewStyleTourFilter = styled.div`
+
+export const NewStyleTourFilter = styled.div`
   .tour__filter {
     position: relative;
 
@@ -96,6 +97,8 @@ const NewStyleTourFilter = styled.div`
     }
     &-item {
       padding: 4px 20px;
+      border-top: 1px solid #fff;
+      border-bottom: 1px solid #fff;
 
       &:last-child {
         background: #fff;
