@@ -1,9 +1,9 @@
-// import { render } from "@testing-library/react";
+import { Link } from "react-router-dom";
+
 import "./NavOnTop.scss";
 import "../../styles/global.scss";
 import "../../styles/responsive.scss";
 import "../../styles/grid.scss";
-import { Link } from "react-router-dom";
 
 const NavOnTop = () => {
   // document.querySelector("modal").modal({ backdrop: "static", keyboard: false });
@@ -135,7 +135,11 @@ const NavOnTop = () => {
                 role="tabpanel"
                 aria-labelledby="login-tab"
               >
-                <form action="#" className="form">
+                <form
+                  action="#"
+                  className="form"
+                  style={{ padding: 0, marginBottom: 0 }}
+                >
                   <h2 className="form__title">Sign In Here!</h2>
                   <h6 className="form__subtitle">
                     Log into your account in just a few simple steps
@@ -182,7 +186,11 @@ const NavOnTop = () => {
                 role="tabpanel"
                 aria-labelledby="register-tab"
               >
-                <form action="#" className="form">
+                <form
+                  action="#"
+                  className="form"
+                  style={{ padding: 0, marginBottom: 0 }}
+                >
                   <h2 className="form__title">Register Now</h2>
                   <h6 className="form__subtitle">
                     Join the SetSail community today & set up a free account.

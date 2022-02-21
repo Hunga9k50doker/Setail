@@ -1,8 +1,8 @@
 import "./sectionSingle.scss";
 import { useState, useEffect } from "react";
-import { RatingStar } from "../../../utils/ratingStart";
+import { RatingStar } from "../../../utils/utils";
 import { user6 } from "../../../assets/img";
-import { RatingStarInput } from "../../../utils/ratingStart";
+import { RatingStarInput } from "../../../utils/utils";
 const ProductItemDetails = ({ itemData }) => {
   var [productCount, setProductCount] = useState(1);
 

@@ -101,6 +101,7 @@ const NewStyleItem = styled.div`
 const NewStyleSelection = styled.div`
   .selections {
     padding-top: 0;
+    margin-top: 80px;
     transform: translateY(-150px);
   }
 `;
