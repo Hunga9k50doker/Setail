@@ -31,7 +31,7 @@ const Location = () => {
                 // style="border:0;"
                 allowFullScreen=""
                 loading="lazy"
-                alt="map can't be loaded"
+                alt="map can\'t be load'
               ></iframe>
             </div>
             <br />

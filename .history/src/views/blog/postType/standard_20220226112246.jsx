@@ -18,6 +18,11 @@ const TypeStandard = () => {
   const getImgBanner = BannerArr.filter((e) => e.types === "banner_pages");
   let { slug } = useParams();
   const location = useLocation();
+  console.log(location);
+  // console.log(slug);
+  const defaultShow = data__cate
+    .getAllCards()
+    .find((e) => e.title === "Beautiful China");
   const NewStyle = styled.div`
     #comment__blog {
       margin: 40px 0;
@@ -87,6 +92,7 @@ const TypeStandard = () => {
     }
   `;
   const NewStyleCardReview = styled.div``;
+  // const title = arr.find((e) => to_slug(e) == slug);
   return (
     <Helmet title="Blog Standard">
       <div className="component">
@@ -107,9 +113,7 @@ const TypeStandard = () => {
           <div className="row ">
             <div className="col col-xxl-9 col-xl-9 col-md-9 col-sm-12">
               <NewStyle>
-                {location.pathname === "/blog/NavLink" ||
-                location.pathname === "/blog/gallery" ||
-                location.pathname === "/blog/standard"
+                {!defaultShow
                   ? data__cate.getAllCards().map(
                       (e, id) =>
                         to_slug(e.title) === "beautiful-china" && (

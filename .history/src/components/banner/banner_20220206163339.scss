@@ -4,8 +4,10 @@
 .ban {
   position: relative;
   width: 100vw;
+  // min-height: fit-content;
   max-height: 100vh;
-  background-color: $primary-color;
+
+  // overflow: hidden;
   background-size: 100vw 100vh;
   background-repeat: no-repeat;
   background-attachment: fixed;

@@ -18,6 +18,12 @@ const TypeStandard = () => {
   const getImgBanner = BannerArr.filter((e) => e.types === "banner_pages");
   let { slug } = useParams();
   const location = useLocation();
+  const pathNameArr = ["/blog/NavLink", "/blog/gallery", "/blog/standard"];
+  // console.log(pathNameArr.some(location.pathname));
+  // console.log(slug);
+  const defaultShow = data__cate
+    .getAllCards()
+    .find((e) => e.title === "Beautiful China");
   const NewStyle = styled.div`
     #comment__blog {
       margin: 40px 0;
