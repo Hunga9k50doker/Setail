@@ -31,3 +31,11 @@ fontawasome
 reactjs, bootstrap.
 ## feature;
 hook, sass,jsx
+
+# Preview: 
+Link: https://sleepy-boyd-387d81.netlify.app/
+
+![p1](https://user-images.githubusercontent.com/66461092/155833289-5e5a3582-7c6e-425a-a7ee-429b42a9abd4.png)
+
+![image](https://user-images.githubusercontent.com/66461092/155833278-422af90a-c80a-4c1a-8424-f0a0cf1b5235.png)
+
