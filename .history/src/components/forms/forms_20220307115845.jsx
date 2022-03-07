@@ -77,7 +77,7 @@ const FormResponed = (props) => {
 // ========form description ========
 const FormDescription = (props) => {
   return (
-    <div className="form" >
+    <div className="form">
       <div className="form__description">
         <h2 className="form__title">Good To Know</h2>
         <h3 className="form__subtitle">

@@ -4,9 +4,8 @@ const CardReview = (props) => {
   return (
     <div className="card__reviews" style={props.style}>
       {/* <div className="row "> */}
-      <div className="col col-xxl-3 col-xl-3  col-md-3 col-sm-12">
-        <img src={props.img} alt="Not Found" className="img__user" />
-      </div>
+      <img src={props.img} alt="Not Found" className="img__user" />
+      <div className="col col-xxl-3 col-xl-3  col-md-3 col-sm-12"></div>
       <div className="col col-xxl-9 col-xl-9 col-md-9 col-sm-12">
         <div className="card__content">
           <h3 className="card__place">{props.place}</h3>

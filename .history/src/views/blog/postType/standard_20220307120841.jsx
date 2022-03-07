@@ -116,7 +116,7 @@ const TypeStandard = () => {
         )}
         <div className="container ">
           <div className="row ">
-            <div className="col col-xxl-9 col-xl-9 col-md-12 col-sm-12">
+            <div className="col col-xxl-9 col-xl-9 col-md-9 col-sm-12">
               <NewStyle>
                 {location.pathname === "/blog/NavLink" ||
                 location.pathname === "/blog/gallery" ||
@@ -180,7 +180,7 @@ const TypeStandard = () => {
                 <FormResponed title="Post a Comment" />
               </NewStyleForm>
             </div>
-            <div className="col col-xxl-3 col-xl-3 col-md-12 col-sm 12">
+            <div className="col col-xxl-3 col-xl-3 col-md-3 col-sm 12">
               <Sidebar />
             </div>
           </div>

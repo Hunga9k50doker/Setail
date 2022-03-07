@@ -68,7 +68,7 @@ h6 {
 }
 img {
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 ul,
 li {
@@ -177,7 +177,7 @@ a {
     width: 100px;
     display: block;
     position: absolute;
-    z-index: 777;
+    z-index: 999;
     padding: 0 120px;
     height: 100%;
 

@@ -40,7 +40,7 @@ const Sidebar = () => {
               <img src={e.img} alt="Not found" />
               <Link
                 to={
-                  id === 2
+                  id === 0
                     ? "/new-year-new-resolutions"
                     : `${id === 1 ? "/hiking" : "/beautiful-china"}`
                 }

@@ -66,7 +66,7 @@ const SlideCardReview = (props) => {
         <Slider {...settings}>
           {card__data.getCards_random(6).map((item, index) => (
             <div className="row">
-              <div className="col ">
+              <div className="col col-xxl-3 col-xl-3 col-md-6 col-sm-12">
                 <CardReview
                   key={index}
                   img={item.img}

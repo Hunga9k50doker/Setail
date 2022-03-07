@@ -65,27 +65,23 @@ const SlideCardReview = (props) => {
       <div className="slide__card-slick">
         <Slider {...settings}>
           {card__data.getCards_random(6).map((item, index) => (
-            <div className="row">
-              <div className="col ">
-                <CardReview
-                  key={index}
-                  img={item.img}
-                  place={item.rating__info.map(
-                    (e, id) => `${id === 0 && e.rating__place}`
-                  )}
-                  name={item.name}
-                  star={item.rating__info.map(
-                    (e, id) =>
-                      id === 0 && (
-                        <RatingStar key={id} rating={e.rating__score / 20} />
-                      )
-                  )}
-                  description={item.rating__info.map(
-                    (e, id) => `${id === 0 && e.rating}`
-                  )}
-                />
-              </div>
-            </div>
+            <CardReview
+              key={index}
+              img={item.img}
+              place={item.rating__info.map(
+                (e, id) => `${id === 0 && e.rating__place}`
+              )}
+              name={item.name}
+              star={item.rating__info.map(
+                (e, id) =>
+                  id === 0 && (
+                    <RatingStar key={id} rating={e.rating__score / 20} />
+                  )
+              )}
+              description={item.rating__info.map(
+                (e, id) => `${id === 0 && e.rating}`
+              )}
+            />
           ))}
         </Slider>
       </div>
