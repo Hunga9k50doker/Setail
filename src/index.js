@@ -4,8 +4,12 @@ import App from "./views/App.js";
 import "./styles/global.scss";
 import "./styles/responsive.scss";
 import "./assets/font/fontawesome-free-5.15.3-web/css/all.min.css";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 import reportWebVitals from "./reportWebVitals";
+AOS.init({
+  duration: 1000,
+});
 
 ReactDOM.render(
   <React.StrictMode>

@@ -10,14 +10,16 @@ import Location from "./NavTabsContent/location";
 import Gallery from "./NavTabsContent/gallery";
 import TourPlan from "./NavTabsContent/tourPlan";
 import Reviews from "./NavTabsContent/reviews";
-
 const NavTabInfo = () => {
   return (
     <>
       <nav>
-        <div className="nav__sidebar nav nav-tabs" id="nav-tab" role="tablist">
+        <article
+          className="nav__sidebar nav nav-tabs"
+          id="nav-tab"
+          role="tablist"
+        >
           <button
-            to
             className="nav-link active"
             id="nav-info-tab"
             data-bs-toggle="tab"
@@ -25,13 +27,12 @@ const NavTabInfo = () => {
             type="button"
             role="tab"
             aria-controls="nav-info"
-            aria-selected="true"
+            aria-selected="1"
           >
             <i className="fas fa-book"></i>
             Infomation
           </button>
           <button
-            to
             className="nav-link"
             id="nav-tour-plan-tab"
             data-bs-toggle="tab"
@@ -39,14 +40,13 @@ const NavTabInfo = () => {
             type="button"
             role="tab"
             aria-controls="nav-tour-plan"
-            aria-selected="false"
+            aria-selected="0"
           >
             <i className="far fa-calendar-alt"></i>
             Tour Plan
           </button>
 
           <button
-            to
             className="nav-link"
             id="nav-location-tab"
             data-bs-toggle="tab"
@@ -54,13 +54,12 @@ const NavTabInfo = () => {
             type="button"
             role="tab"
             aria-controls="nav-location"
-            aria-selected="false"
+            aria-selected="0"
           >
             <i className="fas fa-search-location"></i>
             Location
           </button>
           <button
-            to
             className="nav-link"
             id="nav-gallery-tab"
             data-bs-toggle="tab"
@@ -68,13 +67,12 @@ const NavTabInfo = () => {
             type="button"
             role="tab"
             aria-controls="nav-gallery"
-            aria-selected="false"
+            aria-selected="0"
           >
             <i className="fas fa-camera-retro"></i>
             Gallery
           </button>
           <button
-            to
             className="nav-link"
             id="nav-reviews-tab"
             data-bs-toggle="tab"
@@ -82,63 +80,63 @@ const NavTabInfo = () => {
             type="button"
             role="tab"
             aria-controls="nav-reviews"
-            aria-selected="false"
+            aria-selected="0"
           >
             <i className="far fa-comments"></i>
             Reviews
           </button>
-        </div>
+        </article>
       </nav>
 
-      <div className="col col-xxl-9 col-lg-12 col-md-12 col-12">
-        <div className="tab-content" id="nav-tabContent">
-          <div
+      <article className="col col-xxl-9 col-lg-12 col-md-12 col-12">
+        <article className="tab-content" id="nav-tabContent">
+          <article
             className="tab-pane fade show active"
             id="nav-info"
             role="tabpanel"
             aria-labelledby="nav-info-tab"
           >
             <ContentItem />
-          </div>
-          <div
+          </article>
+          <article
             className="tab-pane fade"
             id="nav-tour-plan"
             role="tabpanel"
             aria-labelledby="nav-tour-plan-tab"
           >
             <TourPlan />
-          </div>
+          </article>
 
-          <div
+          <article
             className="tab-pane fade"
             id="nav-location"
             role="tabpanel"
             aria-labelledby="nav-location-tab"
           >
             <Location />
-          </div>
-          <div
+          </article>
+          <article
             className="tab-pane fade"
             id="nav-gallery"
             role="tabpanel"
             aria-labelledby="nav-gallery-tab"
           >
             <Gallery />
-          </div>
-          <div
+          </article>
+          <article
             className="tab-pane fade"
             id="nav-reviews"
             role="tabpanel"
             aria-labelledby="nav-reviews-tab"
           >
             <Reviews />
-          </div>
-        </div>
-      </div>
+          </article>
+        </article>
+      </article>
       {/* sidebar */}
-      <div className="col col-xxl-3 col-lg-12 col-md-12 col-12">
+      <article className="col col-xxl-3 col-lg-12 col-md-12 col-12">
         <SidebarBooking />
-      </div>
+      </article>
     </>
   );
 };

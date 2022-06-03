@@ -333,7 +333,10 @@ const Reviews = () => {
                           id="invalidCheck"
                           required
                         />
-                        <label className="form-check-label" for="invalidCheck">
+                        <label
+                          className="form-check-label"
+                          htmlFor="invalidCheck"
+                        >
                           Save my name, email, and website in this browser for
                           the next time I comment.
                         </label>

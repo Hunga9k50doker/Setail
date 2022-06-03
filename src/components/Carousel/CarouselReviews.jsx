@@ -65,10 +65,9 @@ const SlideCardReview = (props) => {
       <div className="slide__card-slick">
         <Slider {...settings}>
           {card__data.getCards_random(6).map((item, index) => (
-            <div className="row">
+            <div key={index} className="row">
               <div className="col ">
                 <CardReview
-                  key={index}
                   img={item.img}
                   place={item.rating__info.map(
                     (e, id) => `${id === 0 && e.rating__place}`

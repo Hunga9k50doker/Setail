@@ -4,13 +4,18 @@ import "../../styles/global.scss";
 import { NavLink, Link } from "react-router-dom";
 import LogoHeader from "../../assets/img/logo/logo-header.png";
 import { CustomTitle, map, CardEmpty } from "../../assets/img";
+import CardSelection from "../../components/cards/cardSelection/cardSelection";
+import cardData from "../../assets/fake-data/CardDetails";
+import { to_slug } from "../../utils/utils";
 
 const Nav = () => {
   const [showModal, setShowModal] = useState(false);
   const [showAncordion, setShowAncordion] = useState(false);
-
+  const [searchItem, setSearchItem] = useState("");
+  const [data, setData] = useState(cardData.getAllCards());
+  let item = 8;
+  let count = 0;
   const modalRef = useRef();
-  // console.log(modalRef);
   useEffect(() => {
     const clickOutSide = (e) => {
       if (e.target === modalRef.current) setShowModal(false);
@@ -20,6 +25,7 @@ const Nav = () => {
       window.removeEventListener("click", clickOutSide);
     };
   }, []);
+
   return (
     <div className="nav nav__category">
       <Link to="/">
@@ -351,11 +357,7 @@ const Nav = () => {
             justo et sed sea clita tempor diam,.
           </h5>
           <h3 className="offcanvas__title">Find Your Destination</h3>
-          <form
-            action="
-          #"
-            className="canvas__search"
-          >
+          <form action="#" className="canvas__search">
             <input
               placeholder="Search..."
               type="text"
@@ -416,15 +418,68 @@ const Nav = () => {
         <i
           onClick={() => setShowModal(false)}
           className="fas fa-times close "
-          // ref={searchModal}
         ></i>
         <form
-          action="#"
+          style={{
+            display: "flex",
+            alignItems: "center",
+            flexDirection: "column",
+            justifyContent: "center",
+          }}
+          action={"#"}
           onClick={(e) => e.stopPropagation()}
           className="form-search"
         >
-          <input type="text" className="search-input" placeholder="Search..." />
-          <button className="btn-search">Find now</button>
+          <div
+            style={{ width: "100%", justifyContent: "center", display: "flex" }}
+          >
+            <input
+              type="text"
+              className="search-input"
+              placeholder="Search..."
+              onChange={(e) => setSearchItem(e.target.value)}
+            />
+            {/* <button className="btn-search" disabled={true}>
+              Find now
+            </button> */}
+          </div>
+          <div
+            className="row form__show__list__item"
+            style={{ width: "100%", overflowX: "auto", flexWrap: "nowrap" }}
+          >
+            {data
+              .filter((val) => {
+                if (searchItem === "") {
+                  return val;
+                } else if (
+                  val.title.toLowerCase().includes(searchItem.toLowerCase())
+                ) {
+                  count++;
+                  item = count;
+                  return val;
+                }
+              })
+              .slice(0, item)
+              .map((item, id) => (
+                <Link
+                  key={id}
+                  to={"/tour-item/" + to_slug(item.title)}
+                  className="col col-xxl-3 col-lg-6 col-md-6 col-12"
+                >
+                  <CardSelection
+                    img={item.img}
+                    title={item.title}
+                    rating={item.rating}
+                    cost={Number(item.cost)}
+                    icon={
+                      Number(item.rating) < 6
+                        ? "fas fa-star-half-alt"
+                        : "fas fa-star"
+                    }
+                  />
+                </Link>
+              ))}
+          </div>
         </form>
       </div>
 
@@ -779,13 +834,7 @@ const Nav = () => {
                   </NavLink>
                 </li>
                 <li className="sub-category-item">
-                  <NavLink
-                    to="/elements/tour-carousel"
-
-                    // activeclassname="active"
-                  >
-                    Tour Carousel
-                  </NavLink>
+                  <NavLink to="/elements/tour-carousel">Tour Carousel</NavLink>
                 </li>
                 <li className="sub-category-item">
                   <NavLink to="/elements/tour-filter">Tour Filter</NavLink>

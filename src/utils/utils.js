@@ -9,7 +9,7 @@ const RatingStarInput = () => {
       <label
         className="rating__label"
         key={i}
-        for={`rating${i + 1}`}
+        htmlFor={`rating${i + 1}`}
         onClick={() => {
           setStar(() => i + 1);
         }}
@@ -34,7 +34,7 @@ const RatingStarInput = () => {
 const RatingStar = ({ rating }) => {
   let star = "";
   for (var i = 1; i <= 5; i++) {
-    if (i > rating) star += `<i class="far fa-star"></i>`;
+    if (i > rating) star += `<i className="far fa-star"></i>`;
     else star += '<i class="fas fa-star"></i>';
   }
   return (

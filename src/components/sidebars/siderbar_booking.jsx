@@ -4,7 +4,6 @@ const SidebarBooking = () => {
   // const isValid = document.querySelector(".check__valid");
   const $$ = document.querySelectorAll(".sidebar__booking input[required]");
   const notifi = document.querySelector(".notification");
-  console.log($$);
   function checkValid() {
     for (let i of $$) {
       if (!i.value) {

@@ -11,18 +11,18 @@ const Banner = (props) => {
     >
       <img srcSet={props.img} alt={props.img} />
       <div className="content">
-        <h5 className="subTitle">{props.subTitle}</h5>
-        <h2 className="title">{props.title}</h2>
-        <p className="description">{props.description}</p>
+        <h5 className="subTitle" data-aos="fade-down">
+          {props.subTitle}
+        </h5>
+        <h2 className="title" data-aos="fade-up">
+          {props.title}
+        </h2>
+        <p className="description" data-aos="fade-up">
+          {props.description}
+        </p>
       </div>
     </div>
   );
 };
 
 export default Banner;
-
-// class Example extends React.Component  {
-//   render() {
-//     return <h1>I'm a functional component!</h1>;
-//   }
-// };

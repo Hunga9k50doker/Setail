@@ -8,17 +8,13 @@
 }
 
 .nav {
-  z-index: 888;
+  z-index: 101;
 }
 .component {
   margin-top: 70px !important;
   min-height: 100vh;
 }
 
-.offcanvas.show {
-  // position: relative;
-z-index: 9999;
-}
 .backToTop {
   position: fixed;
   width: 50px;

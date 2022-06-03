@@ -57,6 +57,7 @@ function App() {
   const [showButton, setShowButton] = useState(false);
 
   useEffect(() => {
+    console.clear();
     window.addEventListener("scroll", () => {
       scrollFunction();
     });

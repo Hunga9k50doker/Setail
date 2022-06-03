@@ -4,7 +4,7 @@ import "./cardDetails.scss";
 
 const CardDetails = (props) => {
   return (
-    <div className="card ">
+    <div className="card" data-aos="flip-up">
       <div className="card-header">
         <picture className="card-img">
           <source media="(min-width:1200px)" srcSet={props.img} />
@@ -15,9 +15,7 @@ const CardDetails = (props) => {
           />
           <img src={props.img} className="card-img-top" alt="not found" />
         </picture>
-        <h5 className="card__header__text">
-          Special offer
-        </h5>
+        <h5 className="card__header__text">Special offer</h5>
       </div>
       <div className="card-body">
         <div className="card-information">
@@ -44,7 +42,7 @@ const CardDetails = (props) => {
           <p className="card-rating">
             <i className={props.icon}></i>
             {Number(props.rating) <= 7
-              ? props.rating + " Good" 
+              ? props.rating + " Good"
               : props.rating + " Superb"}
           </p>
         </div>

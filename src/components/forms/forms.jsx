@@ -77,7 +77,7 @@ const FormResponed = (props) => {
 // ========form description ========
 const FormDescription = (props) => {
   return (
-    <div className="form" >
+    <div className="form">
       <div className="form__description">
         <h2 className="form__title">Good To Know</h2>
         <h3 className="form__subtitle">
@@ -89,7 +89,7 @@ const FormDescription = (props) => {
           <tr>
             <td>
               <section>
-                <i class="fas fa-map-marker-alt"></i>
+                <i className="fas fa-map-marker-alt"></i>
                 <p>Country</p>
               </section>
             </td>
@@ -98,7 +98,7 @@ const FormDescription = (props) => {
           <tr>
             <td>
               <section>
-                <i class="fab fa-cc-visa"></i>
+                <i className="fab fa-cc-visa"></i>
                 <p>Visa Requirements</p>
               </section>
             </td>
@@ -108,7 +108,7 @@ const FormDescription = (props) => {
           <tr>
             <td>
               <section>
-                <i class="far fa-comment-dots"></i>
+                <i className="far fa-comment-dots"></i>
                 <p>Languages spoken</p>
               </section>
             </td>
@@ -117,7 +117,7 @@ const FormDescription = (props) => {
           <tr>
             <td>
               <section>
-                <i class="fas fa-wallet"></i>
+                <i className="fas fa-wallet"></i>
                 <p>Currency Used</p>
               </section>
             </td>
@@ -126,7 +126,7 @@ const FormDescription = (props) => {
           <tr>
             <td>
               <section>
-                <i class="far fa-compass"></i>
+                <i className="far fa-compass"></i>
                 <p>Area (Km2)</p>
               </section>
             </td>

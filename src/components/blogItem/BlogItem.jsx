@@ -229,7 +229,7 @@ const PostText = (props) => {
       )}
       <h5>{props.postText.author}</h5>
       <div className="quotes-icon">
-        <i class={props.postText.icon}></i>
+        <i className={props.postText.icon}></i>
       </div>
     </div>
   );
