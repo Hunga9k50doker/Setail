@@ -17,9 +17,7 @@ import "./styles.scss";
 
 const ElementBlog = () => {
   let { slug } = useParams();
-  console.log(slug);
   const getImgBanner = BannerArr.filter((e) => e.types === "banner_pages");
-  // console.log(slug);
   const NewStyle = styled.div`
     .blog-item {
       margin: 40px 0;

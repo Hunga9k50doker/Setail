@@ -44,9 +44,7 @@ const SlideCardReview = (props) => {
       },
     ],
   };
-  // console.clear();
   const ref = React.useRef();
-  // console.log(ref);
   ref.current ? parallaxBackground(ref.current) : "";
   return (
     <div

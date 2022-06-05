@@ -16,8 +16,6 @@ const ElementShop = () => {
   const [items] = useState([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]);
 
   const getImgBanner = BannerArr.filter((e) => e.types === "banner_pages");
-  // console.log(slug);
-
   return (
     <Helmet title="Shop List">
       <div className="component ">

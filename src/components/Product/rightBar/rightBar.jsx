@@ -125,8 +125,7 @@ const PriceFilter = () => {
 };
 
 const Categories = ({ children }) => {
-  // let { slug } = useParams();
-  // console.log(slug, "123");
+
   return (
     <div className="category-list">
       <h5 className="sidebar__item__title">Categories</h5>

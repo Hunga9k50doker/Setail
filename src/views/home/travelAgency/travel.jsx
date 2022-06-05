@@ -29,7 +29,6 @@ import { Paris } from "../../../assets/img";
 //get data
 const getImgBanner = BannerArr.filter((e) => e.types === "banner_home_travel");
 const getVideoData = VideoData.filter((e) => e.id === "video_home_travel");
-// console.log(getImgBanner);
 
 const imgArea = {
   img: Paris,

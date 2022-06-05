@@ -19,8 +19,6 @@ import "./item.scss";
 
 const Item = () => {
   let { slug } = useParams();
-  // console.log(">>>>>>>>>>>>>>>" + slug);
-
   return (
     <Helmet title={slug}>
       <div className="component ">

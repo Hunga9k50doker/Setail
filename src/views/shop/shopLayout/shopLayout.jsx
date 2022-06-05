@@ -11,12 +11,10 @@ import { Baner1, banData } from "../../../components/blogItem/BlogItem";
 
 const ShopLayout = () => {
   const ref = window.location.pathname;
-  // console.log(ref);
   const [items, setItems] = useState([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]);
   const [page, setPage] = useState(1);
 
   function changePage() {
-    // console.log(1);
     setPage(() => {
       if (page == 1) {
         return 2;

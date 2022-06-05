@@ -15,10 +15,8 @@ const BlogStandard = () => {
   let { slug } = useParams();
   const arr = ["Adventure", "Food", "Travel", "New Year", "Summer"];
   const title = arr.find((e) => to_slug(e) === slug);
-  console.log(slug);
   const getImgBanner = BannerArr.filter((e) => e.types === "banner_pages");
   const ref = window.location.pathname;
-  // console.log(slug);
   const NewStyle = styled.div`
     .blog-item {
       margin: 40px 0;

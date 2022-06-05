@@ -28,7 +28,6 @@ const NewStyleSelection = styled.div`
 
 const ItemDetail = () => {
   let { slug } = useParams();
-  // console.log(">>>>>>>>>>>>>>>" + slug);
 
   return (
     <Helmet title={slug}>

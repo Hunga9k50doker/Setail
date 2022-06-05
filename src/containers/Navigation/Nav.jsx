@@ -465,6 +465,7 @@ const Nav = () => {
                   key={id}
                   to={"/tour-item/" + to_slug(item.title)}
                   className="col col-xxl-3 col-lg-6 col-md-6 col-12"
+                  onClick={() => setShowModal(false)}
                 >
                   <CardSelection
                     img={item.img}

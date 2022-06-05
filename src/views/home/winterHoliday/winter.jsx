@@ -33,7 +33,6 @@ const getImgBanner = BannerArr.filter(
   (e) => e.types === "banner_winter_travel"
 );
 const getVideoData = VideoData.filter((e) => e.id === "video_winter_travel");
-// console.log(getImgBanner);
 
 const content1 = {
   content: "Try Now",

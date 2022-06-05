@@ -29,7 +29,6 @@ const ShopList = () => {
     "Winter",
   ];
   function changePage() {
-    // console.log(1);
     setPage(() => {
       if (page == 1) {
         return 2;

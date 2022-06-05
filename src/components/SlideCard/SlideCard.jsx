@@ -6,7 +6,6 @@ import cardData from "../../assets/fake-data/CardDetails";
 import CardDetails from "../cards/cardDetails/cardDetails";
 
 import "./slideCard.scss";
-console.log(cardData);
 const SlideCard = () => {
   return (
     <div className=" slides__card container ">

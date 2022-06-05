@@ -6,9 +6,7 @@ import "../../styles/responsive.scss";
 import "../../styles/grid.scss";
 
 const NavOnTop = () => {
-  // document.querySelector("modal").modal({ backdrop: "static", keyboard: false });
-  // const abs = document.getElementsByClassName("nav__onTop");
-  // console.log(abs);
+ 
   return (
     <>
       <div className="nav__onTop">
