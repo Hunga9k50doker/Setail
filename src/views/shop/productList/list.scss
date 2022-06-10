@@ -68,6 +68,24 @@
     }
   }
   .right-col {
+    .filter__price {
+      input[type="range"]::-webkit-slider-thumb {
+        background: $bg-color--hover;
+      }
+      .price-input {
+        input {
+          color: $black-color;
+          margin: 6px 0;
+        }
+      }
+      .range__sidebar {
+        background: #f0ede8;
+        .range__progress {
+          background-color: $primary-color;
+        }
+      }
+    }
+
     .popular-product {
       margin-top: 2rem;
     }

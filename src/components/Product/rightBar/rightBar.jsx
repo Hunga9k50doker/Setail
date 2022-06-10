@@ -1,5 +1,4 @@
-import { useState, useEffect, useLayoutEffect } from "react";
-import { Link } from "react-router-dom";
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import "./rightBar.scss";
 
 const SearchBar = () => {
@@ -25,101 +24,6 @@ const SearchBar = () => {
           </svg>
         </button>
       </form>
-    </div>
-  );
-};
-
-const PriceFilter = () => {
-  const [minPrice, setMinPrice] = useState(0);
-  const [maxPrice, setMaxPrice] = useState(760);
-
-  const minX = 0;
-  const maxX = 760;
-
-  function minDragCounter(event) {
-    const parent = document.querySelector(".drag-filter");
-    let position = Math.floor(
-      ((event.pageX - parent.offsetLeft - parent.offsetParent.offsetLeft) /
-        parent.offsetWidth) *
-        maxX
-    );
-    setMinPrice(() => position);
-  }
-  function maxDragCounter(event) {
-    const parent = document.querySelector(".drag-filter");
-    let position = Math.floor(
-      ((event.pageX - parent.offsetLeft - parent.offsetParent.offsetLeft) /
-        parent.offsetWidth) *
-        maxX
-    );
-    setMaxPrice(() => position);
-  }
-  useLayoutEffect(() => {
-    if (minPrice < minX) {
-      setMinPrice(() => minX);
-    }
-    if (minPrice > maxX) {
-      setMinPrice(() => maxX);
-    }
-    if (minPrice > maxPrice) {
-      setMinPrice(() => maxPrice);
-    }
-  }, [minPrice]);
-  useLayoutEffect(() => {
-    if (maxPrice < minX) {
-      setMaxPrice(() => minX);
-    }
-    if (maxPrice > maxX) {
-      setMaxPrice(() => maxX);
-    }
-    if (maxPrice < minPrice) {
-      setMaxPrice(() => minPrice);
-    }
-  }, [maxPrice]);
-  useEffect(() => {
-    const min = document.querySelector(".min-price");
-    const max = document.querySelector(".max-price");
-    if (min && max) {
-      min.addEventListener("drag", minDragCounter);
-      min.addEventListener("dragend", minDragCounter);
-      max.addEventListener("drag", maxDragCounter);
-      max.addEventListener("dragend", maxDragCounter);
-    }
-    return () => {
-      min.removeEventListener("drag", minDragCounter);
-      min.removeEventListener("dragend", minDragCounter);
-      max.removeEventListener("drag", maxDragCounter);
-      max.removeEventListener("dragend", maxDragCounter);
-    };
-  }, []);
-
-  let styles = {
-    progress: {
-      left: `${minPrice / 7.6}%`,
-      right: `${100 - maxPrice / 7.6}%`,
-    },
-    min: {
-      position: "absolute",
-      left: `${minPrice / 7.6}%`,
-    },
-    max: {
-      position: "absolute",
-      right: `${100 - maxPrice / 7.6}%`,
-    },
-  };
-
-  return (
-    <div className="price-filter">
-      <h5 className="price-filter__header">Filter by Price</h5>
-      <div className="drag-filter">
-        <div className="filter-range" style={styles.progress}></div>
-        <span className="min-price" style={styles.min} draggable="true"></span>
-        <span className="max-price" style={styles.max} draggable="true"></span>
-      </div>
-      <div className="bottom-content">
-        <span className="price-range">{`Price: $${minPrice} - $${maxPrice}`}</span>
-        <button className="btn btn-filter">filter</button>
-      </div>
     </div>
   );
 };
@@ -163,4 +67,4 @@ const ProductMini = ({ shopData }) => {
     </div>
   );
 };
-export { SearchBar, PriceFilter, Categories, ProductMini };
+export { SearchBar, Categories, ProductMini };

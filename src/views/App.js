@@ -26,7 +26,7 @@ import BlogGallery from "./blog/postType/gallery";
 import BlogLink from "./blog/postType/link";
 import TypeStandard from "./blog/postType/standard";
 import BlogStandard from "./blog/standard/BlogStandard";
-import { BlogItem } from "../components/blogItem/BlogItem";
+// import { BlogItem } from "../components/blogItem/BlogItem";
 
 import ShopList from "./shop/productList/list";
 import ShopSingle from "./shop/productSingle/single";
@@ -57,7 +57,7 @@ function App() {
   const [showButton, setShowButton] = useState(false);
 
   useEffect(() => {
-    console.clear();
+    // console.clear();
     window.addEventListener("scroll", () => {
       scrollFunction();
     });

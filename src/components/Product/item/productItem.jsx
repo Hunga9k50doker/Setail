@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import "./productItem.scss";
 import React, { useState } from "react";
 import {

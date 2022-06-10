@@ -22,45 +22,7 @@
     border: none;
   }
 }
-.price-filter {
-  margin-top: 2rem;
-  h5 {
-    font-size: 1.2rem;
-    font-weight: 600;
-  }
-  .drag-filter {
-    position: relative;
-    width: 100%;
-    height: 20px;
-    background-color: #f0ede8;
-    .filter-range {
-      position: absolute;
-      height: 20px;
-      top: 0;
-      background-color: #3fd0d4;
-    }
-    span {
-      position: absolute;
-      height: 22px;
-      width: 22px;
-      background-color: #3abdc1;
-      cursor: pointer;
-      z-index: 2;
-      transform: translateY(-1px);
-    }
-  }
-  .bottom-content {
-    margin: 1rem 0px;
-    display: flex;
-    justify-content: space-between;
-    .btn-filter {
-      padding: 0px;
-      font-weight: 600;
-      font-family: "Poppins", sans-serif;
-      color: #3fd0d4;
-    }
-  }
-}
+
 .product-mini {
   margin: 1rem 0px;
   height: 5rem;

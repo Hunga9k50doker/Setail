@@ -1,5 +1,6 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import "./sectionSingle.scss";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { RatingStar } from "../../../utils/utils";
 import { user6 } from "../../../assets/img";
 import { RatingStarInput } from "../../../utils/utils";
@@ -57,7 +58,7 @@ const ProductItemDetails = ({ itemData }) => {
               </button>
               <button
                 onClick={() => {
-                  setProductCount((e) => (e == 1 ? 1 : e - 1));
+                  setProductCount((e) => (e === 1 ? 1 : e - 1));
                 }}
               >
                 <i className="fas fa-chevron-down"></i>
@@ -75,11 +76,11 @@ const ProductItemDetails = ({ itemData }) => {
           <div className="info__detail">
             <span className="span__detail">{itemData.SKU}</span>
             <span className="span__detail">
-              <a>{itemData.Categories}</a>
+              <a href='#'>{itemData.Categories}</a>
             </span>
             <span className="span__detail">
               {itemData.Tag.map((e, i) => (
-                <a key={i} className="tags" href="">
+                <a key={i} className="tags" href="#">
                   {e}
                 </a>
               ))}
@@ -150,7 +151,7 @@ const ProductDetailNav = ({ shopData }) => {
           onClick={() => {
             setTabActive(() => 0);
           }}
-          className={`tabs-item ${tabActive == 0 ? "active" : ""}`}
+          className={`tabs-item ${tabActive === 0 ? "active" : ""}`}
         >
           DESCRIPTION
         </button>
@@ -159,7 +160,7 @@ const ProductDetailNav = ({ shopData }) => {
           onClick={() => {
             setTabActive(() => 1);
           }}
-          className={`tabs-item ${tabActive == 1 ? "active" : ""}`}
+          className={`tabs-item ${tabActive === 1 ? "active" : ""}`}
         >
           ADDITIONAL INFORMATION
         </button>
@@ -167,7 +168,7 @@ const ProductDetailNav = ({ shopData }) => {
           onClick={() => {
             setTabActive(() => 2);
           }}
-          className={`tabs-item ${tabActive == 2 ? "active" : ""}`}
+          className={`tabs-item ${tabActive === 2 ? "active" : ""}`}
         >
           REVIEWS(1)
         </button>

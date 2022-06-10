@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import FilterPrice from "../filter/filterPrice";
 import "./sidebars.scss";
 const SidebarSearch = () => {
   return (
@@ -40,9 +41,7 @@ const SidebarSearch = () => {
           </ul>
         </div>
         <div className="sidebar__item">
-          <h3 className="sidebar__item-title">Filter by Price</h3>
-          <input type="range" name="range_price" id="range_price" />
-          <p className="sidebar__item-price">Price: $12 - $3600</p>
+          <FilterPrice />
           <ul className="list__input">
             <li className="list__input-item">
               <input type="radio" name="type__tour" id="popular" />
