@@ -34,3 +34,40 @@
     color: $white-color;
   }
 }
+
+.paginate {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+
+  .next.disabled,
+  .previous.disabled {
+    pointer-events: none;
+    a {
+      color: #ccc;
+    }
+  }
+  .page,
+  .previous,
+  .next {
+    margin: 0 4px;
+    width: 40px;
+    height: 40px;
+
+    a {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      border: 1px solid #ccc;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .page.active {
+    background: $primary-color;
+    a {
+      color: $white-color;
+    }
+  }
+}

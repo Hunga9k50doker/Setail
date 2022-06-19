@@ -95,7 +95,7 @@ const tag = ["camera", "city", "fun", "summer", "travel", "winter"];
 const BlogItem = (props) => {
   return (
     <article className="blog-item">
-      <Link to={"/" + to_slug(props.blog.title)}>
+      <Link to={"/detail/" + to_slug(props.blog.title)}>
         <div className="header__img">
           <img src={props.blog.img} alt={`blog-img-${props.blog.id}`} />
         </div>
@@ -144,7 +144,7 @@ const BlogItem = (props) => {
         </p>
         <div className="post-info">
           <div className="post-info-left">
-            <Link to="/" className="time a--sub">
+            <Link to="#" className="time a--sub">
               {props.blog.time}
             </Link>
             <Link to="#comment__blog" className="comment-count a--sub">
@@ -223,7 +223,7 @@ const PostText = (props) => {
   return (
     <div className="post-text">
       {props.postText.content && (
-        <Link to="" className="quote">
+        <Link to="#" className="quote">
           {props.postText.content}
         </Link>
       )}

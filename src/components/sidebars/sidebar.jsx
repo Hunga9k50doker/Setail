@@ -5,7 +5,7 @@ import data__blog from "../../assets/fake-data/CardBlogs";
 // ip components
 import { SearchBar, Categories } from "../Product/rightBar/rightBar";
 import { FormFollow } from "../forms/forms";
-import { get_random, to_slug } from "../../utils/utils";
+import { to_slug } from "../../utils/utils";
 import "./sidebars.scss";
 const Sidebar = () => {
   const arr = ["Adventure", "Food", "Travel", "New Year", "Summer"];
@@ -21,15 +21,13 @@ const Sidebar = () => {
         </p>
       </div>
       <Categories>
-        <>
-          {get_random(arr, 5).map((e, index) => (
-            <li key={index + 1}>
-              <Link to={`/blog/category/` + to_slug(e)}>
-                {e ? e : "Comming soon!!!"}
-              </Link>
-            </li>
-          ))}
-        </>
+        {arr.map((e, index) => (
+          <li key={index + 1}>
+            <Link to={`/blog/category/` + to_slug(e)}>
+              {e ? e : "Comming soon!!!"}
+            </Link>
+          </li>
+        ))}
       </Categories>
       <FormFollow />
       <div className="sidebar__item">

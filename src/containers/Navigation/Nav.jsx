@@ -390,7 +390,7 @@ const Nav = () => {
             </li>
             <li className="item__social">
               <a
-                href="https://www.instagram.com/nguyenhung9104/"
+                href="https://www.instagram.com/"
                 rel="noreferrer"
                 target="_blank"
               >
@@ -399,7 +399,7 @@ const Nav = () => {
             </li>
             <li className="item__social">
               <a
-                href="https://www.facebook.com/profile.php?id=100047468063150"
+                href="https://www.facebook.com/"
                 rel="noreferrer"
                 target="_blank"
               >

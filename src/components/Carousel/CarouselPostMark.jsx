@@ -1,6 +1,8 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Slider from "react-slick";
+import { ref, listAll, getDownloadURL } from "firebase/storage";
+import { storage } from "../../firebase/firebase";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -48,7 +50,18 @@ const SlideStamp = (props) => {
     ],
   };
   const refBg = useRef();
-  refBg.current ? parallaxBackground(refBg.current) : "";
+  const listImgs = ref(storage, "postmark/");
+  console.log(listImgs);
+  const [imgs, setImgs] = useState([]);
+  if (refBg.current) {
+    parallaxBackground(refBg.current);
+  }
+
+  useEffect(() => {
+    listAll(listImgs)
+      .then(() => console.log(listImgs))
+      .catch((error) => console.log(error));
+  }, []);
   return (
     <div
       className=" slide__card__review "
